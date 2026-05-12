@@ -1,55 +1,176 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-// Honest notes on what we use. Intentionally non-commercial: no affiliate
-// links, no "buy now" buttons. We'll write longer-form gear posts when
-// something is genuinely worth a deep look.
 const categories = [
   {
     name: 'The ovens',
     notes:
-      'A Ninja Woodfire (electric + pellets) for the everyday weeknight pies and an Ooni for the showpiece bakes — fast deck temps, gas convenience, and serious 900°F leoparding when we want it. Two ovens, two roles.',
+      'A Ninja Woodfire (electric + pellets) for the everyday weeknight pies — electric, predictable, eight cooking modes, and genuinely good pizza at 700°F. New York and Pan settings are where it shines. The cord is short. Get an outdoor extension cord before you do anything else.',
+    detail: [
+      {
+        label: 'Ninja Woodfire 8-in-1 Outdoor Oven (OO101)',
+        body: 'What it is: a convection oven that maxes at 700°F, with a pellet hopper that adds real wood smoke character when you want it. The Pizza setting has five sub-presets — Neapolitan, New York, Thin Crust, Pan, and Frozen — each with different time and temperature profiles. New York and Pan are where it shines. Neapolitan is possible but you\'re not hitting 900°F, so adjust your expectations and your hydration accordingly. What it isn\'t: a replacement for a gas-fired oven if authentic leoparding and 60-second Neapolitans are your whole thing. If you want a backyard oven that smokes pork shoulder on Saturday, roasts a whole chicken on Sunday, and makes excellent pizza every other night of the week — this is it.',
+        links: [
+          { text: 'Ninja Woodfire OO101 on Amazon', href: '#' },
+          { text: 'Ninja Woodfire OO101 — Ninja Kitchen direct', href: '#' },
+        ],
+      },
+    ],
   },
   {
     name: 'Pellets',
     notes:
-      'Hardwood pellets for both the Ninja and the Ooni Karu. We rotate oak, maple, and a cherry blend, decanted into a sealed bucket with a couple of silica gel packs. Dry pellets are the cheapest upgrade you can make.',
+      'Hardwood pellets for the Ninja. We rotate oak, maple, and a cherry blend, decanted into a sealed bucket with a couple of silica gel packs. Dry pellets are the cheapest upgrade you can make. New England humidity is not your pellets\' friend.',
+    detail: [
+      {
+        label: 'Ninja All-Purpose Blend (cherry, maple, oak)',
+        body: 'The everyday bag. Mild, slightly sweet, works on pizza, chicken, vegetables, fish. If you\'re buying one bag, buy this one. The sweetness disappears into savory food and the smoke level is approachable rather than aggressive.',
+        links: [{ text: 'Ninja All-Purpose Blend pellets', href: '#' }],
+      },
+      {
+        label: 'Ninja Robust Blend (hickory, cherry, maple, oak)',
+        body: 'The BBQ bag. Pulled pork, brisket, ribs, anything where you want that classic smoke depth. Not for pizza unless you specifically want a campfire note on your crust, which occasionally you do.',
+        links: [{ text: 'Ninja Robust Blend pellets', href: '#' }],
+      },
+      {
+        label: 'Kona variety pack',
+        body: 'Eight one-pound bags, different single-source woods. Good for experimenting without committing to a full five-pound bag of mesquite only to discover you hate mesquite on pizza. (Most people hate mesquite on pizza.) Food-grade pellets only — heating pellets contain binders not meant to go near food.',
+        links: [{ text: 'Kona wood pellets variety pack', href: '#' }],
+      },
+    ],
   },
   {
     name: 'Peels',
     notes:
       'A wide perforated launching peel and a small round turning peel. Aluminum on the deck — wood looks great but eats flour and warps in wet New England air.',
+    detail: [
+      {
+        label: 'Launching peel',
+        body: 'Aluminum, perforated, sized to fit the Woodfire opening. The perforations matter — flour falls through instead of burning on the stone. The Ninja XSKOPPL is purpose-built for this oven. A generic 12-inch perforated aluminum peel does the same job for less. Wood peels launch fine but don\'t retrieve as cleanly.',
+        links: [
+          { text: 'Ninja XSKOPPL perforated peel', href: '#' },
+          { text: 'Generic 12-inch perforated aluminum peel', href: '#' },
+        ],
+      },
+      {
+        label: 'Turning peel',
+        body: 'A small round one, 9 or 10 inches, for rotating the pizza mid-cook. Not strictly necessary at 700°F where heat is more even than in a 900°F gas oven, but useful for catching hot spots. Used about half the time.',
+        links: [{ text: '9-inch turning peel', href: '#' }],
+      },
+    ],
+  },
+  {
+    name: 'The dough',
+    notes:
+      'Three ingredients that actually move the needle on crust quality. Everything else is technique.',
+    detail: [
+      {
+        label: 'Caputo Pizzeria Type "00" flour',
+        body: 'This is the flour. Finely milled Italian 00 for high-heat baking, low ash content, strong gluten structure that stretches without tearing. The difference between this and all-purpose or even bread flour is not subtle once you\'ve felt the dough properly fermented — it\'s extensible in a way that lets you open the ball by hand without fighting it. I buy the 2.2-pound bag for weeknight bakes and the 11-pound bag when we\'re doing a big pizza night. With Caputo 00 and New England tap water, I run 62–65% hydration on the Woodfire\'s New York setting.',
+        links: [
+          { text: 'Caputo Pizzeria 00 flour, 2.2 lb', href: '#' },
+          { text: 'Caputo Pizzeria 00 flour, 11 lb', href: '#' },
+        ],
+      },
+      {
+        label: 'Baleine Fine Sea Salt',
+        body: 'Salt matters more than most pizza recipes admit. Iodized table salt inhibits yeast activity and leaves a metallic edge in the baked crust. Baleine is a French Atlantic sea salt, fine enough to dissolve fully into the dough without streaking, clean flavor. Use 2% salt by weight of flour — for a standard 500g flour batch, that\'s 10g. Worth weighing rather than guessing.',
+        links: [{ text: 'Baleine Fine Sea Salt', href: '#' }],
+      },
+      {
+        label: 'Caputo Lievita dry yeast',
+        body: 'The same Caputo that makes the flour makes a dry active yeast formulated for long cold ferments. It performs reliably at refrigerator temperatures over 24–72 hours where regular active dry yeast can stall or produce off flavors. I use one packet (7g) per kilo of flour on a 48-hour cold ferment. If you\'re doing same-day dough, standard active dry works fine — the Lievita earns its place on longer ferments.',
+        links: [{ text: 'Caputo Lievita dry yeast', href: '#' }],
+      },
+    ],
+  },
+  {
+    name: 'The bread maker',
+    notes:
+      'Dump in the ingredients, press start, come back to finished dough. The Cuisinart CBK-110NAS for anyone who wants consistent results without the hand-mixing — especially useful when pizza night means six or eight balls at once.',
+    detail: [
+      {
+        label: 'Cuisinart CBK-110NAS',
+        body: 'Let me be honest about this one first: you don\'t need a bread maker to make great pizza dough. The Caputo 00, Baleine salt, and Caputo Lievita above are an easy hand-mix — combine, rest, fold twice, refrigerate. It takes about 10 minutes of active work. The Cuisinart earns its place for a different reason: consistency at volume. When pizza night means six or eight balls of dough, hand-mixing and portioning that quantity gets tedious. Use the Dough cycle specifically — it mixes and kneads without baking, which is what you want for pizza. The 450-watt motor handles Caputo 00 without straining, though you may need to add flour a tablespoon at a time during the second knead if the dough seems too wet. After a batch or two you\'ll know exactly where it needs to land. Compact footprint, fits under standard cabinets, brushed stainless steel, non-stick pan cleans quickly by hand.',
+        links: [{ text: 'Cuisinart CBK-110NAS Bread Maker on Amazon', href: '#' }],
+      },
+    ],
   },
   {
     name: 'Pizza stone & care',
     notes:
-      'Both ovens use a cordierite stone. We let them burn off between pies, brush dry, and never wash with soap. A hot stone is a forgiving stone.',
+      'The Woodfire ships with a 12-inch square cordierite stone. We let it burn off between pies, brush dry, and never wash with soap. A hot stone is a forgiving stone.',
+    detail: [
+      {
+        label: 'Stone temperature vs. air temperature',
+        body: 'The Woodfire\'s display shows you the air temp inside the oven — not the stone surface. Those numbers can differ by 100°F or more. A $20 infrared thermometer aimed at the stone tells you when it\'s actually ready. Before owning one I\'d preheat for 20 minutes and still occasionally get pale, undercooked bottoms. After: consistent crust, every time.',
+        links: [{ text: 'Etekcity infrared thermometer', href: '#' }],
+      },
+      {
+        label: 'The patina is the point',
+        body: 'A pizza stone darkens over time and that\'s correct. The carbonized layer seasons the stone and helps it perform better. Don\'t scrape it back to white. Don\'t wash it with soap — soap soaks into the porous stone and flavors your next pizza in a way you won\'t enjoy. Scrape off loose debris with a dry brush. For stuck cheese, let the stone heat up fully and burn it off. If you crack your stone, let it cool completely before moving it and replace it before cooking again.',
+        links: [{ text: 'Replacement 12-inch cordierite pizza stone', href: '#' }],
+      },
+    ],
   },
   {
-    name: 'Infrared thermometer',
+    name: 'The cart',
     notes:
-      'A simple IR gun pointed at the center of the stone. We aim for 700°F on the Ninja and 850–880°F on the Ooni before launching the first pie.',
+      'Counter-height, stainless steel top, sealed storage underneath. The Keter Unity is where the dough gets built and the toppings get staged.',
+    detail: [
+      {
+        label: 'Keter Unity Stainless Steel & Resin Outdoor Kitchen Cart',
+        body: 'The piece of gear that changed how pizza night actually flows. Before it, prepping dough and toppings happened in the kitchen, then everything got shuttled outside. Now the whole operation runs outdoors — dough gets opened on the stainless top, toppings go in small bowls on the lower shelf, peels hang on the hooks, pellet bags live in the sealed cabinet underneath. The stainless top wipes clean between pies. Counter height matches a standard kitchen counter. The sealed storage cabinet keeps pellets and flour dry through New England rain. The wheels lock, which matters when you\'re pushing a peel under a pizza. It\'s not the official Ninja stand — the XSKUNSTAND fits the oven precisely and is the right answer if you want everything matched. But the Keter gives you a full prep station rather than just an oven stand, and for how we run pizza night the dedicated counter space has been worth more than the perfect oven fit.',
+        links: [
+          { text: 'Keter Unity Stainless Steel Outdoor Kitchen Cart', href: '#' },
+          { text: 'Ninja XSKUNSTAND official stand', href: '#' },
+        ],
+      },
+    ],
   },
   {
-    name: 'Scale & dough containers',
+    name: 'The cover',
     notes:
-      'Gram scale, a stack of square dough containers, and a quiet corner of the fridge. The dough lives there for three days at a time.',
+      'The Woodfire is weather-resistant. New England isn\'t. Get the cover.',
+    detail: [
+      {
+        label: 'Ninja XSKOCVR',
+        body: 'The power cord is short and the electronics are real — this isn\'t a cast iron grate you can leave out through a February nor\'easter. The official Ninja XSKOCVR fits exactly right. Third-party covers sized specifically for the OO100 series run about half the price and hold up through rain and wind without issue. If you have the Keter cart next to the oven as a permanent setup, size your cover for the oven alone — the Keter\'s stainless top and resin body handle weather without any help.',
+        links: [
+          { text: 'Ninja XSKOCVR official cover', href: '#' },
+          { text: 'Third-party OO100 series cover', href: '#' },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'The cord',
+    notes:
+      'The Woodfire ships with a 4.5-foot cord. Almost everyone discovers this the hard way.',
+    detail: [
+      {
+        label: '12-gauge outdoor-rated extension cord',
+        body: 'Get at least 15 feet. The gauge matters — the oven pulls real wattage and a thin indoor extension cord can overheat. The Keter cart is on wheels, which helps with positioning, but you\'ll still want the cord length to give you flexibility on where the whole setup lands. This is the one thing I\'d buy before the oven arrives.',
+        links: [{ text: '12-gauge 25-foot outdoor extension cord', href: '#' }],
+      },
+    ],
   },
 ];
 ---
 
 <BaseLayout
   title="Gear"
-  description="A no-affiliate, no-noise rundown of the Ninja Woodfire and Ooni gear we actually reach for on backyard pizza nights."
+  description="Honest notes on the Ninja Woodfire and the tools and ingredients that keep it running well — from Caputo 00 flour to the Keter prep cart."
 >
   <section class="container-page py-16 md:py-20">
     <p class="eyebrow">Gear</p>
     <h1 class="mt-3 font-display text-4xl text-balance md:text-5xl">What we actually use</h1>
     <p class="mt-4 max-w-2xl text-pretty text-timber-100/85">
-      Honest notes on the tools that earn their place on the deck — Ninja
-      Woodfire, Ooni, and the small stack of accessories that keep both
-      running. No affiliate links, no sponsorships — just what's worked
-      across a few hundred backyard pies.
+      Honest notes on the tools and ingredients that earn their place on the
+      deck — the Ninja Woodfire mainly, and the small stack of things that keep
+      it running well. Some links below are affiliate links, which means I earn
+      a small commission if you buy, at no extra cost to you. Everything here
+      has spent real time on my patio.
     </p>
 
     <ul class="mt-12 grid gap-6 md:grid-cols-2">
@@ -58,15 +179,41 @@ const categories = [
           <li class="card">
             <h2 class="font-display text-2xl text-timber-50">{c.name}</h2>
             <p class="mt-3 text-sm text-timber-100/85">{c.notes}</p>
+            {c.detail && (
+              <div class="mt-5 space-y-5 border-t border-timber-700/40 pt-5">
+                {c.detail.map((d) => (
+                  <div>
+                    <p class="text-sm font-semibold text-timber-50">{d.label}</p>
+                    <p class="mt-1 text-sm text-timber-100/75 leading-relaxed">{d.body}</p>
+                    {d.links && d.links.length > 0 && (
+                      <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+                        {d.links.map((link) => (
+                          <li>
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener sponsored"
+                              class="text-xs text-orange-400 hover:text-orange-300 underline underline-offset-2"
+                            >
+                              {link.text} →
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </li>
         ))
       }
     </ul>
 
     <p class="mt-12 max-w-2xl text-sm text-timber-300/80">
-      We'll write longer pieces about specific tools as we go. If something
-      ends up here, it's because we'd recommend it to a friend without
-      thinking twice.
+      If something ends up here, it's because I'd recommend it to a friend
+      without thinking twice. This page gets updated when something earns
+      it — or gets cut.
     </p>
   </section>
 </BaseLayout>
