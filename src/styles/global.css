@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base ---------- */
+@layer base {
+  :root {
+    color-scheme: dark;
+    --grain-opacity: 0.035;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-twilight-700 text-timber-50 font-sans;
+    background-image:
+      radial-gradient(1100px 580px at 50% -8%, rgba(243, 114, 7, 0.22), transparent 62%),
+      radial-gradient(700px 380px at 92% 110%, rgba(168, 46, 29, 0.22), transparent 62%),
+      linear-gradient(180deg, #1c1916 0%, #141210 100%);
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  /* Subtle film-grain so the warm flat colors feel like a real photograph. */
+  body::before {
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='200' height='200' filter='url(%23n)' opacity='0.9'/></svg>");
+    mix-blend-mode: overlay;
+  }
+
+  body > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    background-color: theme('colors.glow.400');
+    color: theme('colors.twilight.800');
+  }
+}
+
+/* ---------- Components ---------- */
+@layer components {
+  .container-prose {
+    @apply mx-auto w-full max-w-prose px-6;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6;
+  }
+
+  /* A small label that sits above section headings — tiny ember dot + caps */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-glow-300;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-1.5 w-1.5 rounded-full bg-glow-400;
+    box-shadow: 0 0 12px theme('colors.glow.400');
+  }
+
+  /* Buttons */
+  .btn-ember {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ember-500 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-ember transition;
+    background-image: linear-gradient(135deg, theme('colors.ember.500') 0%, theme('colors.glow.500') 100%);
+  }
+  .btn-ember:hover {
+    @apply -translate-y-0.5 shadow-lg;
+    filter: brightness(1.06);
+  }
+  .btn-ember:focus-visible {
+    @apply outline-none ring-2 ring-glow-300 ring-offset-2 ring-offset-twilight-700;
+  }
+
+  /* Larger, more prominent ember button — used as the hero CTA */
+  .btn-ember-lg {
+    @apply inline-flex items-center justify-center gap-3 rounded-full px-9 py-4 text-base font-semibold uppercase tracking-[0.12em] text-white transition;
+    background-image: linear-gradient(135deg, #c63d28 0%, #f37207 60%, #ffb247 100%);
+    box-shadow:
+      0 0 0 1px rgba(255, 178, 71, 0.32),
+      0 14px 40px -10px rgba(243, 114, 7, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+  .btn-ember-lg:hover {
+    @apply -translate-y-0.5;
+    filter: brightness(1.08) saturate(1.05);
+    box-shadow:
+      0 0 0 1px rgba(255, 178, 71, 0.5),
+      0 18px 50px -10px rgba(243, 114, 7, 0.8),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  .btn-ember-lg:focus-visible {
+    @apply outline-none ring-2 ring-glow-300 ring-offset-2 ring-offset-harbor-900;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-timber-300/30 bg-twilight-600/30 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-timber-50 backdrop-blur-sm transition;
+  }
+  .btn-ghost:hover {
+    @apply -translate-y-0.5 border-glow-300/70 text-glow-200;
+  }
+
+  /* Coastal variant of the ghost button — used on the navy hero */
+  .btn-ghost-coastal {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/5 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white backdrop-blur-sm transition;
+  }
+  .btn-ghost-coastal:hover {
+    @apply -translate-y-0.5 border-white/80 bg-white/10;
+  }
+  .btn-ghost-coastal:focus-visible {
+    @apply outline-none ring-2 ring-white/70 ring-offset-2 ring-offset-harbor-900;
+  }
+
+  /* Card surfaces */
+  .card {
+    @apply relative overflow-hidden rounded-2xl border border-timber-300/15 bg-twilight-600/55 p-6 shadow-deck backdrop-blur-sm transition;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(243, 114, 7, 0.08), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .card:hover {
+    @apply -translate-y-0.5 border-glow-300/40;
+  }
+  .card:hover::after {
+    opacity: 1;
+  }
+
+  /* Wordmark used on the homepage hero */
+  .wordmark {
+    @apply font-display font-black uppercase leading-[0.92] tracking-tight;
+    background: linear-gradient(180deg, #fff8ec 0%, #ffd185 55%, #f37207 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 4px 30px rgba(243, 114, 7, 0.2);
+  }
+
+  /* Clean coastal wordmark — mixed case, off-white, subtle warmth via shadow */
+  .wordmark-clean {
+    @apply font-display leading-[0.95];
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #fefcf8;
+    text-shadow:
+      0 6px 36px rgba(7, 17, 30, 0.55),
+      0 0 60px rgba(243, 114, 7, 0.12);
+  }
+
+  /* Thin ember rule used as a section divider */
+  .ember-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      theme('colors.ember.500') 30%,
+      theme('colors.glow.400') 50%,
+      theme('colors.ember.500') 70%,
+      transparent 100%
+    );
+    opacity: 0.5;
+  }
+}
+
+/* ---------- Utilities ---------- */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

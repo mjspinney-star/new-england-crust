@@ -1,0 +1,327 @@
+---
+/*
+  Inline SVG "scene": a Ninja Woodfire and an Ooni-style oven, sitting on a
+  folding table on a New England deck at night. Pure SVG keeps the page fast
+  and image-asset free. Fire glow flickers, and small embers drift up the
+  page from the chimney.
+*/
+interface Props {
+  /** When true, the scene fills its container at any size — used as a hero backdrop. */
+  fill?: boolean;
+  /** Pass-through class names for layout sizing from the parent. */
+  class?: string;
+}
+const { fill = false, class: className = '' } = Astro.props;
+---
+
+<div
+  class:list={[
+    'relative overflow-hidden border-timber-300/15 bg-twilight-800',
+    fill ? 'h-full w-full' : 'aspect-[4/3] md:aspect-[5/4] rounded-3xl border shadow-deck',
+    className,
+  ]}
+>
+  <svg
+    viewBox="0 0 800 640"
+    class="absolute inset-0 h-full w-full"
+    role="img"
+    aria-label="A Ninja Woodfire and an Ooni-style pizza oven glowing at night on a New England backyard deck"
+    preserveAspectRatio="xMidYMid slice"
+  >
+    <defs>
+      <radialGradient id="sky" cx="50%" cy="20%" r="80%">
+        <stop offset="0%" stop-color="#3a3530" />
+        <stop offset="55%" stop-color="#1c1916" />
+        <stop offset="100%" stop-color="#070605" />
+      </radialGradient>
+      <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fff8ec" stop-opacity="0.95" />
+        <stop offset="70%" stop-color="#ffeac7" stop-opacity="0.4" />
+        <stop offset="100%" stop-color="#ffeac7" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="fire" cx="50%" cy="60%" r="60%">
+        <stop offset="0%" stop-color="#fff1c2" />
+        <stop offset="35%" stop-color="#ffb247" />
+        <stop offset="70%" stop-color="#d85604" />
+        <stop offset="100%" stop-color="#581b16" />
+      </radialGradient>
+      <radialGradient id="glow-aura" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffb247" stop-opacity="0.7" />
+        <stop offset="55%" stop-color="#f37207" stop-opacity="0.18" />
+        <stop offset="100%" stop-color="#f37207" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="big-glow" cx="50%" cy="60%" r="55%">
+        <stop offset="0%" stop-color="#ffb247" stop-opacity="0.45" />
+        <stop offset="60%" stop-color="#a82e1d" stop-opacity="0.12" />
+        <stop offset="100%" stop-color="#26221d" stop-opacity="0" />
+      </radialGradient>
+      <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#3a3a3a" />
+        <stop offset="50%" stop-color="#1f1f1f" />
+        <stop offset="100%" stop-color="#0d0d0d" />
+      </linearGradient>
+      <linearGradient id="ninja" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#2a2a2a" />
+        <stop offset="100%" stop-color="#101010" />
+      </linearGradient>
+      <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#5c3f25" />
+        <stop offset="100%" stop-color="#33231a" />
+      </linearGradient>
+      <linearGradient id="plank" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#46301f" />
+        <stop offset="50%" stop-color="#5c3f25" />
+        <stop offset="100%" stop-color="#46301f" />
+      </linearGradient>
+      <filter id="soft-blur" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="2" />
+      </filter>
+    </defs>
+
+    <!-- Night sky -->
+    <rect width="800" height="640" fill="url(#sky)" />
+
+    <!-- Ambient warm glow filling the lower half of the sky -->
+    <rect x="0" y="280" width="800" height="360" fill="url(#big-glow)" />
+
+    <!-- Stars -->
+    <g fill="#fff8ec">
+      <circle cx="80" cy="80" r="1.2" opacity="0.9" />
+      <circle cx="160" cy="50" r="0.9" opacity="0.7" />
+      <circle cx="240" cy="110" r="1.4" opacity="0.85" />
+      <circle cx="330" cy="60" r="0.8" opacity="0.7" />
+      <circle cx="520" cy="90" r="1.1" opacity="0.85" />
+      <circle cx="610" cy="40" r="0.9" opacity="0.7" />
+      <circle cx="700" cy="120" r="1.3" opacity="0.9" />
+      <circle cx="740" cy="70" r="0.7" opacity="0.6" />
+      <circle cx="50" cy="180" r="0.8" opacity="0.7" />
+      <circle cx="420" cy="40" r="0.7" opacity="0.6" />
+      <circle cx="120" cy="140" r="0.6" opacity="0.55" />
+      <circle cx="680" cy="180" r="0.8" opacity="0.6" />
+    </g>
+
+    <!-- Moon -->
+    <circle cx="640" cy="120" r="80" fill="url(#moon)" />
+    <circle cx="640" cy="120" r="32" fill="#fff8ec" opacity="0.95" />
+
+    <!-- Distant tree line — layered for depth -->
+    <g opacity="0.6">
+      <path
+        d="M0,380 C40,355 90,365 140,355 C200,343 250,365 310,350 C370,335 420,365 480,350 C540,335 600,365 660,350 C720,338 770,360 800,355 L800,420 L0,420 Z"
+        fill="#0d0c0a"
+      />
+    </g>
+    <g opacity="0.95">
+      <path
+        d="M0,400 C60,330 110,350 150,330 C200,305 240,355 290,330 C340,305 380,355 420,330 C470,305 510,355 560,330 C610,305 660,355 720,330 C760,315 800,345 800,345 L800,420 L0,420 Z"
+        fill="#070605"
+      />
+    </g>
+
+    <!-- Backyard ground / lawn glow -->
+    <rect x="0" y="420" width="800" height="220" fill="#0d0c0a" />
+    <ellipse cx="400" cy="500" rx="380" ry="90" fill="url(#glow-aura)" />
+
+    <!-- Wooden deck -->
+    <g>
+      <rect x="40" y="500" width="720" height="100" fill="url(#deck)" rx="6" />
+      <g stroke="#33231a" stroke-width="1.5" opacity="0.7">
+        <line x1="40" y1="525" x2="760" y2="525" />
+        <line x1="40" y1="555" x2="760" y2="555" />
+        <line x1="40" y1="585" x2="760" y2="585" />
+      </g>
+      <g stroke="#241712" stroke-width="1" opacity="0.5">
+        <line x1="180" y1="500" x2="180" y2="600" />
+        <line x1="320" y1="500" x2="320" y2="600" />
+        <line x1="460" y1="500" x2="460" y2="600" />
+        <line x1="600" y1="500" x2="600" y2="600" />
+      </g>
+      <!-- Warm light spill on the deck in front of the ovens -->
+      <ellipse cx="400" cy="510" rx="220" ry="22" fill="#ffb247" opacity="0.22" />
+    </g>
+
+    <!-- Aura behind both ovens -->
+    <ellipse cx="400" cy="430" rx="280" ry="190" fill="url(#glow-aura)" />
+    <ellipse cx="400" cy="430" rx="350" ry="240" fill="url(#glow-aura)" opacity="0.45" />
+
+    <!-- ===== Folding table the ovens sit on ===== -->
+    <g>
+      <!-- Tabletop -->
+      <rect x="120" y="410" width="560" height="14" fill="url(#plank)" rx="2" />
+      <rect x="120" y="410" width="560" height="3" fill="#6e4d2f" opacity="0.7" />
+      <!-- Apron under tabletop -->
+      <rect x="130" y="424" width="540" height="6" fill="#33231a" />
+      <!-- Legs (visible through gap between ovens) -->
+      <rect x="148" y="430" width="12" height="80" fill="#1d130d" />
+      <rect x="640" y="430" width="12" height="80" fill="#1d130d" />
+      <!-- Cross-brace silhouette -->
+      <path d="M148,510 L640,510" stroke="#1d130d" stroke-width="2" opacity="0.8" />
+      <!-- Subtle highlight on tabletop near fire -->
+      <rect x="180" y="410" width="440" height="2" fill="#ffb247" opacity="0.25" />
+    </g>
+
+    <!-- ===== Ooni-style oven (left/center) ===== -->
+    <g>
+      <!-- Drop shadow on table -->
+      <ellipse cx="295" cy="410" rx="125" ry="3" fill="#000" opacity="0.55" />
+
+      <!-- Body: long horizontal rectangle with subtly curved top -->
+      <path
+        d="M180,346 Q295,330 410,346 L410,408 L180,408 Z"
+        fill="url(#metal)"
+      />
+      <!-- Top metal hood seam -->
+      <path
+        d="M188,348 Q295,335 402,348"
+        fill="none"
+        stroke="#0a0a0a"
+        stroke-width="1"
+        opacity="0.6"
+      />
+      <!-- Side highlight -->
+      <path
+        d="M183,348 Q190,360 190,400"
+        fill="none"
+        stroke="#5a5a5a"
+        stroke-width="1"
+        opacity="0.4"
+      />
+
+      <!-- Front opening (arched) with fire glow -->
+      <path d="M210,408 Q295,358 380,408 Z" fill="#1a0907" />
+      <g class="fire-flicker">
+        <path d="M218,406 Q295,368 372,406 Z" fill="url(#fire)" />
+        <path d="M232,406 Q295,378 358,406 Z" fill="#ffeac7" opacity="0.85" />
+        <path d="M248,406 Q295,388 342,406 Z" fill="#fff1c2" opacity="0.95" />
+      </g>
+
+      <!-- Brand stripe accent -->
+      <rect x="200" y="395" width="190" height="2" fill="#c63d28" opacity="0.55" />
+
+      <!-- Chimney stack rising from the back -->
+      <rect x="338" y="290" width="22" height="58" fill="#1a1a1a" />
+      <rect x="333" y="285" width="32" height="8" fill="#0a0a0a" />
+      <!-- Chimney cap shadow -->
+      <rect x="338" y="293" width="22" height="2" fill="#3a3a3a" opacity="0.6" />
+
+      <!-- Smoke rising from chimney -->
+      <g fill="#9d978e" opacity="0.32" filter="url(#soft-blur)">
+        <circle cx="349" cy="275" r="9" />
+        <circle cx="358" cy="252" r="12" />
+        <circle cx="346" cy="225" r="16" />
+        <circle cx="356" cy="195" r="20" opacity="0.5" />
+      </g>
+
+      <!-- Small front feet -->
+      <rect x="195" y="408" width="8" height="6" fill="#0d0d0d" />
+      <rect x="387" y="408" width="8" height="6" fill="#0d0d0d" />
+    </g>
+
+    <!-- ===== Ninja Woodfire-style oven (right) ===== -->
+    <g>
+      <!-- Drop shadow on table -->
+      <ellipse cx="510" cy="410" rx="80" ry="3" fill="#000" opacity="0.55" />
+
+      <!-- Main body: more box-like, slightly taller proportionally -->
+      <rect x="442" y="350" width="138" height="58" rx="5" fill="url(#ninja)" />
+      <!-- Top hood / vent area -->
+      <rect x="450" y="338" width="122" height="14" rx="3" fill="#0a0a0a" />
+      <!-- Vent slits on top -->
+      <g stroke="#3a3a3a" stroke-width="1" opacity="0.8">
+        <line x1="465" y1="343" x2="557" y2="343" />
+        <line x1="465" y1="346" x2="557" y2="346" />
+        <line x1="465" y1="349" x2="557" y2="349" />
+      </g>
+      <!-- Top edge highlight -->
+      <line x1="450" y1="338" x2="572" y2="338" stroke="#4a4a4a" stroke-width="0.8" opacity="0.6" />
+
+      <!-- Front opening with fire glow inside -->
+      <rect x="460" y="362" width="102" height="28" rx="2" fill="#1a0907" />
+      <g class="fire-flicker">
+        <rect x="463" y="365" width="96" height="22" rx="1.5" fill="url(#fire)" />
+        <rect x="473" y="370" width="76" height="14" rx="1" fill="#ffeac7" opacity="0.85" />
+      </g>
+
+      <!-- Front control / handle bar -->
+      <rect x="465" y="395" width="92" height="3" rx="1" fill="#3a3a3a" />
+      <!-- Tiny indicator light -->
+      <circle cx="555" cy="396.5" r="1.5" fill="#ffb247">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      </circle>
+
+      <!-- Brand stripe accent -->
+      <rect x="455" y="403" width="112" height="1.5" fill="#c63d28" opacity="0.55" />
+
+      <!-- Side handles -->
+      <rect x="436" y="368" width="6" height="22" rx="2" fill="#3a3a3a" />
+      <rect x="580" y="368" width="6" height="22" rx="2" fill="#3a3a3a" />
+
+      <!-- Small feet -->
+      <rect x="448" y="408" width="7" height="5" fill="#0a0a0a" />
+      <rect x="567" y="408" width="7" height="5" fill="#0a0a0a" />
+    </g>
+
+    <!-- Pellet bag tucked beside the table -->
+    <g transform="translate(80, 470)">
+      <rect width="56" height="42" rx="2" fill="#3a2a1a" />
+      <rect y="3" width="56" height="6" fill="#2a1d10" />
+      <rect x="6" y="14" width="44" height="2" fill="#946635" opacity="0.6" />
+      <rect x="6" y="20" width="32" height="1.5" fill="#946635" opacity="0.5" />
+    </g>
+
+    <!-- Pizza peel leaning on the deck (right side) -->
+    <g transform="rotate(-22 700 470)">
+      <rect x="688" y="380" width="14" height="180" fill="#5c3f25" rx="3" />
+      <rect x="668" y="360" width="54" height="40" fill="#946635" rx="6" />
+    </g>
+
+    <!-- Drifting embers from the Ooni chimney -->
+    <g class="embers" fill="#ffb247">
+      <circle cx="350" cy="280" r="1.6" />
+      <circle cx="362" cy="260" r="1.2" />
+      <circle cx="346" cy="240" r="1.4" />
+      <circle cx="358" cy="220" r="1" />
+      <circle cx="349" cy="200" r="1.1" />
+      <circle cx="364" cy="170" r="1.3" />
+    </g>
+
+    <!-- Foreground glow rim on the deck -->
+    <ellipse cx="400" cy="510" rx="200" ry="16" fill="#ffb247" opacity="0.22" />
+  </svg>
+
+  <!-- soft vignette overlay -->
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(7,6,5,0.6)_100%)]"></div>
+</div>
+
+<style>
+  @keyframes flicker {
+    0%, 100% { opacity: 1; transform: translateY(0) scaleY(1); }
+    25% { opacity: 0.92; transform: translateY(-1px) scaleY(1.02); }
+    50% { opacity: 0.97; transform: translateY(0.5px) scaleY(0.99); }
+    75% { opacity: 0.9; transform: translateY(-0.5px) scaleY(1.03); }
+  }
+  .fire-flicker {
+    transform-origin: 50% 100%;
+    animation: flicker 2.6s ease-in-out infinite;
+  }
+
+  @keyframes drift {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    15% { opacity: 1; }
+    100% { transform: translateY(-180px) translateX(8px); opacity: 0; }
+  }
+  .embers circle {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: drift 5s ease-out infinite;
+  }
+  .embers circle:nth-child(2) { animation-delay: 0.6s; }
+  .embers circle:nth-child(3) { animation-delay: 1.2s; }
+  .embers circle:nth-child(4) { animation-delay: 1.8s; }
+  .embers circle:nth-child(5) { animation-delay: 2.4s; }
+  .embers circle:nth-child(6) { animation-delay: 3.0s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fire-flicker, .embers circle { animation: none; }
+  }
+</style>

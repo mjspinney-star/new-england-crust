@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Honest notes on what we use. Intentionally non-commercial: no affiliate
+// links, no "buy now" buttons. We'll write longer-form gear posts when
+// something is genuinely worth a deep look.
+const categories = [
+  {
+    name: 'The ovens',
+    notes:
+      'A Ninja Woodfire (electric + pellets) for the everyday weeknight pies and an Ooni for the showpiece bakes — fast deck temps, gas convenience, and serious 900°F leoparding when we want it. Two ovens, two roles.',
+  },
+  {
+    name: 'Pellets',
+    notes:
+      'Hardwood pellets for both the Ninja and the Ooni Karu. We rotate oak, maple, and a cherry blend, decanted into a sealed bucket with a couple of silica gel packs. Dry pellets are the cheapest upgrade you can make.',
+  },
+  {
+    name: 'Peels',
+    notes:
+      'A wide perforated launching peel and a small round turning peel. Aluminum on the deck — wood looks great but eats flour and warps in wet New England air.',
+  },
+  {
+    name: 'Pizza stone & care',
+    notes:
+      'Both ovens use a cordierite stone. We let them burn off between pies, brush dry, and never wash with soap. A hot stone is a forgiving stone.',
+  },
+  {
+    name: 'Infrared thermometer',
+    notes:
+      'A simple IR gun pointed at the center of the stone. We aim for 700°F on the Ninja and 850–880°F on the Ooni before launching the first pie.',
+  },
+  {
+    name: 'Scale & dough containers',
+    notes:
+      'Gram scale, a stack of square dough containers, and a quiet corner of the fridge. The dough lives there for three days at a time.',
+  },
+];
+---
+
+<BaseLayout
+  title="Gear"
+  description="A no-affiliate, no-noise rundown of the Ninja Woodfire and Ooni gear we actually reach for on backyard pizza nights."
+>
+  <section class="container-page py-16 md:py-20">
+    <p class="eyebrow">Gear</p>
+    <h1 class="mt-3 font-display text-4xl text-balance md:text-5xl">What we actually use</h1>
+    <p class="mt-4 max-w-2xl text-pretty text-timber-100/85">
+      Honest notes on the tools that earn their place on the deck — Ninja
+      Woodfire, Ooni, and the small stack of accessories that keep both
+      running. No affiliate links, no sponsorships — just what's worked
+      across a few hundred backyard pies.
+    </p>
+
+    <ul class="mt-12 grid gap-6 md:grid-cols-2">
+      {
+        categories.map((c) => (
+          <li class="card">
+            <h2 class="font-display text-2xl text-timber-50">{c.name}</h2>
+            <p class="mt-3 text-sm text-timber-100/85">{c.notes}</p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="mt-12 max-w-2xl text-sm text-timber-300/80">
+      We'll write longer pieces about specific tools as we go. If something
+      ends up here, it's because we'd recommend it to a friend without
+      thinking twice.
+    </p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-timber-300/10 bg-twilight-800/80">
+  <div class="container-page flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p class="font-display text-xl text-timber-50">New England Crust</p>
+      <p class="mt-1 text-sm text-timber-200/80">
+        Backyard pizza nights, pellet smoke, and stories from the deck.
+      </p>
+    </div>
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-timber-200/80">
+        <li><a class="hover:text-glow-200" href="/">Home</a></li>
+        <li><a class="hover:text-glow-200" href="/blog/">Blog</a></li>
+        <li><a class="hover:text-glow-200" href="/recipes/">Recipes</a></li>
+        <li><a class="hover:text-glow-200" href="/gear/">Gear</a></li>
+        <li><a class="hover:text-glow-200" href="/about/">About</a></li>
+        <li><a class="hover:text-glow-200" href="/rss.xml">RSS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-timber-300/10">
+    <div class="container-page py-4 text-xs text-timber-300/70">
+      &copy; {year} New England Crust. Made on a folding table somewhere in New England.
+    </div>
+  </div>
+</footer>

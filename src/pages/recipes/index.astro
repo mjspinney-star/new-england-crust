@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Recipes is a curated landing page for now. As you publish recipe posts in
+// the blog, link them here, or convert this to its own content collection.
+const recipes = [
+  {
+    title: 'The 72-hour cold-ferment dough',
+    blurb:
+      'Our weekly Friday-night base. Forgiving, flavorful, and built for a hot Ninja or Ooni stone.',
+    href: '/blog/72-hour-cold-ferment-dough/',
+    eta: '15 min hands-on · 3 days fermenting',
+  },
+  {
+    title: 'Roasted heirloom tomato sauce',
+    blurb:
+      'Every August, New England farm stands overflow with heirloom tomatoes in every shape and color — Brandywines, Green Zebras, Cherokee Purples. We slow-roast them until deeply caramelized, then finish with fresh basil and good olive oil. The best pizza sauce we\'ve ever made, and it only exists for about six weeks a year.',
+    href: '#',
+    eta: 'Coming soon',
+  },
+  {
+    title: 'New Hampshire mushroom & taleggio',
+    blurb:
+      'Foraged hens-of-the-woods, taleggio, thyme, a hit of lemon when it comes off the peel.',
+    href: '#',
+    eta: 'Coming soon',
+  },
+  {
+    title: 'Clam pie, the New England way',
+    blurb:
+      'Our take on a New Haven classic — Wellfleet littlenecks, garlic, oregano, no mozzarella.',
+    href: '#',
+    eta: 'Coming soon',
+  },
+];
+---
+
+<BaseLayout
+  title="Recipes"
+  description="Sourdough, sauce, and seasonal toppings — backyard pizza recipes from New England Crust."
+>
+  <section class="container-page py-16 md:py-20">
+    <p class="eyebrow">Recipes</p>
+    <h1 class="mt-3 font-display text-4xl text-balance md:text-5xl">Pies worth a Friday night</h1>
+    <p class="mt-4 max-w-2xl text-pretty text-timber-100/85">
+      Doughs, sauces, and topping combinations we keep coming back to.
+      Tested on a Ninja Woodfire and an Ooni out on the deck — pellets,
+      gas, and the friends standing around the peel.
+    </p>
+
+    <ul class="mt-12 grid gap-6 md:grid-cols-2">
+      {
+        recipes.map((r) => (
+          <li class="card">
+            <a href={r.href} class="block">
+              <p class="text-xs uppercase tracking-[0.18em] text-timber-300/80">{r.eta}</p>
+              <h2 class="mt-2 font-display text-2xl text-timber-50">{r.title}</h2>
+              <p class="mt-3 text-sm text-timber-100/85">{r.blurb}</p>
+              <span class="mt-5 inline-flex items-center gap-1 text-sm text-glow-200">
+                {r.href.startsWith('/') ? 'Read recipe' : 'In the works'}
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" /></svg>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

@@ -1,0 +1,46 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
+  canonical?: string;
+}
+
+const {
+  title = 'New England Crust',
+  description = 'Backyard pizza nights in New England — Ninja Woodfire and Ooni recipes, technique notes, and stories from the deck.',
+  image = '/og-image.jpg',
+  article = false,
+  canonical,
+} = Astro.props;
+
+const siteName = 'New England Crust';
+const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
+const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = new URL(image, Astro.site).toString();
+---
+
+<!-- Primary meta -->
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+<meta name="theme-color" content="#26221d" />
+
+<!-- Open Graph -->
+<meta property="og:type" content={article ? 'article' : 'website'} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={url} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:image" content={ogImage} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- Icons & manifest -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="alternate" type="application/rss+xml" title={`${siteName} RSS`} href="/rss.xml" />

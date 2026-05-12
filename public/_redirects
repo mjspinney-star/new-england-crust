@@ -1,0 +1,5 @@
+# Cloudflare Pages-style redirects.
+# Trailing-slash canonical URLs are handled by Astro's build.format = 'directory'.
+
+# Examples (uncomment as needed):
+# /old-post  /blog/new-slug/  301

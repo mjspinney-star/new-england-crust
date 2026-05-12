@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="The story behind New England Crust — a backyard pizza site built around the Ninja Woodfire, an Ooni, and Friday nights."
+>
+  <section class="container-page grid gap-12 py-16 md:grid-cols-[2fr_1fr] md:py-20">
+    <div>
+      <p class="eyebrow">About</p>
+      <h1 class="mt-3 font-display text-4xl text-balance md:text-5xl">A site about backyard pizza nights.</h1>
+
+      <div class="prose prose-invert mt-8 max-w-none
+                  prose-headings:font-display prose-headings:text-timber-50
+                  prose-a:text-glow-200 hover:prose-a:text-glow-300">
+        <p>
+          New England Crust started as a notebook on the kitchen counter —
+          dough hydrations, oven preheats, what worked, what didn't.
+          A few summers and many pies later, it's a place to write that
+          down in public.
+        </p>
+
+        <p>
+          We're based in New England. We cook outside on a Ninja Woodfire
+          and an Ooni, set up on a folding table at the edge of a deck under
+          a maple. We don't run a restaurant. We're not chasing perfect
+          Neapolitan. We're chasing the night itself: cold air, hot stones,
+          friends, honest pies.
+        </p>
+
+        <h2>What you'll find here</h2>
+        <ul>
+          <li>Recipes that survived a real backyard, not a test kitchen.</li>
+          <li>Heat-management notes — pellets, gas, and when to use which oven.</li>
+          <li>Stories from the deck, the way they actually happened.</li>
+        </ul>
+
+        <h2>What you won't</h2>
+        <ul>
+          <li>Affiliate roundups. We don't write those.</li>
+          <li>SEO listicles. Posts come out when they're worth reading.</li>
+          <li>Pretending a portable oven is a Naples sidewalk.</li>
+        </ul>
+
+        <p>
+          Got a question, or a recipe you'd like us to try?
+          We're easy to find. Pull up a chair.
+        </p>
+      </div>
+    </div>
+
+    <aside class="space-y-4">
+      <div class="card">
+        <h3 class="font-display text-xl">Where we cook</h3>
+        <p class="mt-2 text-sm text-timber-100/85">
+          A backyard somewhere between maples and salt air. The Ninja and the
+          Ooni share a folding table at the edge of the deck. There's usually
+          a dog underfoot.
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="font-display text-xl">How we publish</h3>
+        <p class="mt-2 text-sm text-timber-100/85">
+          Slowly. New posts only when there's something real to say. Subscribe
+          to the <a class="text-glow-200 hover:underline" href="/rss.xml">RSS feed</a>
+          if that's still your speed.
+        </p>
+      </div>
+    </aside>
+  </section>
+</BaseLayout>

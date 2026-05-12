@@ -1,0 +1,240 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// The hero photo lives in /public/images/ so it's served as-is.
+// If you'd rather use Astro's <Image /> component for auto-srcset and
+// AVIF/WebP conversion, move the file to /src/assets/images/ and replace
+// the <img> below with:
+//
+//   import { Image } from 'astro:assets';
+//   import heroImage from '../assets/images/NinjaWoodfireHero.jpeg';
+//   ...
+//   <Image src={heroImage} alt="..." widths={[800, 1200, 1800, 2400]}
+//          sizes="100vw" loading="eager" fetchpriority="high"
+//          class="absolute inset-0 -z-10 h-full w-full object-cover" />
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title="New England Crust"
+  description="Backyard pizza nights from a New England deck — Ninja Woodfire recipes, technique notes, and coastal-evening stories."
+>
+  <!-- ============== HERO ============== -->
+  <section class="relative isolate overflow-hidden bg-harbor-950">
+    <!-- Photo background — the source JPEG itself is now a tight ~2:1 strip of
+         the oven front, cropped from just above the NINJA WOODFIRE badge to
+         just below the control-panel knobs/display. Side spatula, terracotta
+         lid, and the cart all live outside the file, so a plain object-cover
+         is all that's needed. -->
+    <img
+      src="/images/NinjaWoodfireHero.jpeg"
+      alt="The front of a Ninja Woodfire Pizza Oven — the NINJA WOODFIRE badge above the control panel"
+      width="2485"
+      height="1257"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+      class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+    />
+
+    <!-- Heavy mood wash — flat coastal-dark layer that drops the whole scene
+         into a smoky, dramatic register. Strong enough to carry the headline,
+         soft enough that the brushed-steel door and NINJA WOODFIRE badge
+         still read through it. -->
+    <div
+      class="absolute inset-0 -z-10"
+      style="background: rgba(7,17,30,0.55);"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Heavy vignette — keeps the oven (centre) the brightest part of the
+         frame and pushes the corners deep into a smoky, moody dark, so the
+         scene feels like a cropped fire-lit photograph. -->
+    <div
+      class="absolute inset-0 -z-10"
+      style="background: radial-gradient(ellipse 75% 85% at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.18) 55%, rgba(0,0,0,0.55) 100%);"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Vertical contrast pass — slightly darker top and bottom edges so the
+         frame closes cleanly above the badge and below the panel, with no
+         visual leak into the nav above or the next section below. -->
+    <div
+      class="absolute inset-0 -z-10"
+      style="background: linear-gradient(180deg, rgba(7,17,30,0.40) 0%, rgba(7,17,30,0.0) 18%, rgba(7,17,30,0.0) 82%, rgba(7,17,30,0.55) 100%);"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Localised scrim directly behind the headline band — pools just enough
+         additional dark over the dark body strip (between the badge and the
+         dials) so the wordmark stays crisp while the badge above and the
+         control panel below remain legible. -->
+    <div
+      class="pointer-events-none absolute inset-x-0 -z-10"
+      style="top: 38%; height: 24%; background: radial-gradient(ellipse 58% 100% at 50% 50%, rgba(7,17,30,0.6) 0%, rgba(7,17,30,0.18) 70%, rgba(7,17,30,0) 100%);"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Soft fire-glow rising from the oven mouth — subtle warmth, not noise -->
+    <div
+      class="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-1/2"
+      style="background: radial-gradient(ellipse 60% 55% at 50% 95%, rgba(243,114,7,0.22) 0%, rgba(243,114,7,0.05) 55%, rgba(243,114,7,0) 80%);"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Single crisp coastal hairline at the bottom -->
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-px bg-white/22" aria-hidden="true"></div>
+
+    <!-- Text block is centered horizontally and vertically so it lands in the
+         dark band of body between the NINJA WOODFIRE badge (above) and the
+         control panel (below). The block is intentionally compact so the
+         visual hierarchy reads top→bottom: badge → text → panel. Hero height
+         is unchanged from the previous pass. -->
+    <div class="container-page relative flex min-h-[80vh] flex-col items-center justify-center py-10 text-center sm:py-12 md:min-h-[86vh] md:py-14">
+      <p class="mb-3 inline-flex items-center gap-2.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-white sm:text-[11px]"
+         style="text-shadow: 0 1px 8px rgba(0,0,0,0.7);">
+        <span class="h-1 w-1 rounded-full bg-glow-400" style="box-shadow: 0 0 8px #ffb247;" aria-hidden="true"></span>
+        Coastal New England · Backyard Pizza Nights
+      </p>
+
+      <h1 class="font-display font-bold leading-[0.95] tracking-tight text-balance text-white text-[1.875rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[4rem]"
+          style="text-shadow: 0 6px 32px rgba(0,0,0,0.65), 0 0 60px rgba(243,114,7,0.10);">
+        New England Crust
+      </h1>
+
+      <p class="mt-3 max-w-xl text-balance font-display italic text-white text-sm sm:text-base md:text-lg"
+         style="text-shadow: 0 2px 18px rgba(0,0,0,0.75);">
+        Salt Air &amp; Crispy Crust
+      </p>
+
+      <div class="mt-5">
+        <a href="/recipes/" class="btn-ember">
+          Browse Recipes
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== VALUE STRIPE ============== -->
+  <section class="container-page py-20 md:py-24">
+    <div class="mx-auto mb-12 max-w-2xl text-center">
+      <p class="eyebrow">Why we cook outside</p>
+      <h2 class="mt-3 font-display text-3xl text-balance md:text-4xl">
+        Three things, said honestly.
+      </h2>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      <article class="card">
+        <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-ember-500/15 text-glow-300 ring-1 ring-glow-300/20">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 4 4 4 4 8a4 4 0 0 1-8 0c0-3 2-3 4-8Zm-1 14a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+        </div>
+        <h3 class="font-display text-xl text-timber-50">Heat, first</h3>
+        <p class="mt-2 text-sm text-timber-100/80">
+          The Ninja Woodfire's stone climbs to 700°F in about fifteen minutes
+          and bakes a pie in five. Knowing your oven is the whole game.
+        </p>
+      </article>
+      <article class="card">
+        <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-ember-500/15 text-glow-300 ring-1 ring-glow-300/20">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 12h16M4 6h16M4 18h10"/></svg>
+        </div>
+        <h3 class="font-display text-xl text-timber-50">Recipes worth keeping</h3>
+        <p class="mt-2 text-sm text-timber-100/80">
+          Sourdough, biga, same-day, or "we have guests in two hours."
+          A pie for every kind of New England weeknight.
+        </p>
+      </article>
+      <article class="card">
+        <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-ember-500/15 text-glow-300 ring-1 ring-glow-300/20">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2h-4v-7H10v7H6a2 2 0 0 1-2-2V10z"/></svg>
+        </div>
+        <h3 class="font-display text-xl text-timber-50">Made for the backyard</h3>
+        <p class="mt-2 text-sm text-timber-100/80">
+          No restaurant kitchen. Just a deck, a Ninja Woodfire, a sack of
+          pellets, friends, and a clear New England night.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <div class="container-page"><div class="ember-rule"></div></div>
+
+  <!-- ============== LATEST FROM THE BLOG ============== -->
+  <section class="container-page py-20 md:py-24">
+    <div class="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="eyebrow">From the deck</p>
+        <h2 class="mt-3 font-display text-3xl md:text-4xl">Latest dispatches</h2>
+      </div>
+      <a href="/blog/" class="text-sm text-glow-200 hover:underline">All posts &rarr;</a>
+    </div>
+
+    {
+      posts.length === 0 ? (
+        <p class="text-timber-200/80">No posts yet — your first dispatch is just a Markdown file away.</p>
+      ) : (
+        <ul class="grid gap-6 md:grid-cols-3">
+          {posts.map((post) => (
+            <li class="card group">
+              <a href={`/blog/${post.slug}/`} class="block">
+                <p class="text-[11px] uppercase tracking-[0.2em] text-timber-300/80">
+                  {dateFormatter.format(post.data.pubDate)}
+                </p>
+                <h3 class="mt-2 font-display text-xl text-timber-50 transition group-hover:text-glow-200">
+                  {post.data.title}
+                </h3>
+                <p class="mt-3 text-sm text-timber-100/80 line-clamp-3">
+                  {post.data.description}
+                </p>
+                <span class="mt-4 inline-flex items-center gap-1 text-sm text-glow-200">
+                  Read post
+                  <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" /></svg>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="container-page pb-20 md:pb-24">
+    <div
+      class="relative overflow-hidden rounded-3xl border border-timber-300/15 p-10 shadow-deck md:p-14"
+      style="background: radial-gradient(ellipse at top right, rgba(243,114,7,0.18), transparent 55%), linear-gradient(180deg, rgba(38,34,29,0.85) 0%, rgba(20,18,16,0.85) 100%);"
+    >
+      <div class="grid gap-8 md:grid-cols-[2fr_1fr] md:items-center">
+        <div>
+          <p class="eyebrow">Pull up a chair</p>
+          <h2 class="mt-3 font-display text-3xl text-balance md:text-4xl">
+            Friday is for fire and friends.
+          </h2>
+          <p class="mt-4 max-w-xl text-pretty text-timber-100/85">
+            New posts, new recipes, and the occasional pellet opinion —
+            written only when something is actually worth reading.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <a href="/recipes/" class="btn-ember w-full justify-center">Browse Recipes</a>
+          <a href="/about/" class="btn-ghost w-full justify-center">Who we are</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
