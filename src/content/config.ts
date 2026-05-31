@@ -13,20 +13,4 @@ const blog = defineCollection({
   }),
 });
 
-const recipes = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    pubDate: z.coerce.date(),
-    tags: z.array(z.string()).default([]),
-    draft: z.boolean().default(false),
-    prepTime: z.string().optional(),
-    cookTime: z.string().optional(),
-    yield: z.string().optional(),
-    oven: z.string().optional(),
-    category: z.string().optional(),
-  }),
-});
-
-export const collections = { blog, recipes };
+export const collections = { blog };
