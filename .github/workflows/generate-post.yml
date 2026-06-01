@@ -93,6 +93,7 @@ jobs:
           5. End with a practical next step or a brief related posts block
 
           FRONTMATTER — REQUIRED ON EVERY POST — FORMAT EXACTLY AS FOLLOWS:
+          
           ---
           title: \"Post title here\"
           description: \"One sentence SEO summary under 155 characters, written for a human not a robot\"
