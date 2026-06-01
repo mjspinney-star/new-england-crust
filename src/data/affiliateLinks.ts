@@ -131,6 +131,13 @@ export const affiliateLinks: AffiliateProduct[] = [
     category: "ingredient",
   },
   {
+    id: "cuisinart-3in1-oven",
+    name: "Cuisinart CGG-403 3-in-1 Pizza Oven, Griddle & Grill",
+    short: "https://amzn.to/43DuWwe",
+    full: "https://www.amazon.com/Cuisinart-CGG-403-Pizza-Griddle-Grill/dp/B09MYF3BXW?linkCode=ll2&tag=newenglandcru-20&linkId=a53387261f58ec13f3d60c3831d56fda",
+    category: "oven",
+  },
+  {
     id: "cuisinart-bread-maker",
     name: "Cuisinart CBK-110 Compact Bread Maker",
     short: "https://amzn.to/4uTS3P9",
