@@ -1,0 +1,78 @@
+---
+title: "Caputo 00 Breadmaker Dough"
+description: "Silky, elastic Neapolitan-style dough made in a bread machine with Caputo 00 flour, Caputo Lievito yeast, and Baleine fine sea salt. Cold-ferment for 24–48 hours for the best crust."
+pubDate: 2026-05-31
+category: "recipes"
+tags: ["dough", "caputo", "00 flour", "bread machine", "neapolitan", "cold ferment"]
+draft: false
+heroImage: "/images/caputo-dough-ingredients.jpeg"
+prepTime: "15 min"
+cookTime: "90 min dough cycle + 24–48 hr ferment"
+yield: "2–4 dough balls (250–300g each)"
+oven: "Ninja Woodfire or Ooni"
+---
+
+Three ingredients. One machine. The rest is time.
+
+We've been making this alongside our [72-hour sourdough](/blog/72-hour-cold-ferment-dough) for nights when we want a more classic Neapolitan result — lighter, more extensible, with that thin, pliable center and a rim that puffs and chars just right off the Ninja stone. Caputo 00 is the flour New Haven and Naples both reach for, and there's a reason. It's milled finer than anything you'll find at a grocery store, the gluten develops beautifully in a bread machine, and the result stretches without fighting you.
+
+The three ingredients in the photo — Caputo Pizzeria 00, Caputo Lievito dry yeast, and Baleine fine sea salt — are the whole recipe. Use a kitchen scale. It's not optional with 00 flour.
+
+---
+
+## The Numbers
+
+| Ingredient | Weight | Volume (approx.) |
+|---|---|---|
+| Caputo Pizzeria 00 flour | 500g | ~4 cups |
+| Cool water | 325g | ~1⅓ cups |
+| Baleine fine sea salt | 13g | ~2¼ tsp |
+| Caputo Lievito instant yeast | 1.5g | ~½ tsp |
+| Olive oil (optional) | — | 2 tbsp |
+
+**Hydration: 65%.** This is on the lower end of Neapolitan doughs — intentionally. Bread machines work best with slightly stiffer doughs. You can nudge it to 68% (340g water) once you've made it a few times and know how your machine handles it.
+
+---
+
+## Method
+
+**1. Load the machine in the right order.**
+Add ingredients in the order your breadmaker recommends — typically liquids first. We do: water, olive oil, flour, salt, yeast. Keep the yeast away from the salt until the machine starts mixing.
+
+**2. Run the dough cycle.**
+Select the dough cycle (not the bread cycle). Most machines run 1.5–2 hours, with kneading followed by a first rise. Don't rush it.
+
+**3. Check at 10 minutes.**
+Lift the lid during the first kneading. The dough should form a smooth, slightly tacky ball that clears the sides. Too wet and sticky: add flour a teaspoon at a time. Too stiff and cracking: add water a teaspoon at a time. Once it's right, close the lid and leave it alone.
+
+**4. Divide and ball.**
+When the cycle finishes, turn the dough onto a lightly floured surface. Divide into 2–4 equal pieces — 250–300g per pizza is a good target. Shape each into a tight ball: fold the edges to the bottom, then roll under your palm until the surface is smooth and taut.
+
+**5. Cold ferment. Don't skip this.**
+Place the balls on a lightly oiled tray, cover tightly with plastic wrap, and refrigerate for 24–48 hours. The flavor development that happens here is the whole point. A same-day dough made with 00 flour tastes fine. A 48-hour cold-fermented one tastes completely different.
+
+**6. Temper before baking.**
+Pull the dough from the fridge 1–2 hours before you plan to bake. Cold dough tears. Room-temperature dough stretches. Give it the time it needs.
+
+**7. Shape and bake.**
+Stretch gently by hand — no rolling pin. Start in the center and work toward the edges, leaving the rim alone. Dock it if you're worried about bubbling. Get your Ninja into Pizza mode and let it fully preheat before the first pie goes in.
+
+---
+
+## Notes
+
+**On water temperature.** We use cool tap water, not cold from the fridge, not warm. Bread machines generate heat during kneading — warm water can push the dough temperature too high and overactivate the yeast before fermentation starts.
+
+**On yeast.** 1.5g is not a typo. It's about a quarter of what most American recipes call for. Less yeast + more time = better flavor. Trust the cold ferment.
+
+**On the olive oil.** It's optional and traditional Neapolitan dough skips it entirely. We add it when we want a softer crumb. Leave it out when we want maximum char on the rim.
+
+**On yield.** 500g of flour gives you enough dough for two 12-inch pizzas or four smaller 8-inch ones. We usually go with three 10-inch pies — good coverage, easy to manage on the peel.
+
+---
+
+## See Also
+
+- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita)
+- [Roasted Heirloom Tomato Sauce](/recipes/roasted-heirloom-tomato-sauce)
+- [Clam Pie, the New England Way](/recipes/clam-pie-new-england-way)
