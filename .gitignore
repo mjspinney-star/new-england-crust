@@ -31,3 +31,9 @@ best-outdoor-pizza-ovens-under-500.md
 pizza-night-recipes-beyond-margherita.md
 backyard-pizza-night-setup.md
 best-outdoor-pizza-ovens-under-500.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
