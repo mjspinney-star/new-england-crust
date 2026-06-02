@@ -15,20 +15,28 @@ const links = [
 <header class="sticky top-0 z-40 border-b border-timber-300/10 bg-twilight-700/80 backdrop-blur-md">
   <div class="container-page flex items-center justify-between py-4">
     <a href="/" class="group flex items-center gap-3" aria-label="New England Crust — home">
+      <!-- Badge mark: Ember Amber ring + three-flame group -->
+      <svg viewBox="0 0 680 680" width="40" height="40" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        class="shrink-0 transition-transform group-hover:scale-105"
+        style="filter: drop-shadow(0 0 6px rgba(212,131,42,0.3))">
+        <circle cx="340" cy="340" r="294" fill="#120E08"/>
+        <circle cx="340" cy="340" r="292" fill="none" stroke="#D4832A" stroke-width="8"/>
+        <!-- Left flame -->
+        <path d="M 298,218 C 308,242 304,266 292,285 C 278,262 278,236 298,218 Z" fill="#C84B2E" opacity="0.85"/>
+        <path d="M 298,238 C 306,254 303,270 293,281 C 282,268 282,250 298,238 Z" fill="#E8943A"/>
+        <!-- Right flame -->
+        <path d="M 362,210 C 374,236 372,260 358,282 C 344,260 344,234 362,210 Z" fill="#C84B2E" opacity="0.85"/>
+        <path d="M 362,232 C 371,250 369,268 358,279 C 347,267 347,248 362,232 Z" fill="#E8943A"/>
+        <!-- Center flame -->
+        <path d="M 340,138 C 368,172 360,230 330,280 C 308,244 312,182 340,138 Z" fill="#C84B2E"/>
+        <path d="M 338,162 C 362,194 354,242 328,278 C 310,248 316,196 338,162 Z" fill="#E8943A"/>
+        <path d="M 336,190 C 354,216 348,252 328,272 C 314,252 318,218 336,190 Z" fill="#F4C042"/>
+        <path d="M 334,215 C 346,232 342,256 328,268 C 318,256 320,234 334,215 Z" fill="#FFEFAA" opacity="0.5"/>
+      </svg>
       <span
-        class="relative grid h-10 w-10 place-items-center rounded-full transition-transform group-hover:scale-105"
-        aria-hidden="true"
-      >
-        <!-- Mark: a small flame inside an ember disc -->
-        <span class="absolute inset-0 rounded-full" style="background: radial-gradient(circle at 50% 60%, #ffb247 0%, #d85604 55%, #581b16 100%); box-shadow: 0 0 18px rgba(243,114,7,0.55);"></span>
-        <svg viewBox="0 0 24 24" class="relative h-5 w-5 text-twilight-800" fill="currentColor" aria-hidden="true">
-          <path d="M12 3c1.2 3.4 4 4 4 8a4 4 0 1 1-8 0c0-2.5 1.6-3.4 2.8-6.4.4-.9.8-1.5 1.2-1.6Z" />
-        </svg>
-      </span>
-      <span class="flex flex-col leading-tight">
-        <span class="font-display text-base font-bold text-timber-50 sm:text-lg">New England Crust</span>
-        <span class="text-[10px] font-semibold uppercase tracking-[0.22em] text-glow-300">Backyard pizza · NE</span>
-      </span>
+        class="hidden sm:inline font-display font-bold"
+        style="color: #F5EFE0; font-size: 18px; letter-spacing: 2.5px;"
+      >New England Crust</span>
     </a>
 
     <nav aria-label="Primary" class="hidden md:block">

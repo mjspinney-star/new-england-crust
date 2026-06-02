@@ -3,13 +3,54 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="mt-24 border-t border-timber-300/10 bg-twilight-800/80">
-  <div class="container-page flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
-    <div>
-      <p class="font-display text-xl text-timber-50">New England Crust</p>
-      <p class="mt-1 text-sm text-timber-200/80">
-        Backyard pizza nights, pellet smoke, and stories from the deck.
-      </p>
-    </div>
+
+  <!-- Brand badge anchor -->
+  <div class="container-page flex flex-col items-center pt-10 pb-6">
+    <svg viewBox="0 0 680 680" width="120" height="120" aria-label="New England Crust" role="img" xmlns="http://www.w3.org/2000/svg"
+      style="filter: drop-shadow(0 0 18px rgba(212,131,42,0.2))">
+      <defs>
+        <path id="footer-arc-top" d="M 72,340 A 268,268 0 0,1 608,340" fill="none"/>
+        <path id="footer-arc-bottom" d="M 72,340 A 268,268 0 0,0 608,340" fill="none"/>
+      </defs>
+      <circle cx="340" cy="340" r="294" fill="#120E08"/>
+      <circle cx="340" cy="340" r="292" fill="none" stroke="#D4832A" stroke-width="3"/>
+      <circle cx="340" cy="340" r="278" fill="none" stroke="#F5EFE0" stroke-width="1" opacity="0.2"/>
+      <circle cx="340" cy="340" r="254" fill="none" stroke="#F5EFE0" stroke-width="1" stroke-dasharray="4,8" opacity="0.15"/>
+      <text font-size="22" font-weight="600" fill="#F5EFE0" font-family="Georgia, 'Times New Roman', serif" letter-spacing="5">
+        <textPath href="#footer-arc-top" startOffset="50%" text-anchor="middle">· NEW ENGLAND ·</textPath>
+      </text>
+      <text font-size="14" font-weight="600" fill="#D4832A" font-family="Georgia, 'Times New Roman', serif" letter-spacing="4.5">
+        <textPath href="#footer-arc-bottom" startOffset="50%" text-anchor="middle">SALT AIR &amp; OPEN FLAME</textPath>
+      </text>
+      <!-- Left flame -->
+      <path d="M 298,218 C 308,242 304,266 292,285 C 278,262 278,236 298,218 Z" fill="#C84B2E" opacity="0.75"/>
+      <path d="M 298,238 C 306,254 303,270 293,281 C 282,268 282,250 298,238 Z" fill="#E8943A" opacity="0.90"/>
+      <!-- Right flame -->
+      <path d="M 362,210 C 374,236 372,260 358,282 C 344,260 344,234 362,210 Z" fill="#C84B2E" opacity="0.75"/>
+      <path d="M 362,232 C 371,250 369,268 358,279 C 347,267 347,248 362,232 Z" fill="#E8943A" opacity="0.90"/>
+      <!-- Center flame -->
+      <path d="M 340,138 C 368,172 360,230 330,280 C 308,244 312,182 340,138 Z" fill="#C84B2E"/>
+      <path d="M 338,162 C 362,194 354,242 328,278 C 310,248 316,196 338,162 Z" fill="#E8943A"/>
+      <path d="M 336,190 C 354,216 348,252 328,272 C 314,252 318,218 336,190 Z" fill="#F4C042"/>
+      <path d="M 334,215 C 346,232 342,256 328,268 C 318,256 320,234 334,215 Z" fill="#FFEFAA" opacity="0.46"/>
+      <!-- Ember glow -->
+      <ellipse cx="332" cy="287" rx="54" ry="11" fill="#E8943A" opacity="0.15"/>
+      <!-- CRUST wordmark -->
+      <text x="340" y="375" font-size="74" font-weight="700" fill="#F5EFE0" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle" letter-spacing="12">CRUST</text>
+      <!-- Diamond rule -->
+      <line x1="120" y1="396" x2="286" y2="396" stroke="#D4832A" stroke-width="1.5" opacity="0.55"/>
+      <polygon points="340,390 345,396 340,402 335,396" fill="#D4832A" opacity="0.65"/>
+      <line x1="394" y1="396" x2="560" y2="396" stroke="#D4832A" stroke-width="1.5" opacity="0.55"/>
+      <!-- Est. 2025 -->
+      <text x="340" y="422" font-size="13" fill="#F5EFE0" font-family="Georgia, 'Times New Roman', serif" font-style="italic" text-anchor="middle" letter-spacing="4" opacity="0.45">Est. 2025</text>
+    </svg>
+  </div>
+
+  <!-- Nav + blurb -->
+  <div class="container-page flex flex-col gap-6 pb-8 md:flex-row md:items-center md:justify-between">
+    <p class="text-sm text-timber-200/80">
+      Backyard pizza nights, pellet smoke, and stories from the deck.
+    </p>
     <nav aria-label="Footer">
       <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-timber-200/80">
         <li><a class="hover:text-glow-200" href="/">Home</a></li>
@@ -22,6 +63,7 @@ const year = new Date().getFullYear();
       </ul>
     </nav>
   </div>
+
   <div class="border-t border-timber-300/10">
     <div class="container-page py-4 text-xs text-timber-300/70">
       &copy; {year} New England Crust. Made on a folding table somewhere in New England.
