@@ -90,7 +90,7 @@ jobs:
           ];
 
           // Pick topic based on number of existing posts (cycles through the list)
-          const existingPosts = fs.readdirSync('src/content/blog').filter(f => f.endsWith('.md'));
+          const existingPosts = fs.readdirSync('src/content/blog').filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
           const topicIndex = existingPosts.length % topics.length;
           const selected = topics[topicIndex];
 
