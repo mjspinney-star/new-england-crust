@@ -76,7 +76,6 @@ jobs:
 
             // ── GEAR ───────────────────────────────────────────────────────────
             { type: 'gear', topic: 'Why a cheap pizza stone still beats an expensive pan' },
-            { type: 'gear', topic: 'Two peels vs. one — is a turning peel worth owning' },
             { type: 'gear', topic: 'Cover vs. no cover — what actually happens to an outdoor oven left uncovered in New England' },
             { type: 'gear', topic: 'Extension cord basics for the Ninja Woodfire — because the included cord is too short' },
             { type: 'gear', topic: 'The Ninja Woodfire vs. a gas oven — what the smoke flavor difference actually tastes like' },
