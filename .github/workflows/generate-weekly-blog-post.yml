@@ -63,8 +63,8 @@ jobs:
             // ── RECIPE ─────────────────────────────────────────────────────────
             { type: 'recipe', topic: 'A no-cook tomato sauce that does not need simmering' },
             { type: 'recipe', topic: 'White pizza with ricotta, garlic, and lemon' },
-            { type: 'recipe', topic: 'Cold-fermented dough — 72 hours in the fridge and why it is worth the wait' },
-            { type: 'recipe', topic: 'A clam pizza that actually makes sense in New England' },
+            { type: 'recipe', topic: 'A same-day pizza dough for nights when you forgot to plan ahead' },
+            { type: 'recipe', topic: 'Grilled corn and poblano pizza — a late-summer backyard pie worth making once a season' },
             { type: 'recipe', topic: 'Hot honey pepperoni — the simplest pizza worth making twice a week' },
             { type: 'recipe', topic: 'Fig, prosciutto, and arugula pizza — how to balance the sweet and the bitter' },
             { type: 'recipe', topic: 'Mushroom pizza with thyme and fontina — a fall patio pizza' },
