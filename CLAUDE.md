@@ -1,51 +1,104 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2868
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+# New England Crust — Project Context
 
-\f0\fs26\fsmilli13333 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 # CLAUDE.md - New England Crust Project Guidelines\
-\
-## Project Overview\
-- Brand Name: **New England Crust**\
-- Niche: Backyard pizza nights in New England using portable outdoor pizza ovens\
-- Primary Oven: **Ninja Woodfire Pizza Oven**\
-- Secondary Oven: Ooni (mention only when relevant)\
-- Tone: Warm, friendly, helpful, slightly coastal New England feel\
-- Visual Style: Coastal New England + warm appetizing pizza nights (navy blue, crisp white, warm wood tones, soft fire glow, rich reds/oranges)\
-\
-## Core Brand Rules\
-- Always focus on real backyard pizza nights with the Ninja Woodfire as the hero oven.\
-- Emphasize: crispy crust, woodfire flavor, New England backyard/deck setting, salt air, cozy nights with friends/family.\
-- Keep language warm and inviting \'97 never cold or overly corporate.\
-- Maintain anonymity: Do not use real names. Use "we", "our backyard", or brand voice only.\
-\
-## Hero Section Requirements\
-- Main image: public/images/NinjaWoodfireHero.jpg\
-- Focus: Ninja Woodfire oven (especially body and control panel)\
-- Style: Clean coastal look with good text contrast\
-- Text positioning: Keep text high enough so it never covers the "NINJA WOODFIRE" logo\
-- Preferred taglines: \'93Salt Air & Crispy Crust\'94, \'93Coastal Crust \'95 Backyard Fire\'94, \'93Warm Woodfire \'95 New England Nights\'94\
-\
-## Technical Guidelines\
-- Framework: Astro (static output)\
-- Styling: Tailwind CSS\
-- Blog posts: Markdown files in `src/content/blog/`\
-- Images: Always use Astro `<Image>` component for optimization\
-- Deployment target: Cloudflare Pages\
-\
-## Content & Writing Style\
-- Tone: Warm, helpful friend who loves backyard pizza\
-- Focus on practical tips for Ninja Woodfire users\
-- Keep posts engaging and photo-heavy\
-\
-## Best Practices for Claude\
-- Keep responses and changes focused and incremental\
-- Always maintain the warm coastal New England + appetizing pizza night atmosphere\
-- Prioritize clean design, fast loading, and mobile experience\
-\
-Reference this file in every session for consistency.\
-}
+> This file gives Claude persistent context for all Cowork sessions on this project.
+> Update it as the site evolves — decisions made, content published, programs joined.
+
+---
+
+## Project Overview
+
+**New England Crust** is a pizza-focused blog and content site built to grow an audience first, then monetize through affiliate marketing. The site is built with **Astro** and hosted on **Cloudflare**. The local project folder is `new-england-crust` on the desktop.
+
+**Current status:** Active content and monetization phase. Amazon Associates links are live in published content. Impact.com account created and verification tag is live — awaiting brand approvals for Ooni, Ninja, and Solo Stove Pi.
+
+---
+
+## Tech Stack
+
+- **Framework:** Astro (static site generator)
+- **Hosting:** Cloudflare Pages
+- **Local dev:** Localhost
+- **Content format:** Markdown (.md) with Astro frontmatter
+- **Blog content folder:** `src/content/blog/`
+
+All blog posts are `.md` files and need proper Astro frontmatter (title, description, date, etc.) to integrate correctly.
+
+---
+
+## Brand Voice
+
+- First-person, personal, and authentic — written like a real pizza enthusiast, not a content farm
+- Conversational but knowledgeable; the reader should feel like they're getting advice from a friend who really knows pizza
+- New England roots inform the perspective — regional pride without being exclusionary
+- No filler, no fluff; every sentence earns its place
+- Opinions are expressed clearly ("my pick is…", "I personally enjoy…")
+
+---
+
+## Affiliate Strategy
+
+**Dual-track approach:**
+
+### Track 1 — Pizza Ovens (Via Impact.com — Awaiting Brand Approval)
+Impact.com affiliate network account is created and the verification tag is live in `src/layouts/Layout.astro`. Awaiting brand approval from pizza oven partners. Do NOT add these affiliate links until brand approvals are confirmed.
+
+| Brand | Network | Est. Commission | Cookie | Status |
+|---|---|---|---|---|
+| Ooni | Impact.com | 5–8% | ~30 days | Awaiting approval |
+| Ninja | Impact.com | 3–8% | ~30 days | Awaiting approval |
+| Solo Stove Pi (Gas) | Impact.com | 8–10% | ~30 days | Awaiting approval |
+
+### Track 2 — Everything Else (Amazon Associates — LIVE)
+Amazon affiliate links are active and already live in published content. All non-oven product recommendations (ingredients, tools, accessories, cookware, etc.) use Amazon Associates links.
+
+**Content strategy:**
+- Comparison articles (Ooni vs. Ninja vs. Solo Stove Pi) are the primary high-value affiliate driver
+- Amazon links support all supporting content — dough tools, peels, flour, accessories, etc.
+- Seasonal content pushes (summer grilling, holiday gifting)
+- First-person reviews with honest pros/cons build trust before the ask
+
+**Important rule:** Amazon links are live and can be included in content. Impact.com brand programs are NOT yet approved — do not add those affiliate links until explicitly instructed.
+
+---
+
+## Content Published / In Progress
+
+### Live Blog Posts
+- `best-outdoor-pizza-ovens-under-500.md` — Reviews multiple ovens; three picks: Ooni and Ninja as top picks, Solo Stove Pi as "Also Worth Considering." Heading reads "My Picks."
+- Two Peels vs One
+- Ninja Woodfire Accessories Worth Buying
+- 9 Pizza Night Recipes That Aren't Margherita
+- Backyard Pizza Night Setup
+- Storing Pellets Through a Humid NE Summer
+- Our 72-Hour Cold Fermented Dough (blog post version)
+
+### Live Recipes
+- Our 72-Hour Cold Fermented Dough
+- Caputo 00 (dough/flour focused)
+- Chicken Bacon Ranch
+- Pesto, Fresh Mozzarella & Basil
+- Clam Pie
+- Roasted Heirloom and NH Mushroom
+
+### Publishing Schedule
+A GitHub + Claude API (Console subscription) automation is set up to publish new posts automatically every **Monday and Thursday**. This pipeline is active — account for it when planning content so the queue stays filled.
+
+---
+
+## Workflow Notes
+
+- Files are authored here locally and dropped into `src/content/blog/` manually
+- Cowork is the preferred tool for file creation, editing, and folder management
+- Claude.ai chat is used for drafting, strategy, and research
+- Google Drive is used as backup storage only — HTML files do not render there, and DOCX conversions have been unreliable. Direct download → manual upload is the most reliable workflow.
+
+---
+
+## What to Remember Each Session
+
+1. **Amazon Associates links are live** — include them in content for non-oven products
+2. **Impact.com account is live** — verification tag in Layout.astro; awaiting brand approvals for Ooni, Ninja, Solo Stove Pi — do NOT add those links until instructed
+3. Voice is **first-person and personal** — avoid generic blog tone
+4. The three oven brands are the high-value monetization focus; Amazon covers everything else
+5. Astro frontmatter is required on all `.md` posts
+6. Update this file when major decisions are made or content is published
