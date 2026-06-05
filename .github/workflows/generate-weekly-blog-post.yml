@@ -22,7 +22,7 @@ jobs:
       - name: Generate blog post via Claude API
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node .github/scripts/generate-post.js
+        run: node .github/scripts/generate-post.cjs
 
       - name: Commit and push new post
         run: |
