@@ -144,6 +144,34 @@ export const affiliateLinks: AffiliateProduct[] = [
     full: "https://www.amazon.com/Cuisinart-CBK-110-Compact-Automatic-Silver/dp/B07C8V4FDR?linkCode=ll2&tag=newenglandcru-20&linkId=362e9b00cf934c18288316910a6455a1",
     category: "tool",
   },
+  {
+    id: "oxo-bench-scraper",
+    name: "OXO Good Grips Bench Scraper",
+    short: "https://amzn.to/43ZCHwC",
+    full: "https://amzn.to/43ZCHwC",
+    category: "tool",
+  },
+  {
+    id: "etekcity-scale",
+    name: "Etekcity Digital Kitchen Scale",
+    short: "https://amzn.to/4dVhJ84",
+    full: "https://amzn.to/4dVhJ84",
+    category: "tool",
+  },
+  {
+    id: "gorilla-grip-mitts",
+    name: "Gorilla Grip Silicone Oven Mitts",
+    short: "https://amzn.to/4fB2SAS",
+    full: "https://amzn.to/4fB2SAS",
+    category: "tool",
+  },
+  {
+    id: "chef-pomodoro-proofing-box",
+    name: "Chef Pomodoro Pizza Dough Proofing Box",
+    short: "https://amzn.to/4oBSStP",
+    full: "https://amzn.to/4oBSStP",
+    category: "tool",
+  },
 ];
 
 // Helper: get a single product by id
