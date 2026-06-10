@@ -239,7 +239,7 @@ Use exactly one of these:
 
 ### Accessories under $50 — additional angles
 - "10 Pizza Accessories Under $50 We Actually Use on Our Patio"
-- "The $20 Tool That Changed How We Cook Pizza"
+- "The $15 Scale That Fixed Our Dough Once and For All"
 - "Our 5 Pizza Night Essentials, All Under $75 Combined"
 - "What's in Our Pizza Toolkit — Nothing Over $50"
 - "Our Honest Picks: Pizza Gear Under $50 That Earned a Spot"
