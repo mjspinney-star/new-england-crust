@@ -264,15 +264,6 @@ Use exactly one of these:
 - "Save This Before Your Pellets Get Damp — Our Setup Inside"
 - "Our Rule: Pellets Out of the Bag the Day They Arrive"
 
-### Welcome / intro post — additional angles
-- "Why We Run Two Pizza Ovens at Every Backyard Pizza Night"
-- "Our Friday Night Ritual: Two Ovens, One Backyard"
-- "Ooni for Showpieces, Ninja for Everything Else — Our Setup"
-- "What We're Building at New England Crust (And Why)"
-- "Our Pizza Philosophy: The Dough Is the Project, the Fire Is the Season"
-- "Why We Cook Pizza on a Deck in New England, Not Naples"
-- "Our Backyard Pizza Story — Come Pull Up a Chair"
-
 ### 72-hour cold-ferment dough — additional angles
 - "Our 72-Hour Dough Recipe — The One We Always Come Back To"
 - "Our Dough Survives a Humid July and a Cold Ninja Stone"
@@ -292,3 +283,4 @@ Use exactly one of these:
 - Output filenames: NEC-[postname]-pin[#].png — increment the number for each new pin
 - Target cadence: 2 new pins per week generated, posted 1-2 per day
 - Analytics: check monthly — top performers get 2-3 more variation pins
+- Skip Pinterest pins for "Welcome to New England Crust" (intro/about post) — intro posts don't drive Pinterest traffic and an underperforming pin can drag down account distribution. Revisit only if a dedicated "Story"/"About" category gets added later.
