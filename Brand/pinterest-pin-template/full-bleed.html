@@ -1,0 +1,188 @@
+<!-- @template name="Pinterest Pin — Full Bleed" description="1000×1500 pin — full-bleed photo background, gradient overlay on lower 40%, text on gradient." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinterest Pin — Full Bleed</title>
+<script src="./ds-base.js"></script>
+<style>
+  /* ---- viewport scaling ------------------------------------ */
+  html, body {
+    margin: 0; padding: 0;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background: #0A0806;
+    overflow: hidden;
+  }
+
+  .pin-stage {
+    width: 1000px; height: 1500px;
+    transform-origin: center center;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  /* ---- full-bleed photo background ------------------------- */
+  .pin-bg {
+    position: absolute;
+    inset: 0;
+    background: #1E1710;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pin-bg__label {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(188, 174, 146, 0.28);
+    user-select: none;
+    /* keep label centered in the clear top zone */
+    margin-bottom: 500px;
+  }
+
+  /* ---- gradient overlay: bottom 40% ----------------------- */
+  .pin-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60%;
+    background: linear-gradient(
+      180deg,
+      rgba(18, 14, 8, 0) 0%,
+      rgba(18, 14, 8, 0.20) 20%,
+      rgba(18, 14, 8, 0.52) 40%,
+      rgba(18, 14, 8, 0.70) 55%,
+      rgba(18, 14, 8, 0.82) 70%,
+      rgba(18, 14, 8, 0.92) 85%,
+      rgba(18, 14, 8, 0.96) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* ---- badge mark: top-right ------------------------------ */
+  .pin-badge {
+    position: absolute;
+    top: 36px; right: 36px;
+    width: 80px; height: 80px;
+    z-index: 3;
+    opacity: 0.92;
+    filter: drop-shadow(0 2px 12px rgba(0,0,0,0.6));
+  }
+
+  /* ---- text block: sits on the gradient ------------------- */
+  .pin-text {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px 56px;
+    text-align: center;
+  }
+
+  /* category pill */
+  .pin-pill {
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: #120E08;
+    background: #D4832A;
+    padding: 8px 22px;
+    border-radius: 999px;
+    margin-bottom: 32px;
+  }
+
+  /* headline */
+  .pin-headline {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: #F5EFE0;
+    margin: 0 0 20px;
+    max-width: 820px;
+    text-wrap: balance;
+  }
+
+  /* italic subhead */
+  .pin-subhead {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.35;
+    color: rgba(245, 239, 224, 0.72);
+    margin: 0 0 44px;
+    max-width: 700px;
+  }
+
+  /* footer URL */
+  .pin-footer {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #D4832A;
+    opacity: 0.65;
+  }
+
+  /* thin amber rule above footer */
+  .pin-footer::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: rgba(212, 131, 42, 0.30);
+    margin: 0 auto 14px;
+  }
+</style>
+
+<script>
+  function scalePin() {
+    const stage = document.querySelector('.pin-stage');
+    if (!stage) return;
+    const sw = 1000, sh = 1500;
+    const vw = window.innerWidth, vh = window.innerHeight;
+    const scale = Math.min(vw / sw, vh / sh, 1);
+    stage.style.transform = 'scale(' + scale + ')';
+  }
+  window.addEventListener('resize', scalePin);
+  window.addEventListener('DOMContentLoaded', scalePin);
+</script>
+</head>
+<body>
+  <div class="pin-stage">
+
+    <!-- Full-bleed photo background -->
+    <div class="pin-bg">
+      <span class="pin-bg__label">Photo</span>
+    </div>
+
+    <!-- Dark gradient overlay — bottom 40% -->
+    <div class="pin-overlay"></div>
+
+    <!-- Badge mark — top-right -->
+    <img class="pin-badge" src="../../assets/logo-badge-full.svg" alt="New England Crust">
+
+    <!-- Text on the gradient -->
+    <div class="pin-text">
+      <div class="pin-pill">Pizza Night</div>
+      <h1 class="pin-headline">The Clam Pie That Started It All</h1>
+      <p class="pin-subhead">A wood-fired ode to the Rhode Island shore.</p>
+      <div class="pin-footer">newenglandcrust.com</div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!-- @template name="Pinterest Board Covers" description="6× 600×600 square covers — badge, diamond rule, board name. Cohesive grid set." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinterest Board Covers — New England Crust</title>
+<script src="./ds-base.js"></script>
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    background: #0A0806;
+    min-height: 100vh;
+  }
+
+  .grid-stage {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 32px;
+  }
+
+  .grid-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #D4832A;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .covers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* ---- individual cover ----------------------------------- */
+  .cover {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 600px;
+    background: #120E08;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 62px;
+    overflow: hidden;
+  }
+
+  /* ember glow behind badge */
+  .cover::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(212, 131, 42, 0.18) 0%,
+      rgba(200, 75, 46, 0.08) 40%,
+      rgba(18, 14, 8, 0) 70%
+    );
+    pointer-events: none;
+  }
+
+  /* badge */
+  .cover__badge {
+    width: 140px;
+    height: 140px;
+    margin-top: -24px;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 2px 16px rgba(212, 131, 42, 0.25));
+  }
+
+  /* rule + diamond */
+  .cover__rule {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    margin: 22px 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover__rule::before,
+  .cover__rule::after {
+    content: "";
+    flex: 1;
+    height: 0;
+    border-top: 1px solid rgba(212, 131, 42, 0.35);
+  }
+  .cover__diamond {
+    width: 7px;
+    height: 7px;
+    background: #D4832A;
+    transform: rotate(45deg);
+    opacity: 0.75;
+    flex-shrink: 0;
+  }
+
+  /* board name */
+  .cover__name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #F5EFE0;
+    text-align: center;
+    line-height: 1.35;
+    padding: 0 36px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* footer URL */
+  .cover__url {
+    position: absolute;
+    bottom: 20px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: #D4832A;
+    opacity: 0.45;
+  }
+
+  @media (max-width: 900px) {
+    .covers-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .covers-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+  <div class="grid-stage">
+    <div class="grid-title">Pinterest Board Covers</div>
+    <div class="covers-grid">
+
+      <div class="cover">
+        <img class="cover__badge" src="../../assets/logo-badge-full.svg" alt="NEC">
+        <div class="cover__rule"><span class="cover__diamond"></span></div>
+        <div class="cover__name">Pizza Recipes</div>
+        <div class="cover__url">newenglandcrust.com</div>
+      </div>
+
+      <div class="cover">
+        <img class="cover__badge" src="../../assets/logo-badge-full.svg" alt="NEC">
+        <div class="cover__rule"><span class="cover__diamond"></span></div>
+        <div class="cover__name">Outdoor Ovens</div>
+        <div class="cover__url">newenglandcrust.com</div>
+      </div>
+
+      <div class="cover">
+        <img class="cover__badge" src="../../assets/logo-badge-full.svg" alt="NEC">
+        <div class="cover__rule"><span class="cover__diamond"></span></div>
+        <div class="cover__name">Gear &amp; Tools</div>
+        <div class="cover__url">newenglandcrust.com</div>
+      </div>
+
+      <div class="cover">
+        <img class="cover__badge" src="../../assets/logo-badge-full.svg" alt="NEC">
+        <div class="cover__rule"><span class="cover__diamond"></span></div>
+        <div class="cover__name">Dough &amp;<br>Technique</div>
+        <div class="cover__url">newenglandcrust.com</div>
+      </div>
+
+      <div class="cover">
+        <img class="cover__badge" src="../../assets/logo-badge-full.svg" alt="NEC">
+        <div class="cover__rule"><span class="cover__diamond"></span></div>
+        <div class="cover__name">Pizza Night<br>Inspo</div>
+        <div class="cover__url">newenglandcrust.com</div>
+      </div>
+
+      <div class="cover">
+        <img class="cover__badge" src="../../assets/logo-badge-full.svg" alt="NEC">
+        <div class="cover__rule"><span class="cover__diamond"></span></div>
+        <div class="cover__name">New England<br>Crust Blog</div>
+        <div class="cover__url">newenglandcrust.com</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

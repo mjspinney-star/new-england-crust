@@ -20,7 +20,8 @@
 - **Local dev:** Localhost
 - **Content format:** Markdown (.md) with Astro frontmatter
 - **Blog content folder:** `src/content/blog/`
-- **Analytics:** Google Analytics 4 — Measurement ID `G-3QBKJCC5F9` — tag live in `src/layouts/Layout.astro`
+- **Analytics:** Google Analytics 4 — Measurement ID `G-3QBKJCC5F9` — tag live in `src/layouts/BaseLayout.astro`
+- **Search Console:** Set up June 2026 — sitemap submitted at `newenglandcrust.com/sitemap.xml`
 
 All blog posts are `.md` files and need proper Astro frontmatter (title, description, date, etc.) to integrate correctly.
 
