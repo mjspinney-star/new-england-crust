@@ -62,6 +62,9 @@ const topics = [
 
 // Pick topic based on number of existing posts (cycles through the list)
 const existingPosts = fs.readdirSync('src/content/blog').filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
+const publishedSlugs = existingPosts
+  .map(f => f.replace(/\.mdx?$/, ''))
+  .join('\n');
 const topicIndex = existingPosts.length % topics.length;
 const selected = topics[topicIndex];
 
@@ -102,7 +105,7 @@ POST STRUCTURE — FOLLOW THIS EVERY TIME:
 2. Build into main content using short sections with subheadings
 3. Where relevant, include a real-world quirks or honest assessment section
 4. Close each major section with a clear verdict or takeaway
-5. End with a practical next step or a brief related posts block
+5. End with a practical next step or "Try this next" section. Do NOT write any inline Related section or related links in the post body. Related posts are handled in the frontmatter only.
 
 FRONTMATTER — REQUIRED ON EVERY POST — FORMAT EXACTLY AS FOLLOWS:
 ---
@@ -111,8 +114,10 @@ description: "One sentence SEO summary under 155 characters, written for a human
 pubDate: DATE_PLACEHOLDER
 category: CATEGORY_PLACEHOLDER
 tags: [tag1, tag2, tag3]
+relatedPosts: []
 draft: false
 ---
+For the relatedPosts field: populate it with 1–2 slugs from the PUBLISHED SLUGS LIST provided in the user prompt that are genuinely related to this post's topic. If nothing is a close match, leave the array empty. Never invent a slug that is not on the list.
 
 AFFILIATE MENTIONS — ONLY WHEN GENUINELY RELEVANT:
 Mention these products the way you would recommend something to a friend — briefly and honestly, never like an ad:
@@ -133,6 +138,9 @@ Topic: ${selected.topic}
 
 Use ${today} as the pubDate value in the frontmatter.
 Use ${selected.type} as the category value in the frontmatter.
+
+Here is the list of currently published post slugs. Only use slugs from this list for the relatedPosts frontmatter field:
+${publishedSlugs}
 
 Follow all voice, structure, length, and frontmatter rules exactly. Output only the Markdown post — nothing else.`;
 
