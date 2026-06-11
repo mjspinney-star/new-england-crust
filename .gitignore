@@ -25,3 +25,9 @@ pnpm-debug.log*
 # stray root files (delete from Finder)
 backyard-pizza-night-setup.md
 best-outdoor-pizza-ovens-under-500.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
