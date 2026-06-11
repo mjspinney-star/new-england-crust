@@ -5,6 +5,9 @@ pubDate: 2026-06-11
 category: technique
 tags: [dough, shaping, technique]
 draft: false
+relatedPosts:
+  - "72-hour-cold-ferment-dough"
+  - "2026-06-05-preheating-your-outdoor-oven-in-cold-weather-what-"
 ---
 
 Last fall we had a friend over for a backyard cook — one of those good October nights where you're in a hoodie and the Ooni is doing most of the work. She grabbed the rolling pin off the prep table before we could say anything. Thirty seconds later the dough was flat, even, and completely dead.
@@ -42,7 +45,3 @@ For anything else, put the rolling pin in a drawer.
 ## Try This Next Session
 
 Start with a well-fermented dough ball that's been at room temperature for at least an hour. Press from the center out with your fingertips, rotate a quarter turn, repeat. Don't rush it. Two or three sessions and hand shaping will feel more natural than reaching for a rolling pin ever did.
-
----
-
-*Related: [How long to cold ferment pizza dough] | [Getting your Ooni stone properly preheated]*

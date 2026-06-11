@@ -15,6 +15,11 @@ type Props = { post: CollectionEntry<'blog'> };
 const { post } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await post.render();
 
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const relatedPosts = (post.data.relatedPosts ?? [])
+  .map(slug => allPosts.find(p => p.slug === slug))
+  .filter((p): p is CollectionEntry<'blog'> => p !== undefined);
+
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   month: 'long',
   day: 'numeric',
@@ -62,7 +67,21 @@ const minutesRead = (remarkPluginFrontmatter as { minutesRead?: string } | undef
       <Content />
     </div>
 
-    <footer class="mt-16 flex items-center justify-between border-t border-timber-300/15 pt-6 text-sm text-timber-200/80">
+    {relatedPosts.length > 0 && (
+      <div class="mt-16 border-t border-timber-300/15 pt-8">
+        <p class="text-xs uppercase tracking-[0.2em] text-glow-300 mb-4">Related</p>
+        <ul class="space-y-2">
+          {relatedPosts.map((related) => (
+            <li>
+              <a href={`/blog/${related.slug}/`} class="text-sm text-timber-100/90 hover:text-glow-200">
+                {related.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+    <footer class="mt-10 flex items-center justify-between border-t border-timber-300/15 pt-6 text-sm text-timber-200/80">
       <a href="/blog/" class="hover:text-glow-200">&larr; All posts</a>
       <a href="/" class="hover:text-glow-200">Back home</a>
     </footer>
