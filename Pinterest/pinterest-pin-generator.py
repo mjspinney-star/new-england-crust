@@ -75,6 +75,7 @@ PINS = [
         "headline":   "Your Backyard Pizza Night Starts Here",
         "subhead":    "The exact setup we use every time.",
         "layout":     "split",
+        "badge_position": "top_left",
         "output":     "outputs/NEC-pizzanight-v2.png",
     },
     # ── Add more pins below ───────────────────────────────────────────────────
@@ -107,6 +108,26 @@ def wrap_text(text, draw, font, max_width):
     if current:
         lines.append(current)
     return lines
+
+
+LOGO_PATH = "new-england-crust-logo.png"
+
+def paste_logo_badge(canvas, cx, cy, size=152):
+    """
+    Paste the New England Crust badge logo (transparent PNG) centered at
+    (cx, cy). `size` is the width/height of the pasted logo in pixels —
+    152px makes the visible ring ~131px, matching the old drawn badge.
+    Falls back to the procedural flame badge if the logo file is missing.
+    """
+    if not os.path.exists(LOGO_PATH):
+        draw = ImageDraw.Draw(canvas, 'RGBA')
+        draw_flame_badge(draw, cx, cy, scale=size / 185.0)
+        return
+    logo = Image.open(LOGO_PATH).convert('RGBA')
+    logo = logo.resize((size, size), Image.LANCZOS)
+    x = cx - size // 2
+    y = cy - size // 2
+    canvas.paste(logo, (x, y), logo)
 
 
 def draw_flame_badge(draw, cx, cy, scale=1.0):
@@ -240,7 +261,7 @@ def draw_diamond_rule(draw, y, left, right, amber):
 
 # ── SPLIT LAYOUT (2/3 photo + 1/3 text block) ─────────────────────────────────
 
-def make_pin_split(photo_path, category, headline, subhead, output_path):
+def make_pin_split(photo_path, category, headline, subhead, output_path, badge_position="top_right"):
     PHOTO_H  = H * 2 // 3   # 1000px
     TEXT_H   = H - PHOTO_H  # 500px
     LEFT     = 52
@@ -257,8 +278,9 @@ def make_pin_split(photo_path, category, headline, subhead, output_path):
     canvas.paste(photo, (0, 0))
     draw = ImageDraw.Draw(canvas, 'RGBA')
 
-    # Badge mark — top right of photo area
-    draw_flame_badge(draw, cx=W - 88, cy=88, scale=0.82)
+    # Badge mark — top right or top left of photo area
+    badge_cx = 88 if badge_position == "top_left" else W - 88
+    paste_logo_badge(canvas, cx=badge_cx, cy=88)
 
     # ── Text block ────────────────────────────────────────────────────────────
     TEXT_TOP = PHOTO_H
@@ -322,7 +344,7 @@ def make_pin_split(photo_path, category, headline, subhead, output_path):
 
 # ── FULL-BLEED LAYOUT (photo fills pin, gradient overlay on bottom 40%) ───────
 
-def make_pin_fullbleed(photo_path, category, headline, subhead, output_path):
+def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, badge_position="top_right"):
     LEFT   = 52
     RIGHT  = W - 52
     TEXT_W = RIGHT - LEFT
@@ -352,8 +374,9 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path):
 
     draw = ImageDraw.Draw(img, 'RGBA')
 
-    # Badge mark top-right
-    draw_flame_badge(draw, cx=W - 88, cy=88, scale=0.82)
+    # Badge mark — top right or top left
+    badge_cx = 88 if badge_position == "top_left" else W - 88
+    paste_logo_badge(img, cx=badge_cx, cy=88)
 
     # Footer URL
     font_url = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 19)
@@ -405,11 +428,12 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path):
 def make_pin(pin):
     layout = pin.get("layout", "split")
     kwargs = dict(
-        photo_path  = pin.get("photo_path"),
-        category    = pin.get("category", "New England Crust"),
-        headline    = pin.get("headline", ""),
-        subhead     = pin.get("subhead", ""),
-        output_path = pin["output"],
+        photo_path     = pin.get("photo_path"),
+        category       = pin.get("category", "New England Crust"),
+        headline       = pin.get("headline", ""),
+        subhead        = pin.get("subhead", ""),
+        output_path    = pin["output"],
+        badge_position = pin.get("badge_position", "top_right"),
     )
     if layout == "fullbleed":
         make_pin_fullbleed(**kwargs)
