@@ -41,10 +41,19 @@ Copy this block, paste it into the Pin Queue section, and fill it in:
 - **category:** Gear Guide  ← short label: Gear Guide, Pizza Night, Recipe, Tips
 - **headline:** Your headline here  ← keep each line ~20 chars for clean wrapping
 - **descriptor:** One or two supporting sentences, max 44 chars per line.
+- **badge_position:** top_right  ← OPTIONAL — top_right (default) or top_left
 - **output:** NEC-postname-pin#.png  ← e.g. NEC-accessories-pin7.png
 - **board:** Pinterest Board Name  ← exact board name on your Pinterest profile
 - **link:** https://newenglandcrust.com/blog/your-post-slug/
 ```
+
+**badge_position notes:**
+- Every pin now carries the New England Crust logo badge (flame + ring) in
+  the top corner of the photo.
+- Leave `badge_position` out entirely (or set to `top_right`) for the normal
+  case — that's the default.
+- Set it to `top_left` only if the photo's main subject sits in the top-right
+  corner and the badge would otherwise overlap or cover it.
 
 **Tips for good headlines (from your best performers):**
 - Lead with the product name: "Ninja Woodfire Accessories..."

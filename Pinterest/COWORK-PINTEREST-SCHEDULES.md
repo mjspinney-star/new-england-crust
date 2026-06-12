@@ -68,7 +68,10 @@ and find ALL items marked `[ ]` in the Pin Queue section.
 For each `[ ]` item:
 1. Add an entry to the PINS list in
    `/Users/michaelspinney/Desktop/new-england-crust/Pinterest/pinterest-pin-generator.py`
-   using the photo, category, headline, descriptor, and output filename specified
+   using the photo, category, headline, descriptor, and output filename specified.
+   If the item includes a `badge_position` value, add it to the entry as
+   `"badge_position": "top_left"` (or `"top_right"`) — otherwise omit it and
+   the script will default to top_right.
 2. Make sure the photo file exists in the Pinterest folder before running —
    if a photo is missing, skip that pin and leave a note in the queue file
 
