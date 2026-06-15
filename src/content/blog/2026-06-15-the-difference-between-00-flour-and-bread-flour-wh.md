@@ -1,0 +1,47 @@
+---
+title: "00 Flour vs Bread Flour for Pizza: Which One Should You Actually Use"
+description: "The real difference between 00 flour and bread flour for pizza dough, and how to pick the right one for your oven and cook style."
+pubDate: 2026-06-15
+category: ingredient
+tags: [flour, dough, ingredients, pizza-basics]
+relatedPosts: ["2026-06-08-how-to-tell-when-your-dough-is-actually-ready-to-o", "72-hour-cold-ferment-dough"]
+draft: false
+---
+
+We have had this conversation in our backyard more times than we can count. Someone shows up with a bag of bread flour, someone else swears by 00, and then we spend ten minutes talking about protein content instead of just making pizza.
+
+Here is the short version: both work. But they do not work the same way, and the oven you are using matters more than most people realize.
+
+## What the Difference Actually Is
+
+**00 flour** is milled finer than bread flour — closer to powder than sand, if you run it through your fingers. It also has a slightly lower protein content, typically around 11 to 12 percent. That lower protein means less gluten development, which means a dough that stretches without fighting you and bakes up with a lighter, more tender crumb.
+
+**Bread flour** runs higher — usually 12.5 to 14 percent protein. More gluten. Chewier texture. A little more structure and snap in the finished crust.
+
+Both are wheat flour. The difference is in the grind and the protein, not some magic Italian ingredient.
+
+## When 00 Flour Is the Right Call
+
+If you are running a high-heat oven — an Ooni Koda 12 *[Affiliate link: Ooni Koda 12 — Ooni]* at 900°F or close to it — 00 flour earns its reputation. It handles the fast cook without burning the sugars before the crust sets. The finer grind hydrates quickly and gives you that thin, slightly blistered edge that Neapolitan-style pizza is known for.
+
+It is also more forgiving to stretch by hand, which matters when you are working cold dough on a November afternoon in a hoodie.
+
+The downside: 00 flour costs more. It is not always on the shelf at a regular grocery store. And in humid New England summers, it can get sticky fast.
+
+## When Bread Flour Makes More Sense
+
+Bread flour is easier to find and cheaper. It performs well at lower temperatures — if you are using a Solo Stove Pi *[Affiliate link: Solo Stove Pi — Solo Stove]* or cooking in the 700 to 800°F range, bread flour gives you a crispier, chewier bite that a lot of people actually prefer.
+
+It also holds up better for thicker styles — a New Haven-style bar pie or anything with a longer bake time. The extra gluten gives the crust structure so it does not go limp under heavy toppings.
+
+You will notice the dough feels a little tighter when you shape it. Give it an extra ten minutes of rest after balling and it relaxes fine.
+
+## Honest Take on Mixing Them
+
+We sometimes blend 70 percent 00 with 30 percent bread flour when we want a middle-ground dough — the stretch of 00 with a bit more chew. It is not a rule. It is just what works for us after a few seasons of trial and error.
+
+**Verdict: Match the flour to the oven.** High heat, fast cook, Neapolitan goal — use 00. Lower temp, longer bake, chewier crust — bread flour is the practical choice and it will not let you down.
+
+## Try This Next
+
+Pick one flour and make the same dough recipe twice back to back — once with 00, once with bread flour. Same hydration, same ferment time, same oven. You will know which one you prefer after that cook. No need to overthink it before then.
