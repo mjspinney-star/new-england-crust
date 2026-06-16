@@ -482,7 +482,7 @@ def make_pin_primeday(photo_path, category, headline, subhead, output_path, badg
     # Pill background
     PILL_TOP2  = PILL_TOP + amazon_h + 10
     PILL_H     = 64
-    PILL_TEXT  = "⚡  PRIME DAY PICKS"
+    PILL_TEXT  = "PRIME DAY PICKS"
     font_pill  = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 28)
     pill_bbox  = draw.textbbox((0,0), PILL_TEXT, font=font_pill)
     pill_tw    = pill_bbox[2] - pill_bbox[0]
@@ -504,7 +504,7 @@ def make_pin_primeday(photo_path, category, headline, subhead, output_path, badg
     font_date = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 18)
     draw.text((PILL_LEFT, DATE_TOP),
               "JUNE 23 – 26, 2026", font=font_date,
-              fill=(*EMBER_AMBER, 130))
+              fill=(*EMBER_AMBER, 220))
 
     # ── Footer URL ────────────────────────────────────────────────────────────
     font_url = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 19)
@@ -524,7 +524,7 @@ def make_pin_primeday(photo_path, category, headline, subhead, output_path, badg
     cat_upper = category.upper()
     cat_bbox  = draw.textbbox((0,0), cat_upper, font=font_cat)
     cat_w     = cat_bbox[2] - cat_bbox[0]
-    cat_y     = int(H * 0.58)
+    cat_y     = int(H * 0.66)
     draw.text(((W - cat_w) // 2, cat_y),
               cat_upper, font=font_cat, fill=EMBER_AMBER)
 
