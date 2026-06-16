@@ -87,6 +87,15 @@ PINS = [
         "badge_position": "top_right",
         "output":         "outputs/NEC-primeday-pin1.png",
     },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Gear Guide",
+        "headline":       "Prime Day Pizza Accessories Worth Adding to Your Cart",
+        "subhead":        "The under-$50 picks we actually use — all on Amazon, all worth watching June 23–26.",
+        "layout":         "primeday",
+        "badge_position": "top_right",
+        "output":         "outputs/NEC-primeday-accessories-pin1.png",
+    },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {
     #     "photo_path": "your-photo.jpeg",   # or None for placeholder

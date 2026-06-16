@@ -121,7 +121,29 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [x] Prime Day Accessories 2026 (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Prime Day Pizza Accessories Worth Adding to Your Cart
+- **descriptor:** The under-$50 picks we actually use — all on Amazon, all worth watching June 23–26.
+- **layout:** primeday
+- **badge_position:** top_right
+- **output:** NEC-primeday-accessories-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-pizza-accessories-under-50/
+
+---
+
 ## IDEAS BANK — Not Yet Scheduled
+
+### Caputo flour / ingredient photo (IMG_8372.jpeg) — future pin angles
+- "The Three Ingredients We Always Have On Hand"
+- "Why We Use Caputo 00 Flour for Every Pizza We Make"
+- "Our Dough Starts Here — Caputo 00, Lievito Yeast, La Baleine Salt"
+- Best paired with: 72-hour cold ferment dough post, or 00 flour vs bread flour post
+- Photo: IMG_8372.jpeg — clean white counter, products clearly readable, no cropping needed
+
+---
 
 Park headline ideas here. When ready to produce, move them up to the Pin Queue
 with full details filled in.
