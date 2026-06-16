@@ -96,6 +96,33 @@ PINS = [
         "badge_position": "top_right",
         "output":         "outputs/NEC-primeday-accessories-pin1.png",
     },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Oven Review",
+        "headline":       "Our Pizza Oven Buying Guide — Save This Before You Shop",
+        "subhead":        "Five ovens under $500 tested honestly — here's how we'd rank them and the one spec that matters most.",
+        "layout":         "fullbleed",
+        "badge_position": "top_right",
+        "output":         "outputs/NEC-ovens-pin2.png",
+    },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Oven Review",
+        "headline":       "Propane vs Pellets vs Electric — Which Outdoor Pizza Oven Is Actually Worth It",
+        "subhead":        "We tested all three fuel types. Here's the honest answer before you spend $300–$500.",
+        "layout":         "split",
+        "badge_position": "top_right",
+        "output":         "outputs/NEC-ovens-pin3.png",
+    },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Tips",
+        "headline":       "The $20 Tool That Fixed Every Pizza We Were Making Wrong",
+        "subhead":        "Your oven display shows air temp — not stone temp. This is the gap that ruins pizza. Here's what we use.",
+        "layout":         "split",
+        "badge_position": "top_left",
+        "output":         "outputs/NEC-thermometer-pin1.png",
+    },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {
     #     "photo_path": "your-photo.jpeg",   # or None for placeholder

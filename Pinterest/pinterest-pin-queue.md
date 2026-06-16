@@ -134,6 +134,45 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [x] Pizza Ovens Under $500 — Variation Pin 2
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** Our Pizza Oven Buying Guide — Save This Before You Shop
+- **descriptor:** Five ovens under $500 tested honestly — here's how we'd rank them and the one spec that matters most.
+- **layout:** fullbleed
+- **badge_position:** top_right
+- **output:** NEC-ovens-pin2.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
+### [x] Pizza Ovens Under $500 — Variation Pin 3
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** Propane vs Pellets vs Electric — Which Outdoor Pizza Oven Is Actually Worth It
+- **descriptor:** We tested all three fuel types. Here's the honest answer before you spend $300–$500.
+- **layout:** split
+- **badge_position:** top_right
+- **output:** NEC-ovens-pin3.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
+### [x] Infrared Thermometer — Accessory Pin Rework
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** The $20 Tool That Fixed Every Pizza We Were Making Wrong
+- **descriptor:** Your oven display shows air temp — not stone temp. This is the gap that ruins pizza. Here's what we use.
+- **layout:** split
+- **badge_position:** top_left
+- **output:** NEC-thermometer-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-pizza-accessories-under-50/
+
+---
+
 ## IDEAS BANK — Not Yet Scheduled
 
 ### Caputo flour / ingredient photo (IMG_8372.jpeg) — future pin angles
