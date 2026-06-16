@@ -467,44 +467,57 @@ def make_pin_primeday(photo_path, category, headline, subhead, output_path, badg
     badge_cx = 88 if badge_position == "top_left" else W - 88
     paste_logo_badge(img, cx=badge_cx, cy=88)
 
-    # ── Prime Day pill — top left ─────────────────────────────────────────────
+    # ── Prime Day pill — top left (single stacked block) ─────────────────────
     PILL_LEFT = 44
     PILL_TOP  = 44
+    PAD_X     = 24
+    PAD_Y     = 14
 
-    # "AMAZON" label above pill
-    font_amazon = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 20)
-    draw.text((PILL_LEFT, PILL_TOP),
-              "AMAZON", font=font_amazon,
-              fill=(*EMBER_AMBER, 180))
+    font_amazon = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 18)
+    font_pill   = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 32)
+    font_date   = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 17)
+
     amazon_bbox = draw.textbbox((0,0), "AMAZON", font=font_amazon)
-    amazon_h = amazon_bbox[3] - amazon_bbox[1]
+    amazon_h    = amazon_bbox[3] - amazon_bbox[1]
+    amazon_w    = amazon_bbox[2] - amazon_bbox[0]
 
-    # Pill background
-    PILL_TOP2  = PILL_TOP + amazon_h + 10
-    PILL_H     = 64
-    PILL_TEXT  = "PRIME DAY PICKS"
-    font_pill  = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 28)
-    pill_bbox  = draw.textbbox((0,0), PILL_TEXT, font=font_pill)
-    pill_tw    = pill_bbox[2] - pill_bbox[0]
-    PILL_W     = pill_tw + 48
-    PILL_RIGHT = PILL_LEFT + PILL_W
+    pill_bbox   = draw.textbbox((0,0), "PRIME DAY PICKS", font=font_pill)
+    pill_h      = pill_bbox[3] - pill_bbox[1]
+    pill_w      = pill_bbox[2] - pill_bbox[0]
 
-    # Draw pill rectangle
+    date_bbox   = draw.textbbox((0,0), "JUNE 23 – 26, 2026", font=font_date)
+    date_h      = date_bbox[3] - date_bbox[1]
+    date_w      = date_bbox[2] - date_bbox[0]
+
+    # Block width = widest element + padding both sides
+    BLOCK_W = max(amazon_w, pill_w, date_w) + PAD_X * 2
+    # Block height = all three rows + gaps + padding top/bottom
+    GAP          = 10
+    BLOCK_H      = PAD_Y + amazon_h + GAP + pill_h + GAP + date_h + PAD_Y
+    PILL_RIGHT   = PILL_LEFT + BLOCK_W
+    PILL_BOTTOM  = PILL_TOP  + BLOCK_H
+
+    # Draw single amber rectangle
     draw.rectangle(
-        [PILL_LEFT, PILL_TOP2, PILL_RIGHT, PILL_TOP2 + PILL_H],
+        [PILL_LEFT, PILL_TOP, PILL_RIGHT, PILL_BOTTOM],
         fill=EMBER_AMBER
     )
-    # Pill text in deep char
-    pill_text_y = PILL_TOP2 + (PILL_H - (pill_bbox[3] - pill_bbox[1])) // 2
-    draw.text((PILL_LEFT + 24, pill_text_y),
-              PILL_TEXT, font=font_pill, fill=DEEP_CHAR)
 
-    # Date label below pill
-    DATE_TOP  = PILL_TOP2 + PILL_H + 10
-    font_date = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 18)
-    draw.text((PILL_LEFT, DATE_TOP),
+    # AMAZON — small, dark char, top of block
+    amazon_y = PILL_TOP + PAD_Y
+    draw.text((PILL_LEFT + PAD_X, amazon_y),
+              "AMAZON", font=font_amazon, fill=DEEP_CHAR)
+
+    # PRIME DAY PICKS — bold, dark char, middle
+    picks_y = amazon_y + amazon_h + GAP
+    draw.text((PILL_LEFT + PAD_X, picks_y),
+              "PRIME DAY PICKS", font=font_pill, fill=DEEP_CHAR)
+
+    # JUNE 23 – 26, 2026 — small, slightly muted, bottom
+    date_y = picks_y + pill_h + GAP
+    draw.text((PILL_LEFT + PAD_X, date_y),
               "JUNE 23 – 26, 2026", font=font_date,
-              fill=(*EMBER_AMBER, 220))
+              fill=(*DEEP_CHAR, 180))
 
     # ── Footer URL ────────────────────────────────────────────────────────────
     font_url = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 19)
