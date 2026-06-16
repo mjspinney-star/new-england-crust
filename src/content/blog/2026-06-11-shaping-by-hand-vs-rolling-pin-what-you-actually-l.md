@@ -1,5 +1,5 @@
 ---
-title: "Shaping by Hand vs. Rolling Pin: What You Actually Lose When You Roll"
+title: "Why Hand-Stretching Pizza Dough Beats Using a Rolling Pin"
 description: "Hand stretching pizza dough preserves air bubbles and texture that a rolling pin crushes out. Here's what actually happens and why it matters."
 pubDate: 2026-06-11
 category: technique

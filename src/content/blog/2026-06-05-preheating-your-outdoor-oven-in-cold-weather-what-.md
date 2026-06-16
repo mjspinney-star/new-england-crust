@@ -1,5 +1,5 @@
 ---
-title: "Preheating Your Outdoor Pizza Oven in Cold Weather: What Actually Changes"
+title: "Cold-Weather Pizza Oven Preheating: What Actually Changes"
 description: "Cold temps affect how your outdoor pizza oven preheats. Here's what to expect and how to adjust before your first cook of the season."
 pubDate: 2026-06-05
 category: technique

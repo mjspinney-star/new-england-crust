@@ -1,6 +1,6 @@
 ---
-title: "00 Flour vs Bread Flour for Pizza: Which One Should You Actually Use"
-description: "The real difference between 00 flour and bread flour for pizza dough, and how to pick the right one for your oven and cook style."
+title: "00 Flour vs. Bread Flour for Pizza: The Baker's Guide"
+description: "The real difference between 00 flour and bread flour for pizza dough, and how to pick the right one for your outdoor oven and cook style."
 pubDate: 2026-06-15
 category: ingredient
 tags: [flour, dough, ingredients, pizza-basics]

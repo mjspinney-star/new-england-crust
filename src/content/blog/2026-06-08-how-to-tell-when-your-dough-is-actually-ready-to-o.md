@@ -1,6 +1,6 @@
 ---
 title: "How to Tell When Your Dough Is Actually Ready to Open"
-description: "The signs that tell you pizza dough is ready to stretch — and the mistakes most beginners make by rushing it."
+description: "The signs that tell you pizza dough is ready to stretch — and the common mistakes most beginners make by opening it too early and rushing the process."
 pubDate: 2026-06-08
 category: technique
 tags: [dough, technique, beginner tips]

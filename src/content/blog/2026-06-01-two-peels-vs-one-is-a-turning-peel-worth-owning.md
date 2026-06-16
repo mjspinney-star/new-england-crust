@@ -1,6 +1,6 @@
 ---
 title: "Two Peels vs. One — Is a Turning Peel Worth Owning?"
-description: "Whether you need a second peel for pizza rotation depends on your oven and how often you cook. Here's how we think about it."
+description: "Whether you need a second peel for pizza rotation depends on your oven and how often you cook. Here's how we think about it and what finally made us buy one."
 pubDate: 2026-06-01
 category: gear
 tags: [peels, pizza-tools, equipment, technique]
