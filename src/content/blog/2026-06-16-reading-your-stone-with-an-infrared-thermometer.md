@@ -1,0 +1,39 @@
+---
+title: "Reading Your Stone with an Infrared Thermometer — What the Numbers Actually Mean"
+description: "The Ninja Woodfire display measures air temperature, not stone temperature. Here's what that gap means for your crust and how to close it."
+pubDate: 2026-06-16
+category: "technique"
+tags: ["ninja woodfire", "infrared thermometer", "pizza stone", "technique"]
+relatedPosts: ["2026-05-24-ninja-woodfire-accessories-worth-buying"]
+draft: false
+---
+The display on your Ninja Woodfire is not lying to you exactly — but it is telling you the wrong temperature. What it shows is the air temperature inside the oven. What actually determines whether your crust puffs, chars, and crisps the way it should is the surface temperature of the pizza stone. Those two numbers can be 100°F apart or more, and that gap is responsible for more underwhelming pizza than bad dough, wrong flour, and poor toppings combined.
+An infrared thermometer costs $20 and closes that gap completely. Point it at the stone, read the number, decide whether to launch. That is the whole job.
+---
+## What the Oven Display Is Actually Measuring
+The Woodfire heats air. Air heats fast — within 15 to 20 minutes of startup, the display will show temperatures in the 650–700°F range and the oven will signal that it is ready to cook.
+The stone heats slower. It is thermal mass — dense ceramic that absorbs heat gradually and holds it. When the air inside the oven is at 700°F, the stone surface might be at 580°F. That 120°F difference is the difference between a crust that finishes in 90 seconds with a proper char and one that sits for four minutes going pale and dense before the bottom finally catches up.
+The oven does not know the difference. It is measuring air. You have to measure the stone yourself.
+---
+## The Numbers to Know
+These are the stone surface temperatures we aim for depending on what we are cooking:
+**700–750°F** — Neapolitan-style pizza. Fast cook, 90 seconds to two minutes, leopard spotting on the cornicione, slightly soft center. This is the high end and it requires patience to reach.
+**625–675°F** — New York-style or most standard home pizza. Longer bake, three to four minutes, crispier bottom, more forgiving if your dough is a little thick or your toppings are heavy.
+**500–550°F** — Focaccia, thick crust, or anything you want cooked through without burning the bottom. More time in the oven, more even heat penetration.
+These are starting points, not rules. Your dough hydration, your toppings, and how long the stone has been running all factor in. The point is that you cannot hit a target you are not measuring.
+---
+## How to Use the Thermometer
+Point it at the center of the stone, not the edges. The edges of the OO101 stone run hotter than the center — if you read the edge and launch on that number, the center of your pizza will be underdone.
+Take a reading every couple of minutes during the last part of preheat. When the oven signals ready, the stone is typically 80–120°F behind the air temperature. We have found that waiting an additional 5 to 8 minutes after the ready signal — and confirming with the thermometer — is what separates consistent results from occasional ones.
+Launch when the center of the stone reads within 25°F of your target. Not before.
+---
+## When the Numbers Are Off
+**Stone too cool:** Wait. Do not launch. A pizza on a cool stone is going to stick, cook unevenly, and come out with a pale dense bottom no matter how good the dough is. Another five minutes of patience costs nothing.
+**Stone uneven:** The OO101 tends to run hotter toward the back. If your thermometer shows a 50°F or more difference between front and back, let the oven continue to stabilize or shift where you launch — place the pizza slightly forward so it is not sitting directly over the hottest zone.
+**Stone too hot:** This happens if you have been running the oven for a long time or ran a high-heat cook before switching to pizza. Let the oven door sit open for a minute or two, then re-read. The stone sheds heat slowly but it will come down.
+---
+## The Thermometer Itself
+The Etekcity Lasergrip 1080 runs about $20 on Amazon and handles everything described here without any issues. You do not need a $60 unit with Bluetooth logging and a carrying case. You need a number in under two seconds and a laser dot you can aim. The Etekcity does that. [We cover it in our accessories post](https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/) alongside the other four things we would buy before firing up the Woodfire for the first time.
+---
+The oven display tells you when to start paying attention. The infrared thermometer tells you when to actually cook. At $20, it is the cheapest upgrade with the most direct impact on results — more than a new peel, more than premium pellets, more than anything else on the accessory list.
+Get one before your next cook.
