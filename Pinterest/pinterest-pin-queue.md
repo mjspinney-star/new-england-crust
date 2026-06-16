@@ -108,6 +108,19 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [x] Prime Day Pizza Oven Deals 2026 (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** Prime Day Pizza Oven Deals — What's Worth Watching
+- **descriptor:** Ooni, Ninja Woodfire, Solo Stove Pi — what to buy, what to skip, and when to check back.
+- **layout:** primeday
+- **badge_position:** top_right
+- **output:** NEC-primeday-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/prime-day-pizza-oven-deals-2026/
+
+---
+
 ## IDEAS BANK — Not Yet Scheduled
 
 Park headline ideas here. When ready to produce, move them up to the Pin Queue

@@ -1,0 +1,7 @@
+{
+  "sandbox": {
+    "filesystem": {
+      "allowWrite": ["~/Desktop/new-england-crust/.git"]
+    }
+  }
+}

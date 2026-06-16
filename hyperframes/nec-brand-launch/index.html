@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <style>
+    /* ── Local fonts ── */
+    @font-face {
+      font-family: "Anton";
+      src: url("fonts/Anton-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "Barlow Condensed";
+      src: url("fonts/BarlowCondensed-SemiBold.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "Barlow Condensed";
+      src: url("fonts/BarlowCondensed-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: block;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      background: #0d1a27;
+      font-family: "Anton", sans-serif;
+    }
+
+    #root {
+      position: relative;
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+    }
+
+    /* ── Scene base ── */
+    .scene {
+      position: absolute;
+      top: 0; left: 0;
+      width: 1080px;
+      height: 1920px;
+      z-index: 2;
+    }
+
+    #s2, #s3, #s4, #s5 { opacity: 0; }
+
+    /* ── Photo background ── */
+    .photo-wrap {
+      position: absolute;
+      /* 10% oversized on each axis for Ken Burns / scale headroom */
+      top: -5%; left: -5%;
+      width: 110%; height: 110%;
+      background-size: cover;
+      background-position: center;
+      transform-origin: center center;
+      z-index: 0;
+    }
+
+    /* ── Overlays ── */
+    .vignette {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse 90% 70% at 50% 50%, transparent 25%, rgba(0,0,0,0.55) 90%),
+        linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, transparent 25%, transparent 75%, rgba(0,0,0,0.35) 100%);
+      z-index: 1;
+    }
+
+    .dark-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
+
+    /* ── Navy background elements ── */
+    .navy-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #1B2A3B;
+      z-index: 0;
+    }
+
+    .grid-tex {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+      opacity: 0.07;
+      background-image: radial-gradient(circle, rgba(245,240,232,0.7) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+
+    /* Warm orange ambient glow (navy slides only) */
+    .glow {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ── Scene content ── */
+    .scene-content {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 130px 90px;
+      text-align: center;
+      z-index: 3;
+    }
+
+    /* ── Typography ── */
+
+    /* S2 — big tagline */
+    .tagline {
+      font-family: "Anton", sans-serif;
+      font-size: 106px;
+      line-height: 1.04;
+      color: #F5F0E8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* S3 — three-line list */
+    .list-line {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 72px;
+      font-weight: 700;
+      color: #F5F0E8;
+      line-height: 1.25;
+    }
+
+    /* S4 — photo caption */
+    .oven-label {
+      font-family: "Anton", sans-serif;
+      font-size: 80px;
+      line-height: 1.06;
+      color: #F5F0E8;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    /* S5 — URL beneath logo */
+    .brand-url {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.55);
+      margin-top: 40px;
+    }
+
+    /* Accent rule */
+    .accent-rule {
+      height: 4px;
+      background: #C4622D;
+      margin-top: 52px;
+      transform-origin: center center;
+    }
+
+    /* Logo image */
+    .logo-img {
+      width: 700px;
+      max-width: 82%;
+    }
+
+    /* ── Corner registration marks ── */
+    .corner {
+      position: absolute;
+      width: 36px; height: 36px;
+      border-color: rgba(196,98,45,0.30);
+      border-style: solid;
+      z-index: 4;
+    }
+    .c-tl { top:64px;    left:64px;  border-width: 3px 0 0 3px; }
+    .c-tr { top:64px;    right:64px; border-width: 3px 3px 0 0; }
+    .c-bl { bottom:64px; left:64px;  border-width: 0 0 3px 3px; }
+    .c-br { bottom:64px; right:64px; border-width: 0 3px 3px 0; }
+  </style>
+</head>
+<body>
+  <div id="root"
+    data-composition-id="nec-brand-launch"
+    data-width="1080"
+    data-height="1920"
+    data-start="0"
+    data-duration="20"
+  >
+
+    <!-- ════════════════════════════════════════
+         SCENE 1 — Cold Open (0–3s)
+         Full bleed WoodfireHero, Ken Burns zoom,
+         cinematic vignette, no text.
+    ════════════════════════════════════════ -->
+    <div id="s1" class="scene">
+      <div id="s1-photo" class="photo-wrap"
+        style="background-image: url('../../NinjaWoodfireHero.jpeg');"
+        data-layout-ignore>
+      </div>
+      <div class="vignette" data-layout-ignore></div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════
+         SCENE 2 — Tagline (3–6s)
+         "Salt Air & Open Flame." — Anton, cream,
+         uppercase. Burnt orange rule beneath.
+    ════════════════════════════════════════ -->
+    <div id="s2" class="scene">
+      <div class="navy-bg"></div>
+      <div class="grid-tex" data-layout-ignore></div>
+      <div class="glow" style="width:420px;height:420px;top:780px;left:-100px;background:radial-gradient(circle,rgba(196,98,45,0.16) 0%,transparent 70%);" data-layout-ignore></div>
+      <div class="glow" style="width:260px;height:260px;top:300px;right:-60px;background:radial-gradient(circle,rgba(196,98,45,0.08) 0%,transparent 70%);" data-layout-ignore></div>
+      <div class="corner c-tl" data-layout-ignore></div>
+      <div class="corner c-tr" data-layout-ignore></div>
+      <div class="corner c-bl" data-layout-ignore></div>
+      <div class="corner c-br" data-layout-ignore></div>
+      <div class="scene-content">
+        <div id="s2-tag" class="tagline">Salt Air<br>&amp; Open Flame.</div>
+        <div id="s2-rule" class="accent-rule" style="width:80px;"></div>
+      </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════
+         SCENE 3 — What We Do (6–10s)
+         Three lines in Barlow Condensed Bold,
+         staggered 0.4s each.
+    ════════════════════════════════════════ -->
+    <div id="s3" class="scene">
+      <div class="navy-bg"></div>
+      <div class="grid-tex" data-layout-ignore></div>
+      <div class="glow" style="width:340px;height:340px;top:640px;right:-70px;background:radial-gradient(circle,rgba(196,98,45,0.13) 0%,transparent 70%);" data-layout-ignore></div>
+      <div class="glow" style="width:280px;height:280px;top:1200px;left:-50px;background:radial-gradient(circle,rgba(196,98,45,0.10) 0%,transparent 70%);" data-layout-ignore></div>
+      <div class="corner c-tl" data-layout-ignore></div>
+      <div class="corner c-tr" data-layout-ignore></div>
+      <div class="corner c-bl" data-layout-ignore></div>
+      <div class="corner c-br" data-layout-ignore></div>
+      <div class="scene-content" style="gap: 12px;">
+        <div id="s3-l1" class="list-line">Wood-fired pizza.</div>
+        <div id="s3-l2" class="list-line">Backyard fire nights.</div>
+        <div id="s3-l3" class="list-line">New England summers.</div>
+        <div id="s3-rule" class="accent-rule" style="width:72px;"></div>
+      </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════
+         SCENE 4 — The Oven (10–13s)
+         Full bleed photo, dark overlay (0.45),
+         "Ninja Woodfire OO101" — Anton, uppercase.
+         Text fades in after 0.5s.
+    ════════════════════════════════════════ -->
+    <div id="s4" class="scene">
+      <div class="photo-wrap"
+        style="background-image: url('../../NinjaWoodfireHero.jpeg');"
+        data-layout-ignore>
+      </div>
+      <div class="dark-overlay" data-layout-ignore></div>
+      <div class="scene-content">
+        <div id="s4-label" class="oven-label">Ninja Woodfire<br>OO101</div>
+        <div id="s4-rule" class="accent-rule" style="width:72px;"></div>
+      </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════
+         SCENE 5 — Logo Card (13–20s)
+         Deep navy, logo fades in over 1s,
+         newenglandcrust.com below in Barlow
+         Condensed SemiBold.
+    ════════════════════════════════════════ -->
+    <div id="s5" class="scene">
+      <div class="navy-bg"></div>
+      <div class="grid-tex" data-layout-ignore></div>
+      <div class="glow" style="width:500px;height:500px;top:740px;left:290px;background:radial-gradient(circle,rgba(196,98,45,0.18) 0%,transparent 65%);" data-layout-ignore></div>
+      <div class="corner c-tl" data-layout-ignore></div>
+      <div class="corner c-tr" data-layout-ignore></div>
+      <div class="corner c-bl" data-layout-ignore></div>
+      <div class="corner c-br" data-layout-ignore></div>
+      <div class="scene-content">
+        <img id="s5-logo" class="logo-img" src="../../new-england-crust-logo.png" alt="New England Crust" />
+        <div id="s5-url" class="brand-url">newenglandcrust.com</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+
+    // ─────────────────────────────────────────────
+    // SCENE 1 — Ken Burns: 100% → 108% over 3.8s
+    // Photo wrap is 110% oversized; scale headroom
+    // keeps edges out of frame.
+    // ─────────────────────────────────────────────
+    tl.fromTo("#s1-photo",
+      { scale: 1 },
+      { scale: 1.08, duration: 3.8, ease: "none" },
+    0);
+
+    // ─────────────────────────────────────────────
+    // Crossfade timestamps (transition starts 0.25s
+    // before the scene's nominal end time):
+    //   S1 ends @3s  → T1 = 2.75
+    //   S2 ends @6s  → T2 = 5.75
+    //   S3 ends @10s → T3 = 9.75
+    //   S4 ends @13s → T4 = 12.75
+    //   S5 ends @20s (final fade ~19.2s)
+    // ─────────────────────────────────────────────
+    const T1 = 2.75;
+    const T2 = 5.75;
+    const T3 = 9.75;
+    const T4 = 12.75;
+
+    // ── S1 → S2 crossfade ──
+    tl.to(   "#s1", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T1);
+    tl.fromTo("#s2", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T1);
+
+    // ════ SCENE 2 entrances ════
+    // Tagline fades + rises slowly (feels cinematic)
+    tl.from("#s2-tag",  { y: 60, opacity: 0, duration: 0.90, ease: "power3.out" }, T1 + 0.45);
+    tl.from("#s2-rule", {
+      scaleX: 0, opacity: 0,
+      duration: 0.60, ease: "power2.out",
+      transformOrigin: "center center"
+    }, T1 + 1.20);
+
+    // ── S2 → S3 crossfade ──
+    tl.to(   "#s2", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T2);
+    tl.fromTo("#s3", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T2);
+
+    // ════ SCENE 3 entrances — staggered 0.4s each ════
+    tl.from("#s3-l1",   { y: 44, opacity: 0, duration: 0.62, ease: "power3.out" }, T2 + 0.45);
+    tl.from("#s3-l2",   { y: 44, opacity: 0, duration: 0.62, ease: "power3.out" }, T2 + 0.85);
+    tl.from("#s3-l3",   { y: 44, opacity: 0, duration: 0.62, ease: "power3.out" }, T2 + 1.25);
+    tl.from("#s3-rule", {
+      scaleX: 0, opacity: 0,
+      duration: 0.50, ease: "power2.out",
+      transformOrigin: "center center"
+    }, T2 + 1.72);
+
+    // ── S3 → S4 crossfade ──
+    tl.to(   "#s3", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T3);
+    tl.fromTo("#s4", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T3);
+
+    // ════ SCENE 4 entrances ════
+    // Text fades in after 0.5s delay (per brief)
+    tl.from("#s4-label", { opacity: 0, y: 28, duration: 0.80, ease: "power3.out" }, T3 + 0.50);
+    tl.from("#s4-rule",  {
+      scaleX: 0, opacity: 0,
+      duration: 0.50, ease: "power2.out",
+      transformOrigin: "center center"
+    }, T3 + 1.05);
+
+    // ── S4 → S5 crossfade ──
+    tl.to(   "#s4", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T4);
+    tl.fromTo("#s5", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T4);
+
+    // ════ SCENE 5 entrances ════
+    // Logo fades in from 0→100% over 1s (per brief)
+    tl.fromTo("#s5-logo",
+      { opacity: 0 },
+      { opacity: 1, duration: 1.0, ease: "power2.out" },
+    T4 + 0.45);
+    // URL settles in shortly after
+    tl.from("#s5-url", { y: 22, opacity: 0, duration: 0.65, ease: "power2.out" }, T4 + 1.30);
+
+    // ── Final fade to black ──
+    tl.to("#s5", { opacity: 0, duration: 0.8, ease: "power2.in" }, 19.2);
+
+    window.__timelines["nec-brand-launch"] = tl;
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <radialGradient id="glow" cx="50%" cy="46%" r="32%">
+      <stop offset="0%" stop-color="#D4832A" stop-opacity="0.18"></stop>
+      <stop offset="55%" stop-color="#C84B2E" stop-opacity="0.06"></stop>
+      <stop offset="100%" stop-color="#120E08" stop-opacity="0"></stop>
+    </radialGradient>
+    
+    <path id="arcTop" d="M 78,300 A 222,222 0 0,1 522,300" fill="none"></path>
+    <path id="arcBottom" d="M 165,520 A 258,258 0 0,0 435,520" fill="none"></path>
+  </defs>
+
+  
+  
+  <circle cx="300" cy="280" r="210" fill="url(#glow)"></circle>
+
+  
+  <circle cx="300" cy="300" r="290" fill="none" stroke="#D4832A" stroke-width="2.5"></circle>
+  
+  <circle cx="300" cy="300" r="277" fill="none" stroke="#D4832A" stroke-width="0.7" opacity="0.45"></circle>
+
+  
+  <rect x="17" y="297" width="7" height="7" fill="#D4832A" transform="rotate(45,20.5,300.5)" opacity="0.55"></rect>
+  <rect x="576" y="297" width="7" height="7" fill="#D4832A" transform="rotate(45,579.5,300.5)" opacity="0.55"></rect>
+
+  
+  <text font-family="Georgia, &#39;Times New Roman&#39;, serif" font-weight="700" font-size="21" letter-spacing="0.20em" fill="#D4832A" text-anchor="middle" font-variant="small-caps">
+    <textPath href="#arcTop" startOffset="50%">NEW ENGLAND CRUST</textPath>
+  </text>
+  <text font-family="Georgia, &#39;Times New Roman&#39;, serif" font-weight="400" font-style="italic" font-size="13.5" letter-spacing="0.14em" fill="#D4832A" text-anchor="middle" opacity="0.70">
+    <textPath href="#arcBottom" startOffset="50%">Salt Air &amp; Open Flame</textPath>
+  </text>
+
+  
+  <circle cx="300" cy="28" r="2.2" fill="#D4832A" opacity="0.3"></circle>
+  <circle cx="300" cy="572" r="2.2" fill="#D4832A" opacity="0.3"></circle>
+  <circle cx="180" cy="60" r="1.5" fill="#D4832A" opacity="0.2"></circle>
+  <circle cx="420" cy="60" r="1.5" fill="#D4832A" opacity="0.2"></circle>
+  <circle cx="180" cy="540" r="1.5" fill="#D4832A" opacity="0.2"></circle>
+  <circle cx="420" cy="540" r="1.5" fill="#D4832A" opacity="0.2"></circle>
+
+  
+  <g>
+
+    
+    <g>
+      <path d="M 198,318 C 182,292 168,258 178,230 C 185,212 200,218 196,236" fill="none" stroke="#D4A868" stroke-width="18" stroke-linecap="round" opacity="0.92"></path>
+      <circle cx="180" cy="230" r="15" fill="#D4A868" opacity="0.88"></circle>
+      <circle cx="192" cy="222" r="10" fill="#D8B070" opacity="0.82"></circle>
+      <circle cx="172" cy="242" r="9" fill="#D4A868" opacity="0.78"></circle>
+    </g>
+
+    
+    <ellipse cx="242" cy="338" rx="70" ry="52" fill="#D4A868"></ellipse>
+    
+    <circle cx="190" cy="318" r="16" fill="#D4A868" opacity="0.9"></circle>
+    <circle cx="180" cy="340" r="14" fill="#D8B070" opacity="0.85"></circle>
+    <circle cx="185" cy="360" r="12" fill="#B8904C" opacity="0.8"></circle>
+    <circle cx="200" cy="375" r="11" fill="#D4A868" opacity="0.78"></circle>
+
+    
+    <rect x="242" y="295" width="62" height="85" rx="22" fill="#D4A868"></rect>
+
+    
+    <ellipse cx="308" cy="325" rx="44" ry="54" fill="#D4A868"></ellipse>
+    
+    <circle cx="335" cy="355" r="14" fill="#D4A868" opacity="0.9"></circle>
+    <circle cx="345" cy="338" r="11" fill="#B8904C" opacity="0.8"></circle>
+    <circle cx="340" cy="310" r="10" fill="#D8B070" opacity="0.85"></circle>
+    <circle cx="280" cy="360" r="12" fill="#D4A868" opacity="0.8"></circle>
+
+    
+    <ellipse cx="212" cy="385" rx="25" ry="32" fill="#B8904C"></ellipse>
+    <circle cx="198" cy="388" r="10" fill="#B8904C" opacity="0.7"></circle>
+    <ellipse cx="210" cy="414" rx="17" ry="10" fill="#C49858"></ellipse>
+
+    
+    <rect x="287" y="365" width="21" height="48" rx="10" fill="#D4A868"></rect>
+    <rect x="312" y="368" width="19" height="44" rx="9" fill="#C49858"></rect>
+    
+    <circle cx="284" cy="370" r="8" fill="#D8B070" opacity="0.85"></circle>
+    <circle cx="334" cy="372" r="7" fill="#B8904C" opacity="0.75"></circle>
+    
+    <ellipse cx="297" cy="413" rx="15" ry="8" fill="#C49858"></ellipse>
+    <ellipse cx="321" cy="412" rx="13" ry="7" fill="#C49858"></ellipse>
+
+    
+    <rect x="278" y="260" width="48" height="50" rx="16" fill="#D4A868"></rect>
+
+    
+    <polygon points="264,276 342,276 312,334 296,336" fill="#D4832A"></polygon>
+    <polygon points="264,276 342,276 312,334 296,336" fill="none" stroke="#B86E22" stroke-width="0.8" opacity="0.4"></polygon>
+    
+    <circle cx="342" cy="281" r="8" fill="#C84B2E"></circle>
+    <circle cx="354" cy="274" r="5.5" fill="#C84B2E"></circle>
+    
+    <line x1="280" y1="290" x2="318" y2="320" stroke="#B86E22" stroke-width="0.7" opacity="0.25"></line>
+    
+    <text x="304" y="306" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" font-style="italic" fill="#120E08" letter-spacing="0.3">Ember</text>
+
+    
+    <circle cx="312" cy="226" r="56" fill="#D4A868"></circle>
+    
+    <circle cx="292" cy="178" r="21" fill="#D4A868"></circle>
+    <circle cx="318" cy="174" r="19" fill="#D8B070"></circle>
+    <circle cx="342" cy="182" r="16" fill="#DCBA78"></circle>
+    <circle cx="270" cy="190" r="18" fill="#D4A868"></circle>
+    <circle cx="354" cy="198" r="14" fill="#D8B070"></circle>
+    <circle cx="258" cy="214" r="15" fill="#D4A868"></circle>
+    <circle cx="360" cy="218" r="12" fill="#DCBA78"></circle>
+    <circle cx="264" cy="242" r="13" fill="#D4A868"></circle>
+    <circle cx="280" cy="170" r="12" fill="#DCBA78"></circle>
+    <circle cx="348" cy="170" r="10" fill="#D8B070"></circle>
+
+    
+    <ellipse cx="365" cy="238" rx="30" ry="18" fill="#C49858"></ellipse>
+    <circle cx="350" cy="248" r="9" fill="#B8904C" opacity="0.7"></circle>
+
+    
+    <g>
+      <ellipse cx="268" cy="258" rx="20" ry="44" fill="#C49858" transform="rotate(-12,268,258)"></ellipse>
+      <ellipse cx="270" cy="264" rx="12" ry="30" fill="#A07838" transform="rotate(-12,270,264)" opacity="0.45"></ellipse>
+    </g>
+
+    
+    
+    <g>
+      <circle cx="330" cy="222" r="7.5" fill="#120E08"></circle>
+      <circle cx="332" cy="220" r="2.5" fill="#F5E8D0"></circle>
+    </g>
+    
+    <path d="M 319,211 Q 330,207 341,211" fill="none" stroke="#A07838" stroke-width="1.5" opacity="0.40"></path>
+
+    
+    <ellipse cx="388" cy="234" rx="8.5" ry="6.5" fill="#120E08"></ellipse>
+    <ellipse cx="387" cy="232" rx="3" ry="1.8" fill="#2A2018" opacity="0.45"></ellipse>
+
+    
+    <path d="M 388,241 C 380,252 370,249 362,245" fill="none" stroke="#3A2A1A" stroke-width="1.5" stroke-linecap="round"></path>
+
+    
+    
+
+    
+    <circle cx="365" cy="254" r="9" fill="#C49858" opacity="0.55"></circle>
+    <circle cx="375" cy="250" r="6" fill="#C49858" opacity="0.4"></circle>
+
+  </g>
+
+</svg>

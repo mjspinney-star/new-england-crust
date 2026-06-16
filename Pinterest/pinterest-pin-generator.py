@@ -78,6 +78,15 @@ PINS = [
         "badge_position": "top_left",
         "output":     "outputs/NEC-pizzanight-v2.png",
     },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Oven Review",
+        "headline":       "Prime Day Pizza Oven Deals — What's Worth Watching",
+        "subhead":        "Ooni, Ninja Woodfire, Solo Stove Pi — what to buy, what to skip, and when to check back.",
+        "layout":         "primeday",
+        "badge_position": "top_right",
+        "output":         "outputs/NEC-primeday-pin1.png",
+    },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {
     #     "photo_path": "your-photo.jpeg",   # or None for placeholder
@@ -423,6 +432,129 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, bad
     print(f"  ✓ Saved: {output_path}")
 
 
+# ── PRIME DAY LAYOUT (fullbleed photo + Prime Day pill callout) ───────────────
+
+def make_pin_primeday(photo_path, category, headline, subhead, output_path, badge_position="top_right"):
+    LEFT   = 52
+    RIGHT  = W - 52
+    TEXT_W = RIGHT - LEFT
+
+    # ── Photo full canvas ─────────────────────────────────────────────────────
+    if photo_path and os.path.exists(photo_path):
+        img = Image.open(photo_path).convert('RGB')
+        src_w, src_h = img.size
+        if src_w > src_h:
+            img = img.rotate(270, expand=True)
+            src_w, src_h = img.size
+        ratio = W / H
+        if src_w / src_h > ratio:
+            new_w = int(src_h * ratio)
+            left  = (src_w - new_w) // 2
+            img   = img.crop((left, 0, left + new_w, src_h))
+        else:
+            new_h = int(src_w / ratio)
+            img   = img.crop((0, 0, src_w, new_h))
+        img = img.resize((W, H), Image.LANCZOS)
+    else:
+        img = Image.new('RGB', (W, H), DEEP_CHAR)
+
+    # Dark gradient over bottom 45%
+    apply_dark_gradient(img, int(H * 0.50), H, max_alpha=0.92)
+
+    draw = ImageDraw.Draw(img, 'RGBA')
+
+    # ── Badge mark ────────────────────────────────────────────────────────────
+    badge_cx = 88 if badge_position == "top_left" else W - 88
+    paste_logo_badge(img, cx=badge_cx, cy=88)
+
+    # ── Prime Day pill — top left ─────────────────────────────────────────────
+    PILL_LEFT = 44
+    PILL_TOP  = 44
+
+    # "AMAZON" label above pill
+    font_amazon = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 20)
+    draw.text((PILL_LEFT, PILL_TOP),
+              "AMAZON", font=font_amazon,
+              fill=(*EMBER_AMBER, 180))
+    amazon_bbox = draw.textbbox((0,0), "AMAZON", font=font_amazon)
+    amazon_h = amazon_bbox[3] - amazon_bbox[1]
+
+    # Pill background
+    PILL_TOP2  = PILL_TOP + amazon_h + 10
+    PILL_H     = 64
+    PILL_TEXT  = "⚡  PRIME DAY PICKS"
+    font_pill  = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 28)
+    pill_bbox  = draw.textbbox((0,0), PILL_TEXT, font=font_pill)
+    pill_tw    = pill_bbox[2] - pill_bbox[0]
+    PILL_W     = pill_tw + 48
+    PILL_RIGHT = PILL_LEFT + PILL_W
+
+    # Draw pill rectangle
+    draw.rectangle(
+        [PILL_LEFT, PILL_TOP2, PILL_RIGHT, PILL_TOP2 + PILL_H],
+        fill=EMBER_AMBER
+    )
+    # Pill text in deep char
+    pill_text_y = PILL_TOP2 + (PILL_H - (pill_bbox[3] - pill_bbox[1])) // 2
+    draw.text((PILL_LEFT + 24, pill_text_y),
+              PILL_TEXT, font=font_pill, fill=DEEP_CHAR)
+
+    # Date label below pill
+    DATE_TOP  = PILL_TOP2 + PILL_H + 10
+    font_date = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 18)
+    draw.text((PILL_LEFT, DATE_TOP),
+              "JUNE 23 – 26, 2026", font=font_date,
+              fill=(*EMBER_AMBER, 130))
+
+    # ── Footer URL ────────────────────────────────────────────────────────────
+    font_url = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 19)
+    url_text = "N E W E N G L A N D C R U S T . C O M"
+    url_bbox = draw.textbbox((0,0), url_text, font=font_url)
+    url_w    = url_bbox[2] - url_bbox[0]
+    url_y    = H - 46 - (url_bbox[3] - url_bbox[1])
+    draw.text(((W - url_w) // 2, url_y),
+              url_text, font=font_url, fill=EMBER_AMBER)
+
+    # Thin rule above URL
+    draw.line([(LEFT, url_y - 18), (RIGHT, url_y - 18)],
+              fill=(*EMBER_AMBER, 60), width=1)
+
+    # ── Category label + diamond rule ─────────────────────────────────────────
+    font_cat  = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 20)
+    cat_upper = category.upper()
+    cat_bbox  = draw.textbbox((0,0), cat_upper, font=font_cat)
+    cat_w     = cat_bbox[2] - cat_bbox[0]
+    cat_y     = int(H * 0.58)
+    draw.text(((W - cat_w) // 2, cat_y),
+              cat_upper, font=font_cat, fill=EMBER_AMBER)
+
+    rule_y = cat_y + (cat_bbox[3] - cat_bbox[1]) + 10
+    draw_diamond_rule(draw, rule_y, LEFT, RIGHT, EMBER_AMBER)
+
+    # ── Headline ──────────────────────────────────────────────────────────────
+    font_hl   = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 62)
+    hl_line_h = 70
+    hl_lines  = wrap_text(headline, draw, font_hl, TEXT_W)[:3]
+    y = rule_y + 22
+    for line in hl_lines:
+        draw.text((LEFT, y), line, font=font_hl, fill=WARM_CREAM)
+        y += hl_line_h
+
+    # ── Subhead ───────────────────────────────────────────────────────────────
+    if subhead:
+        font_sub  = _font(MAC_SERIF_ITALIC, LIN_SERIF_ITALIC, 26)
+        sub_lines = wrap_text(subhead, draw, font_sub, TEXT_W)[:2]
+        y += 8
+        for line in sub_lines:
+            draw.text((LEFT, y), line, font=font_sub,
+                      fill=(*WARM_CREAM, 155))
+            y += 34
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    img.convert('RGB').save(output_path, 'PNG', quality=95)
+    print(f"  ✓ Saved: {output_path}")
+
+
 # ── DISPATCH ──────────────────────────────────────────────────────────────────
 
 def make_pin(pin):
@@ -437,6 +569,8 @@ def make_pin(pin):
     )
     if layout == "fullbleed":
         make_pin_fullbleed(**kwargs)
+    elif layout == "primeday":
+        make_pin_primeday(**kwargs)
     else:
         make_pin_split(**kwargs)
 

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime Day Pin — New England Crust</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background: #0A0806;
+    overflow: hidden;
+  }
+
+  .pin {
+    width: 1000px; height: 1500px;
+    transform-origin: center center;
+    position: relative;
+    overflow: hidden;
+    background: #120E08;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  /* ---- photo placeholder top 60% ---- */
+  .pin__photo {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 65%;
+    background: #1A1208;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* subtle texture grid lines for depth */
+  .pin__photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(212,131,42,0.03) 60px, rgba(212,131,42,0.03) 61px),
+      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(212,131,42,0.03) 60px, rgba(212,131,42,0.03) 61px);
+  }
+
+  .pin__photo-label {
+    font-size: 22px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(188, 174, 146, 0.22);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---- ember glow center of photo ---- */
+  .pin__ember {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -40%);
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(212,131,42,0.10) 0%,
+      rgba(200,75,46,0.05) 40%,
+      rgba(18,14,8,0) 70%
+    );
+    pointer-events: none;
+  }
+
+  /* ---- vignette over photo ---- */
+  .pin__vignette {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 75%;
+    background: linear-gradient(
+      180deg,
+      rgba(18,14,8,0)    0%,
+      rgba(18,14,8,0)    45%,
+      rgba(18,14,8,0.35) 65%,
+      rgba(18,14,8,0.80) 82%,
+      #120E08             100%
+    );
+    pointer-events: none;
+  }
+
+  /* ---- badge: top-right ---- */
+  .pin__badge {
+    position: absolute;
+    top: 36px; right: 36px;
+    width: 84px; height: 84px;
+    z-index: 4;
+    filter: drop-shadow(0 2px 16px rgba(0,0,0,0.7));
+    opacity: 0.92;
+  }
+
+  /* ---- PRIME DAY callout pill — top-left ---- */
+  .pin__prime-tag {
+    position: absolute;
+    top: 36px; left: 36px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .pin__prime-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #D4832A;
+    opacity: 0.8;
+  }
+
+  .pin__prime-pill {
+    background: #D4832A;
+    color: #120E08;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 9px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    white-space: nowrap;
+  }
+
+  .pin__prime-lightning {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .pin__prime-date {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(212,131,42,0.55);
+    margin-top: 2px;
+  }
+
+  /* ---- text section — lower 35% ---- */
+  .pin__text {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 72px 60px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  /* eyebrow category */
+  .pin__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .pin__eyebrow-rule {
+    width: 36px;
+    height: 1px;
+    background: rgba(212,131,42,0.45);
+  }
+
+  .pin__eyebrow-diamond {
+    width: 6px; height: 6px;
+    background: #D4832A;
+    transform: rotate(45deg);
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  .pin__eyebrow-text {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #D4832A;
+  }
+
+  /* headline */
+  .pin__headline {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: #F5EFE0;
+    margin: 0 0 24px;
+    text-wrap: balance;
+  }
+
+  /* sub-line */
+  .pin__sub {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(245,239,224,0.62);
+    margin: 0 0 40px;
+    max-width: 700px;
+  }
+
+  /* CTA */
+  .pin__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid rgba(212,131,42,0.55);
+    border-radius: 2px;
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #D4832A;
+    margin-bottom: 44px;
+  }
+
+  .pin__cta-arrow {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  /* thin rule + footer */
+  .pin__footer-rule {
+    width: 60px;
+    height: 1px;
+    background: rgba(212,131,42,0.25);
+    margin: 0 auto 16px;
+  }
+
+  .pin__footer {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #D4832A;
+    opacity: 0.50;
+  }
+
+  /* ---- viewport scaling ---- */
+</style>
+<script>
+  function scale() {
+    const pin = document.querySelector('.pin');
+    if (!pin) return;
+    const s = Math.min(window.innerWidth / 1000, window.innerHeight / 1500);
+    pin.style.transform = 'scale(' + s + ')';
+  }
+  window.addEventListener('resize', scale);
+  window.addEventListener('DOMContentLoaded', scale);
+</script>
+</head>
+<body>
+<div class="pin">
+
+  <!-- Photo placeholder -->
+  <div class="pin__photo">
+    <div class="pin__ember"></div>
+    <span class="pin__photo-label">Photo</span>
+  </div>
+
+  <!-- Vignette -->
+  <div class="pin__vignette"></div>
+
+  <!-- Badge top-right -->
+  <img class="pin__badge" src="../../assets/logo-badge-full.svg" alt="New England Crust">
+
+  <!-- Prime Day callout top-left -->
+  <div class="pin__prime-tag">
+    <div class="pin__prime-label">Amazon</div>
+    <div class="pin__prime-pill">
+      <span class="pin__prime-lightning">⚡</span>
+      Prime Day Picks
+    </div>
+    <div class="pin__prime-date">July 8 – 9, 2025</div>
+  </div>
+
+  <!-- Text section -->
+  <div class="pin__text">
+
+    <div class="pin__eyebrow">
+      <div class="pin__eyebrow-rule"></div>
+      <div class="pin__eyebrow-diamond"></div>
+      <div class="pin__eyebrow-text">Gear Guide</div>
+      <div class="pin__eyebrow-diamond"></div>
+      <div class="pin__eyebrow-rule"></div>
+    </div>
+
+    <h1 class="pin__headline">The Pizza Gear We Actually Use</h1>
+    <p class="pin__sub">Cast iron, fire starters, dough tools & outdoor ovens — all on sale.</p>
+
+    <div class="pin__cta">
+      Shop the List
+      <span class="pin__cta-arrow">→</span>
+    </div>
+
+    <div class="pin__footer-rule"></div>
+    <div class="pin__footer">newenglandcrust.com</div>
+
+  </div>
+
+</div>
+</body>
+</html>
