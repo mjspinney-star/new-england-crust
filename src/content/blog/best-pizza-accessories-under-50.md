@@ -1,6 +1,6 @@
 ---
 title: "The Best Pizza & Outdoor Cooking Accessories Under $50"
-description: "The gear that actually improves your backyard pizza nights and outdoor cooks — all under $50, all tested on our Ninja Woodfire patio setup."
+description: "The gear that actually improves your backyard pizza nights and outdoor cooks — all under $50, and all tested on our Ninja Woodfire patio setup."
 pubDate: 2026-06-09
 category: "gear"
 tags: ["ninja woodfire", "accessories", "pizza", "outdoor cooking", "gear"]

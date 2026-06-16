@@ -1,6 +1,6 @@
 ---
-title: "Reading Your Stone with an Infrared Thermometer — What the Numbers Actually Mean"
-description: "The Ninja Woodfire display measures air temperature, not stone temperature. Here's what that gap means for your crust and how to close it."
+title: "How to Read Your Pizza Stone with an Infrared Thermometer"
+description: "The Ninja Woodfire display measures air temperature, not stone temperature. Here's what that gap means for your crust and exactly how to close it."
 pubDate: 2026-06-16
 category: "technique"
 tags: ["ninja woodfire", "infrared thermometer", "pizza stone", "technique"]
