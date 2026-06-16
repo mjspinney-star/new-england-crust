@@ -4,7 +4,7 @@ description: "The Ninja Woodfire display measures air temperature, not stone tem
 pubDate: 2026-06-16
 category: "technique"
 tags: ["ninja woodfire", "infrared thermometer", "pizza stone", "technique"]
-relatedPosts: ["2026-05-24-ninja-woodfire-accessories-worth-buying"]
+relatedPosts: ["ninja-woodfire-accessories-worth-buying"]
 draft: false
 ---
 The display on your Ninja Woodfire is not lying to you exactly — but it is telling you the wrong temperature. What it shows is the air temperature inside the oven. What actually determines whether your crust puffs, chars, and crisps the way it should is the surface temperature of the pizza stone. Those two numbers can be 100°F apart or more, and that gap is responsible for more underwhelming pizza than bad dough, wrong flour, and poor toppings combined.
@@ -28,9 +28,9 @@ Take a reading every couple of minutes during the last part of preheat. When the
 Launch when the center of the stone reads within 25°F of your target. Not before.
 ---
 ## When the Numbers Are Off
-**Stone too cool:** Wait. Do not launch. A pizza on a cool stone is going to stick, cook unevenly, and come out with a pale dense bottom no matter how good the dough is. Another five minutes of patience costs nothing.
-**Stone uneven:** The OO101 tends to run hotter toward the back. If your thermometer shows a 50°F or more difference between front and back, let the oven continue to stabilize or shift where you launch — place the pizza slightly forward so it is not sitting directly over the hottest zone.
-**Stone too hot:** This happens if you have been running the oven for a long time or ran a high-heat cook before switching to pizza. Let the oven door sit open for a minute or two, then re-read. The stone sheds heat slowly but it will come down.
+Stone too cool: Wait. Do not launch. A pizza on a cool stone is going to stick, cook unevenly, and come out with a pale dense bottom no matter how good the dough is. Another five minutes of patience costs nothing.
+Stone uneven: The OO101 tends to run hotter toward the back. If your thermometer shows a 50°F or more difference between front and back, let the oven continue to stabilize or shift where you launch — place the pizza slightly forward so it is not sitting directly over the hottest zone.
+Stone too hot: This happens if you have been running the oven for a long time or ran a high-heat cook before switching to pizza. Let the oven door sit open for a minute or two, then re-read. The stone sheds heat slowly but it will come down.
 ---
 ## The Thermometer Itself
 The Etekcity Lasergrip 1080 runs about $20 on Amazon and handles everything described here without any issues. You do not need a $60 unit with Bluetooth logging and a carrying case. You need a number in under two seconds and a laser dot you can aim. The Etekcity does that. [We cover it in our accessories post](https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/) alongside the other four things we would buy before firing up the Woodfire for the first time.
