@@ -86,6 +86,28 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] Three Ingredients We Stock — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** The Three Ingredients We Always Have On Hand
+- **descriptor:** Three ingredients, same every time — Caputo 00 is the foundation. Here's why we never switch.
+- **output:** NEC-00flour-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/2026-06-15-the-difference-between-00-flour-and-bread-flour-wh/
+
+---
+
+### [ ] Why We Use Caputo 00 Flour — Tips (Pin 2)
+- **photo:** IMG_8372.jpeg
+- **category:** Tips
+- **headline:** Why We Use Caputo 00 Flour for Every Pizza We Make
+- **descriptor:** Finer grind, faster hydration, cleaner blistered edge. Here's why we landed on 00 and stayed.
+- **output:** NEC-00flour-pin2.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/2026-06-15-the-difference-between-00-flour-and-bread-flour-wh/
+
+---
+
 ### [p] Accessories — Gear Guide (Pin 6)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
