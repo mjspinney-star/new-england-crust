@@ -86,6 +86,28 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] Dough Starts Here — Recipe (Pin 3)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** Our Dough Starts Here — Caputo 00, Lievito Yeast, La Baleine Salt
+- **descriptor:** The exact three on our prep counter every cook — and why we've never swapped any of them out.
+- **output:** NEC-00flour-pin3.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/2026-06-15-the-difference-between-00-flour-and-bread-flour-wh/
+
+---
+
+### [ ] The 4 Accessories Before First Cook — Gear Guide (Pin 7)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** The 4 Ninja Woodfire Accessories You Need Before Your First Cook
+- **descriptor:** Cover, cord, peel, thermometer — the four we'd grab before your first cook. Under $80 total.
+- **output:** NEC-accessories-pin7.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
 ### [ ] Three Ingredients We Stock — Recipe (Pin 1)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
