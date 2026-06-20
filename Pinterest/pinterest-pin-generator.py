@@ -123,6 +123,38 @@ PINS = [
         "badge_position": "top_left",
         "output":         "outputs/NEC-thermometer-pin1.png",
     },
+    {
+        "photo_path":     "IMG_8372.jpeg",
+        "category":       "Recipe",
+        "headline":       "Our Dough Starts Here — Caputo 00, Lievito Yeast, La Baleine Salt",
+        "subhead":        "The exact three on our prep counter every cook — and why we've never swapped any of them out.",
+        "layout":         "split",
+        "output":         "outputs/NEC-00flour-pin3.png",
+    },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Gear Guide",
+        "headline":       "The 4 Ninja Woodfire Accessories You Need Before Your First Cook",
+        "subhead":        "Cover, cord, peel, thermometer — the four we'd grab before your first cook. Under $80 total.",
+        "layout":         "split",
+        "output":         "outputs/NEC-accessories-pin7.png",
+    },
+    {
+        "photo_path":     "IMG_8372.jpeg",
+        "category":       "Recipe",
+        "headline":       "The Three Ingredients We Always Have On Hand",
+        "subhead":        "Three ingredients, same every time — Caputo 00 is the foundation. Here's why we never switch.",
+        "layout":         "split",
+        "output":         "outputs/NEC-00flour-pin1.png",
+    },
+    {
+        "photo_path":     "IMG_8372.jpeg",
+        "category":       "Tips",
+        "headline":       "Why We Use Caputo 00 Flour for Every Pizza We Make",
+        "subhead":        "Finer grind, faster hydration, cleaner blistered edge. Here's why we landed on 00 and stayed.",
+        "layout":         "split",
+        "output":         "outputs/NEC-00flour-pin2.png",
+    },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {
     #     "photo_path": "your-photo.jpeg",   # or None for placeholder

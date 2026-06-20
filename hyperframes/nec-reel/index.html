@@ -113,8 +113,15 @@
       color: #F5F0E8;
     }
 
-    /* Slide 4 stays emphatic / all-caps */
-    #s4-hl { text-transform: uppercase; }
+    .subline {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #F5F0E8;
+      margin-top: 36px;
+      opacity: 0;
+    }
 
     .accent-rule {
       width: 72px;
@@ -125,18 +132,36 @@
     }
 
     /* ─── CTA slide (S5) ─── */
+    .cta-fullbreakdown {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-variant: small-caps;
+      color: #C4622D;
+      margin-bottom: 24px;
+    }
     .cta-arrow {
       font-size: 72px;
-      color: #C4622D;
+      color: #F5F0E8;
       line-height: 1;
       margin-bottom: 28px;
     }
     .cta-url {
       font-family: "Barlow Condensed", sans-serif;
-      font-size: 38px;
+      font-size: 52px;
       font-weight: 800;
       color: #C4622D;
       letter-spacing: 0.5px;
+    }
+    .cta-rule {
+      width: 72px;
+      height: 4px;
+      background: #C4622D;
+      margin-top: 36px;
+      margin-bottom: 36px;
+      transform-origin: left center;
     }
     .cta-brand {
       font-family: "Barlow Condensed", sans-serif;
@@ -145,8 +170,7 @@
       letter-spacing: 7px;
       text-transform: uppercase;
       font-variant: small-caps;
-      color: rgba(245, 240, 232, 0.45);
-      margin-top: 28px;
+      color: #F5F0E8;
     }
 
     /* ─── Corner registration marks ─── */
@@ -197,7 +221,7 @@
     <div id="grid-tex" data-layout-ignore></div>
 
     <!-- ════════ SCENE 1 ════════
-         "Everyone buys the wrong thing first." (2s) -->
+         Hook — "Your oven display is measuring the wrong thing." (2s) -->
     <div id="s1" class="scene">
       <div class="glow" style="width:320px;height:320px;top:820px;left:-80px;background:radial-gradient(circle,rgba(196,98,45,0.14) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -205,15 +229,14 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s1-eye" class="eyebrow">The $25 Mistake</div>
-        <div id="s1-hl"  class="headline">Everyone buys the wrong thing first.</div>
+        <div id="s1-hl" class="headline">Your oven display is measuring the wrong thing.</div>
         <div id="s1-rule" class="accent-rule"></div>
       </div>
       <div id="s1-num" class="slide-num">01 / 05</div>
     </div>
 
     <!-- ════════ SCENE 2 ════════
-         "The Ninja Woodfire cord is only 4.5 feet long." (3s) -->
+         "The display reads air temp." (3s) -->
     <div id="s2" class="scene">
       <div class="glow" style="width:280px;height:280px;top:1080px;right:-60px;background:radial-gradient(circle,rgba(196,98,45,0.13) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -221,15 +244,15 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s2-eye" class="eyebrow">The Problem</div>
-        <div id="s2-hl"  class="headline">The Ninja Woodfire cord is only 4.5 feet long.</div>
+        <div id="s2-hl" class="headline">The display reads air temp.</div>
+        <div id="s2-sub" class="subline">The stone can be 100°F colder — and that's what actually cooks your crust.</div>
         <div id="s2-rule" class="accent-rule"></div>
       </div>
       <div id="s2-num" class="slide-num">02 / 05</div>
     </div>
 
     <!-- ════════ SCENE 3 ════════
-         "Most people grab whatever extension cord is in the garage." (3s) -->
+         "An infrared thermometer fixes this." (3s) -->
     <div id="s3" class="scene">
       <div class="glow" style="width:300px;height:300px;top:650px;left:-70px;background:radial-gradient(circle,rgba(196,98,45,0.12) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -237,15 +260,15 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s3-eye" class="eyebrow">What Most People Do</div>
-        <div id="s3-hl"  class="headline">Most people grab whatever cord is in the garage.</div>
+        <div id="s3-hl" class="headline">An infrared thermometer fixes this.</div>
+        <div id="s3-sub" class="subline">$20. Point it at the stone. Read the number. Launch when ready.</div>
         <div id="s3-rule" class="accent-rule"></div>
       </div>
       <div id="s3-num" class="slide-num">03 / 05</div>
     </div>
 
     <!-- ════════ SCENE 4 ════════
-         "That's a fire hazard. 12-gauge outdoor-rated only." (4s) -->
+         "Wait 5–8 min after the ready signal." (3s) -->
     <div id="s4" class="scene">
       <div class="glow" style="width:360px;height:360px;top:920px;right:-80px;background:radial-gradient(circle,rgba(196,98,45,0.16) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -253,15 +276,15 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s4-eye" class="eyebrow">⚠ Fire Hazard</div>
-        <div id="s4-hl"  class="headline">That's a fire hazard. 12-gauge outdoor-rated only.</div>
+        <div id="s4-hl" class="headline">Wait 5–8 min after the "ready" signal.</div>
+        <div id="s4-sub" class="subline">The stone is still catching up. Confirm with the thermometer before you launch.</div>
         <div id="s4-rule" class="accent-rule"></div>
       </div>
       <div id="s4-num" class="slide-num">04 / 05</div>
     </div>
 
     <!-- ════════ SCENE 5 ════════
-         CTA (3s) -->
+         End card CTA (3s) -->
     <div id="s5" class="scene">
       <div class="glow" style="width:400px;height:400px;top:760px;left:340px;background:radial-gradient(circle,rgba(196,98,45,0.15) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -269,10 +292,10 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s5-eye"   class="eyebrow">Full Breakdown</div>
+        <div id="s5-full" class="cta-fullbreakdown">Full Breakdown</div>
         <div id="s5-arrow" class="cta-arrow">↓</div>
-        <div id="s5-url"   class="cta-url">newenglandcrust.com</div>
-        <div id="s5-rule"  class="accent-rule"></div>
+        <div id="s5-url" class="cta-url">newenglandcrust.com</div>
+        <div id="s5-rule" class="cta-rule"></div>
         <div id="s5-brand" class="cta-brand">New England Crust</div>
       </div>
       <div id="s5-num" class="slide-num">05 / 05</div>
@@ -285,7 +308,6 @@
     const tl = gsap.timeline({ paused: true });
 
     // ── Ken Burns: drift the background layer over 15s
-    // #kb-bg is 116% of frame; drift uses the 8% headroom on each edge
     tl.fromTo(
       "#kb-bg",
       { x: 0, y: 0, scale: 1 },
@@ -294,44 +316,42 @@
     );
 
     // ════════ SCENE 1 entrances ════════
-    // (S1 is visible from t=0; all from() calls immediateRender to opacity:0)
-    tl.from("#s1-eye",  { y: 24, opacity: 0, duration: 0.55, ease: "power3.out" },  0.2);
-    tl.from("#s1-hl",   { y: 55, opacity: 0, duration: 0.70, ease: "expo.out"   },  0.38);
+    tl.from("#s1-hl",   { y: 55, opacity: 0, duration: 0.70, ease: "expo.out"   }, 0.25);
     tl.from("#s1-rule", { scaleX: 0, opacity: 0, duration: 0.50, ease: "power2.out", transformOrigin: "left center" }, 0.80);
-    tl.from("#s1-num",  { opacity: 0, duration: 0.40, ease: "sine.out" },            0.90);
+    tl.from("#s1-num",  { opacity: 0, duration: 0.40, ease: "sine.out" }, 0.90);
 
-    // ── Crossfade S1 → S2 at T=1.75 ──
-    const T1 = 1.75;
+    // ── Crossfade S1 → S2 at T=2.0 ──
+    const T1 = 2.0;
     tl.to(  "#s1", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T1);
     tl.fromTo("#s2", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T1);
 
     // ════════ SCENE 2 entrances ════════
-    tl.from("#s2-eye",  { x: -20, opacity: 0, duration: 0.50, ease: "power3.out"  }, T1 + 0.45);
-    tl.from("#s2-hl",   { y: 60,  opacity: 0, duration: 0.70, ease: "back.out(1)" }, T1 + 0.60);
-    tl.from("#s2-rule", { scaleX: 0, opacity: 0, duration: 0.45, ease: "power2.out", transformOrigin: "left center" }, T1 + 1.05);
-    tl.from("#s2-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },             T1 + 1.15);
+    tl.from("#s2-hl",   { y: 60, opacity: 0, duration: 0.70, ease: "back.out(1)" }, T1 + 0.50);
+    tl.from("#s2-sub",  { opacity: 0, duration: 0.60, ease: "power2.out" },          T1 + 0.80);
+    tl.from("#s2-rule", { scaleX: 0, opacity: 0, duration: 0.45, ease: "power2.out", transformOrigin: "left center" }, T1 + 1.10);
+    tl.from("#s2-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },             T1 + 1.20);
 
-    // ── Crossfade S2 → S3 at T=4.75 ──
-    const T2 = 4.75;
+    // ── Crossfade S2 → S3 at T=5.0 ──
+    const T2 = 5.0;
     tl.to(  "#s2", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T2);
     tl.fromTo("#s3", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T2);
 
     // ════════ SCENE 3 entrances ════════
-    tl.from("#s3-eye",  { y: -18, opacity: 0, duration: 0.50, ease: "power3.out" }, T2 + 0.45);
-    tl.from("#s3-hl",   { y:  50, opacity: 0, duration: 0.70, ease: "expo.out"   }, T2 + 0.60);
-    tl.from("#s3-rule", { scaleX: 0, opacity: 0, duration: 0.45, ease: "power3.out", transformOrigin: "left center" }, T2 + 1.05);
-    tl.from("#s3-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },            T2 + 1.15);
+    tl.from("#s3-hl",   { y: 50, opacity: 0, duration: 0.70, ease: "expo.out"   }, T2 + 0.50);
+    tl.from("#s3-sub",  { opacity: 0, duration: 0.60, ease: "power2.out" },         T2 + 0.80);
+    tl.from("#s3-rule", { scaleX: 0, opacity: 0, duration: 0.45, ease: "power3.out", transformOrigin: "left center" }, T2 + 1.10);
+    tl.from("#s3-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },            T2 + 1.20);
 
-    // ── Crossfade S3 → S4 at T=7.75 ──
-    const T3 = 7.75;
+    // ── Crossfade S3 → S4 at T=8.0 ──
+    const T3 = 8.0;
     tl.to(  "#s3", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, T3);
     tl.fromTo("#s4", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T3);
 
     // ════════ SCENE 4 entrances ════════
-    tl.from("#s4-eye",  { y: 20, opacity: 0, duration: 0.45, ease: "power3.out"   }, T3 + 0.45);
-    tl.from("#s4-hl",   { scale: 0.94, y: 40, opacity: 0, duration: 0.75, ease: "power4.out" }, T3 + 0.58);
+    tl.from("#s4-hl",   { scale: 0.94, y: 40, opacity: 0, duration: 0.75, ease: "power4.out" }, T3 + 0.48);
+    tl.from("#s4-sub",  { opacity: 0, duration: 0.60, ease: "power2.out" },                      T3 + 0.80);
     tl.from("#s4-rule", { scaleX: 0, opacity: 0, duration: 0.50, ease: "power2.out", transformOrigin: "left center" }, T3 + 1.10);
-    tl.from("#s4-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },             T3 + 1.20);
+    tl.from("#s4-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },                         T3 + 1.20);
 
     // ── Crossfade S4 → S5 at T=11.75 ──
     const T4 = 11.75;
@@ -339,14 +359,14 @@
     tl.fromTo("#s5", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, T4);
 
     // ════════ SCENE 5 entrances ════════
-    tl.from("#s5-eye",   { y: 20, opacity: 0, duration: 0.50, ease: "power3.out"  }, T4 + 0.45);
-    tl.from("#s5-arrow", { y:-28, opacity: 0, duration: 0.55, ease: "power2.out"  }, T4 + 0.60);
-    tl.from("#s5-url",   { y: 32, opacity: 0, duration: 0.65, ease: "expo.out"    }, T4 + 0.75);
-    tl.from("#s5-rule",  { scaleX: 0, opacity: 0, duration: 0.45, ease: "power2.out", transformOrigin: "left center" }, T4 + 1.10);
+    tl.from("#s5-full",  { y: 20, opacity: 0, duration: 0.50, ease: "power3.out"  }, T4 + 0.40);
+    tl.from("#s5-arrow", { y:-28, opacity: 0, duration: 0.55, ease: "power2.out"  }, T4 + 0.55);
+    tl.from("#s5-url",   { y: 32, opacity: 0, duration: 0.65, ease: "expo.out"    }, T4 + 0.70);
+    tl.from("#s5-rule",  { scaleX: 0, opacity: 0, duration: 0.45, ease: "power2.out", transformOrigin: "left center" }, T4 + 1.05);
     tl.from("#s5-brand", { opacity: 0, letterSpacing: "2px", duration: 0.60, ease: "power1.out" }, T4 + 1.20);
     tl.from("#s5-num",   { opacity: 0, duration: 0.35, ease: "sine.out" },            T4 + 1.30);
 
-    // Final fade to black (allowed on last scene only)
+    // Final fade to black
     tl.to("#s5", { opacity: 0, duration: 0.6, ease: "power2.in" }, 14.4);
 
     window.__timelines["nec-reel"] = tl;

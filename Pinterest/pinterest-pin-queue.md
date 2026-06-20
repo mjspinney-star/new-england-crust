@@ -86,7 +86,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Dough Starts Here — Recipe (Pin 3)
+### [x] Dough Starts Here — Recipe (Pin 3)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
 - **headline:** Our Dough Starts Here — Caputo 00, Lievito Yeast, La Baleine Salt
@@ -97,7 +97,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] The 4 Accessories Before First Cook — Gear Guide (Pin 7)
+### [x] The 4 Accessories Before First Cook — Gear Guide (Pin 7)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The 4 Ninja Woodfire Accessories You Need Before Your First Cook
@@ -108,7 +108,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Three Ingredients We Stock — Recipe (Pin 1)
+### [x] Three Ingredients We Stock — Recipe (Pin 1)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
 - **headline:** The Three Ingredients We Always Have On Hand
@@ -119,7 +119,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Why We Use Caputo 00 Flour — Tips (Pin 2)
+### [x] Why We Use Caputo 00 Flour — Tips (Pin 2)
 - **photo:** IMG_8372.jpeg
 - **category:** Tips
 - **headline:** Why We Use Caputo 00 Flour for Every Pizza We Make
