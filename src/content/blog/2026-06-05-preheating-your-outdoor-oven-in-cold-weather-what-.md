@@ -19,7 +19,7 @@ Our rule in cold weather: add at least 15 to 20 minutes to whatever your normal 
 
 ## Propane Pressure Drops in the Cold
 
-If you are running a propane oven — like the **Ooni Koda 12** *[Affiliate link: Ooni Koda 12 — Ooni]* — your flame will look weaker than usual when temps drop below 40°F. This is not a malfunction. Liquid propane does not vaporize as efficiently in the cold, so pressure at the burner drops.
+If you are running a propane oven — like the **Ooni Koda 12** — your flame will look weaker than usual when temps drop below 40°F. This is not a malfunction. Liquid propane does not vaporize as efficiently in the cold, so pressure at the burner drops.
 
 The fix is straightforward: keep your propane tank somewhere warmer before the cook — a garage, a mudroom, anywhere out of the wind. Bring it out 20 minutes before you fire up. That alone makes a noticeable difference.
 
@@ -27,7 +27,7 @@ The fix is straightforward: keep your propane tank somewhere warmer before the c
 
 A still, 35°F evening is easier to cook in than a breezy 50°F one. Wind robs heat from the oven opening constantly. Position the oven with its back to the wind if you can, or use a low wind block — a cooler, a folding table, whatever you have.
 
-The **Solo Stove Pi** *[Affiliate link: Solo Stove Pi — Solo Stove]* handles wind better than most in our experience, partly because its lower opening naturally shelters the stone. Worth knowing if cold-season cooking is something you do regularly.
+The **Solo Stove Pi** handles wind better than most in our experience, partly because its lower opening naturally shelters the stone. Worth knowing if cold-season cooking is something you do regularly.
 
 ## Watch the First Pizza Closely
 
@@ -37,7 +37,7 @@ Back the flame down by about 20 percent for your first pie. Let the oven stabili
 
 ## One More Honest Note
 
-Wood pellet ovens like the **Ooni Fyra 12** *[Affiliate link: Ooni Fyra 12 — Ooni]* are harder to manage in cold and windy conditions because pellet feed and combustion are both affected. Not impossible — just expect more fussing to hold a steady temperature.
+Wood pellet ovens like the **Ooni Fyra 12** are harder to manage in cold and windy conditions because pellet feed and combustion are both affected. Not impossible — just expect more fussing to hold a steady temperature.
 
 Cold-weather pizza is absolutely worth the extra setup. You just have to respect what the conditions are actually doing to your equipment.
 

@@ -32,9 +32,9 @@ The fix is patience, not a rolling pin. Let the dough rest ten minutes if it kee
 
 ## When It Matters Most
 
-At high heat — the kind you get from an Ooni Koda 12 *[Affiliate link: Ooni Koda 12 — Ooni]* running at 950°F — the difference between hand-stretched and rolled dough is immediate and obvious. The rolled dough doesn't puff. The cornicione stays flat and dry. The hand-stretched dough bloats in the right places, chars where it should, and has actual texture when you bite it.
+At high heat — the kind you get from an Ooni Koda 12 running at 950°F — the difference between hand-stretched and rolled dough is immediate and obvious. The rolled dough doesn't puff. The cornicione stays flat and dry. The hand-stretched dough bloats in the right places, chars where it should, and has actual texture when you bite it.
 
-At lower temps, say a home oven at 500°F or a Solo Stove Pi *[Affiliate link: Solo Stove Pi — Solo Stove]* on a slower cook, the gap is smaller but still there. The crumb on a rolled crust is still noticeably tighter.
+At lower temps, say a home oven at 500°F or a Solo Stove Pi on a slower cook, the gap is smaller but still there. The crumb on a rolled crust is still noticeably tighter.
 
 ## The One Case for a Rolling Pin
 

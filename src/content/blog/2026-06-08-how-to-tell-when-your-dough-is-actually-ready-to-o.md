@@ -31,7 +31,7 @@ Here is the honest bit: there is no substitute for repetition. You will learn th
 
 Give yourself a reference point — proof one ball for 60 minutes and one for 90 on the same day, same room. Open them back to back. You will feel the difference immediately and you will not forget it.
 
-A **bench scraper** helps here too. *[Affiliate link: Bench Scraper — Amazon]* When you are testing multiple balls and moving them around the board, a bench scraper keeps things clean and lets you handle the dough without stretching it prematurely.
+A **bench scraper** helps here too. When you are testing multiple balls and moving them around the board, a bench scraper keeps things clean and lets you handle the dough without stretching it prematurely.
 
 ## One More Thing Worth Saying
 
