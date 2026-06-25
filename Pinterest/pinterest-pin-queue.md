@@ -86,6 +86,28 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] Cover Advice Before You Buy — Gear Guide (Pin 8)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Don't Buy a Ninja Woodfire Cover Until You Read This
+- **descriptor:** We ran both through a New England winter. The third-party option at half the price held up just fine.
+- **output:** NEC-accessories-pin8.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
+### [ ] The $20 Accessory — Gear Guide (Pin 9)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** The $20 Accessory That Changed Every Pizza We Make
+- **descriptor:** The display shows air temp, not stone temp — and they can differ by 100°F. One thermometer fixed it.
+- **output:** NEC-accessories-pin9.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
 ### [x] Dough Starts Here — Recipe (Pin 3)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
