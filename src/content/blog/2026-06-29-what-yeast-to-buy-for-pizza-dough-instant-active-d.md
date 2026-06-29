@@ -1,0 +1,55 @@
+---
+title: "What Yeast to Buy for Pizza Dough: Instant, Active Dry, or Fresh"
+description: "Instant, active dry, or fresh yeast — here's which one actually makes sense for homemade pizza dough and why."
+pubDate: 2026-06-29
+category: ingredient
+tags: [yeast, pizza dough, ingredients]
+relatedPosts: ["2026-06-08-how-to-tell-when-your-dough-is-actually-ready-to-o", "72-hour-cold-ferment-dough"]
+draft: false
+---
+
+Most people grab whatever yeast is on the shelf and hope for the best. That works — until it doesn't. A slow, sluggish dough in November or a overproofed mess in July usually traces back to the yeast, not the recipe.
+
+Here is what we actually use and why.
+
+## Instant Yeast: The One We Reach For Most
+
+**Instant yeast** — sometimes labeled rapid-rise or fast-acting — is our default. It goes straight into dry flour without proofing first. No waiting, no dissolving in water, no extra bowl to wash.
+
+It ferments reliably, stores well in the freezer for months, and behaves consistently whether you are doing a same-day dough or a 72-hour cold ferment. That last part matters more than people think.
+
+One note: the "rapid-rise" labeling on some brands is marketing for breads that need one rise. For pizza, you are controlling fermentation time yourself anyway. Just use it like standard instant yeast and ignore the packaging claims.
+
+**Verdict: Instant yeast is what we keep stocked year-round. Buy it in bulk, store it frozen, use it from frozen.**
+
+## Active Dry Yeast: Fine, But Extra Work
+
+**Active dry yeast** has larger granules that need to be dissolved in warm water before mixing. It was the standard for decades, and it still works.
+
+The issue is the extra step. You proof it in water around 100 to 110°F, wait ten minutes, then mix your dough. If the water is too hot, you kill it. Too cool, it does not activate properly. In a cold New England kitchen in March, water cools faster than you expect.
+
+Active dry yeast is not wrong. It is just slower to work with, and there is a failure point that instant yeast does not have.
+
+**Verdict: Active dry yeast is a capable backup, but it asks more of you for no real payoff in the final dough.**
+
+## Fresh Yeast: Worth It If You Can Get It
+
+**Fresh yeast** — also called cake yeast or compressed yeast — is what a lot of Neapolitan pizzerias use. It is highly active, has a mild, slightly milky smell, and produces a dough with noticeably good flavor when used in long ferments.
+
+The catch: it has a shelf life of about two weeks, it is hard to find outside of specialty grocery stores or restaurant suppliers, and it crumbles unevenly if you do not know what you are doing with it.
+
+We use fresh yeast occasionally when we can get it locally. It is genuinely worth trying once. But we would not build your regular pizza routine around something this perishable and hard to source.
+
+**Verdict: Fresh yeast is worth experimenting with, but it is not a practical everyday ingredient for most backyard cooks.**
+
+## What to Actually Buy
+
+If you are just getting started or building a consistent dough routine, pick up a jar or a bulk bag of instant yeast. SAF Red is widely available and what we use.
+
+*[Affiliate link: SAF Instant Yeast — Amazon]*
+
+Keep it in a sealed container in the freezer and it will last you through the whole outdoor season — and into the next one.
+
+## Try This Next
+
+Mix a small batch of dough with instant yeast and do a side-by-side 48-hour cold ferment against a same-day room temperature ferment. The flavor difference will tell you more about yeast behavior than anything we could write here.
