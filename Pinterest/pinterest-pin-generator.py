@@ -45,9 +45,9 @@ W, H = 1000, 1500
 
 # ── FONT PATHS ────────────────────────────────────────────────────────────────
 # Mac paths (primary — Georgia is system-installed on all Macs)
-MAC_SERIF_BOLD   = '/System/Library/Fonts/Supplemental/Georgia Bold.ttf'
-MAC_SERIF_REG    = '/System/Library/Fonts/Supplemental/Georgia.ttf'
-MAC_SERIF_ITALIC = '/System/Library/Fonts/Supplemental/Georgia Italic.ttf'
+MAC_SERIF_BOLD   = '/Library/Fonts/Georgia Bold.ttf'
+MAC_SERIF_REG    = '/Library/Fonts/Georgia.ttf'
+MAC_SERIF_ITALIC = '/Library/Fonts/Georgia Italic.ttf'
 # Linux fallback (for CI / server environments)
 LIN_SERIF_BOLD   = '/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf'
 LIN_SERIF_REG    = '/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf'
@@ -154,22 +154,6 @@ PINS = [
         "subhead":        "Finer grind, faster hydration, cleaner blistered edge. Here's why we landed on 00 and stayed.",
         "layout":         "split",
         "output":         "outputs/NEC-00flour-pin2.png",
-    },
-    {
-        "photo_path":     "NinjaWoodfireHero.jpeg",
-        "category":       "Gear Guide",
-        "headline":       "Don't Buy a Ninja Woodfire Cover Until You Read This",
-        "subhead":        "We ran both through a New England winter. The third-party option at half the price held up just fine.",
-        "layout":         "split",
-        "output":         "outputs/NEC-accessories-pin8.png",
-    },
-    {
-        "photo_path":     "NinjaWoodfireHero.jpeg",
-        "category":       "Gear Guide",
-        "headline":       "The $20 Accessory That Changed Every Pizza We Make",
-        "subhead":        "The display shows air temp, not stone temp — and they can differ by 100°F. One thermometer fixed it.",
-        "layout":         "split",
-        "output":         "outputs/NEC-accessories-pin9.png",
     },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {
