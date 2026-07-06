@@ -58,6 +58,15 @@ const topics = [
   { type: 'gear', topic: 'The grill cart question — official Ninja stand vs. a third-party cart for the OO101' },
   { type: 'gear', topic: 'Heat-resistant gloves worth buying — and what makes a bad pair dangerous' },
   { type: 'gear', topic: 'Storing your outdoor oven through a New England winter — what we do and what we skip' },
+
+  // ── GIFT GUIDES — Q4 2026 ────────────────────────────────────────────────
+  // Target dates below are for planning only — this script assigns pubDate
+  // automatically at run time (today's date) and does not read these values.
+  { type: 'gear', topic: 'Gifts for the Ninja Woodfire Owner: The 2026 Guide' }, // target: 2026-09-14
+  { type: 'gear', topic: 'Stocking Stuffers Under $25 for the Backyard Pizza Cook' }, // target: 2026-09-21
+  { type: 'how-to', topic: 'Cooking on the Ninja Woodfire in Cold Weather: A New England Guide' }, // target: 2026-09-24
+  { type: 'gear', topic: 'The Pizza Lover Gift Guide (Beyond the Oven)' }, // target: 2026-09-28
+  { type: 'hosting', topic: 'How to Host a Holiday Pizza Night' }, // target: 2026-10-05
 ];
 
 // Pick topic based on number of existing posts (cycles through the list)
