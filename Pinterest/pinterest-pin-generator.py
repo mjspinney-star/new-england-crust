@@ -164,6 +164,8 @@ PINS = [
     #     "subhead":    "One supporting line.",
     #     "layout":     "split",              # "split" or "fullbleed"
     #     "output":     "outputs/NEC-yourpost-pin1.png",
+    #     "ember_badge": True,                # optional, defaults to True — Ember mascot
+    #                                         # badge in the corner opposite badge_position
     # },
 ]
 
@@ -205,6 +207,75 @@ def paste_logo_badge(canvas, cx, cy, size=152):
     x = cx - size // 2
     y = cy - size // 2
     canvas.paste(logo, (x, y), logo)
+
+
+# ── EMBER MASCOT BADGE ────────────────────────────────────────────────────────
+# Composited opposite the NEC logo badge (which always sits at the TOP), so
+# Ember always sits at the BOTTOM — the two never collide by construction.
+EMBER_BADGE_PATH   = "../public/assets/ember/ember-badge-transparent.png"
+EMBER_BADGE_WIDTH  = 100   # target on-canvas width, scaled down from the 2400px source
+EMBER_BADGE_MARGIN = 30    # margin from canvas edge
+
+
+def _load_ember_badge(size):
+    """Load the Ember badge and LANCZOS-downscale it from its 2400px transparent source."""
+    if not os.path.exists(EMBER_BADGE_PATH):
+        return None
+    src = Image.open(EMBER_BADGE_PATH).convert('RGBA')
+    scale = size / src.width
+    new_size = (max(1, size), max(1, int(round(src.height * scale))))
+    return src.resize(new_size, Image.LANCZOS)
+
+
+def ember_corner_for(raw_badge_position):
+    """
+    Ember always sits diagonally opposite the NEC logo badge:
+      badge_position "top_left"  -> Ember "bottom_right"
+      badge_position "top_right" -> Ember "bottom_left"
+      badge_position absent      -> Ember "bottom_right" (explicit default)
+    """
+    if raw_badge_position == "top_left":
+        return "bottom_right"
+    elif raw_badge_position == "top_right":
+        return "bottom_left"
+    return "bottom_right"
+
+
+def paste_ember_badge(canvas, corner="bottom_right", text_bottom=0, enabled=True,
+                       size=EMBER_BADGE_WIDTH, margin=EMBER_BADGE_MARGIN):
+    """
+    Composite the Ember mascot badge into a bottom corner of the pin (PIL
+    alpha compositing via canvas.paste(badge, pos, badge)).
+
+    It never overlaps the NEC logo badge (that one lives at the top; Ember
+    always lives at the bottom). It also never overlaps headline/subhead
+    text: `text_bottom` is the y-coordinate where the last drawn text line
+    ends, and if the default ~100px badge would intrude above that line,
+    the badge is scaled down to fit the remaining gap. If there's no usable
+    room at all, the badge is skipped rather than drawn over text.
+    """
+    if not enabled:
+        return
+
+    canvas_w, canvas_h = canvas.size
+    floor_y   = canvas_h - margin     # bottom edge the badge is anchored to
+    safety_gap = 12                   # breathing room above the text
+    available = floor_y - (text_bottom + safety_gap)
+
+    badge_size = size if available >= size else available
+    if badge_size < 40:
+        # Not enough vertical room to avoid overlapping text — skip.
+        return
+
+    badge = _load_ember_badge(size=badge_size)
+    if badge is None:
+        return
+
+    bw, bh = badge.size
+    y = floor_y - bh
+    x = margin if corner == "bottom_left" else (canvas_w - margin - bw)
+
+    canvas.paste(badge, (x, y), badge)
 
 
 def draw_flame_badge(draw, cx, cy, scale=1.0):
@@ -338,7 +409,8 @@ def draw_diamond_rule(draw, y, left, right, amber):
 
 # ── SPLIT LAYOUT (2/3 photo + 1/3 text block) ─────────────────────────────────
 
-def make_pin_split(photo_path, category, headline, subhead, output_path, badge_position="top_right"):
+def make_pin_split(photo_path, category, headline, subhead, output_path, badge_position="top_right",
+                    ember_badge=True, ember_corner="bottom_right"):
     PHOTO_H  = H * 2 // 3   # 1000px
     TEXT_H   = H - PHOTO_H  # 500px
     LEFT     = 52
@@ -413,6 +485,9 @@ def make_pin_split(photo_path, category, headline, subhead, output_path, badge_p
     rule_y2 = cat_y + (cat_bbox[3]-cat_bbox[1]) + 10
     draw_diamond_rule(draw, rule_y2, LEFT, RIGHT, EMBER_AMBER)
 
+    # Ember mascot badge — bottom corner, opposite the NEC logo
+    paste_ember_badge(canvas, corner=ember_corner, text_bottom=y, enabled=ember_badge)
+
     # Save
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     canvas.convert('RGB').save(output_path, 'PNG', quality=95)
@@ -421,7 +496,8 @@ def make_pin_split(photo_path, category, headline, subhead, output_path, badge_p
 
 # ── FULL-BLEED LAYOUT (photo fills pin, gradient overlay on bottom 40%) ───────
 
-def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, badge_position="top_right"):
+def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, badge_position="top_right",
+                        ember_badge=True, ember_corner="bottom_right"):
     LEFT   = 52
     RIGHT  = W - 52
     TEXT_W = RIGHT - LEFT
@@ -495,6 +571,9 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, bad
                       fill=(*WARM_CREAM, 155))
             y += 34
 
+    # Ember mascot badge — bottom corner, opposite the NEC logo
+    paste_ember_badge(img, corner=ember_corner, text_bottom=y, enabled=ember_badge)
+
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     img.convert('RGB').save(output_path, 'PNG', quality=95)
     print(f"  ✓ Saved: {output_path}")
@@ -502,7 +581,8 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, bad
 
 # ── PRIME DAY LAYOUT (fullbleed photo + Prime Day pill callout) ───────────────
 
-def make_pin_primeday(photo_path, category, headline, subhead, output_path, badge_position="top_right"):
+def make_pin_primeday(photo_path, category, headline, subhead, output_path, badge_position="top_right",
+                       ember_badge=True, ember_corner="bottom_right"):
     LEFT   = 52
     RIGHT  = W - 52
     TEXT_W = RIGHT - LEFT
@@ -631,6 +711,9 @@ def make_pin_primeday(photo_path, category, headline, subhead, output_path, badg
                       fill=(*WARM_CREAM, 155))
             y += 34
 
+    # Ember mascot badge — bottom corner, opposite the NEC logo
+    paste_ember_badge(img, corner=ember_corner, text_bottom=y, enabled=ember_badge)
+
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     img.convert('RGB').save(output_path, 'PNG', quality=95)
     print(f"  ✓ Saved: {output_path}")
@@ -647,6 +730,8 @@ def make_pin(pin):
         subhead        = pin.get("subhead", ""),
         output_path    = pin["output"],
         badge_position = pin.get("badge_position", "top_right"),
+        ember_badge    = pin.get("ember_badge", True),
+        ember_corner   = ember_corner_for(pin.get("badge_position")),
     )
     if layout == "fullbleed":
         make_pin_fullbleed(**kwargs)
