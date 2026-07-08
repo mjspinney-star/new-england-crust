@@ -41,8 +41,8 @@ instructions:
     text: "Off the peel, scatter the remaining raw scallions across the top. The contrast between cooked and fresh scallion is subtle but right. Optional: a thin drizzle of extra ranch base, straight from the bowl, across the finished pie. This is not subtle. People will comment on it."
 gear:
   - name: "Ninja Woodfire Outdoor Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+    url: "https://amzn.to/4obF5K3"
+    note: "live Amazon Associates link"
   - name: "Ooni Pizza Oven"
     url: "https://YOUR-AFFILIATE-LINK"
     note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"

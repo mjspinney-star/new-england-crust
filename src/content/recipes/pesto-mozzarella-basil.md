@@ -35,8 +35,8 @@ instructions:
     text: "Slide off the peel and let sit 60 seconds — fresh mozzarella is essentially liquid at this point and needs a moment. Lay the fresh basil leaves across the surface. A thread of good olive oil. Nothing else. Cut and serve immediately."
 gear:
   - name: "Ninja Woodfire Outdoor Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+    url: "https://amzn.to/4obF5K3"
+    note: "live Amazon Associates link"
   - name: "Ooni Pizza Oven"
     url: "https://YOUR-AFFILIATE-LINK"
     note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"

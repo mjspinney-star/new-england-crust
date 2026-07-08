@@ -34,8 +34,8 @@ instructions:
     text: "Slide off the peel onto a cutting board. Immediately: a squeeze of lemon over the entire surface, a scatter of fresh thyme leaves, and a few flakes of salt. Let it sit 90 seconds before cutting — taleggio needs a moment to set or it runs off the slice."
 gear:
   - name: "Ninja Woodfire Outdoor Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+    url: "https://amzn.to/4obF5K3"
+    note: "live Amazon Associates link"
   - name: "Ooni Pizza Oven"
     url: "https://YOUR-AFFILIATE-LINK"
     note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
