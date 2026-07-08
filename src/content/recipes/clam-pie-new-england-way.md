@@ -5,10 +5,49 @@ pubDate: 2026-06-15
 category: "recipes"
 tags: ["clam pie", "new haven", "white pizza", "seafood", "new england", "littlenecks"]
 draft: false
-prepTime: "30 min"
-cookTime: "4–5 min"
-yield: "One 10–12 inch pizza"
-oven: "Ninja Woodfire or Ooni"
+style: "new-haven"
+prepTime: "PT40M"
+cookTime: "PT6M"
+restTime: "PT48H"
+totalTime: "PT48H46M"
+servings: "2 oblong pies"
+ingredients:
+  - "1 batch New Haven-style dough (70% hydration, cold-fermented 48 hours — about 250g per pie)"
+  - "24 littleneck clams, freshly shucked, juices reserved (two 6.5-oz cans of chopped clams, drained, are the honest weeknight substitute)"
+  - "4 cloves garlic, very thinly sliced"
+  - "1.5 tsp dried oregano"
+  - "80 g grated pecorino romano"
+  - "4 tbsp olive oil"
+  - "Black pepper and lemon wedges to serve"
+instructions:
+  - step: "Prep the clams"
+    text: "If shucking fresh: rough-chop the meats and keep a spoonful of the liquor. If canned: drain well and pat dry — wet clams steam the crust."
+  - step: "Stretch and oil"
+    text: "Stretch the dough oblong and brush the whole surface with olive oil. There is no sauce and no mozzarella on this pizza. Do not be tempted."
+  - step: "Top sparingly"
+    text: "Scatter the clams, garlic, oregano, and most of the pecorino. Restraint matters — an overloaded clam pie goes soggy."
+  - step: "Bake ferociously hot"
+    text: "Koda 12: 750°F+, 4–5 minutes. Ninja Woodfire: max pizza setting, 5–7 minutes. Indoors: steel under the broiler. Pull when the rim is charred and the clam edges are just curling."
+  - step: "Finish"
+    text: "Remaining pecorino, a drizzle of oil, black pepper, and a squeeze of lemon. Eat immediately — a clam pie waits for no one."
+gear:
+  - name: "Ooni Koda 12"
+    url: "https://YOUR-AFFILIATE-LINK"
+    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+  - name: "Ninja Woodfire Outdoor Oven"
+    url: "https://YOUR-AFFILIATE-LINK"
+    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+  - name: "Clam shucking knife"
+    url: "https://YOUR-AFFILIATE-LINK"
+    note: "placeholder link — if you're going the fresh littleneck route, do it safely"
+  - name: "Etekcity Infrared Thermometer"
+    url: "https://amzn.to/3RHkZLA"
+    note: "live Amazon Associates link — for checking stone temp before launch"
+keywords:
+  - "white clam pizza recipe"
+  - "New Haven clam pie"
+  - "clam pizza"
+  - "white pizza recipe"
 ---
 
 The clam pie is the one pizza that New England has an honest claim to. New Haven has been making it since at least the 1920s, and the version Frank Pepe's settled on — white, no mozzarella, fresh clams steamed open on the pie — is one of those things that sounds wrong until you eat it.
@@ -17,52 +56,7 @@ We make ours with Wellfleet littlenecks when we can get them, which is most of t
 
 This is a pizza that rewards a hot stone. The Ninja at full Pizza mode or the Ooni at operating temperature — either one will do. The clam liquor needs to cook down in the few minutes the pie is on the stone, and that only happens at real heat.
 
----
-
-## Ingredients
-
-- 1 dough ball (about 250g), stretched to 10–12 inches
-- 18–24 littleneck clams (Wellfleet, Ipswich, or whatever's freshest)
-- 4 cloves garlic, very thinly sliced
-- 3 tablespoons good olive oil, plus more for finishing
-- 1 teaspoon dried oregano
-- ½ teaspoon Baleine fine sea salt
-- ¼ teaspoon red pepper flakes
-- 2 tablespoons Pecorino Romano or Parmigiano-Reggiano, finely grated
-- Flat-leaf parsley, chopped, for finishing
-- Lemon, for finishing
-
----
-
-## Instructions
-
-### 1. Steam the clams
-
-This is the critical step and the biggest difference from most "pizza" recipes: you're not putting raw clams on the pie. You're steaming them just until they open, extracting the liquor, and then adding the shucked clam meat to the unbaked pie.
-
-Put the scrubbed clams in a wide skillet or pot with a splash of white wine and 2 tablespoons water. Cover and steam over high heat for 4–6 minutes, shaking once, until just opened. Any that don't open after 8 minutes go in the trash.
-
-Let cool slightly, then shuck — remove the meat from the shell, cut each clam in half if large. Reserve the liquor from the pan: strain it through a fine mesh strainer lined with a paper towel to remove sand. You want about 3–4 tablespoons of strained liquor.
-
-### 2. Build on the peel
-
-Stretch your dough and lay it on a well-floured peel.
-
-Brush the surface generously with olive oil — this is the base, there's no sauce. Scatter the garlic slices evenly. Sprinkle the Pecorino or Parmigiano across the surface. Season with oregano, salt, and red pepper flakes.
-
-Distribute the clam meat evenly across the pie. Drizzle 2–3 tablespoons of the reserved clam liquor over the top — not all of it, or the pie will be soggy. The rest can be used for finishing or discarded.
-
-### 3. Launch and bake
-
-**Ninja Woodfire:** Pizza mode, stone preheated to 650°F+ (check with an infrared thermometer). Launch cleanly and cook 4–5 minutes, rotating once at the 2-minute mark. The crust should be blistered and the clam liquor reduced to a glaze. Watch the garlic — at the edges it should be golden, not black.
-
-**Ooni:** Fully preheated on high, at least 20 minutes. Launch and cook 60–90 seconds, rotate 180°, another 60–90 seconds. The Ooni moves fast; don't walk away.
-
-### 4. Finish
-
-Off the peel onto a cutting board. Drizzle with a little fresh olive oil, scatter the parsley, and hit it with a squeeze of lemon. A few extra flakes of salt if it needs it — the clam liquor will have seasoned the pie, so taste first.
-
-Cut and eat immediately. Clam pie doesn't wait.
+It's also one of the most famous pizzas in the country — the version that makes national best-of lists every year and inspires two-hour lines outside Frank Pepe's. And despite the reputation, it's one of the easier pies in our rotation: no sauce to balance, no cheese pull to chase, just fresh clams, garlic, and a brutally hot oven.
 
 ---
 
