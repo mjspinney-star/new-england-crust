@@ -1,0 +1,282 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface InstructionStep {
+  step?: string;
+  text: string;
+}
+
+interface GearItem {
+  name: string;
+  url: string;
+  note?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  heroImage?: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  style?: string;
+  prepTime?: string;
+  cookTime?: string;
+  totalTime?: string;
+  restTime?: string;
+  servings?: string;
+  calories?: number;
+  ingredients?: string[];
+  instructions?: InstructionStep[];
+  gear?: GearItem[];
+  keywords?: string[];
+  canonical?: string;
+}
+
+const {
+  title,
+  description,
+  heroImage,
+  pubDate,
+  updatedDate,
+  style,
+  prepTime,
+  cookTime,
+  totalTime,
+  restTime,
+  servings,
+  calories,
+  ingredients = [],
+  instructions = [],
+  gear = [],
+  keywords = [],
+  canonical,
+} = Astro.props;
+
+// ISO 8601 durations (e.g. "PT30M", "P3D") are what we store in frontmatter
+// so they can be dropped straight into JSON-LD. For on-page display we
+// convert them to something a human reads naturally. Legacy/freeform
+// strings (e.g. "30 min") don't match the pattern and are shown as-is.
+function humanizeDuration(iso?: string): string | undefined {
+  if (!iso) return undefined;
+  const match = iso.match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$/);
+  if (!match) return iso;
+  const [, days, hours, minutes, seconds] = match;
+  const parts: string[] = [];
+  if (days) parts.push(`${days}d`);
+  if (hours) parts.push(`${hours}h`);
+  if (minutes) parts.push(`${minutes}m`);
+  if (seconds) parts.push(`${seconds}s`);
+  return parts.length ? parts.join(' ') : iso;
+}
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const absoluteHeroImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
+
+// --- schema.org Recipe JSON-LD ---
+// Only include properties that actually exist in the frontmatter — no
+// empty/null fields in the emitted object.
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: title,
+  description,
+  author: {
+    '@type': 'Organization',
+    name: 'New England Crust',
+  },
+  recipeCuisine: 'New England',
+};
+
+if (absoluteHeroImage) jsonLd.image = absoluteHeroImage;
+if (pubDate) jsonLd.datePublished = pubDate.toISOString().slice(0, 10);
+if (updatedDate) jsonLd.dateModified = updatedDate.toISOString().slice(0, 10);
+if (prepTime) jsonLd.prepTime = prepTime;
+if (cookTime) jsonLd.cookTime = cookTime;
+if (totalTime) jsonLd.totalTime = totalTime;
+if (servings) jsonLd.recipeYield = servings;
+if (ingredients.length) jsonLd.recipeIngredient = ingredients;
+if (instructions.length) {
+  jsonLd.recipeInstructions = instructions.map((s) => {
+    const entry: Record<string, string> = { '@type': 'HowToStep', text: s.text };
+    if (s.step) entry.name = s.step;
+    return entry;
+  });
+}
+if (keywords.length) jsonLd.keywords = keywords.join(', ');
+if (typeof calories === 'number') {
+  jsonLd.nutrition = {
+    '@type': 'NutritionInformation',
+    calories: `${calories} calories`,
+  };
+}
+---
+
+<BaseLayout title={title} description={description} image={heroImage} article={true} canonical={canonical}>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <article class="container-prose py-16 md:py-20">
+    <header class="not-prose mb-10 border-b border-timber-300/15 pb-8">
+      <p class="eyebrow">
+        {dateFormatter.format(pubDate)}
+        {style && <span class="normal-case tracking-normal text-timber-100/70">· {style}</span>}
+      </p>
+      <h1 class="mt-3 font-display text-4xl leading-tight md:text-5xl">{title}</h1>
+      <p class="mt-4 text-lg text-timber-100/90">{description}</p>
+
+      {heroImage && (
+        <img
+          src={heroImage}
+          alt={title}
+          class="mt-8 w-full rounded-2xl object-cover max-h-[480px]"
+        />
+      )}
+
+      {(prepTime || cookTime || totalTime || restTime || servings) && (
+        <dl class="mt-6 flex flex-wrap gap-6 text-sm text-timber-100/80">
+          {prepTime && (
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-timber-300/70">Prep</dt>
+              <dd class="mt-0.5">{humanizeDuration(prepTime)}</dd>
+            </div>
+          )}
+          {cookTime && (
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-timber-300/70">Cook</dt>
+              <dd class="mt-0.5">{humanizeDuration(cookTime)}</dd>
+            </div>
+          )}
+          {totalTime && (
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-timber-300/70">Total</dt>
+              <dd class="mt-0.5">{humanizeDuration(totalTime)}</dd>
+            </div>
+          )}
+          {restTime && (
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-timber-300/70">Rest / Ferment</dt>
+              <dd class="mt-0.5">{humanizeDuration(restTime)}</dd>
+            </div>
+          )}
+          {servings && (
+            <div>
+              <dt class="text-xs uppercase tracking-widest text-timber-300/70">Servings</dt>
+              <dd class="mt-0.5">{servings}</dd>
+            </div>
+          )}
+        </dl>
+      )}
+    </header>
+
+    <!-- Intro slot — my written content/story goes here, above the recipe card -->
+    <div
+      class="prose prose-invert max-w-none mb-12
+             prose-headings:font-display prose-headings:text-timber-50
+             prose-a:text-glow-200 hover:prose-a:text-glow-300
+             prose-strong:text-glow-200
+             prose-blockquote:border-ember-500 prose-blockquote:text-timber-100
+             prose-img:rounded-2xl"
+    >
+      <slot />
+    </div>
+
+    {(ingredients.length > 0 || instructions.length > 0) && (
+      <div class="not-prose card mb-12">
+        {ingredients.length > 0 && (
+          <div class="mb-8">
+            <h2 class="font-display text-2xl text-timber-50">Ingredients</h2>
+            <ul class="mt-4 space-y-2">
+              {ingredients.map((ingredient) => (
+                <li>
+                  <label class="flex items-start gap-3 text-timber-100/90">
+                    <input
+                      type="checkbox"
+                      class="mt-1 h-4 w-4 shrink-0 rounded border-timber-300/40 bg-twilight-600 text-glow-400 focus:ring-glow-300"
+                    />
+                    <span>{ingredient}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {instructions.length > 0 && (
+          <div>
+            <h2 class="font-display text-2xl text-timber-50">Instructions</h2>
+            <ol class="mt-4 space-y-5">
+              {instructions.map((item, i) => (
+                <li class="flex gap-4">
+                  <span
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ember-500/90 text-sm font-semibold text-white"
+                    aria-hidden="true"
+                  >
+                    {i + 1}
+                  </span>
+                  <div>
+                    {item.step && <p class="font-semibold text-timber-50">{item.step}</p>}
+                    <p class="mt-1 text-timber-100/90">{item.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
+      </div>
+    )}
+
+    {gear.length > 0 && (
+      <div class="not-prose card mb-12 border-glow-300/25 bg-twilight-600/70">
+        <h2 class="font-display text-xl text-timber-50">Gear I used</h2>
+        <ul class="mt-4 space-y-3">
+          {gear.map((item) => (
+            <li class="text-timber-100/90">
+              <a
+                href={item.url}
+                target="_blank"
+                rel="sponsored noopener"
+                class="font-semibold text-glow-200 hover:text-glow-300"
+              >
+                {item.name}
+              </a>
+              {item.note && <span class="text-timber-100/75"> — {item.note}</span>}
+            </li>
+          ))}
+        </ul>
+        <p class="mt-5 text-xs text-timber-100/60">
+          Some links are affiliate links — I earn a small commission at no cost to you.
+        </p>
+      </div>
+    )}
+
+    <div class="not-prose card mb-12 text-center">
+      <h2 class="font-display text-2xl text-timber-50">Get the New England Pizza Dough Cheat Sheet</h2>
+      <p class="mt-3 text-timber-100/85">
+        The ratios, timing, and cold-ferment schedule we actually use — straight to your inbox.
+      </p>
+      <!-- TODO: wire this form to an email provider. See KitPizzaKitForm.astro for the
+           existing ConvertKit embed pattern used elsewhere on the site. -->
+      <form class="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center" action="TODO" method="post">
+        <label class="sr-only" for="recipe-cheat-sheet-email">Email address</label>
+        <input
+          id="recipe-cheat-sheet-email"
+          type="email"
+          name="email_address"
+          placeholder="Email address"
+          required
+          class="w-full max-w-xs rounded-full border border-timber-300/30 bg-twilight-700/80 px-5 py-3 text-sm text-timber-50 placeholder:text-timber-100/50 focus:outline-none focus:ring-2 focus:ring-glow-300"
+        />
+        <button type="submit" class="btn-ember shrink-0">Send Me the Cheat Sheet</button>
+      </form>
+    </div>
+
+    <footer class="mt-16 flex items-center justify-between border-t border-timber-300/15 pt-6 text-sm text-timber-200/80">
+      <a href="/recipes/" class="hover:text-glow-200">&larr; All recipes</a>
+      <a href="/" class="hover:text-glow-200">Back home</a>
+    </footer>
+  </article>
+</BaseLayout>

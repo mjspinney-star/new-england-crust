@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import RecipeLayout from '../../layouts/RecipeLayout.astro';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recipes', ({ data }) => !data.draft);
@@ -15,6 +16,12 @@ type Props = { recipe: CollectionEntry<'recipes'> };
 const { recipe } = Astro.props;
 const { Content } = await recipe.render();
 
+// Newer recipes carry structured ingredients/instructions (and optionally
+// gear) in frontmatter and render through RecipeLayout, which also emits
+// the schema.org Recipe JSON-LD. Older recipes only have prose in the
+// markdown body and keep rendering through the legacy template below.
+const isStructuredRecipe = recipe.data.ingredients.length > 0 || recipe.data.instructions.length > 0;
+
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   month: 'long',
   day: 'numeric',
@@ -22,6 +29,28 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 });
 ---
 
+{isStructuredRecipe ? (
+  <RecipeLayout
+    title={recipe.data.title}
+    description={recipe.data.description}
+    heroImage={recipe.data.heroImage}
+    pubDate={recipe.data.pubDate}
+    updatedDate={recipe.data.updatedDate}
+    style={recipe.data.style}
+    prepTime={recipe.data.prepTime}
+    cookTime={recipe.data.cookTime}
+    totalTime={recipe.data.totalTime}
+    restTime={recipe.data.restTime}
+    servings={recipe.data.servings}
+    calories={recipe.data.calories}
+    ingredients={recipe.data.ingredients}
+    instructions={recipe.data.instructions}
+    gear={recipe.data.gear}
+    keywords={recipe.data.keywords}
+  >
+    <Content />
+  </RecipeLayout>
+) : (
 <BaseLayout
   title={recipe.data.title}
   description={recipe.data.description}
@@ -96,3 +125,4 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
     </footer>
   </article>
 </BaseLayout>
+)}
