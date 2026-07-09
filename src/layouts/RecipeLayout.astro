@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AffiliateLink from '../components/AffiliateLink.astro';
 
 interface InstructionStep {
   step?: string;
@@ -10,6 +11,7 @@ interface GearItem {
   name: string;
   url: string;
   note?: string;
+  affiliateId?: string;
 }
 
 interface Props {
@@ -232,18 +234,25 @@ if (typeof calories === 'number') {
     {gear.length > 0 && (
       <div class="not-prose card mb-12 border-glow-300/25 bg-twilight-600/70">
         <h2 class="font-display text-xl text-timber-50">Gear I used</h2>
-        <ul class="mt-4 space-y-3">
+        <ul class="mt-5 space-y-5">
           {gear.map((item) => (
             <li class="text-timber-100/90">
-              <a
-                href={item.url}
-                target="_blank"
-                rel="sponsored noopener"
-                class="font-semibold text-glow-200 hover:text-glow-300"
-              >
-                {item.name}
-              </a>
-              {item.note && <span class="text-timber-100/75"> — {item.note}</span>}
+              <p class="font-semibold text-timber-50">{item.name}</p>
+              {item.note && <p class="mt-1 text-sm text-timber-100/75 leading-relaxed">{item.note}</p>}
+              <p class="mt-2 text-sm">
+                {item.affiliateId ? (
+                  <AffiliateLink id={item.affiliateId} />
+                ) : (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="sponsored noopener"
+                    class="font-semibold text-glow-200 hover:text-glow-300"
+                  >
+                    Shop this pick
+                  </a>
+                )}
+              </p>
             </li>
           ))}
         </ul>

@@ -26,6 +26,10 @@ const gearItem = z.object({
   name: z.string(),
   url: z.string(),
   note: z.string().optional(),
+  // Optional id matching src/data/affiliateLinks.ts. When present, the gear
+  // card renders the shared <AffiliateLink> component (same styling/badge
+  // as the /gear/ page) instead of a plain link to `url`.
+  affiliateId: z.string().optional(),
 });
 
 const recipes = defineCollection({

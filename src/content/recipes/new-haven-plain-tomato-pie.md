@@ -37,6 +37,7 @@ gear:
   - name: "Ninja Woodfire Outdoor Oven"
     url: "https://amzn.to/4obF5K3"
     note: "Live Amazon Associates link. Runs cooler than the Koda, so use the longer 5–7 minute timing — you still get real char on the rim."
+    affiliateId: "ninja-woodfire-oven"
   - name: "Baking steel"
     url: "https://YOUR-AFFILIATE-LINK"
     note: "The indoor alternative — steel under a broiler out-performs any pizza stone for this."
