@@ -42,8 +42,9 @@ gear:
     note: "Live Amazon Associates link. The difference between a 90-second pie and a pale one is stone temp you can't see. This tool ends the guessing."
     affiliateId: "infrared-thermometer"
   - name: "12-inch perforated pizza peel"
-    url: "https://YOUR-AFFILIATE-LINK"
+    url: "https://amzn.to/4dRGlgB"
     note: "Sized to the Koda 12, and the perforations shed excess flour so it doesn't burn bitter on the stone."
+    affiliateId: "generic-peel"
 keywords:
   - "Neapolitan pizza recipe"
   - "Ooni margherita recipe"

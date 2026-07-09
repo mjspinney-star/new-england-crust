@@ -39,7 +39,7 @@ gear:
     affiliateId: "ninja-woodfire-oven"
   - name: "Ooni Pizza Oven"
     url: "https://YOUR-AFFILIATE-LINK"
-    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+    note: "Direct brand affiliate program pending approval."
   - name: "Etekcity Infrared Thermometer"
     url: "https://amzn.to/3RHkZLA"
     note: "live Amazon Associates link — for checking stone temp before launch"

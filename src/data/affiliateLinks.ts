@@ -172,6 +172,13 @@ export const affiliateLinks: AffiliateProduct[] = [
     full: "https://amzn.to/4oBSStP",
     category: "tool",
   },
+  {
+    id: "clam-shucking-knife",
+    name: "Clam Shucking Knife",
+    short: "https://amzn.to/4p9VZJF",
+    full: "https://amzn.to/4p9VZJF",
+    category: "tool",
+  },
 ];
 
 // Helper: get a single product by id

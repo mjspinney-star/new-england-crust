@@ -243,14 +243,9 @@ if (typeof calories === 'number') {
                 {item.affiliateId ? (
                   <AffiliateLink id={item.affiliateId} />
                 ) : (
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="sponsored noopener"
-                    class="font-semibold text-glow-200 hover:text-glow-300"
-                  >
-                    Shop this pick
-                  </a>
+                  <span class="italic text-timber-300/70" aria-label="Affiliate link pending brand approval">
+                    Pending affiliate link
+                  </span>
                 )}
               </p>
             </li>

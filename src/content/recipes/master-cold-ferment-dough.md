@@ -26,8 +26,9 @@ instructions:
     text: "Pull the dough 1.5–2 hours before baking so it comes to room temperature. Cold dough fights back when you stretch it."
 gear:
   - name: "Digital kitchen scale"
-    url: "https://YOUR-AFFILIATE-LINK"
+    url: "https://amzn.to/4dVhJ84"
     note: "Baker's percentages only work by weight. This is the one non-negotiable tool on the site."
+    affiliateId: "etekcity-scale"
 keywords:
   - "cold ferment pizza dough"
   - "48 hour pizza dough"

@@ -25,8 +25,9 @@ instructions:
     text: "Divide into two balls and rest 15 minutes before stretching. Straight to the oven from here."
 gear:
   - name: "Digital kitchen scale"
-    url: "https://YOUR-AFFILIATE-LINK"
+    url: "https://amzn.to/4dVhJ84"
     note: "Even the emergency dough deserves accurate measuring."
+    affiliateId: "etekcity-scale"
 keywords:
   - "quick pizza dough"
   - "same day pizza dough"

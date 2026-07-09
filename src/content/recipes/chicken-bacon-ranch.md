@@ -46,7 +46,7 @@ gear:
     affiliateId: "ninja-woodfire-oven"
   - name: "Ooni Pizza Oven"
     url: "https://YOUR-AFFILIATE-LINK"
-    note: "placeholder link — Impact.com brand approval pending, not yet an affiliate link"
+    note: "Direct brand affiliate program pending approval."
 keywords:
   - "chicken bacon ranch pizza"
   - "white pizza recipe"
