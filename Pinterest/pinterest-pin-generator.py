@@ -155,6 +155,22 @@ PINS = [
         "layout":         "split",
         "output":         "outputs/NEC-00flour-pin2.png",
     },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Gear Guide",
+        "headline":       "Don't Buy a Ninja Woodfire Cover Until You Read This",
+        "subhead":        "Official or third-party — we tested both through two months of New England rain and wind to see which held up.",
+        "layout":         "split",
+        "output":         "outputs/NEC-accessories-pin8.png",
+    },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Gear Guide",
+        "headline":       "The $20 Accessory That Changed Every Pizza We Make",
+        "subhead":        "This $20 thermometer reads stone temp, not air temp — the 100°F gap that used to leave us with pale bottoms.",
+        "layout":         "split",
+        "output":         "outputs/NEC-accessories-pin9.png",
+    },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {
     #     "photo_path": "your-photo.jpeg",   # or None for placeholder

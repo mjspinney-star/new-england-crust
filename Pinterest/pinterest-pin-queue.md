@@ -86,7 +86,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Cover Before First Cook — Gear Guide (Pin 8)
+### [x] Cover Before First Cook — Gear Guide (Pin 8)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Don't Buy a Ninja Woodfire Cover Until You Read This
@@ -97,7 +97,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] The $20 Stone Fix — Gear Guide (Pin 9)
+### [x] The $20 Stone Fix — Gear Guide (Pin 9)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The $20 Accessory That Changed Every Pizza We Make
