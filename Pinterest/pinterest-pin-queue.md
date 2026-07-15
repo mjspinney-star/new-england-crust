@@ -86,6 +86,32 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] What's In the Box — Gear Guide (Pin 10)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** What's Already in the Box — And What We Bought Anyway
+- **descriptor:** The OO101 comes with more than you'd
+think — here's what's included and
+what we still bought on day one.
+- **output:** NEC-accessories-pin10.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
+### [ ] Buy-Immediately List — Gear Guide (Pin 11)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Our Buy-Immediately List for the Ninja Woodfire (Under $80)
+- **descriptor:** Cover, cord, peel, thermometer — the
+four we bought before our first
+cook, all in for under $80.
+- **output:** NEC-accessories-pin11.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
 ### [x] Cover Before First Cook — Gear Guide (Pin 8)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
