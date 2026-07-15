@@ -26,6 +26,20 @@ export const affiliateLinks: AffiliateProduct[] = [
     category: "oven",
   },
   {
+    id: "ooni-koda-12",
+    name: "Ooni Koda 12 Gas Powered Pizza Oven",
+    short: "https://amzn.to/3R8PMkD",
+    full: "https://amzn.to/3R8PMkD",
+    category: "oven",
+  },
+  {
+    id: "solo-stove-pi",
+    name: "Solo Stove Pi Gas Pizza Oven",
+    short: "https://amzn.to/4fiw9yD",
+    full: "https://amzn.to/4fiw9yD",
+    category: "oven",
+  },
+  {
     id: "ninja-cover",
     name: "Ninja XSKOCVR Premium Cover",
     short: "https://amzn.to/4vpQc4D",
