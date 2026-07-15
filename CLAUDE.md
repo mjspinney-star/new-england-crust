@@ -9,7 +9,7 @@
 
 **New England Crust** is a pizza-focused blog and content site built to grow an audience first, then monetize through affiliate marketing. The site is built with **Astro** and hosted on **Cloudflare**. The local project folder is `new-england-crust` on the desktop.
 
-**Current status:** Active content and monetization phase. Amazon Associates links are live in published content. Impact.com account created and verification tag is live — awaiting brand approvals for Ooni, Ninja, and Solo Stove Pi.
+**Current status:** Active content and monetization phase. Amazon Associates links live across all content including ovens. Impact/Avantlink brand approvals pending.
 
 ---
 
@@ -41,14 +41,16 @@ All blog posts are `.md` files and need proper Astro frontmatter (title, descrip
 
 **Dual-track approach:**
 
-### Track 1 — Pizza Ovens (Via Impact.com — Awaiting Brand Approval)
-Impact.com affiliate network account is created and the verification tag is live in `src/layouts/Layout.astro`. Awaiting brand approval from pizza oven partners. Do NOT add these affiliate links until brand approvals are confirmed.
+### Track 1 — Pizza Ovens (Amazon interim → Impact/Avantlink when approved)
+Amazon Associates links (tag newenglandcru-20) are the interim solution for pizza ovens. Ooni Koda 12, Solo Stove Pi, and Ninja Woodfire oven links are live via Amazon as of July 2026. If an oven has no Amazon listing (e.g., Ooni Fyra), leave it unlinked and ask Michael before adding any link.
 
-| Brand | Network | Est. Commission | Cookie | Status |
-|---|---|---|---|---|
-| Ooni | Impact.com | 5–8% | ~30 days | Awaiting approval |
-| Ninja | Impact.com | 3–8% | ~30 days | Awaiting approval |
-| Solo Stove Pi (Gas) | Impact.com | 8–10% | ~30 days | Awaiting approval |
+When brand approvals come through, swap oven links to the direct programs — they pay higher commission on the same sale. Never remove a working amzn.to link without a replacement ready.
+
+| Brand | Network | Est. Commission | Status |
+|---|---|---|---|
+| Ooni | Avantlink | 5–8% | Applied, awaiting approval |
+| SharkNinja | Impact.com | 3–8% | Reapplying mid-August 2026 |
+| Solo Stove | Impact.com | 8–10% | Applied, awaiting approval |
 
 ### Track 2 — Everything Else (Amazon Associates — LIVE)
 Amazon affiliate links are active and already live in published content. All non-oven product recommendations (ingredients, tools, accessories, cookware, etc.) use Amazon Associates links.
@@ -59,7 +61,7 @@ Amazon affiliate links are active and already live in published content. All non
 - Seasonal content pushes (summer grilling, holiday gifting)
 - First-person reviews with honest pros/cons build trust before the ask
 
-**Important rule:** Amazon links are live and can be included in content. Impact.com brand programs are NOT yet approved — do not add those affiliate links until explicitly instructed.
+**Important rule:** Amazon links are live for all products, ovens included. Impact/Avantlink brand programs are NOT yet approved — never add links from those networks until explicitly instructed. When they approve, oven links get swapped from Amazon to the direct program.
 
 ---
 
@@ -98,8 +100,8 @@ A GitHub + Claude API (Console subscription) automation is set up to publish new
 
 ## What to Remember Each Session
 
-1. **Amazon Associates links are live** — include them in content for non-oven products
-2. **Impact.com account is live** — verification tag in Layout.astro; awaiting brand approvals for Ooni, Ninja, Solo Stove Pi — do NOT add those links until instructed
+1. Amazon Associates links are live for everything — ovens and non-oven products alike (tag newenglandcru-20)
+2. Impact/Avantlink approvals pending (SharkNinja reapplication mid-August 2026) — do NOT add those links until instructed; when approved, swap oven links from Amazon to direct programs
 3. Voice is **first-person and personal** — avoid generic blog tone
 4. The three oven brands are the high-value monetization focus; Amazon covers everything else
 5. Astro frontmatter is required on all `.md` posts
