@@ -1,0 +1,49 @@
+---
+title: "Hot Honey on Pizza: When It Works and When It Overwhelms Everything Else"
+description: "Hot honey is everywhere right now, but it earns its place on some pizzas and ruins others. Here's how we actually use it."
+pubDate: 2026-07-16
+category: ingredient
+tags: [hot honey, pizza toppings, finishing ingredients]
+relatedPosts: ["2026-06-22-finishing-with-good-olive-oil-when-it-matters-and-", "2026-07-13-pecorino-vs-parmigiano-when-each-belongs-on-a-pizz"]
+draft: false
+---
+
+Hot honey is at every pizza shop right now, and honestly, it belongs there — sometimes. The problem is that it has become a default drizzle, something people reach for the same way they reach for red pepper flakes. That reflex gets you into trouble fast.
+
+We have used it enough to know: hot honey is a finishing ingredient with strong opinions. It pairs with the right things and bulldozes the wrong ones.
+
+## What Hot Honey Actually Is
+
+**Hot honey** is honey infused with chili peppers — usually dried chilies or chili flakes — and sometimes a splash of vinegar. The heat level varies a lot by brand. Some are a slow warmth. Some land closer to a hot sauce situation.
+
+The key thing to understand is that you are adding sweetness and heat at the same time. That combination is not subtle. It will change the character of whatever it touches.
+
+## When It Works
+
+Hot honey earns its spot on pizzas that already have a salty, fatty, or funky anchor.
+
+**Pepperoni** is the classic pairing for a reason. The fat renders in the oven, the edges crisp up, and hot honey cuts through that grease with something bright and a little sharp. It works because the pizza is already rich enough to stand up to it.
+
+Soppressata, spicy salami, and cured meats in general follow the same logic. So does pizza with a good amount of **aged cheese** — pecorino, a sharp provolone, or a funky mozzarella di bufala. The salt contrast makes the honey pop instead of just tasting sweet.
+
+We also use it on white pies with ricotta. A drizzle over a ricotta and roasted garlic pizza — after the bake, not before — is one of our go-to finishes from September through October when we are still out on the patio in hoodies pretending summer is not over.
+
+## When It Overwhelms
+
+Fresh tomato-forward pies are the main casualty. A good Margherita already has balance — acid, fat, herbaceous basil. Hot honey on top of that is one flavor too many. It does not enhance the tomato. It competes with it.
+
+Light vegetable toppings get buried too. Zucchini, thin-sliced mushrooms, roasted fennel — these have delicate flavors. Hot honey does not complement them. It just wins.
+
+And do not add it before or during the bake. Honey burns fast at high heat. In an outdoor oven running above 700°F, you will get bitter, scorched sugar instead of a glossy drizzle. Apply it after the pizza comes off the stone.
+
+## How Much to Use
+
+Less than you think. Start with a light pass across the surface — not pooling, not soaking in. You should see the sheen, not a puddle. You can always add more at the table.
+
+**Mike's Hot Honey** *[Affiliate link: Mike's Hot Honey — Amazon]* is what we keep on hand. Medium heat, good viscosity, and the vinegar note gives it enough edge to hold its own against a greasy pepperoni cup.
+
+Hot honey is not for every pizza. But on the right one, it is the detail that makes people ask what you did differently.
+
+## Try This Next
+
+Build a pepperoni pizza, pull it from the oven, and drizzle hot honey immediately while the cheese is still bubbling. Give it thirty seconds to settle, then slice. That is the version worth trying first.
