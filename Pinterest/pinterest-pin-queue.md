@@ -265,6 +265,71 @@ cook, all in for under $80.
 
 ---
 
+### [ ] Save Before You Spend $500 — Oven Review (Pin 4)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** Save This Pizza Oven Guide Before You Spend $500
+- **descriptor:** Our honest outdoor pizza oven comparison — Ninja Woodfire vs Ooni, tested side by side before you spend $500.
+- **layout:** fullbleed
+- **badge_position:** top_right
+- **output:** NEC-ovens-pin4.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
+### [ ] 5 Tested, Only 2 Worth It — Oven Review (Pin 5)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** 5 Outdoor Pizza Ovens Tested — Only 2 Were Worth It
+- **descriptor:** Five ovens, real cooks — the pizza oven buying guide we wish we'd had before our first purchase.
+- **layout:** split
+- **badge_position:** top_left
+- **output:** NEC-ovens-pin5.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
+### [ ] The Buying Mistake — Oven Review (Pin 6)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** The Pizza Oven Buying Mistake Everyone Makes
+- **descriptor:** The one spec most shoppers skip when picking the best outdoor pizza oven — it matters more than price or brand.
+- **layout:** split
+- **badge_position:** top_right
+- **output:** NEC-ovens-pin6.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
+### [ ] Read This Before You Buy — Oven Review (Pin 7)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** Read This Before You Buy an Outdoor Pizza Oven
+- **descriptor:** Propane, pellets, or electric — our pizza oven buying guide covers what we'd buy again and skip.
+- **layout:** fullbleed
+- **badge_position:** top_left
+- **output:** NEC-ovens-pin7.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
+### [ ] Pin This Checklist First — Oven Review (Pin 8)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Oven Review
+- **headline:** Pizza Oven Shopping? Pin This Checklist First
+- **descriptor:** Our best outdoor pizza oven picks under $500, plus the Ninja Woodfire vs Ooni question we get asked most.
+- **layout:** split
+- **badge_position:** top_left
+- **output:** NEC-ovens-pin8.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+
+---
+
 ## IDEAS BANK — Not Yet Scheduled
 
 ### Caputo flour / ingredient photo (IMG_8372.jpeg) — future pin angles
