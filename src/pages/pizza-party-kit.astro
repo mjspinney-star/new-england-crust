@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import KitSignupForm from '../components/KitSignupForm.astro';
+---
+
+<BaseLayout
+  title="The Pizza Party Planning Kit | New England Crust"
+  description="Everything we use to host pizza night for a crowd without losing the evening to it — one free printable kit."
+>
+  <section class="container-page py-16 md:py-24">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="eyebrow">Free Download</p>
+      <h1 class="mt-3 font-display text-3xl text-balance md:text-5xl">
+        The Pizza Party Planning Kit
+      </h1>
+      <p class="mt-5 text-pretty text-lg text-timber-100/85">
+        Everything we use to host pizza night for a crowd without losing the
+        evening to it — free.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-xl">
+      <ul class="space-y-4 text-timber-100/90">
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>The 48-hour countdown timeline</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>Dough quantities by guest count</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>The toppings-bar shopping list</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>Printable and reusable for every party</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-xl">
+      <KitSignupForm
+        formId="9525175"
+        uid="5affb2cce0"
+        header="Get the Free Pizza Party Planning Kit"
+        subheader="The 48-hour timeline, dough quantities by guest count, and the toppings-bar list — one page, free."
+        buttonText="Send Me the Kit"
+        successMessage="Check your inbox — your kit is on its way."
+      />
+    </div>
+
+    <div class="mt-14 flex justify-center">
+      <img
+        src="/assets/ember/ember-badge-transparent.png"
+        alt="Ember, the New England Crust dog"
+        class="h-16 w-16 object-contain opacity-90"
+      />
+    </div>
+  </section>
+</BaseLayout>

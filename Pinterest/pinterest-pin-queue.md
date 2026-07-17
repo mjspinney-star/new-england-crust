@@ -330,6 +330,118 @@ cook, all in for under $80.
 
 ---
 
+*Design note — freebie/lead-magnet pins (below): add a small "FREE" flag
+element using the live site's ember/glow accent colors (Tailwind `ember-500`
+#c63d28 / `glow-400` #ff921a) — not the coral red (#C84B2E) used elsewhere in
+the pin template. Not yet built into `pinterest-pin-generator.py`; flag this
+to whoever implements it before generating these.*
+
+---
+
+### [ ] Don't Buy Until You've Seen This — Quick-Start Guide (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Don't Buy Ninja Woodfire Accessories Until You've Seen This Free Checklist
+- **descriptor:** The four accessories worth buying —
+free, one page, no guessing
+before you shop.
+- **output:** NEC-quickstart-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/quick-start-guide/
+
+---
+
+### [ ] The Only 4 Worth Buying — Quick-Start Guide (Pin 2)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** The Only 4 Ninja Woodfire Accessories Worth Buying — Free One-Page Cheat Sheet
+- **descriptor:** Our exact buy-immediately list,
+pellet picks, and setup —
+free and printable.
+- **output:** NEC-quickstart-pin2.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/quick-start-guide/
+
+---
+
+### [ ] New Owner? Start Here — Quick-Start Guide (Pin 3)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** New Ninja Woodfire Owner? Start With This Free Printable Shopping List
+- **descriptor:** Skip the trial and error. Our
+free quick-start guide covers
+what to buy first.
+- **output:** NEC-quickstart-pin3.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/quick-start-guide/
+
+---
+
+### [ ] Setup Under $100 — Quick-Start Guide (Pin 4)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Ninja Woodfire Setup Under $100 — The Free Quick-Start Guide
+- **descriptor:** The exact accessories we bought
+under $100 — grab the free
+one-page guide.
+- **output:** NEC-quickstart-pin4.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/quick-start-guide/
+
+---
+
+### [ ] What's in the Box vs. What You Need — Quick-Start Guide (Pin 5)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** What's in the Box vs. What You Actually Need to Buy (Free Ninja Woodfire Guide)
+- **descriptor:** Free printable breakdown of
+what Ninja includes and what
+we bought anyway.
+- **output:** NEC-quickstart-pin5.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/quick-start-guide/
+
+---
+
+### [ ] Hosting? This Kit Plans It — Pizza Party Kit (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Pizza Night
+- **headline:** Hosting Pizza Night? This Free Printable Kit Does the Planning for You
+- **descriptor:** Timeline, dough math, and the
+toppings list — free and
+ready to print.
+- **output:** NEC-partykit-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/pizza-party-kit/
+
+---
+
+### [ ] Dough Math for a Crowd — Pizza Party Kit (Pin 2)
+- **photo:** IMG_8372.jpeg
+- **category:** Pizza Night
+- **headline:** How Much Pizza Dough for 12 People? The Free Party Kit Has the Math
+- **descriptor:** Dough quantities by guest count,
+free and printable — no more
+guessing before guests arrive.
+- **output:** NEC-partykit-pin2.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/pizza-party-kit/
+
+---
+
+### [ ] The 48-Hour Timeline — Pizza Party Kit (Pin 3)
+- **photo:** IMG_8372.jpeg
+- **category:** Pizza Night
+- **headline:** The 48-Hour Pizza Party Timeline — Free Printable Planning Kit
+- **descriptor:** Our exact 48-hour countdown,
+free and printable — so party
+day isn't a scramble.
+- **output:** NEC-partykit-pin3.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/pizza-party-kit/
+
+---
+
 ## IDEAS BANK — Not Yet Scheduled
 
 ### Caputo flour / ingredient photo (IMG_8372.jpeg) — future pin angles

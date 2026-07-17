@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import KitSignupForm from '../components/KitSignupForm.astro';
+---
+
+<BaseLayout
+  title="The Ninja Woodfire Quick-Start Guide | New England Crust"
+  description="The four accessories actually worth buying, the two pellet bags we keep in rotation, and our exact deck setup — one free page."
+>
+  <section class="container-page py-16 md:py-24">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="eyebrow">Free Download</p>
+      <h1 class="mt-3 font-display text-3xl text-balance md:text-5xl">
+        The Ninja Woodfire Quick-Start Guide
+      </h1>
+      <p class="mt-5 text-pretty text-lg text-timber-100/85">
+        One page. The four accessories actually worth buying, the two pellet
+        bags we keep in rotation, and our exact setup — free.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-xl">
+      <ul class="space-y-4 text-timber-100/90">
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>The buy-immediately shopping list, with realistic prices</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>Our pellet cheat sheet — what to buy, what to skip</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>Our real deck setup, at a glance</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-glow-400" aria-hidden="true"></span>
+          <span>Printable — stick it on the fridge or take it to the store</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-xl">
+      <KitSignupForm formId="9523571" uid="226581bb79" />
+    </div>
+
+    <div class="mt-14 flex justify-center">
+      <img
+        src="/assets/ember/ember-badge-transparent.png"
+        alt="Ember, the New England Crust dog"
+        class="h-16 w-16 object-contain opacity-90"
+      />
+    </div>
+  </section>
+</BaseLayout>
