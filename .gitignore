@@ -34,3 +34,4 @@ Reddit/
 pin-kits/
 Pinterest/outputs/
 Photos/*.HEIC
+__pycache__/
