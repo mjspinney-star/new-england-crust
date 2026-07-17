@@ -40,6 +40,12 @@ EMBER_ORANGE = (232, 148,  58)   # #E8943A — flame mid
 GOLD         = (244, 192,  66)   # #F4C042 — flame inner
 PALE_GOLD    = (255, 239, 170)   # #FFEFAA — flame core
 
+# FREE flag badge — opt-in per-pin, site's ember/glow accent (not the coral
+# used in the flame badge above). See paste_free_flag() below.
+FLAG_EMBER   = (198,  61,  40)   # #C63D28 — badge fill
+FLAG_GLOW    = (255, 146,  26)   # #FF921A — badge text (used when contrast holds)
+FLAG_WHITE   = (255, 255, 255)   # fallback badge text when glow-on-ember contrast is too low
+
 # ── PIN DIMENSIONS ────────────────────────────────────────────────────────────
 W, H = 1000, 1500
 
@@ -52,6 +58,11 @@ MAC_SERIF_ITALIC = '/Library/Fonts/Georgia Italic.ttf'
 LIN_SERIF_BOLD   = '/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf'
 LIN_SERIF_REG    = '/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf'
 LIN_SERIF_ITALIC = '/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf'
+
+# Sans-serif bold — used only for the small FREE flag badge (deliberately
+# distinct from the Georgia serif headline type elsewhere on the pin).
+MAC_SANS_BOLD = '/Library/Fonts/Arial Bold.ttf'
+LIN_SANS_BOLD = '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'
 
 def _font(mac_path, linux_path, size):
     path = mac_path if os.path.exists(mac_path) else linux_path
@@ -257,6 +268,72 @@ def ember_corner_for(raw_badge_position):
     return "bottom_right"
 
 
+# ── FREE FLAG BADGE ───────────────────────────────────────────────────────────
+# Opt-in per-pin: only drawn when a queue entry sets `flag: FREE`. Entries
+# without the field are completely unaffected — this function is simply
+# never called for them.
+FLAG_MARGIN = 30   # margin from canvas edge
+
+
+def flag_corner_for(raw_badge_position):
+    """
+    The FREE flag always sits at the TOP, in the corner opposite the NEC
+    logo badge, so the two never collide:
+      badge_position "top_left"  -> flag "top_right"
+      badge_position "top_right" -> flag "top_left"
+      badge_position absent      -> flag "top_left" (NEC logo defaults top_right)
+    """
+    if raw_badge_position == "top_left":
+        return "top_right"
+    return "top_left"
+
+
+def paste_free_flag(canvas, corner="top_left", margin=FLAG_MARGIN):
+    """
+    Draw a small rounded-rectangle FREE badge: ember (#C63D28) fill, bold
+    sans-serif "FREE" text. Text is glow (#FF921A) by default, but that
+    combination measures ~2.3:1 contrast — too low to read reliably at
+    Pinterest phone-zoom sizes — so text falls back to white (~5.1:1).
+    """
+    draw = ImageDraw.Draw(canvas, 'RGBA')
+    font_flag = _font(MAC_SANS_BOLD, LIN_SANS_BOLD, 24)
+
+    label = "FREE"
+    bbox  = draw.textbbox((0, 0), label, font=font_flag)
+    text_w, text_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+
+    pad_x, pad_y = 22, 12
+    box_w = text_w + pad_x * 2
+    box_h = text_h + pad_y * 2
+
+    canvas_w, _ = canvas.size
+    top = margin
+    left = margin if corner == "top_left" else (canvas_w - margin - box_w)
+    right = left + box_w
+    bottom = top + box_h
+
+    draw.rounded_rectangle([left, top, right, bottom], radius=box_h // 3,
+                            fill=FLAG_EMBER)
+
+    text_color = FLAG_GLOW if _contrast_ratio(FLAG_GLOW, FLAG_EMBER) >= 3.0 else FLAG_WHITE
+    text_x = left + pad_x
+    text_y = top + pad_y - bbox[1]
+    draw.text((text_x, text_y), label, font=font_flag, fill=text_color)
+
+
+def _contrast_ratio(rgb1, rgb2):
+    """WCAG relative-luminance contrast ratio between two RGB colors."""
+    def _luminance(rgb):
+        def channel(c):
+            c = c / 255.0
+            return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+        r, g, b = (channel(c) for c in rgb)
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b
+    l1, l2 = _luminance(rgb1), _luminance(rgb2)
+    lighter, darker = max(l1, l2), min(l1, l2)
+    return (lighter + 0.05) / (darker + 0.05)
+
+
 def paste_ember_badge(canvas, corner="bottom_right", text_bottom=0, enabled=True,
                        size=EMBER_BADGE_WIDTH, margin=EMBER_BADGE_MARGIN):
     """
@@ -426,7 +503,7 @@ def draw_diamond_rule(draw, y, left, right, amber):
 # ── SPLIT LAYOUT (2/3 photo + 1/3 text block) ─────────────────────────────────
 
 def make_pin_split(photo_path, category, headline, subhead, output_path, badge_position="top_right",
-                    ember_badge=True, ember_corner="bottom_right"):
+                    ember_badge=True, ember_corner="bottom_right", flag=None):
     PHOTO_H  = H * 2 // 3   # 1000px
     TEXT_H   = H - PHOTO_H  # 500px
     LEFT     = 52
@@ -446,6 +523,10 @@ def make_pin_split(photo_path, category, headline, subhead, output_path, badge_p
     # Badge mark — top right or top left of photo area
     badge_cx = 88 if badge_position == "top_left" else W - 88
     paste_logo_badge(canvas, cx=badge_cx, cy=88)
+
+    # FREE flag — opt-in, opposite top corner from the NEC logo badge
+    if flag:
+        paste_free_flag(canvas, corner=flag_corner_for(badge_position))
 
     # ── Text block ────────────────────────────────────────────────────────────
     TEXT_TOP = PHOTO_H
@@ -513,7 +594,7 @@ def make_pin_split(photo_path, category, headline, subhead, output_path, badge_p
 # ── FULL-BLEED LAYOUT (photo fills pin, gradient overlay on bottom 40%) ───────
 
 def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, badge_position="top_right",
-                        ember_badge=True, ember_corner="bottom_right"):
+                        ember_badge=True, ember_corner="bottom_right", flag=None):
     LEFT   = 52
     RIGHT  = W - 52
     TEXT_W = RIGHT - LEFT
@@ -546,6 +627,10 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, bad
     # Badge mark — top right or top left
     badge_cx = 88 if badge_position == "top_left" else W - 88
     paste_logo_badge(img, cx=badge_cx, cy=88)
+
+    # FREE flag — opt-in, opposite top corner from the NEC logo badge
+    if flag:
+        paste_free_flag(img, corner=flag_corner_for(badge_position))
 
     # Footer URL
     font_url = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 19)
@@ -598,7 +683,7 @@ def make_pin_fullbleed(photo_path, category, headline, subhead, output_path, bad
 # ── PRIME DAY LAYOUT (fullbleed photo + Prime Day pill callout) ───────────────
 
 def make_pin_primeday(photo_path, category, headline, subhead, output_path, badge_position="top_right",
-                       ember_badge=True, ember_corner="bottom_right"):
+                       ember_badge=True, ember_corner="bottom_right", flag=None):
     LEFT   = 52
     RIGHT  = W - 52
     TEXT_W = RIGHT - LEFT
@@ -630,6 +715,13 @@ def make_pin_primeday(photo_path, category, headline, subhead, output_path, badg
     # ── Badge mark ────────────────────────────────────────────────────────────
     badge_cx = 88 if badge_position == "top_left" else W - 88
     paste_logo_badge(img, cx=badge_cx, cy=88)
+
+    # FREE flag — primeday's top-left is always taken by the Prime Day pill
+    # below, and top-right conventionally holds the NEC logo on this layout,
+    # so there's no top corner that avoids both. Skip rather than overlap.
+    if flag:
+        print(f"  ! Skipped FREE flag on {output_path}: primeday layout has "
+              f"no free top corner (pill occupies top-left, logo top-right).")
 
     # ── Prime Day pill — top left (single stacked block) ─────────────────────
     PILL_LEFT = 44
@@ -748,6 +840,7 @@ def make_pin(pin):
         badge_position = pin.get("badge_position", "top_right"),
         ember_badge    = pin.get("ember_badge", True),
         ember_corner   = ember_corner_for(pin.get("badge_position")),
+        flag           = pin.get("flag"),
     )
     if layout == "fullbleed":
         make_pin_fullbleed(**kwargs)

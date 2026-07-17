@@ -42,6 +42,7 @@ Copy this block, paste it into the Pin Queue section, and fill it in:
 - **headline:** Your headline here  ← keep each line ~20 chars for clean wrapping
 - **descriptor:** One or two supporting sentences, max 44 chars per line.
 - **badge_position:** top_right  ← OPTIONAL — top_right (default) or top_left
+- **flag:** FREE  ← OPTIONAL — adds a small ember/glow "FREE" corner badge, for lead-magnet pins only
 - **output:** NEC-postname-pin#.png  ← e.g. NEC-accessories-pin7.png
 - **board:** Pinterest Board Name  ← exact board name on your Pinterest profile
 - **link:** https://newenglandcrust.com/blog/your-post-slug/
@@ -330,14 +331,6 @@ cook, all in for under $80.
 
 ---
 
-*Design note — freebie/lead-magnet pins (below): add a small "FREE" flag
-element using the live site's ember/glow accent colors (Tailwind `ember-500`
-#c63d28 / `glow-400` #ff921a) — not the coral red (#C84B2E) used elsewhere in
-the pin template. Not yet built into `pinterest-pin-generator.py`; flag this
-to whoever implements it before generating these.*
-
----
-
 ### [ ] Don't Buy Until You've Seen This — Quick-Start Guide (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
@@ -345,6 +338,7 @@ to whoever implements it before generating these.*
 - **descriptor:** The four accessories worth buying —
 free, one page, no guessing
 before you shop.
+- **flag:** FREE
 - **output:** NEC-quickstart-pin1.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/quick-start-guide/
@@ -358,6 +352,7 @@ before you shop.
 - **descriptor:** Our exact buy-immediately list,
 pellet picks, and setup —
 free and printable.
+- **flag:** FREE
 - **output:** NEC-quickstart-pin2.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/quick-start-guide/
@@ -371,6 +366,7 @@ free and printable.
 - **descriptor:** Skip the trial and error. Our
 free quick-start guide covers
 what to buy first.
+- **flag:** FREE
 - **output:** NEC-quickstart-pin3.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/quick-start-guide/
@@ -384,6 +380,7 @@ what to buy first.
 - **descriptor:** The exact accessories we bought
 under $100 — grab the free
 one-page guide.
+- **flag:** FREE
 - **output:** NEC-quickstart-pin4.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/quick-start-guide/
@@ -397,6 +394,7 @@ one-page guide.
 - **descriptor:** Free printable breakdown of
 what Ninja includes and what
 we bought anyway.
+- **flag:** FREE
 - **output:** NEC-quickstart-pin5.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/quick-start-guide/
@@ -410,6 +408,7 @@ we bought anyway.
 - **descriptor:** Timeline, dough math, and the
 toppings list — free and
 ready to print.
+- **flag:** FREE
 - **output:** NEC-partykit-pin1.png
 - **board:** Backyard Pizza Night
 - **link:** https://newenglandcrust.com/pizza-party-kit/
@@ -423,6 +422,7 @@ ready to print.
 - **descriptor:** Dough quantities by guest count,
 free and printable — no more
 guessing before guests arrive.
+- **flag:** FREE
 - **output:** NEC-partykit-pin2.png
 - **board:** Backyard Pizza Night
 - **link:** https://newenglandcrust.com/pizza-party-kit/
@@ -436,6 +436,7 @@ guessing before guests arrive.
 - **descriptor:** Our exact 48-hour countdown,
 free and printable — so party
 day isn't a scramble.
+- **flag:** FREE
 - **output:** NEC-partykit-pin3.png
 - **board:** Backyard Pizza Night
 - **link:** https://newenglandcrust.com/pizza-party-kit/
