@@ -360,7 +360,7 @@ free and printable.
 ---
 
 ### [x] New Owner? Start Here — Quick-Start Guide (Pin 3)
-- **photo:** NinjaWoodfireHero.jpeg
+- **photo:** Photos/2026-07-17-dough-shots/dough-ball-machine.jpg
 - **category:** Gear Guide
 - **headline:** New Ninja Woodfire Owner? Start With This Free Printable Shopping List
 - **descriptor:** Skip the trial and error. Our
@@ -388,7 +388,7 @@ one-page guide.
 ---
 
 ### [x] What's in the Box vs. What You Need — Quick-Start Guide (Pin 5)
-- **photo:** NinjaWoodfireHero.jpeg
+- **photo:** Photos/2026-07-17-dough-shots/dough-ball-machine.jpg
 - **category:** Gear Guide
 - **headline:** What's in the Box vs. What You Actually Need to Buy (Free Ninja Woodfire Guide)
 - **descriptor:** Free printable breakdown of
