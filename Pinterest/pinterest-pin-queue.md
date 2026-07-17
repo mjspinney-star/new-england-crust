@@ -402,7 +402,7 @@ we bought anyway.
 ---
 
 ### [ ] Hosting? This Kit Plans It — Pizza Party Kit (Pin 1)
-- **photo:** IMG_8372.jpeg
+- **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** Hosting Pizza Night? This Free Printable Kit Does the Planning for You
 - **descriptor:** Timeline, dough math, and the
@@ -416,7 +416,7 @@ ready to print.
 ---
 
 ### [ ] Dough Math for a Crowd — Pizza Party Kit (Pin 2)
-- **photo:** IMG_8372.jpeg
+- **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** How Much Pizza Dough for 12 People? The Free Party Kit Has the Math
 - **descriptor:** Dough quantities by guest count,
@@ -430,7 +430,7 @@ guessing before guests arrive.
 ---
 
 ### [ ] The 48-Hour Timeline — Pizza Party Kit (Pin 3)
-- **photo:** IMG_8372.jpeg
+- **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** The 48-Hour Pizza Party Timeline — Free Printable Planning Kit
 - **descriptor:** Our exact 48-hour countdown,

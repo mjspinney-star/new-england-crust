@@ -46,6 +46,18 @@ FLAG_EMBER   = (198,  61,  40)   # #C63D28 — badge fill
 FLAG_GLOW    = (255, 146,  26)   # #FF921A — badge text (used when contrast holds)
 FLAG_WHITE   = (255, 255, 255)   # fallback badge text when glow-on-ember contrast is too low
 
+# Checklist illustration (photo-less pins) — pulled from the live site's
+# Tailwind palette (tailwind.config.mjs): twilight, timber, glow.
+TIMBER_PAGE   = (237, 224, 203)  # timber-100 #EDE0CB — the "page" card
+TIMBER_HEADER = (118,  80,  43)  # timber-600 #76502B — header bar across the page top
+TIMBER_LINE   = (148, 102,  53)  # timber-500 #946635 — muted checklist lines
+GLOW_CHECK    = (255, 146,  26)  # glow-400  #FF921A — checkmark accent
+CARD_SHADOW   = (7,     6,   5, 110)  # twilight-900-ish, translucent drop shadow
+
+# Sentinel photo_path value that triggers the checklist illustration instead
+# of loading a real photo or the generic "PHOTO" placeholder.
+ILLUSTRATION_CHECKLIST = "illustration:checklist"
+
 # ── PIN DIMENSIONS ────────────────────────────────────────────────────────────
 W, H = 1000, 1500
 
@@ -447,9 +459,79 @@ def apply_dark_gradient(img, start_y, end_y, max_alpha=0.82):
     return img
 
 
+def draw_checklist_illustration(target_h):
+    """
+    Flat-illustration stand-in for pins with no product photo: a timber-toned
+    "page" card lying on the deep char/twilight background, with a header
+    bar and a short checkmark-and-line checklist. Built entirely from PIL
+    primitives already used elsewhere in this file (rounded_rectangle,
+    ellipse, line) — no new photo, no new dependency.
+    """
+    img = Image.new('RGB', (W, target_h), DEEP_CHAR)
+    draw = ImageDraw.Draw(img, 'RGBA')
+
+    card_w = int(W * 0.62)
+    card_h = int(target_h * 0.68)
+    card_x = (W - card_w) // 2
+    card_y = (target_h - card_h) // 2 - 20
+
+    # Soft drop shadow, offset down-right, so the card reads as lying on
+    # the background rather than pasted flat onto it.
+    shadow_off = 14
+    draw.rounded_rectangle(
+        [card_x + shadow_off, card_y + shadow_off,
+         card_x + card_w + shadow_off, card_y + card_h + shadow_off],
+        radius=18, fill=CARD_SHADOW,
+    )
+
+    # Page body
+    draw.rounded_rectangle(
+        [card_x, card_y, card_x + card_w, card_y + card_h],
+        radius=18, fill=TIMBER_PAGE,
+    )
+
+    # Header bar across the top of the page — rounded top, square bottom so
+    # it reads as one continuous strip rather than a floating pill.
+    header_h = int(card_h * 0.16)
+    draw.rounded_rectangle(
+        [card_x, card_y, card_x + card_w, card_y + header_h],
+        radius=18, fill=TIMBER_HEADER,
+    )
+    draw.rectangle(
+        [card_x, card_y + header_h - 18, card_x + card_w, card_y + header_h],
+        fill=TIMBER_HEADER,
+    )
+
+    # Checklist rows — checkmark circle + line, 4 rows
+    rows       = 4
+    row_pad_x  = int(card_w * 0.12)
+    list_top   = card_y + header_h + int(card_h * 0.12)
+    list_bot   = card_y + card_h - int(card_h * 0.10)
+    row_gap    = (list_bot - list_top) // rows
+    check_r    = 12
+
+    for i in range(rows):
+        ry = list_top + i * row_gap + row_gap // 2
+        cx = card_x + row_pad_x
+
+        draw.ellipse([cx - check_r, ry - check_r, cx + check_r, ry + check_r],
+                     outline=GLOW_CHECK, width=3)
+        draw.line([(cx - 5, ry), (cx - 1, ry + 5), (cx + 7, ry - 7)],
+                  fill=GLOW_CHECK, width=3)
+
+        line_x0 = cx + check_r + 16
+        line_x1 = card_x + card_w - row_pad_x
+        draw.line([(line_x0, ry), (line_x1, ry)], fill=TIMBER_LINE, width=6)
+
+    return img
+
+
 def load_photo(photo_path):
     """Load, auto-orient, and crop photo to W×(H*2//3)."""
     target_h = H * 2 // 3  # top two-thirds
+
+    if photo_path == ILLUSTRATION_CHECKLIST:
+        return draw_checklist_illustration(target_h)
 
     if photo_path and os.path.exists(photo_path):
         img = Image.open(photo_path).convert('RGB')
