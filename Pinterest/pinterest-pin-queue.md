@@ -87,7 +87,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] What's In the Box — Gear Guide (Pin 10)
+### [x] What's In the Box — Gear Guide (Pin 10)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** What's Already in the Box — And What We Bought Anyway
@@ -100,7 +100,7 @@ what we still bought on day one.
 
 ---
 
-### [ ] Buy-Immediately List — Gear Guide (Pin 11)
+### [x] Buy-Immediately List — Gear Guide (Pin 11)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Our Buy-Immediately List for the Ninja Woodfire (Under $80)
@@ -266,7 +266,7 @@ cook, all in for under $80.
 
 ---
 
-### [ ] Save Before You Spend $500 — Oven Review (Pin 4)
+### [x] Save Before You Spend $500 — Oven Review (Pin 4)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** Save This Pizza Oven Guide Before You Spend $500
@@ -279,7 +279,7 @@ cook, all in for under $80.
 
 ---
 
-### [ ] 5 Tested, Only 2 Worth It — Oven Review (Pin 5)
+### [x] 5 Tested, Only 2 Worth It — Oven Review (Pin 5)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** 5 Outdoor Pizza Ovens Tested — Only 2 Were Worth It
@@ -292,7 +292,7 @@ cook, all in for under $80.
 
 ---
 
-### [ ] The Buying Mistake — Oven Review (Pin 6)
+### [x] The Buying Mistake — Oven Review (Pin 6)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** The Pizza Oven Buying Mistake Everyone Makes
@@ -305,7 +305,7 @@ cook, all in for under $80.
 
 ---
 
-### [ ] Read This Before You Buy — Oven Review (Pin 7)
+### [x] Read This Before You Buy — Oven Review (Pin 7)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** Read This Before You Buy an Outdoor Pizza Oven
@@ -318,7 +318,7 @@ cook, all in for under $80.
 
 ---
 
-### [ ] Pin This Checklist First — Oven Review (Pin 8)
+### [x] Pin This Checklist First — Oven Review (Pin 8)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** Pizza Oven Shopping? Pin This Checklist First
@@ -331,7 +331,7 @@ cook, all in for under $80.
 
 ---
 
-### [ ] Don't Buy Until You've Seen This — Quick-Start Guide (Pin 1)
+### [x] Don't Buy Until You've Seen This — Quick-Start Guide (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Don't Buy Ninja Woodfire Accessories Until You've Seen This Free Checklist
@@ -345,7 +345,7 @@ before you shop.
 
 ---
 
-### [ ] The Only 4 Worth Buying — Quick-Start Guide (Pin 2)
+### [x] The Only 4 Worth Buying — Quick-Start Guide (Pin 2)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The Only 4 Ninja Woodfire Accessories Worth Buying — Free One-Page Cheat Sheet
@@ -359,7 +359,7 @@ free and printable.
 
 ---
 
-### [ ] New Owner? Start Here — Quick-Start Guide (Pin 3)
+### [x] New Owner? Start Here — Quick-Start Guide (Pin 3)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** New Ninja Woodfire Owner? Start With This Free Printable Shopping List
@@ -373,7 +373,7 @@ what to buy first.
 
 ---
 
-### [ ] Setup Under $100 — Quick-Start Guide (Pin 4)
+### [x] Setup Under $100 — Quick-Start Guide (Pin 4)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Ninja Woodfire Setup Under $100 — The Free Quick-Start Guide
@@ -387,7 +387,7 @@ one-page guide.
 
 ---
 
-### [ ] What's in the Box vs. What You Need — Quick-Start Guide (Pin 5)
+### [x] What's in the Box vs. What You Need — Quick-Start Guide (Pin 5)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** What's in the Box vs. What You Actually Need to Buy (Free Ninja Woodfire Guide)
@@ -401,7 +401,7 @@ we bought anyway.
 
 ---
 
-### [ ] Hosting? This Kit Plans It — Pizza Party Kit (Pin 1)
+### [x] Hosting? This Kit Plans It — Pizza Party Kit (Pin 1)
 - **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** Hosting Pizza Night? This Free Printable Kit Does the Planning for You
@@ -415,7 +415,7 @@ ready to print.
 
 ---
 
-### [ ] Dough Math for a Crowd — Pizza Party Kit (Pin 2)
+### [x] Dough Math for a Crowd — Pizza Party Kit (Pin 2)
 - **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** How Much Pizza Dough for 12 People? The Free Party Kit Has the Math
@@ -429,7 +429,7 @@ guessing before guests arrive.
 
 ---
 
-### [ ] The 48-Hour Timeline — Pizza Party Kit (Pin 3)
+### [x] The 48-Hour Timeline — Pizza Party Kit (Pin 3)
 - **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** The 48-Hour Pizza Party Timeline — Free Printable Planning Kit
