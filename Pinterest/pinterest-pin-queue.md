@@ -113,7 +113,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] Cover Before First Cook — Gear Guide (Pin 8)
+### [p] Cover Before First Cook — Gear Guide (Pin 8)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Don't Buy a Ninja Woodfire Cover Until You Read This
@@ -124,7 +124,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] The $20 Stone Fix — Gear Guide (Pin 9)
+### [p] The $20 Stone Fix — Gear Guide (Pin 9)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The $20 Accessory That Changed Every Pizza We Make
@@ -132,10 +132,11 @@ cook, all in for under $80.
 - **output:** NEC-accessories-pin9.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+- **note:** live twice on Pinterest as of 2026-07-18 — do not post again
 
 ---
 
-### [x] Dough Starts Here — Recipe (Pin 3)
+### [p] Dough Starts Here — Recipe (Pin 3)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
 - **headline:** Our Dough Starts Here — Caputo 00, Lievito Yeast, La Baleine Salt
@@ -146,7 +147,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] The 4 Accessories Before First Cook — Gear Guide (Pin 7)
+### [p] The 4 Accessories Before First Cook — Gear Guide (Pin 7)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The 4 Ninja Woodfire Accessories You Need Before Your First Cook
@@ -201,7 +202,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] Prime Day Pizza Oven Deals 2026 (Pin 1)
+### [p] Prime Day Pizza Oven Deals 2026 (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** Prime Day Pizza Oven Deals — What's Worth Watching
@@ -214,7 +215,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] Prime Day Accessories 2026 (Pin 1)
+### [p] Prime Day Accessories 2026 (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Prime Day Pizza Accessories Worth Adding to Your Cart
@@ -227,7 +228,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] Pizza Ovens Under $500 — Variation Pin 2
+### [p] Pizza Ovens Under $500 — Variation Pin 2
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** Our Pizza Oven Buying Guide — Save This Before You Shop
@@ -237,6 +238,7 @@ cook, all in for under $80.
 - **output:** NEC-ovens-pin2.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+- **note:** live twice on Pinterest as of 2026-07-18 — do not post again
 
 ---
 
@@ -250,10 +252,11 @@ cook, all in for under $80.
 - **output:** NEC-ovens-pin3.png
 - **board:** Ninja Woodfire Oven
 - **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/
+- **note:** live twice on Pinterest as of 2026-07-18 — do not post again
 
 ---
 
-### [x] Infrared Thermometer — Accessory Pin Rework
+### [p] Infrared Thermometer — Accessory Pin Rework
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Tips
 - **headline:** The $20 Tool That Fixed Every Pizza We Were Making Wrong
@@ -266,7 +269,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] Save Before You Spend $500 — Oven Review (Pin 4)
+### [p] Save Before You Spend $500 — Oven Review (Pin 4)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Oven Review
 - **headline:** Save This Pizza Oven Guide Before You Spend $500
@@ -331,7 +334,7 @@ cook, all in for under $80.
 
 ---
 
-### [x] Don't Buy Until You've Seen This — Quick-Start Guide (Pin 1)
+### [p] Don't Buy Until You've Seen This — Quick-Start Guide (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Don't Buy Ninja Woodfire Accessories Until You've Seen This Free Checklist
@@ -401,7 +404,7 @@ we bought anyway.
 
 ---
 
-### [x] Hosting? This Kit Plans It — Pizza Party Kit (Pin 1)
+### [p] Hosting? This Kit Plans It — Pizza Party Kit (Pin 1)
 - **photo:** illustration:checklist  ← flat page/checklist illustration, no photo (see generator's draw_checklist_illustration)
 - **category:** Pizza Night
 - **headline:** Hosting Pizza Night? This Free Printable Kit Does the Planning for You
@@ -440,6 +443,143 @@ day isn't a scramble.
 - **output:** NEC-partykit-pin3.png
 - **board:** Backyard Pizza Night
 - **link:** https://newenglandcrust.com/pizza-party-kit/
+
+---
+
+<!-- Backfilled 2026-07-18: the 13 entries below were found live on Pinterest but were
+     never in this queue (posted outside the queue workflow). Board and link recorded
+     exactly as verified on each live pin. -->
+
+### [p] Clam Pie, New England Way — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Recipe
+- **headline:** Clam Pie, New England Way
+- **descriptor:** No mozzarella. The clam liquor is the sauce.
+- **output:** none — posted outside queue
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/clam-pie-new-england-way?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Caputo 00 Bread Machine Dough — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Recipe
+- **headline:** Caputo 00 Pizza Dough in a Bread Machine — 3 Ingredients
+- **output:** none — posted outside queue
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/caputo-breadmaker-dough/?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Nobody Tells You This — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Gear Guide
+- **headline:** Nobody Tells You This Before You Buy a Ninja Woodfire
+- **descriptor:** Four things we wish we'd known on day one.
+- **output:** none — posted outside queue
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] What Comes in the Box — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Gear Guide
+- **headline:** What Comes in the Ninja Woodfire Box (And What You Still Need)
+- **output:** none — posted outside queue
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Realistic Accessory Budget — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Gear Guide
+- **headline:** The Realistic Ninja Woodfire Accessory Budget (Not the $600 Version)
+- **output:** none — posted outside queue
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Accessories Actually Worth Buying — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Gear Guide
+- **headline:** The Ninja Woodfire Accessories Actually Worth Buying
+- **output:** none — posted outside queue
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Half Are a Waste — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Gear Guide
+- **headline:** Half of Ninja Woodfire Accessories Are a Waste — Here's Which Half
+- **output:** none — posted outside queue
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Ninja Woodfire vs Ooni — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Oven Review
+- **headline:** Ninja Woodfire vs Ooni — Which One Should You Buy?
+- **output:** none — posted outside queue
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Which Oven Is Actually Worth It — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Oven Review
+- **headline:** Which Outdoor Pizza Oven Is Actually Worth It?
+- **output:** none — posted outside queue
+- **board:** Outdoor Pizza Ovens
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Best Ovens Under $500 — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Oven Review
+- **headline:** The Best Outdoor Pizza Ovens Under $500
+- **output:** none — posted outside queue
+- **board:** Outdoor Pizza Ovens
+- **link:** https://newenglandcrust.com/blog/best-outdoor-pizza-ovens-under-500/?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Host Without the Stress — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Pizza Night
+- **headline:** How to Host a Backyard Pizza Night Without the Stress
+- **output:** none — posted outside queue
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/backyard-pizza-night-setup?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Everything You Need for Pizza Night — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Pizza Night
+- **headline:** Everything You Need for the Perfect Backyard Pizza Night
+- **output:** none — posted outside queue
+- **board:** Backyard Pizza Night
+- **link:** https://www.newenglandcrust.com/blog/backyard-pizza-night-setup/?utm_source=Pinterest&utm_medium=organic
+
+---
+
+### [p] Our Pizza Night Formula — Backfilled from live profile
+- **photo:** unknown — posted outside queue
+- **category:** Pizza Night
+- **headline:** Our Backyard Pizza Night Formula
+- **descriptor:** New England evenings, a hot stone, and wood smoke. The exact setup we use every time — gear, prep, and the details that make it effortless.
+- **output:** none — posted outside queue
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/backyard-pizza-night-setup/?utm_source=Pinterest&utm_medium=organic
 
 ---
 
