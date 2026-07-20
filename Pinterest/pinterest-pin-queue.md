@@ -583,6 +583,18 @@ day isn't a scramble.
 
 ---
 
+### [ ] Pesto, Fresh Mozzarella & Basil — Recipe
+- **photo:** pesto-pizza-spreading-sauce-pin-1000x1500.jpg
+- **category:** Recipe
+- **headline:** Pesto, Fresh Mozzarella & Basil
+- **descriptor:** Fresh pesto, torn mozzarella, basil laid on after the bake. The summer pie we make more than any other.
+- **note:** photo-pin eligible — real photos now exist for this recipe, no illustration workaround needed. Pre-cropped 1000×1500 spreading-sauce shot used above; hero, dough-prep, topped-prebake, ninja-woodfire-oven, and slice-detail shots also live in the recipe's photo set if a different angle is wanted.
+- **output:** NEC-pesto-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/pesto-mozzarella-basil?utm_source=Pinterest&utm_medium=organic
+
+---
+
 ## IDEAS BANK — Not Yet Scheduled
 
 ### Caputo flour / ingredient photo (IMG_8372.jpeg) — future pin angles
