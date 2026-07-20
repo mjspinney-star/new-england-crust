@@ -2,9 +2,15 @@
 import BaseLayout from './BaseLayout.astro';
 import AffiliateLink from '../components/AffiliateLink.astro';
 
+interface InstructionImage {
+  src: string;
+  alt: string;
+}
+
 interface InstructionStep {
   step?: string;
   text: string;
+  images?: InstructionImage[];
 }
 
 interface GearItem {
@@ -222,6 +228,18 @@ if (typeof calories === 'number') {
                   <div>
                     {item.step && <p class="font-semibold text-timber-50">{item.step}</p>}
                     <p class="mt-1 text-timber-100/90">{item.text}</p>
+                    {item.images && item.images.length > 0 && (
+                      <div class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                        {item.images.map((img) => (
+                          <img
+                            src={img.src}
+                            alt={img.alt}
+                            loading="lazy"
+                            class="aspect-square w-full rounded-lg object-cover"
+                          />
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </li>
               ))}

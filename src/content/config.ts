@@ -14,10 +14,17 @@ const blog = defineCollection({
   }),
 });
 
+// Optional inline photo attached to an instruction step.
+const instructionImage = z.object({
+  src: z.string(),
+  alt: z.string(),
+});
+
 // Structured instruction step used by the newer recipe schema (see below).
 const instructionStep = z.object({
   step: z.string().optional(),
   text: z.string(),
+  images: z.array(instructionImage).optional(),
 });
 
 // A single piece of affiliate/owned gear referenced from a recipe
