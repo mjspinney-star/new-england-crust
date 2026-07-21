@@ -28,10 +28,12 @@ best-outdoor-pizza-ovens-under-500.md
 Instagram/
 
 # Generated weekly outputs (local only, not deployed)
-reels/
+reels/*.mp4
+reels/*.command
 Email/Drafts/
 Reddit/
-pin-kits/
+pin-kits/**/*.jpg
+pin-kits/**/*.png
 Pinterest/outputs/
 Photos/*.HEIC
 __pycache__/
