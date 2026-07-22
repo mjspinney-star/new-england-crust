@@ -38,3 +38,4 @@ Pinterest/outputs/
 Photos/*.HEIC
 __pycache__/
 Pinterest/*.jpg
+*.zip
