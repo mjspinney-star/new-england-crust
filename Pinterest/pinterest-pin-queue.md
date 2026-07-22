@@ -87,6 +87,32 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] Accessory We Regret Buying — Gear Guide (Pin 12)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** The Ninja Woodfire Accessory We Regret Buying
+- **descriptor:** We bought a $25 cheat sheet and a
+cleaning kit we never opened —
+here's what we'd skip instead.
+- **output:** NEC-accessories-pin12.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
+### [ ] What We'd Tell a New Owner — Gear Guide (Pin 13)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Months In — Here's What We'd Tell a New Ninja Woodfire Owner
+- **descriptor:** Months of pizza, pulled pork, and
+dehydrated apple chips later —
+here's our honest gear verdict.
+- **output:** NEC-accessories-pin13.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/ninja-woodfire-accessories-worth-buying/
+
+---
+
 ### [x] What's In the Box — Gear Guide (Pin 10)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
