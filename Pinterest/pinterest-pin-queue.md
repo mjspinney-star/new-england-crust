@@ -819,6 +819,13 @@ Use exactly one of these:
 - "What Changed the First Time We Used a Turning Peel Mid-Bake"
 - "Our Honest Take: Is a Turning Peel Worth It for Home Ovens Under 700°F"
 - "The Peel Combo We'd Recommend for a Ninja Woodfire Owner"
+- "The Peel We'd Tell a Beginner to Skip Buying First"
+- "Why Our Turning Peel Almost Went Back the Week We Bought It"
+- "The One Peel Habit That Saves Us From Burnt Knuckles"
+- "What We Do When We Only Have One Peel and Guests Are Waiting"
+- "Our Peel Shopping Regret — And What We'd Buy Instead Now"
+- "The Peel Question Every First-Time Oven Buyer Asks Us"
+- "Why a Second Peel Didn't Fix Our Timing Problem — Practice Did"
 
 ### Cold-weather preheating — additional angles
 - "Our Cold-Weather Pizza Oven Rule: Add 15–20 Minutes"
@@ -853,6 +860,12 @@ Use exactly one of these:
 - "Our Cold-Weather Fuel Choice — What We Reach for After Halloween"
 - "The Preheat Shortcut We Use When It's Too Cold to Wait 40 Minutes"
 - "What We Wish We'd Known Before Our First November Pizza Night"
+- "The Frost Morning That Taught Us to Respect Cold-Weather Preheating"
+- "Why We Don't Trust the Ready Light in November"
+- "Our Layered Clothing Rule for a Cold-Weather Pizza Night"
+- "What Changes First When Temps Drop Below 40°F"
+- "The Cold-Weather Cook We Almost Called Off — And Didn't"
+- "Why We Add a Second Preheat Check Once Frost Hits the Deck"
 
 ### Dough readiness post — additional angles
 - "The Poke Test We Use Every Time Before Opening Dough"
@@ -886,6 +899,12 @@ Use exactly one of these:
 - "What a Cold Kitchen Does to Our 'Ready' Timeline"
 - "Our Readiness Checklist for Guests Who Want to Help Shape"
 - "The Dough Readiness Sign We Almost Always Get Wrong First"
+- "The Dough Readiness Question We Answer the Same Way Every Time"
+- "Why We Stopped Trusting the Clock and Started Trusting Our Hands"
+- "What a Torn Edge Tells Us About Dough That Wasn't Ready"
+- "Our Quick Fix When Dough Snaps Back Anyway"
+- "The Readiness Test We Teach First-Time Guests in Thirty Seconds"
+- "Why Two Dough Balls From the Same Batch Aren't Always Ready Together"
 
 ### Accessories under $50 — additional angles
 - "10 Pizza Accessories Under $50 We Actually Use on Our Patio"
@@ -919,6 +938,12 @@ Use exactly one of these:
 - "Our Honest Ranking of Every Under-$50 Tool We Own"
 - "The Accessory Bundle We'd Gift Someone New to Backyard Pizza"
 - "Why We Still Reach for the Cheapest Tool in Our Kit Most Often"
+- "The Cheapest Tool on This List That We Use the Most"
+- "Our Answer to Which of These Accessories to Buy First"
+- "What We'd Cut From This List If We Had to Pick Five"
+- "Why We Still Recommend This List a Year Later"
+- "The Accessory Under $50 We Almost Left Off This List"
+- "Our Honest Take on Which of These Are Actually Necessary"
 
 ### 9 pizza night recipes — additional angles
 - "9 Pizza Topping Combos We Keep Coming Back To"
@@ -952,6 +977,12 @@ Use exactly one of these:
 - "Which of Our 9 Pizzas Pairs Best With a Cold Beer on the Patio"
 - "The Recipe From Our List We Almost Cut for Being Too Simple"
 - "Our Go-To Pick When We're Cooking for Someone With a Picky Palate"
+- "The Combo From This List Our Neighbors Ask Us to Make Again"
+- "Why This List Exists — We Got Tired of Making the Same Pizza"
+- "Our Answer to Which of These Nine Takes the Most Effort"
+- "What We Serve Alongside These Nine Pizzas"
+- "The Recipe on This List That Surprised Us Most"
+- "Why Margherita Still Makes the Cut Even With This List"
 
 ### Pellet storage — additional angles
 - "How We Keep Our Pellets Dry Through a Humid NE Summer"
@@ -984,6 +1015,12 @@ Use exactly one of these:
 - "What We Do With Pellets That Got a Little Damp But Aren't Ruined"
 - "The Storage Setup That Finally Stopped Our Pellets From Clumping"
 - "Why We Buy Two Blends Instead of Stocking Up on Just One"
+- "The Storage Mistake We Won't Make Twice"
+- "Why Humidity Sneaks Up on Pellet Storage Every Summer"
+- "Our Answer to How Long Sealed Pellets Actually Last"
+- "What We Check Before Every Bag Goes Into Storage"
+- "The Bucket System That Finally Solved Our Pellet Problem"
+- "Why We Buy Pellets Differently Than We Did Our First Season"
 
 ### 72-hour cold-ferment dough — additional angles
 - "Our 72-Hour Dough Recipe — The One We Always Come Back To"
@@ -1017,6 +1054,12 @@ Use exactly one of these:
 - "Why We Weigh Every Dough Ball Instead of Eyeballing It"
 - "What Happens to This Recipe When the Kitchen Runs Warm"
 - "Our Go-To Answer for Scaling This Recipe Up for a Crowd"
+- "The Recipe We Trust Enough to Make Blind, No Notes"
+- "Why This Dough Forgives Mistakes Ours Made in Year One"
+- "Our Answer to Whether This Recipe Works in a Home Oven Too"
+- "What Changed the First Time We Doubled This Recipe"
+- "The Dough Timeline We Never Skip, Even When We're Busy"
+- "Why We Recommend This Recipe to Every New Oven Owner"
 
 ### 00 flour vs. bread flour — additional angles
 - "00 Flour vs. Bread Flour — What We Actually Use and Why"
@@ -1045,6 +1088,12 @@ Use exactly one of these:
 - "What We Noticed the First Time We Ran Out of 00 Mid-Batch"
 - "Our Flour Shelf Life Answer After Storing Bags Through a Humid Summer"
 - "The Flour We'd Recommend to Someone Who Just Bought Their First Oven"
+- "The Bag We Grab Without Thinking Anymore — And Why"
+- "What Happens When a Guest Brings the Wrong Flour to Pizza Night"
+- "Our Answer to Which Flour Ages Better in New England Humidity"
+- "The Flour Debate We Had in Our Own Backyard More Than Once"
+- "Why Ten Minutes of Flour Talk Always Delays Pizza Night"
+- "What We Tell Someone Buying Their First Bag of 00"
 
 ### Hand stretching vs. rolling pin — additional angles
 - "Why We Banned the Rolling Pin From Our Pizza Setup"
@@ -1073,6 +1122,12 @@ Use exactly one of these:
 - "What We Tell Beginners Who Are Scared to Hand-Stretch"
 - "The Difference in Bake Time Between Hand-Stretched and Rolled Dough"
 - "Why We Changed Our Minds About the Rolling Pin After Years of Avoiding It"
+- "The Guest Who Reached for the Rolling Pin Before We Could Stop Her"
+- "Why Our Hands Do a Better Job Than Any Tool We've Tried"
+- "What We Say When Someone Insists a Rolling Pin Is Easier"
+- "The First Stretch That Actually Felt Right — What Changed"
+- "Our Answer to Whether Beginners Should Start With a Rolling Pin Anyway"
+- "Why We Keep Teaching This the Same Way Every Single Time"
 
 ### Infrared thermometer / reading the stone — additional angles
 - "Why We Never Launch a Pizza Without an Infrared Reading First"
@@ -1100,6 +1155,12 @@ Use exactly one of these:
 - "The Reading We Wait for Before We Even Open the Dough Container"
 - "Why We Trust the Thermometer Over the Oven's Built-In Gauge"
 - "What Changed in Our Bake Once We Started Checking Stone Temp Mid-Cook"
+- "The Thermometer We Almost Didn't Buy — And Wish We'd Bought Sooner"
+- "Why the Display Number Stopped Mattering to Us Entirely"
+- "Our One-Tool Rule Before Every Single Launch"
+- "What a $20 Gadget Taught Us About Trusting Numbers Over Guesses"
+- "The Reading That Changed How We Judge Every Cook Now"
+- "Why We Recommend This Tool Before Any Other Pizza Purchase"
 
 ### Prime Day pizza oven deals 2026 — additional angles
 - "Our Prime Day Watch List for Pizza Gear — June 23–26"
@@ -1127,6 +1188,12 @@ Use exactly one of these:
 - "Our Prime Day Regret — The Deal We Should Have Grabbed"
 - "What We're Telling Friends Who Ask About Prime Day Pizza Deals"
 - "The Prime Day Accessory Deal That Beat the Oven Discounts"
+- "Our Answer to Whether Prime Day Deals Are Actually Worth Waiting For"
+- "What We Learned Comparing This Year's Prime Day to Last Year's"
+- "The Prime Day Purchase We're Glad We Waited On"
+- "Why We Check Three Retailers, Not Just Amazon, During Prime Day"
+- "Our Prime Day Rule: Never Buy the First Day's Price"
+- "What We'd Tell Someone Tempted to Buy Full Price Before Prime Day"
 
 ### Finishing with good olive oil — additional angles
 - "The Drizzle That Changed Our Margherita — And Why We Skip It on Loaded Pies"
@@ -1147,6 +1214,12 @@ Use exactly one of these:
 - "What We Learned Testing Three Olive Oils Side by Side on the Same Pizza"
 - "Our Rule for How Much Oil Is Too Much on a Finished Pie"
 - "The Pizza Where Skipping the Oil Was the Right Call"
+- "The Oil We Reserve Only for Pies That Earn It"
+- "Why Some Nights We Skip the Good Bottle Entirely"
+- "Our Rule for Which Pies Get the Expensive Drizzle"
+- "What We Learned Wasting Good Oil on the Wrong Pizza"
+- "The Bottle Test That Settled This Debate for Us"
+- "Why Timing the Drizzle Matters More Than the Brand"
 
 ### Fresh basil vs. dried — additional angles
 - "Fresh or Dried Basil for a 90-Second Pizza Cook — Our Honest Answer"
@@ -1162,6 +1235,12 @@ Use exactly one of these:
 - "Why We Grow Our Own Basil Just for Pizza Season"
 - "Our Test: Fresh Basil Added Pre-Bake vs. Post-Bake"
 - "The Basil Mistake That Taught Us to Always Add It Last"
+- "The Basil Call We Make Before Every Single Bake"
+- "Why We Stopped Overthinking Basil and Started Trusting the Oven"
+- "Our Backyard Basil Patch and What It's Actually For"
+- "What We Tell Guests Who Bring Basil to Pizza Night"
+- "The Pie Where Dried Basil Actually Won the Taste Test"
+- "Why Timing Beats Fresh vs. Dried as the Real Question"
 
 ### What yeast to buy — additional angles
 - "Instant, Active Dry, or Fresh Yeast — What We Actually Use for Pizza"
@@ -1177,6 +1256,12 @@ Use exactly one of these:
 - "What Happens When You Use Too Much Yeast in a Cold Ferment"
 - "Our Honest Take on Sourdough Starter vs. Commercial Yeast for Pizza"
 - "The Yeast Brand We Keep Buying Back After Trying Cheaper Options"
+- "The Yeast Shelf Confusion We Finally Settled for Good"
+- "Why We Buy Yeast in Bulk Once We Found the Right One"
+- "Our Answer to Whether Grocery Store Yeast Is Good Enough"
+- "What We Tell Someone Making Their First Batch of Dough Ever"
+- "The Yeast Question That Comes Up at Every Backyard Pizza Night"
+- "Why Fresh Yeast Isn't Worth Chasing Down for Most Home Cooks"
 
 ### Grilled corn and poblano pizza — additional angles
 - "Our Late-Summer Pizza We Only Make Once a Season — And Why"
@@ -1191,6 +1276,12 @@ Use exactly one of these:
 - "What We Add for Heat When the Poblano Isn't Spicy Enough"
 - "Our Prep Shortcut for This Pizza on a Busy Weeknight"
 - "The Leftover Corn Trick That Started This Whole Recipe"
+- "Why This Pizza Only Shows Up on Our Menu Once a Year"
+- "The Farm Stand Trip That Inspired This Whole Recipe"
+- "Our Answer to Whether This Pizza Works Without a Grill"
+- "What Guests Say the First Time They Try This Combo"
+- "The One Ingredient Swap That Would Ruin This Pizza"
+- "Why August Corn Makes or Breaks This Recipe"
 
 ### Why salt timing matters — additional angles
 - "Why We Never Add Salt to Our Dough Right Away — The Timing Matters"
@@ -1205,6 +1296,12 @@ Use exactly one of these:
 - "Why We Weigh Our Salt Instead of Measuring by Spoon"
 - "Our Rule for Adjusting Salt When We Switch Flour Types"
 - "What Happens to Fermentation Speed When Salt Timing Goes Wrong"
+- "The Salt Habit We Broke After One Ruined Batch"
+- "Why We Time Salt to the Minute During Cold Ferments"
+- "What We Tell Beginners Before They Touch the Salt Jar"
+- "Our Answer to Whether Sea Salt Changes This Timing at All"
+- "The Batch That Convinced Us Salt Timing Isn't Optional"
+- "Why This Small Step Fixes More Dough Problems Than People Think"
 
 ### Semolina on the peel — additional angles
 - "Why We Keep a Small Bowl of Semolina Next to Every Peel"
@@ -1213,6 +1310,12 @@ Use exactly one of these:
 - "What Semolina Does That Flour Can't — We Tested Both Side by Side"
 - "The Sticking Mistake That Made Us Switch to Semolina for Good"
 - "Why We Never Use Semolina on the Stone, Only the Peel"
+- "The Bowl of Semolina That Lives Permanently on Our Prep Table"
+- "Why We Buy Semolina by the Bag, Not the Small Container"
+- "Our Answer to Whether Cornmeal Works as a Semolina Substitute"
+- "What Convinced a Skeptical Friend to Switch to Semolina"
+- "The One Peel Disaster That Semolina Would Have Prevented"
+- "Why Semolina Earned a Permanent Spot in Our Pizza Setup"
 
 ### Pecorino vs. Parmigiano — additional angles
 - "Pecorino or Parmigiano? Our Rule for Reading the Pie First"
@@ -1221,6 +1324,52 @@ Use exactly one of these:
 - "Our Honest Take on Pre-Grated Cheese vs. Fresh Off the Wedge"
 - "What Pecorino Does to a Pizza That Parmigiano Never Could"
 - "The Cheese Mistake That Muddied Our Best White Pie"
+- "The Cheese Debate We Have Every Time We Build a White Pie"
+- "Why We Keep Both Wedges in the Fridge at Once"
+- "Our Answer to Which Cheese Wins on a Simple Margherita"
+- "What We Tell Guests Confused by the Two Cheese Wedges"
+- "The Pizza Where Using the Wrong Cheese Cost Us the Bite"
+- "Why We Grate Fresh Every Time, No Shortcuts"
+
+### Hot honey on pizza — additional angles
+- "The Pizza Where Hot Honey Actually Earns Its Spot"
+- "Why We Stopped Drizzling Hot Honey on Everything"
+- "Our Rule for How Much Hot Honey Is Too Much"
+- "What Hot Honey Ruins When It's Used on the Wrong Pie"
+- "The Brand of Hot Honey We Keep Coming Back To"
+- "Why Sweet and Heat Together Isn't Always the Right Call"
+
+### Canned vs. fresh clams for white clam pizza — additional angles
+- "Canned or Fresh Clams for White Clam Pizza — Our Honest Answer"
+- "The Clam Pizza Where Canned Actually Won"
+- "Why Fresh Clams Overcook Fast in a 900°F Oven"
+- "Our Rule for Judging Good Canned Clams at the Store"
+- "What We Learned Testing Both Clams Back to Back"
+- "The New England Clam Pizza Mistake We See Most Often"
+
+### Backyard pizza night setup — additional angles
+- "The Setup Mistake We Made Our First Season Hosting"
+- "Why Four Stations Beat Just Winging It"
+- "Our Answer to Setting This Up Solo Without Help"
+- "What We'd Change About Our Setup If We Started Over Today"
+- "The Station Guests Notice First When They Walk Into the Backyard"
+- "Why This Setup Works Just as Well for Four People as for Twelve"
+
+### Pizza oven comparison (best outdoor pizza ovens under $500) — additional angles
+- "The Question We Get Asked More Than Any Other About Ovens"
+- "Why We Don't Regret Owning Two Different Ovens"
+- "Our Answer to Whether Cheaper Ovens Are Actually Worth It"
+- "What We'd Tell Someone Buying Their Very First Pizza Oven"
+- "The Oven Feature We Didn't Know to Ask About Until We Owned One"
+- "Why Price Isn't the First Thing We Check Anymore"
+
+### Ninja Woodfire accessories worth buying — additional angles
+- "The Accessory Question We Still Get a Year After Our First Post"
+- "Why Our List Changed After a Full Year of Cooks"
+- "Our Answer to Whether Off-Brand Accessories Are Worth the Savings"
+- "What We'd Tell Someone Who Just Unboxed Their Ninja Woodfire"
+- "The Accessory We Didn't Trust Until We Tried It Ourselves"
+- "Why We Keep Revisiting This List Every Few Months"
 
 ---
 
