@@ -48,7 +48,7 @@ Requirements for each headline idea:
 - Suitable for a Pinterest vertical image pin
 
 Do not touch the Pin Queue section. Do not generate full pin details — ideas
-only. Commit the updated queue file with the message "Added Pinterest headline ideas".
+only. Commit and push by running: bash run-git-commit.command "Added Pinterest headline ideas" Pinterest/pinterest-pin-queue.md
 
 ---
 
@@ -82,7 +82,7 @@ After running:
 - Confirm each expected PNG exists in the `outputs/` folder
 - Mark each successfully generated pin as `[x]` in the queue file
 - If any pin failed, mark it `[!]` and note the reason
-- Commit all changes with the message "Generated Pinterest pins — [date]"
+- Commit and push: bash run-git-commit.command "Generated Pinterest pins — [date]" Pinterest/pinterest-pin-queue.md
 
 If there are no `[ ]` items in the queue, stop and output this message:
 "Pin queue is empty. Add items to the Pin Queue in pinterest-pin-queue.md

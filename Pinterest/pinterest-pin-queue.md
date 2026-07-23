@@ -77,7 +77,7 @@ When the weekly scheduled task runs:
 3. Run `python3 pinterest-pin-generator.py` from this Pinterest folder
 4. Confirm PNGs were saved to the `outputs/` folder
 5. Mark each completed pin `[x]` in this file
-6. Commit changes: `git add -A && git commit -m "Generated Pinterest pins"`
+6. Commit changes: bash run-git-commit.command "Generated Pinterest pins — [date]" Pinterest/pinterest-pin-queue.md
 
 If there are no `[ ]` items, do nothing and note the queue is empty.
 
