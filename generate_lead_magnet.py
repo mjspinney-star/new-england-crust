@@ -24,7 +24,7 @@ Leave it as None to generate the cover without a photo (title-only layout).
 ─────────────────────────────────────────────
 """
 
-COVER_PHOTO_PATH = "/Users/michaelspinney/Desktop/new-england-crust/NinjaWoodfireHero.jpeg"
+COVER_PHOTO_PATH = "/Users/michaelspinney/Desktop/new-england-crust/public/images/NinjaWoodfireHero.jpeg"
 
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
@@ -700,7 +700,7 @@ def build_pdf():
 
     story.append(Spacer(1, 20))
     story.append(Paragraph(
-        "© New England Crust · newenglandcrust.com · Salt Air & Crispy Crust",
+        "© New England Crust · newenglandcrust.com · Salt Air & Open Flame",
         S["footer"]
     ))
 
