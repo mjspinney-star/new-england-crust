@@ -2,7 +2,7 @@
 
 This is a reference copy of the live Tuesday 3:00 PM Cowork scheduled job.
 If you edit the job in Cowork's settings, update this file to match.
-Last synced: 2026-07-21
+Last synced: 2026-07-23
 
 ---
 
@@ -64,6 +64,35 @@ Save all 3 scripts to:
 Use today's actual date in the filename.
 
 PART 2 — GENERATE REEL
+
+IMPORTANT — content-injection workflow (do not skip):
+hyperframes/nec-reel/index.html is a SHARED template reused by every
+weekly reel. Never hand-edit its slide text directly — editing it in
+place is what caused two separate mis-rendered/mislabeled reels in
+July 2026 (a later week's staged content silently overwrote an
+earlier reel's output because both render scripts pulled from the
+same mutable file).
+
+Instead:
+1. Write the slide content for Reel 1 to a new JSON file at
+   hyperframes/nec-reel/content/YYYY-MM-DD-reel1-[slug].json using
+   this schema (all fields required; use "" for s2/s3/s4_subline
+   when a slide has no subline):
+   {
+     "s1_headline": "...",
+     "s2_headline": "...", "s2_subline": "...",
+     "s3_headline": "...", "s3_subline": "...",
+     "s4_headline": "...", "s4_subline": "..."
+   }
+2. Copy the most recent render-reel-YYYY-MM-DD.command as a template
+   for a new dated copy, updating OUTPUT and CONTENT to point at the
+   new mp4 filename and the new JSON file above. Leave the
+   `--variables-file "$CONTENT" --strict-variables` flags in place —
+   strict mode fails the render instead of silently falling back to
+   template defaults if the JSON file is missing a field.
+3. Run the new .command script. It renders index.html's fixed
+   layout/animation with your JSON's text — it does not read or
+   write any other reel's content.
 
 Using Reel 1 from the scripts above, generate an MP4 using
 HyperFrames with these exact brand specs:

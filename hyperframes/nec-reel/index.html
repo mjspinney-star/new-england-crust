@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-composition-variables='[
+  {"id":"s1_headline","type":"string","label":"Slide 1 headline (hook, no subline)","default":"Fresh clams can ruin your clam pizza faster than canned ones."},
+  {"id":"s2_headline","type":"string","label":"Slide 2 headline","default":"In a 900°F oven, fresh clams overcook almost instantly."},
+  {"id":"s2_subline","type":"string","label":"Slide 2 subline (leave empty for none)","default":"Canned clams are already cooked, so they&#39;re actually more forgiving at high heat."},
+  {"id":"s3_headline","type":"string","label":"Slide 3 headline","default":"We add fresh clams in the last 20 seconds of the cook."},
+  {"id":"s3_subline","type":"string","label":"Slide 3 subline (leave empty for none)","default":"Any earlier and they tighten up before the crust is even done."},
+  {"id":"s4_headline","type":"string","label":"Slide 4 headline","default":"Short on time? Canned clams, no debate."},
+  {"id":"s4_subline","type":"string","label":"Slide 4 subline (leave empty for none)","default":"Bumble Bee or Bar Harbor, drained, finished with a little reserved juice."}
+]'>
 <head>
   <meta charset="UTF-8" />
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
@@ -120,7 +128,6 @@
       line-height: 1.2;
       color: #F5F0E8;
       margin-top: 36px;
-      opacity: 0;
     }
 
     .accent-rule {
@@ -221,7 +228,7 @@
     <div id="grid-tex" data-layout-ignore></div>
 
     <!-- ════════ SCENE 1 ════════
-         Hook — "'Fresh clams are better.' We still reach for the can most weeks." (2s) -->
+         Hook (no subline) — content injected from data-composition-variables, see script below -->
     <div id="s1" class="scene">
       <div class="glow" style="width:320px;height:320px;top:820px;left:-80px;background:radial-gradient(circle,rgba(196,98,45,0.14) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -229,14 +236,13 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s1-hl" class="headline">"Fresh clams are better." We still reach for the can most weeks.</div>
+        <div id="s1-hl" class="headline"></div>
         <div id="s1-rule" class="accent-rule"></div>
       </div>
       <div id="s1-num" class="slide-num">01 / 05</div>
     </div>
 
-    <!-- ════════ SCENE 2 ════════
-         "Fresh littlenecks mean a special grocery trip, same day, no substitutions." (3s) -->
+    <!-- ════════ SCENE 2 ════════ -->
     <div id="s2" class="scene">
       <div class="glow" style="width:280px;height:280px;top:1080px;right:-60px;background:radial-gradient(circle,rgba(196,98,45,0.13) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -244,15 +250,14 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s2-hl" class="headline">Fresh littlenecks mean a special grocery trip, same day, no substitutions.</div>
-        <div id="s2-sub" class="subline">Canned clams are already in the pantry on a random Tuesday. That counts for something.</div>
+        <div id="s2-hl" class="headline"></div>
+        <div id="s2-sub" class="subline"></div>
         <div id="s2-rule" class="accent-rule"></div>
       </div>
       <div id="s2-num" class="slide-num">02 / 05</div>
     </div>
 
-    <!-- ════════ SCENE 3 ════════
-         "Shucking is also just messier than most recipes let on." (3s) -->
+    <!-- ════════ SCENE 3 ════════ -->
     <div id="s3" class="scene">
       <div class="glow" style="width:300px;height:300px;top:650px;left:-70px;background:radial-gradient(circle,rgba(196,98,45,0.12) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -260,15 +265,14 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s3-hl" class="headline">Shucking is also just messier than most recipes let on.</div>
-        <div id="s3-sub" class="subline">Shells, grit, a sink full of brine — for a pizza that's on the table in 20 minutes either way.</div>
+        <div id="s3-hl" class="headline"></div>
+        <div id="s3-sub" class="subline"></div>
         <div id="s3-rule" class="accent-rule"></div>
       </div>
       <div id="s3-num" class="slide-num">03 / 05</div>
     </div>
 
-    <!-- ════════ SCENE 4 ════════
-         "Start with canned, get the build right, then upgrade to fresh." (3s) -->
+    <!-- ════════ SCENE 4 ════════ -->
     <div id="s4" class="scene">
       <div class="glow" style="width:360px;height:360px;top:920px;right:-80px;background:radial-gradient(circle,rgba(196,98,45,0.16) 0%,transparent 70%);" data-layout-ignore></div>
       <div class="corner c-tl" data-layout-ignore></div>
@@ -276,7 +280,8 @@
       <div class="corner c-bl" data-layout-ignore></div>
       <div class="corner c-br" data-layout-ignore></div>
       <div class="scene-content">
-        <div id="s4-hl" class="headline">Start with canned, get the build right, then upgrade to fresh.</div>
+        <div id="s4-hl" class="headline"></div>
+        <div id="s4-sub" class="subline"></div>
         <div id="s4-rule" class="accent-rule"></div>
       </div>
       <div id="s4-num" class="slide-num">04 / 05</div>
@@ -303,6 +308,30 @@
   </div>
 
   <script>
+    // ═══════════════════════════════════════════════════════════════
+    // Content comes from data-composition-variables (see <html> tag)
+    // plus whatever --variables/--variables-file the render command
+    // supplies. NEVER hand-edit the slide text below directly in this
+    // file — this file is the shared template for every weekly reel.
+    // Edit content by passing a variables file, e.g.:
+    //   hyperframes render -c . --variables-file content/2026-07-28-reel1.json -o ../reel-....mp4
+    // ═══════════════════════════════════════════════════════════════
+    const V = window.__hyperframes.getVariables();
+
+    document.getElementById("s1-hl").textContent = V.s1_headline;
+
+    document.getElementById("s2-hl").textContent  = V.s2_headline;
+    document.getElementById("s2-sub").textContent = V.s2_subline || "";
+    if (!V.s2_subline) document.getElementById("s2-sub").style.display = "none";
+
+    document.getElementById("s3-hl").textContent  = V.s3_headline;
+    document.getElementById("s3-sub").textContent = V.s3_subline || "";
+    if (!V.s3_subline) document.getElementById("s3-sub").style.display = "none";
+
+    document.getElementById("s4-hl").textContent  = V.s4_headline;
+    document.getElementById("s4-sub").textContent = V.s4_subline || "";
+    if (!V.s4_subline) document.getElementById("s4-sub").style.display = "none";
+
     window.__timelines = window.__timelines || {};
     const tl = gsap.timeline({ paused: true });
 
@@ -348,8 +377,9 @@
 
     // ════════ SCENE 4 entrances ════════
     tl.from("#s4-hl",   { scale: 0.94, y: 40, opacity: 0, duration: 0.75, ease: "power4.out" }, T3 + 0.48);
-    tl.from("#s4-rule", { scaleX: 0, opacity: 0, duration: 0.50, ease: "power2.out", transformOrigin: "left center" }, T3 + 1.10);
-    tl.from("#s4-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },                         T3 + 1.20);
+    tl.from("#s4-sub",  { opacity: 0, duration: 0.60, ease: "power2.out" },                       T3 + 0.90);
+    tl.from("#s4-rule", { scaleX: 0, opacity: 0, duration: 0.50, ease: "power2.out", transformOrigin: "left center" }, T3 + 1.20);
+    tl.from("#s4-num",  { opacity: 0, duration: 0.35, ease: "sine.out" },                         T3 + 1.30);
 
     // ── Crossfade S4 → S5 at T=11.75 ──
     const T4 = 11.75;
