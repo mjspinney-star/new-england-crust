@@ -87,7 +87,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Accessory We Regret Buying — Gear Guide (Pin 12)
+### [x] Accessory We Regret Buying — Gear Guide (Pin 12)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The Ninja Woodfire Accessory We Regret Buying
@@ -100,7 +100,7 @@ here's what we'd skip instead.
 
 ---
 
-### [ ] What We'd Tell a New Owner — Gear Guide (Pin 13)
+### [x] What We'd Tell a New Owner — Gear Guide (Pin 13)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** Months In — Here's What We'd Tell a New Ninja Woodfire Owner
@@ -609,7 +609,7 @@ day isn't a scramble.
 
 ---
 
-### [ ] Pesto, Fresh Mozzarella & Basil — Recipe
+### [x] Pesto, Fresh Mozzarella & Basil — Recipe
 - **photo:** pesto-pizza-spreading-sauce-pin-1000x1500.jpg
 - **category:** Recipe
 - **headline:** Pesto, Fresh Mozzarella & Basil
