@@ -186,14 +186,24 @@ const req = https.request(options, (res) => {
 
     const postContent = response.content[0].text;
 
-    // Filename: YYYY-MM-DD-post-type-topic-slug.md
-    const slug = selected.topic
+    // Filename: post-topic-slug.md (no date prefix, word-boundary safe)
+    let slug = selected.topic
       .toLowerCase()
       .replace(/[^a-z0-9\s-]/g, '')
       .replace(/\s+/g, '-')
-      .slice(0, 50);
-
-    const filename = `src/content/blog/${today}-${slug}.md`;
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+    if (slug.length > 50) {
+      slug = slug.slice(0, 50);
+      const lastHyphen = slug.lastIndexOf('-');
+      if (lastHyphen > 20) slug = slug.slice(0, lastHyphen);
+      slug = slug.replace(/-$/, '');
+    }
+    const filename = `src/content/blog/${slug}.md`;
+    if (fs.existsSync(filename)) {
+      console.error(`Post already exists: ${filename} — aborting.`);
+      process.exit(1);
+    }
     fs.writeFileSync(filename, postContent);
     console.log('Post saved to: ' + filename);
 
