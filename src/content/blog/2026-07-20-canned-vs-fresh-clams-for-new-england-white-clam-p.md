@@ -44,4 +44,4 @@ The rest of the pie matters too. A strong garlic-olive oil base, good low-moistu
 
 ## Try This Next
 
-If you are making white clam pizza for the first time, start with canned. Get the build right — dough, oil, cheese ratio, cook time. Once that feels dialed in, swap in fresh clams and you will immediately taste the difference. That comparison, made back to back, teaches you more than reading about it will.
+If you are making [white clam pizza](/recipes/clam-pie-new-england-way/) for the first time, start with canned. Get the build right — dough, oil, cheese ratio, cook time. Once that feels dialed in, swap in fresh clams and you will immediately taste the difference. That comparison, made back to back, teaches you more than reading about it will.

@@ -13,7 +13,7 @@ The best upgrades to a backyard pizza setup don't cost much. We've spent more ti
 
 You don't need to spend $200 on gear to cook significantly better pizza. The sweet spot is under $50: tools that solve real problems without requiring a second mortgage. Below is the list we'd hand to anyone setting up their first serious outdoor pizza station, or looking to fill in the gaps on a setup they already have.
 
-Most of these live on or near our Ninja Woodfire patio setup, but they're just as useful on an Ooni, a Solo Stove, or a standard grill with a stone. The problems they solve are universal.
+Most of these live on or near our [Ninja Woodfire patio setup](/blog/ninja-woodfire-accessories-worth-buying/), but they're just as useful on an Ooni, a Solo Stove, or a standard grill with a stone. The problems they solve are universal.
 
 ---
 
@@ -129,7 +129,7 @@ The essentials tier alone is a meaningful upgrade. Start there, cook fifty pizza
 
 ---
 
-Summer pizza nights on the coast have a way of raising the stakes — salt air, good company, and a hot oven that won't forgive a bad launch. The right gear doesn't make you a better cook by itself, but it removes the friction that gets in the way of good results. For the bigger-ticket items — oven covers, stands, and the ovens themselves — check our full accessories page for what we actually use on the deck.
+Summer pizza nights on the coast have a way of raising the stakes — salt air, good company, and a hot oven that won't forgive a bad launch. The right gear doesn't make you a better cook by itself, but it removes the friction that gets in the way of good results. For the bigger-ticket items — oven covers, stands, and [the ovens themselves](/blog/best-outdoor-pizza-ovens-under-500/) — check our [full gear page](/gear/) for what we actually use on the deck.
 
 ---
 
