@@ -1,108 +1,111 @@
 # New England Crust — Project Context
 
-> This file gives Claude persistent context for all Cowork sessions on this project.
-> Update it as the site evolves — decisions made, content published, programs joined.
+> Durable project brief for Claude Code sessions. Update it as the site
+> evolves — decisions made, content published, programs joined.
+> Rewritten 2026-07-28 at the end of the fable5-seo-audit pass; that branch's
+> PR (#3) and `AUDIT.md` hold the full history of how we got here.
 
 ---
 
-## Project Overview
+## What this site is
 
-**New England Crust** is a pizza-focused blog and content site built to grow an audience first, then monetize through affiliate marketing. The site is built with **Astro** and hosted on **Cloudflare**. The local project folder is `new-england-crust` on the desktop.
+**New England Crust** (newenglandcrust.com) is a first-person pizza blog —
+backyard outdoor-oven cooking from a New England point of view — built to grow
+an audience and monetize through affiliate links. The high-value focus is
+outdoor pizza ovens (Ooni, Ninja Woodfire, Solo Stove); everything else
+(tools, ingredients, accessories) supports it via Amazon Associates.
 
-**Current status:** Active content and monetization phase. Amazon Associates links live across all content including ovens. Impact/Avantlink brand approvals pending.
+## Tech stack
 
----
+- **Astro** static site (`output: 'static'`, trailing-slash directory URLs)
+- **Cloudflare Workers with static assets** — deploy via
+  `npx wrangler versions upload --assets=./dist`; config in `wrangler.jsonc`
+  at repo root (name `new-england-crust`, assets dir `./dist`)
+- Content: markdown collections in `src/content/blog/` and
+  `src/content/recipes/` (`.mdx` when a post uses components)
+- Analytics: GA4 `G-3QBKJCC5F9` (tag in `BaseLayout.astro`)
+- Search Console: sitemap is **`/sitemap-index.xml`** (there is no
+  `sitemap.xml` — never point anything at that)
+- Build: `npm run build` — run it after every change set; fix what you broke
 
-## Tech Stack
+## Conventions — read CONTRIBUTING-SEO.md first
 
-- **Framework:** Astro (static site generator)
-- **Hosting:** Cloudflare Pages
-- **Local dev:** Localhost
-- **Content format:** Markdown (.md) with Astro frontmatter
-- **Blog content folder:** `src/content/blog/`
-- **Analytics:** Google Analytics 4 — Measurement ID `G-3QBKJCC5F9` — tag live in `src/layouts/BaseLayout.astro`
-- **Search Console:** Set up June 2026 — sitemap submitted at `newenglandcrust.com/sitemap.xml`
+`CONTRIBUTING-SEO.md` at repo root is the rulebook (affiliate link rules, FTC
+disclosure placement, publishing model, frontmatter limits, heading/link
+hygiene, redirect procedure, brand-program swap runbook). Don't restate it
+here; read it before editing content or components.
 
-All blog posts are `.md` files and need proper Astro frontmatter (title, description, date, etc.) to integrate correctly.
+## Affiliate policy (summary — details in CONTRIBUTING-SEO.md)
 
----
+- **Amazon Associates tag: `newenglandcru-20`** on every Amazon link. All
+  affiliate links render through `<AffiliateLink id="..." />` backed by the
+  registry — never hand-written in content.
+- **Ooni & Solo Stove: NO Amazon-tagged links anywhere.** Impact/Avantlink
+  reapplications are in flight (denied once for Ooni; clean outbound profile
+  is critical). Their registry entries carry `pendingProgram` and render
+  untracked brand-direct links until programs approve — then it's a one-line
+  registry swap per brand.
+- **Ninja: stays on Amazon** (direct rate not clearly better). Revisit after
+  Ooni/Solo approvals land.
+- Product not in the registry? Plain text + log it in `REGISTRY-GAPS.md`.
 
-## Brand Voice
+## Where things live
 
-- First-person, personal, and authentic — written like a real pizza enthusiast, not a content farm
-- Conversational but knowledgeable; the reader should feel like they're getting advice from a friend who really knows pizza
-- New England roots inform the perspective — regional pride without being exclusionary
-- No filler, no fluff; every sentence earns its place
-- Opinions are expressed clearly ("my pick is…", "I personally enjoy…")
+| What | Where |
+|---|---|
+| Affiliate registry (single source of truth) | `src/data/affiliateLinks.ts` |
+| Affiliate link component (rel, badges, brand policy) | `src/components/AffiliateLink.astro` |
+| Publish filter (draft AND pubDate ≤ now) | `src/data/publishing.ts` — used by all routes, indexes, RSS |
+| Layouts (SEO meta, Recipe JSON-LD, gear cards) | `src/layouts/BaseLayout.astro`, `src/layouts/RecipeLayout.astro`, `src/components/SEO.astro` |
+| Mon/Thu post generator (GitHub Actions + Claude API) | `.github/workflows/generate-weekly-blog-post.yml`, `.github/scripts/generate-post.cjs` |
+| Redirects (301s live forever) | `public/_redirects` |
+| Social/OG fallback image | `public/og-image.jpg` (1200×630) |
+| Audit history + Ooni/Solo link inventory | `AUDIT.md` |
+| Product gaps + voice-mix log | `REGISTRY-GAPS.md` |
 
----
+## Publishing model
 
-## Affiliate Strategy
+Content publishes when `draft: false` **and** `pubDate` has arrived (first
+build on/after the date). The recipe queue is armed through 2026-09-28
+(master-dough 07-30, south-shore 08-03, beach 08-06, greek 08-10, same-day
+08-13, new-haven 08-17, ri-bakery 08-31, margherita 09-07, ny-slice 09-14,
+detroit 09-21, grandma 09-28). The generator must never emit affiliate
+placeholders or suggest Ooni/Solo links (prompt-enforced — keep it that way).
 
-**Dual-track approach:**
+## Voice
 
-### Track 1 — Pizza Ovens (Amazon interim → Impact/Avantlink when approved)
-Amazon Associates links (tag newenglandcru-20) are the interim solution for pizza ovens. Ooni Koda 12, Solo Stove Pi, and Ninja Woodfire oven links are live via Amazon as of July 2026. If an oven has no Amazon listing (e.g., Ooni Fyra), leave it unlinked and ask Michael before adding any link.
+First-person, personal, no content-farm tone. Two registers, never mixed on
+one page: **"I"** for story/experience pieces and all newly generated content;
+**"we"** stays in legacy instructional bodies (don't rewrite them). Within-page
+clashes get logged in `REGISTRY-GAPS.md` for Michael to fix by hand.
 
-When brand approvals come through, swap oven links to the direct programs — they pay higher commission on the same sale. Never remove a working amzn.to link without a replacement ready.
+## Known-open items (as of 2026-07-28)
 
-| Brand | Network | Est. Commission | Status |
-|---|---|---|---|
-| Ooni | Avantlink | 5–8% | Applied, awaiting approval |
-| SharkNinja | Impact.com | 3–8% | Reapplying mid-August 2026 |
-| Solo Stove | Impact.com | 8–10% | Applied, awaiting approval |
+1. **Registry gaps** (see `REGISTRY-GAPS.md`): turning peel (two posts link a
+   launching peel under "turning peel" text pending this), finishing olive
+   oil, semolina, pellet bucket + silica packs.
+2. **Restore after 08-01:** the "Roasted Heirloom Tomato Sauce" link in
+   `caputo-breadmaker-dough.mdx` "See Also" (removed while target was hidden).
+3. **Voice-mix pages** logged in `REGISTRY-GAPS.md` (RecipeLayout "Gear I
+   used" over "we" recipe bodies; /gear/ mixes both) — Michael fixes by hand.
+4. **Parked work** (deliberately deferred until post-deploy GSC data): rest of
+   Task B title/meta rewrites, Task C schema markup (Article/ItemList/FAQ/
+   Breadcrumb), Task E internal linking, Task F component extraction +
+   deleting `sample-recipe-schema-demo.md` (kept `draft: true` on purpose).
+5. **Etekcity model nuance:** the infrared post names the "Lasergrip 1080" but
+   the registry ASIN is a newer Etekcity IR gun — swap ASIN or prose someday.
+6. **Cloudflare deploy verification:** wrangler.jsonc added for Workers
+   static assets; if preview builds still fail, check whether the dashboard
+   project is actually Pages (would need `wrangler pages deploy ./dist`).
+7. **Security:** git remote URL embeds a plaintext GitHub PAT — rotate and
+   move to a credential helper.
 
-### Track 2 — Everything Else (Amazon Associates — LIVE)
-Amazon affiliate links are active and already live in published content. All non-oven product recommendations (ingredients, tools, accessories, cookware, etc.) use Amazon Associates links.
+## What to remember each session
 
-**Content strategy:**
-- Comparison articles (Ooni vs. Ninja vs. Solo Stove Pi) are the primary high-value affiliate driver
-- Amazon links support all supporting content — dough tools, peels, flour, accessories, etc.
-- Seasonal content pushes (summer grilling, holiday gifting)
-- First-person reviews with honest pros/cons build trust before the ask
-
-**Important rule:** Amazon links are live for all products, ovens included. Impact/Avantlink brand programs are NOT yet approved — never add links from those networks until explicitly instructed. When they approve, oven links get swapped from Amazon to the direct program.
-
----
-
-## Content Published / In Progress
-
-### Live Blog Posts
-- `best-outdoor-pizza-ovens-under-500.md` — Reviews multiple ovens; three picks: Ooni and Ninja as top picks, Solo Stove Pi as "Also Worth Considering." Heading reads "My Picks."
-- Two Peels vs One
-- Ninja Woodfire Accessories Worth Buying
-- 9 Pizza Night Recipes That Aren't Margherita
-- Backyard Pizza Night Setup
-- Storing Pellets Through a Humid NE Summer
-- Our 72-Hour Cold Fermented Dough (blog post version)
-
-### Live Recipes
-- Our 72-Hour Cold Fermented Dough
-- Caputo 00 (dough/flour focused)
-- Chicken Bacon Ranch
-- Pesto, Fresh Mozzarella & Basil
-- Clam Pie
-- Roasted Heirloom and NH Mushroom
-
-### Publishing Schedule
-A GitHub + Claude API (Console subscription) automation is set up to publish new posts automatically every **Monday and Thursday**. This pipeline is active — account for it when planning content so the queue stays filled.
-
----
-
-## Workflow Notes
-
-- Files are authored here locally and dropped into `src/content/blog/` manually
-- Cowork is the preferred tool for file creation, editing, and folder management
-- Claude.ai chat is used for drafting, strategy, and research
-- Google Drive is used as backup storage only — HTML files do not render there, and DOCX conversions have been unreliable. Direct download → manual upload is the most reliable workflow.
-
----
-
-## What to Remember Each Session
-
-1. Amazon Associates links are live for everything — ovens and non-oven products alike (tag newenglandcru-20)
-2. Impact/Avantlink approvals pending (SharkNinja reapplication mid-August 2026) — do NOT add those links until instructed; when approved, swap oven links from Amazon to direct programs
-3. Voice is **first-person and personal** — avoid generic blog tone
-4. The three oven brands are the high-value monetization focus; Amazon covers everything else
-5. Astro frontmatter is required on all `.md` posts
-6. Update this file when major decisions are made or content is published
+1. Never add an Amazon-tagged link to an Ooni or Solo Stove product.
+2. Never hand-write affiliate URLs in content — registry + component only.
+3. Run `npm run build` after edits; the pubDate filter means future content
+   staying hidden is correct behavior, not a bug.
+4. Michael reviews per-step commits and wants judgment calls flagged, not
+   guessed — pause on policy-shaped decisions.
+5. Update this file when major decisions land.
