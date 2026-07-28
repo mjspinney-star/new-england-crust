@@ -374,7 +374,7 @@ before you shop.
 
 ---
 
-### [x] The Only 4 Worth Buying — Quick-Start Guide (Pin 2)
+### [p] The Only 4 Worth Buying — Quick-Start Guide (Pin 2)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
 - **headline:** The Only 4 Ninja Woodfire Accessories Worth Buying — Free One-Page Cheat Sheet

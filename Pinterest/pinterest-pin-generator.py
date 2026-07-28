@@ -618,6 +618,392 @@ def draw_diamond_rule(draw, y, left, right, amber):
               fill=(*amber, 160), width=1)
 
 
+# ── PIN-KIT LAYOUT (hero photo fills top ~65% + text block below) ────────────
+# Used for the recipe "pin kit" folders (pin-kits/<slug>/pin-N-*.png) — four
+# pins per recipe sharing one hero photo, distinct from the Pinterest/outputs/
+# PINS list above. Unlike make_pin_split(), a missing hero photo is a hard
+# skip (see load_hero_photo_fill / generate_pin_kits) — this function is only
+# ever called once the caller has confirmed the photo file exists.
+
+PIN_KIT_PHOTO_H = int(H * 0.65)   # 975 — top ~65% of the 1000x1500 canvas
+PIN_KIT_FADE_H  = 80              # gradient fade over the bottom 80px of the photo
+
+
+def load_hero_photo_fill(photo_path, target_h):
+    """
+    Load and center-crop a hero photo to W x target_h ("crop to fill").
+    Returns None if photo_path is falsy or the file doesn't exist — callers
+    must treat that as a hard skip, not a placeholder.
+    """
+    if not photo_path or not os.path.exists(photo_path):
+        return None
+    img = Image.open(photo_path).convert('RGB')
+    src_w, src_h = img.size
+    # EXIF-less orientation fix: rotate landscape iPhone shots to portrait
+    if src_w > src_h:
+        img = img.rotate(270, expand=True)
+        src_w, src_h = img.size
+    ratio = W / target_h
+    if src_w / src_h > ratio:
+        new_w = int(src_h * ratio)
+        left  = (src_w - new_w) // 2
+        img   = img.crop((left, 0, left + new_w, src_h))
+    else:
+        new_h = int(src_w / ratio)
+        top   = (src_h - new_h) // 4   # bias toward top of photo
+        img   = img.crop((0, top, src_w, top + new_h))
+    return img.resize((W, target_h), Image.LANCZOS)
+
+
+def _paste_with_soft_shadow(canvas, layer_rgba, x, y, blur=10, offset=(0, 6), alpha=130):
+    """
+    Drop a soft blurred dark shadow behind an RGBA layer (logo badge or top
+    badge pill), then paste the layer on top. Used so the CRUST logo and the
+    top-left category badge stay legible when they sit directly on a busy
+    photo instead of the old flat gradient background.
+    """
+    canvas_w, canvas_h = canvas.size
+    shadow_layer = Image.new('RGBA', (canvas_w, canvas_h), (0, 0, 0, 0))
+    alpha_mask = layer_rgba.split()[3].point(lambda a: alpha if a > 0 else 0)
+    shadow_solid = Image.new('RGBA', layer_rgba.size, (0, 0, 0, 255))
+    shadow_solid.putalpha(alpha_mask)
+    shadow_layer.paste(shadow_solid, (x + offset[0], y + offset[1]), shadow_solid)
+    shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(blur))
+    composited = Image.alpha_composite(canvas.convert('RGBA'), shadow_layer)
+    canvas.paste(composited.convert('RGB'), (0, 0))
+    canvas.paste(layer_rgba, (x, y), layer_rgba)
+
+
+def paste_logo_badge_kit(canvas, cx, cy, size=152):
+    """Same as paste_logo_badge(), but drops a soft shadow first so the dark
+    logo circle lifts cleanly off a busy photo background."""
+    if not os.path.exists(LOGO_PATH):
+        # Fall back to the flat badge (already has its own filled circle,
+        # which reads fine on a photo without an extra shadow).
+        draw = ImageDraw.Draw(canvas, 'RGBA')
+        draw_flame_badge(draw, cx, cy, scale=size / 185.0)
+        return
+    logo = Image.open(LOGO_PATH).convert('RGBA')
+    logo = logo.resize((size, size), Image.LANCZOS)
+    x = cx - size // 2
+    y = cy - size // 2
+    _paste_with_soft_shadow(canvas, logo, x, y, blur=10, offset=(0, 5), alpha=110)
+
+
+def paste_kit_badge(canvas, corner, label, margin=30):
+    """
+    Small rounded-rect category badge ("NEW ENGLAND CLASSIC", "STEP-BY-STEP")
+    used on pin 2 / pin 4 of each kit — Ember Amber fill, Deep Char bold
+    serif text, dropped with a soft shadow since it now sits over a photo.
+    """
+    font_badge = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 28)
+    draw_probe = ImageDraw.Draw(Image.new('RGBA', (10, 10)))
+    bbox = draw_probe.textbbox((0, 0), label, font=font_badge)
+    text_w, text_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+
+    pad_x, pad_y = 24, 16
+    box_w = text_w + pad_x * 2
+    box_h = text_h + pad_y * 2
+
+    layer = Image.new('RGBA', (box_w, box_h), (0, 0, 0, 0))
+    ldraw = ImageDraw.Draw(layer, 'RGBA')
+    ldraw.rectangle([0, 0, box_w, box_h], fill=(*EMBER_AMBER, 255))
+    ldraw.text((pad_x, pad_y - bbox[1]), label, font=font_badge, fill=DEEP_CHAR)
+
+    canvas_w, _ = canvas.size
+    top  = margin
+    left = margin if corner == "top_left" else (canvas_w - margin - box_w)
+    _paste_with_soft_shadow(canvas, layer, left, top, blur=8, offset=(0, 5), alpha=110)
+
+
+def make_pin_kit(hero_photo_path, category, headline, subhead, output_path,
+                  top_badge=None, top_badge_corner="top_left",
+                  ember_badge=True, ember_corner="bottom_left"):
+    """
+    Pin-kit layout: hero photo crop-to-fill over the top ~65% of the canvas
+    (y=0..PIN_KIT_PHOTO_H), gradient fade over the bottom PIN_KIT_FADE_H px
+    of the photo into the brand background, text block below unchanged from
+    the site's established look (CRUST logo top-right, optional category
+    badge top-left, Ember mascot bottom-left, category/headline/subhead/
+    footer stacked in the bottom third).
+
+    Returns True if the pin was generated, False if the hero photo was
+    missing (caller is responsible for skip/warning — this function assumes
+    the photo already exists by the time it's called).
+    """
+    photo = load_hero_photo_fill(hero_photo_path, PIN_KIT_PHOTO_H)
+    if photo is None:
+        return False
+
+    # Gradient fade: photo -> Deep Char brand background over the bottom
+    # PIN_KIT_FADE_H px of the photo, so the text block below reads cleanly.
+    apply_dark_gradient(photo, PIN_KIT_PHOTO_H - PIN_KIT_FADE_H, PIN_KIT_PHOTO_H,
+                         max_alpha=1.0)
+
+    canvas = Image.new('RGB', (W, H), DEEP_CHAR)
+    canvas.paste(photo, (0, 0))
+    draw = ImageDraw.Draw(canvas, 'RGBA')
+
+    LEFT   = 52
+    RIGHT  = W - 52
+    TEXT_W = RIGHT - LEFT
+
+    # CRUST logo badge — top right, always on top of the photo, shadowed
+    paste_logo_badge_kit(canvas, cx=W - 88, cy=88)
+
+    # Optional category badge — top left, opposite the logo, shadowed
+    if top_badge:
+        paste_kit_badge(canvas, corner=top_badge_corner, label=top_badge)
+
+    # ── Text block ────────────────────────────────────────────────────────
+    TEXT_TOP = PIN_KIT_PHOTO_H
+    PADDING  = 38
+
+    font_url = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 19)
+    url_text = "N E W E N G L A N D C R U S T . C O M"
+    url_bbox = draw.textbbox((0, 0), url_text, font=font_url)
+    url_w    = url_bbox[2] - url_bbox[0]
+    url_y    = H - PADDING - (url_bbox[3] - url_bbox[1])
+    draw.text(((W - url_w) // 2, url_y), url_text, font=font_url, fill=EMBER_AMBER)
+
+    rule_y = url_y - 18
+    draw.line([(LEFT, rule_y), (RIGHT, rule_y)], fill=(*EMBER_AMBER, 60), width=1)
+
+    font_hl   = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 66)
+    hl_line_h = 74
+    cat_block = 72
+
+    hl_y_start = TEXT_TOP + PADDING + cat_block
+    hl_lines   = wrap_text(headline, draw, font_hl, TEXT_W)[:3]
+
+    y = hl_y_start
+    for line in hl_lines:
+        draw.text((LEFT, y), line, font=font_hl, fill=WARM_CREAM)
+        y += hl_line_h
+
+    if subhead:
+        font_sub  = _font(MAC_SERIF_ITALIC, LIN_SERIF_ITALIC, 26)
+        sub_lines = wrap_text(subhead, draw, font_sub, TEXT_W)[:2]
+        y += 8
+        for line in sub_lines:
+            draw.text((LEFT, y), line, font=font_sub, fill=(*WARM_CREAM, 160))
+            y += 34
+
+    cat_y     = TEXT_TOP + PADDING
+    font_cat  = _font(MAC_SERIF_BOLD, LIN_SERIF_BOLD, 20)
+    cat_upper = category.upper()
+    cat_bbox  = draw.textbbox((0, 0), cat_upper, font=font_cat)
+    cat_w     = cat_bbox[2] - cat_bbox[0]
+    cat_x     = (W - cat_w) // 2
+    draw.text((cat_x, cat_y), cat_upper, font=font_cat, fill=EMBER_AMBER)
+
+    rule_y2 = cat_y + (cat_bbox[3] - cat_bbox[1]) + 10
+    draw_diamond_rule(draw, rule_y2, LEFT, RIGHT, EMBER_AMBER)
+
+    # Ember mascot badge — fixed bottom-left for this layout
+    paste_ember_badge(canvas, corner=ember_corner, text_bottom=y, enabled=ember_badge)
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    canvas.convert('RGB').save(output_path, 'PNG', quality=95)
+    print(f"  ✓ Saved: {output_path}")
+    return True
+
+
+# ── PIN-KIT CONFIG ─────────────────────────────────────────────────────────
+# One entry per recipe. Each pin declares which of the 4 standard variants
+# it is via "variant" (hero_title / classic_badge / ingredient_teaser /
+# how_to). Photo resolution per variant, in priority order:
+#   1. recipe["hero_photos"][variant]  — a dedicated photo for that variant
+#   2. recipe["hero_photo"]            — single fallback photo used for any
+#                                         variant without its own entry
+# This lets a recipe ship with one photo mapped to all 4 pins (current
+# state) and later swap in per-variant photos one at a time (e.g. after a
+# batch photo session) without touching the pin copy or layout code. Photo
+# paths are relative to this script's location (Pinterest/), matching the
+# ../pin-kits/... convention already used for EMBER_BADGE_PATH above.
+#
+# A variant whose resolved path doesn't exist on disk is skipped — no
+# blank-top or text-only pin is ever written for it. If a recipe has some
+# variants found and some missing, the found ones still generate normally.
+#
+# NOTE: clam-pie-new-england-way is deliberately NOT included here. Those
+# pins are already live on Pinterest — do not wire that recipe in, do not
+# regenerate, do not touch pin-kits/clam-pie-new-england-way/.
+
+PIN_KIT_VARIANTS = ["hero_title", "classic_badge", "ingredient_teaser", "how_to"]
+
+PIN_KIT_RECIPES = [
+    {
+        "slug": "pesto-mozzarella-basil",
+        "hero_photo": "../pin-kits/pesto-mozzarella-basil/pesto-mozzarella-basil-pizza-hero.jpg",
+        "hero_photos": {
+            # Per-variant overrides go here once the batch photo session is
+            # done, e.g.:
+            #   "hero_title":        "../pin-kits/pesto-mozzarella-basil/whole-pie.jpg",
+            #   "classic_badge":     "../pin-kits/pesto-mozzarella-basil/slice-pull.jpg",
+            #   "ingredient_teaser": "../pin-kits/pesto-mozzarella-basil/ingredients-flatlay.jpg",
+            #   "how_to":            "../pin-kits/pesto-mozzarella-basil/on-the-peel.jpg",
+        },
+        "output_dir": "../pin-kits/pesto-mozzarella-basil",
+        "pins": [
+            {"variant": "hero_title", "suffix": "pin-1-hero-title-v2.png", "category": "Recipe",
+             "headline": "Pesto, Mozzarella & Basil",
+             "subhead": "The summer pie. Simple on purpose."},
+            {"variant": "classic_badge", "suffix": "pin-2-classic-badge-v2.png", "category": "Recipe",
+             "headline": "Pesto, Mozzarella & Basil",
+             "subhead": "Fresh pesto, torn mozzarella, basil.",
+             "top_badge": "NEW ENGLAND CLASSIC"},
+            {"variant": "ingredient_teaser", "suffix": "pin-3-ingredient-teaser-v2.png", "category": "Recipe",
+             "headline": "13 Ingredients, Simple on Purpose",
+             "subhead": "Fresh pesto, no shortcuts."},
+            {"variant": "how_to", "suffix": "pin-4-how-to-v2.png", "category": "Recipe",
+             "headline": "15 Min Prep · 4 Min Bake",
+             "subhead": "Pesto, Mozzarella & Basil Pizza",
+             "top_badge": "STEP-BY-STEP"},
+        ],
+    },
+    {
+        "slug": "chicken-bacon-ranch",
+        "hero_photo": "../pin-kits/chicken-bacon-ranch/chicken-bacon-ranch-hero.jpg",
+        "hero_photos": {},
+        "output_dir": "../pin-kits/chicken-bacon-ranch",
+        "pins": [
+            {"variant": "hero_title", "suffix": "pin-1-hero-title-v2.png", "category": "Recipe",
+             "headline": "Chicken, Bacon & Ranch",
+             "subhead": "The white pizza that goes first."},
+            {"variant": "classic_badge", "suffix": "pin-2-classic-badge-v2.png", "category": "Recipe",
+             "headline": "Chicken, Bacon & Ranch",
+             "subhead": "Herby ranch, crispy bacon, hot stone.",
+             "top_badge": "NEW ENGLAND CLASSIC"},
+            {"variant": "ingredient_teaser", "suffix": "pin-3-ingredient-teaser-v2.png", "category": "Recipe",
+             "headline": "The Ranch Base You Make Yourself",
+             "subhead": "No packet mix. Ever."},
+            {"variant": "how_to", "suffix": "pin-4-how-to-v2.png", "category": "Recipe",
+             "headline": "20 Min Prep · 4 Min Bake",
+             "subhead": "Chicken, Bacon & Ranch Pizza",
+             "top_badge": "STEP-BY-STEP"},
+        ],
+    },
+    {
+        "slug": "new-hampshire-mushroom-taleggio",
+        "hero_photo": "../pin-kits/new-hampshire-mushroom-taleggio/new-hampshire-mushroom-taleggio-hero.jpg",
+        "hero_photos": {},
+        "output_dir": "../pin-kits/new-hampshire-mushroom-taleggio",
+        "pins": [
+            {"variant": "hero_title", "suffix": "pin-1-hero-title-v2.png", "category": "Recipe",
+             "headline": "NH Mushroom & Taleggio",
+             "subhead": "Tastes like October in the woods."},
+            {"variant": "classic_badge", "suffix": "pin-2-classic-badge-v2.png", "category": "Recipe",
+             "headline": "NH Mushroom & Taleggio",
+             "subhead": "Foraged mushrooms, melted taleggio.",
+             "top_badge": "NEW ENGLAND CLASSIC"},
+            {"variant": "ingredient_teaser", "suffix": "pin-3-ingredient-teaser-v2.png", "category": "Recipe",
+             "headline": "12 Ingredients, All Foraged Flavor",
+             "subhead": "Hens-of-the-woods, thyme, taleggio."},
+            {"variant": "how_to", "suffix": "pin-4-how-to-v2.png", "category": "Recipe",
+             "headline": "20 Min Prep · 4 Min Bake",
+             "subhead": "NH Mushroom & Taleggio Pizza",
+             "top_badge": "STEP-BY-STEP"},
+        ],
+    },
+    {
+        "slug": "roasted-heirloom-tomato-sauce",
+        "hero_photo": "../pin-kits/roasted-heirloom-tomato-sauce/roasted-heirloom-tomato-sauce-hero.jpg",
+        "hero_photos": {},
+        "output_dir": "../pin-kits/roasted-heirloom-tomato-sauce",
+        "pins": [
+            {"variant": "hero_title", "suffix": "pin-1-hero-title-v2.png", "category": "Recipe",
+             "headline": "Roasted Heirloom Tomato Sauce",
+             "subhead": "Six weeks a year. Worth every batch."},
+            {"variant": "classic_badge", "suffix": "pin-2-classic-badge-v2.png", "category": "Recipe",
+             "headline": "Roasted Heirloom Tomato Sauce",
+             "subhead": "Straight from the farm stand.",
+             "top_badge": "NEW ENGLAND CLASSIC"},
+            {"variant": "ingredient_teaser", "suffix": "pin-3-ingredient-teaser-v2.png", "category": "Recipe",
+             "headline": "8 Ingredients, Six Weeks a Year",
+             "subhead": "Slow-roasted, deeply caramelized."},
+            {"variant": "how_to", "suffix": "pin-4-how-to-v2.png", "category": "Recipe",
+             "headline": "15 Min Prep · 1 Hr 15 Min Roast",
+             "subhead": "Roasted Heirloom Tomato Sauce",
+             "top_badge": "STEP-BY-STEP"},
+        ],
+    },
+    {
+        "slug": "caputo-breadmaker-dough",
+        "hero_photo": "../pin-kits/caputo-breadmaker-dough/caputo-breadmaker-dough-hero.jpg",
+        "hero_photos": {},
+        "output_dir": "../pin-kits/caputo-breadmaker-dough",
+        "pins": [
+            {"variant": "hero_title", "suffix": "pin-1-hero-title-v2.png", "category": "Recipe",
+             "headline": "Caputo 00 Breadmaker Dough",
+             "subhead": "Three ingredients. One machine. Time does the rest."},
+            {"variant": "classic_badge", "suffix": "pin-2-classic-badge-v2.png", "category": "Recipe",
+             "headline": "Caputo 00 Breadmaker Dough",
+             "subhead": "Our go-to Neapolitan-style base.",
+             "top_badge": "NEW ENGLAND CLASSIC"},
+            {"variant": "ingredient_teaser", "suffix": "pin-3-ingredient-teaser-v2.png", "category": "Recipe",
+             "headline": "Only 3 Ingredients",
+             "subhead": "Flour, yeast, salt. That's it."},
+            {"variant": "how_to", "suffix": "pin-4-how-to-v2.png", "category": "Recipe",
+             "headline": "15 Min Active · 24–48 Hr Ferment",
+             "subhead": "Caputo 00 Breadmaker Dough",
+             "top_badge": "STEP-BY-STEP"},
+        ],
+    },
+]
+
+
+def _resolve_variant_photo(recipe, variant):
+    """Per-variant photo if set, else the recipe's single fallback photo."""
+    return recipe.get("hero_photos", {}).get(variant) or recipe.get("hero_photo")
+
+
+def generate_pin_kits():
+    """
+    Walk PIN_KIT_RECIPES and generate pins for whichever variants have a
+    resolved hero photo on disk (per-variant override, falling back to the
+    recipe's single hero_photo). Variants with no resolved photo are
+    skipped individually — no blank-top or text-only pins are ever written
+    — and a warning lists exactly which variants are still missing, so
+    re-running after a partial photo session gives a clean checklist.
+    """
+    print("\nPin-kit hero-photo pins")
+    for recipe in PIN_KIT_RECIPES:
+        resolved = {v: _resolve_variant_photo(recipe, v) for v in PIN_KIT_VARIANTS}
+        found   = [v for v in PIN_KIT_VARIANTS if resolved[v] and os.path.exists(resolved[v])]
+        missing = [v for v in PIN_KIT_VARIANTS if v not in found]
+
+        if not found:
+            print(f"  ⚠️ Skipping {recipe['slug']}: no hero photo found for "
+                  f"any of the 4 variants ({', '.join(PIN_KIT_VARIANTS)}). "
+                  f"Add photos and re-run.")
+            continue
+
+        if missing:
+            found_str   = ", ".join(found)
+            missing_str = ", ".join(missing)
+            found_word   = "photo" if len(found) == 1 else "photos"
+            missing_word = "other" if len(missing) == 1 else "others"
+            print(f"  ⚠️ {recipe['slug']}: found {found_str} {found_word}, "
+                  f"missing {len(missing)} {missing_word}: {missing_str}")
+
+        print(f"  Generating: {recipe['slug']} ({len(found)} of "
+              f"{len(recipe['pins'])} pins)")
+        for pin in recipe["pins"]:
+            if pin["variant"] not in found:
+                continue
+            out = os.path.join(recipe["output_dir"], pin["suffix"])
+            make_pin_kit(
+                hero_photo_path=resolved[pin["variant"]],
+                category=pin["category"],
+                headline=pin["headline"],
+                subhead=pin.get("subhead", ""),
+                output_path=out,
+                top_badge=pin.get("top_badge"),
+                top_badge_corner=pin.get("top_badge_corner", "top_left"),
+            )
+
+
 # ── SPLIT LAYOUT (2/3 photo + 1/3 text block) ─────────────────────────────────
 
 def make_pin_split(photo_path, category, headline, subhead, output_path, badge_position="top_right",
@@ -976,3 +1362,6 @@ if __name__ == "__main__":
         print(f"  Generating: {pin['output']}")
         make_pin(pin)
     print("\nDone. Check the outputs/ folder.")
+
+    generate_pin_kits()
+    print("\nDone. Check each pin-kits/<recipe>/ folder for -v2.png files.")
