@@ -95,7 +95,7 @@ PUNCTUATION AND FORMATTING:
 - One exclamation point maximum per post — use sparingly
 - Subheadings for each major section
 - Bold for key terms or tools introduced for the first time
-- Affiliate link placeholders formatted as: *[Affiliate link: Product name — Retailer]*
+- Do NOT insert affiliate links or placeholder link tokens of any kind — links are added editorially after review via the site's AffiliateLink component
 
 POST STRUCTURE — FOLLOW THIS EVERY TIME:
 1. Open with a specific situation, observation, or honest statement — not a definition or history lesson
@@ -120,7 +120,7 @@ Mention these products the way you would recommend something to a friend — bri
 - Ooni Fyra 12: wood pellet version of the Koda, best for wood-fire purists
 - Solo Stove Pi: forgiving cook, good for families and beginners, ~900F max
 - Ninja Woodfire OO101: electric plus wood pellets, 700F max, best for outdoor cooking generalists who want pizza AND a smoker
-Always include a placeholder affiliate link: *[Affiliate link: Product name — Retailer]*
+Do NOT include any affiliate link or placeholder token — name the product in plain text only; links are added editorially after review. Never link or suggest links for Ooni or Solo Stove products (brand program policy).
 
 LENGTH: 400 to 600 words total including frontmatter.
 OUTPUT: Markdown only. No preamble. No explanation. Start with the frontmatter block and end with the last line of post content.`;

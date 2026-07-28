@@ -1,7 +1,7 @@
 ---
 title: "Salisbury Beach Pizza (Tripoli-Style) at Home"
 description: "The thin, sweet-sauced, provolone-topped beach pizza every North Shore kid grew up on — recreated in a home oven with a sheet pan and a slightly sweet tomato sauce."
-pubDate: 2026-07-13
+pubDate: 2026-07-30
 style: "beach-pizza"
 prepTime: "PT25M"
 cookTime: "PT14M"
