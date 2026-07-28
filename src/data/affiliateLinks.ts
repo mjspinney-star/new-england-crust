@@ -46,13 +46,19 @@ export const affiliateLinks: AffiliateProduct[] = [
     short: "https://amzn.to/44cJ3sE",
     full: "https://www.amazon.com/dp/B07PN5R5WY/?tag=newenglandcru-20",
     category: "oven",
+    // Verified 2026-07-28: specific Koda 12 (1st gen) gas product page.
+    pendingProgram: { brand: "ooni", brandUrl: "https://ooni.com/products/ooni-koda" },
   },
   {
     id: "solo-stove-pi",
-    name: "Solo Stove Pi Gas Pizza Oven",
+    // The gas model's retail name is "Pi Prime" — same product the old
+    // Amazon link (ASIN B0CG2MB8YB) pointed at.
+    name: "Solo Stove Pi Prime Gas Pizza Oven",
     short: "https://amzn.to/4fiw9yD",
     full: "https://amzn.to/4fiw9yD",
     category: "oven",
+    // Verified 2026-07-28: specific Pi Prime propane product page.
+    pendingProgram: { brand: "solo-stove", brandUrl: "https://www.solostove.com/en-us/p/pi-prime" },
   },
   {
     id: "ninja-cover",

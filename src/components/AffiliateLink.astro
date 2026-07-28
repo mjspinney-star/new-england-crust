@@ -34,10 +34,10 @@ const pending = product.pendingProgram;
     <a
       href={pending.brandUrl}
       target="_blank"
-      rel="noopener"
+      rel="noopener nofollow"
       class="affiliate-link"
       data-affiliate="none"
-    >{linkText}</a>
+    >{linkText}{badge && <span class="affiliate-badge" aria-hidden="true">→ {pending.brand === "ooni" ? "Ooni" : "Solo Stove"}</span>}</a>
   ) : (
     <span>{linkText}</span>
   )
