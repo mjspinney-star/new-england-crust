@@ -3,3 +3,7 @@
 
 # Examples (uncomment as needed):
 # /old-post  /blog/new-slug/  301
+
+# 2026-07-28: Prime Day page converted to evergreen deals page.
+/blog/prime-day-pizza-oven-deals-2026/  /blog/best-pizza-oven-deals/  301
+/blog/prime-day-pizza-oven-deals-2026   /blog/best-pizza-oven-deals/  301
