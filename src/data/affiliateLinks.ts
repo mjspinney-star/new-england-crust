@@ -26,10 +26,14 @@ export const affiliateLinks: AffiliateProduct[] = [
     category: "oven",
   },
   {
+    // Standard Koda 12 SKU (B07PN5R5WY) is canonical site-wide — the base
+    // listing outlives bundles, which get repriced or discontinued. The old
+    // short https://amzn.to/3R8PMkD pointed at a Koda 12 bundle (B0FLDRWD4F);
+    // link the bundle explicitly only in a post that reviews the bundle.
     id: "ooni-koda-12",
     name: "Ooni Koda 12 Gas Powered Pizza Oven",
-    short: "https://amzn.to/3R8PMkD",
-    full: "https://amzn.to/3R8PMkD",
+    short: "https://amzn.to/44cJ3sE",
+    full: "https://www.amazon.com/dp/B07PN5R5WY/?tag=newenglandcru-20",
     category: "oven",
   },
   {
@@ -191,6 +195,27 @@ export const affiliateLinks: AffiliateProduct[] = [
     name: "Clam Shucking Knife",
     short: "https://amzn.to/4p9VZJF",
     full: "https://amzn.to/4p9VZJF",
+    category: "tool",
+  },
+  {
+    id: "hans-grill-brush",
+    name: "Hans Grill Pizza Oven Brush & Scraper",
+    short: "https://amzn.to/4e7Y1Vu",
+    full: "https://www.amazon.com/dp/B08N1GD3HR/?tag=newenglandcru-20",
+    category: "tool",
+  },
+  {
+    id: "thermopop-2",
+    name: "ThermoWorks ThermoPop 2 Instant-Read Thermometer",
+    short: "https://amzn.to/4xnYBY4",
+    full: "https://www.amazon.com/dp/B0DC8FD41B/?tag=newenglandcru-20",
+    category: "thermometer",
+  },
+  {
+    id: "vollum-banneton",
+    name: "Vollum Banneton Bread Proofing Basket",
+    short: "https://amzn.to/43qkxE5",
+    full: "https://www.amazon.com/dp/B079ZP74Q3/?tag=newenglandcru-20",
     category: "tool",
   },
 ];

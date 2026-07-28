@@ -52,9 +52,10 @@ gear:
     url: "https://amzn.to/4obF5K3"
     note: "live Amazon Associates link"
     affiliateId: "ninja-woodfire-oven"
-  - name: "Ooni Pizza Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Direct brand affiliate program pending approval."
+  - name: "Ooni Koda 12"
+    url: "https://amzn.to/44cJ3sE"
+    note: "interim Amazon Associates link — swap to Ooni direct program on approval"
+    affiliateId: "ooni-koda-12"
 keywords:
   - "pesto pizza recipe"
   - "fresh mozzarella pizza"
