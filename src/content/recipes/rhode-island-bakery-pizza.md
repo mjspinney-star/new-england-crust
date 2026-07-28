@@ -2,7 +2,6 @@
 title: "Rhode Island Bakery Pizza (Red Strips)"
 description: "The thick, cheeseless, room-temperature tomato strips sold in every Rhode Island bakery case — the most misunderstood pizza in New England."
 pubDate: 2026-08-31
-heroImage: "/images/recipes/ri-strips-hero.jpg"
 style: "bakery-pizza"
 prepTime: "PT25M"
 cookTime: "PT22M"

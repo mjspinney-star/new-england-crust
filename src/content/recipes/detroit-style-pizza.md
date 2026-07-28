@@ -2,7 +2,6 @@
 title: "Detroit-Style Pizza (Crispy Frico Edge)"
 description: "The deep, airy, square pan pizza with caramelized cheese walls and sauce on top — the style that took over America, done in a home oven."
 pubDate: 2026-09-21
-heroImage: "/images/recipes/detroit-hero.jpg"
 style: "detroit"
 prepTime: "PT25M"
 cookTime: "PT15M"

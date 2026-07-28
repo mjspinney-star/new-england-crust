@@ -2,7 +2,6 @@
 title: "NY-Style Pizza at Home (The Foldable Slice)"
 description: "The big, thin, foldable slice done right in a home oven — oil-and-sugar dough, low-moisture mozzarella, and a baking steel doing the work of a deck oven."
 pubDate: 2026-09-14
-heroImage: "/images/recipes/ny-slice-hero.jpg"
 style: "ny-style"
 prepTime: "PT30M"
 cookTime: "PT8M"

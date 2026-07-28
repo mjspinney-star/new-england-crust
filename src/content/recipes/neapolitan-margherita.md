@@ -2,7 +2,6 @@
 title: "Backyard Neapolitan Margherita (60-Second Bake)"
 description: "The classic that every outdoor pizza oven was built for — 00 flour, San Marzano tomatoes, fresh mozzarella, and a bake measured in seconds."
 pubDate: 2026-09-07
-heroImage: "/images/recipes/margherita-hero.jpg"
 style: "neapolitan"
 prepTime: "PT30M"
 cookTime: "PT2M"

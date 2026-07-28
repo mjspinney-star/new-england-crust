@@ -2,7 +2,6 @@
 title: "Grandma Pie (Thin Sheet-Pan Pizza)"
 description: "The thin, garlicky, no-fuss sheet pan pizza — minimal proofing, cheese under the sauce, and the fastest route from dough to dinner for a crowd."
 pubDate: 2026-09-28
-heroImage: "/images/recipes/grandma-hero.jpg"
 style: "grandma"
 prepTime: "PT20M"
 cookTime: "PT18M"

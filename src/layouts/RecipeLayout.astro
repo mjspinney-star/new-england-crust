@@ -83,7 +83,11 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
 });
 
-const absoluteHeroImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
+// Recipes without their own photo fall back to the site OG image so the
+// Recipe JSON-LD always carries an `image` (Google strongly prefers it)
+// and social shares never render blank. Replace with a real photo as
+// each recipe gets shot.
+const absoluteHeroImage = new URL(heroImage ?? '/og-image.jpg', Astro.site).toString();
 
 // --- schema.org Recipe JSON-LD ---
 // Only include properties that actually exist in the frontmatter — no
