@@ -27,7 +27,7 @@ Skip the red sauce entirely. This pie uses olive oil as the base, and the char f
 
 ## Grill the Corn and Poblano First
 
-Get your grill hot — or fire up whatever outdoor oven you are running. We use the **Ooni Koda 12** *[Affiliate link: Ooni Koda 12 — Ooni]* for the pizza itself, but a standard gas or charcoal grill handles the corn and poblano step well.
+Get your grill hot — or fire up whatever outdoor oven you are running. We use the **Ooni Koda 12** for the pizza itself, but a standard gas or charcoal grill handles the corn and poblano step well.
 
 Grill the corn directly over the flame, turning until you get real char marks on most of the kernels. Cut the kernels off the cob once it is cool enough to handle. Char the poblano until the skin blisters all over, then seal it in a bowl with a plate on top for ten minutes. Peel, seed, and slice it into thin strips.
 
@@ -37,7 +37,7 @@ This step takes about twenty minutes. Do not rush it — the char is the flavor.
 
 Stretch your dough to about 11 or 12 inches. Brush the surface with olive oil, then scatter the mozzarella across it, leaving an inch at the edge. Lay the corn kernels and poblano strips over the cheese. Season with salt and black pepper.
 
-Launch it into your oven. At 950F on the Koda, it cooks in about 75 to 90 seconds and needs a turn halfway through — a **turning peel** makes this much easier at high heat. At lower temps on something like the **Solo Stove Pi** *[Affiliate link: Solo Stove Pi — Solo Stove]*, give it 3 to 4 minutes.
+Launch it into your oven. At 950F on the Koda, it cooks in about 75 to 90 seconds and needs a turn halfway through — a **turning peel** makes this much easier at high heat. At lower temps on something like the **Solo Stove Pi**, give it 3 to 4 minutes.
 
 Pull it when the crust is spotted and the cheese has color on the edges.
 

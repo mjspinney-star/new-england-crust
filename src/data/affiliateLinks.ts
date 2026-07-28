@@ -229,6 +229,20 @@ export const affiliateLinks: AffiliateProduct[] = [
     category: "thermometer",
   },
   {
+    id: "saf-instant-yeast",
+    name: "SAF Instant Yeast (Red Label), 1 lb",
+    short: "https://www.amazon.com/dp/B0001CXUHW/?tag=newenglandcru-20",
+    full: "https://www.amazon.com/dp/B0001CXUHW/?tag=newenglandcru-20",
+    category: "ingredient",
+  },
+  {
+    id: "mikes-hot-honey",
+    name: "Mike's Hot Honey (10 oz)",
+    short: "https://www.amazon.com/dp/B085B1YZ8Q/?tag=newenglandcru-20",
+    full: "https://www.amazon.com/dp/B085B1YZ8Q/?tag=newenglandcru-20",
+    category: "ingredient",
+  },
+  {
     id: "vollum-banneton",
     name: "Vollum Banneton Bread Proofing Basket",
     short: "https://amzn.to/43qkxE5",

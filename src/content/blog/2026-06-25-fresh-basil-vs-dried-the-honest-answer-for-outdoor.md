@@ -8,15 +8,13 @@ relatedPosts: ["2026-06-22-finishing-with-good-olive-oil-when-it-matters-and-", 
 draft: false
 ---
 
-# Fresh Basil vs. Dried: The Honest Answer for Outdoor Pizza Cooking
-
 Here is the situation we have all been in. You are two hours into a backyard pizza session, the stone is ripping hot, and someone asks if they should tear some basil on before the launch or just grab the jar from the spice cabinet.
 
 It is not a small question. The answer depends entirely on how your oven cooks.
 
 ## What High Heat Does to Basil
 
-Fresh basil burns fast. At 900°F to 950°F — the kind of temps you are running in an Ooni Koda 12 *[Affiliate link: Ooni Koda 12 — Ooni]* — fresh leaves on top of a pie before the launch will turn black and bitter in under a minute. Not charred in a good way. Just scorched.
+Fresh basil burns fast. At 900°F to 950°F — the kind of temps you are running in an Ooni Koda 12 — fresh leaves on top of a pie before the launch will turn black and bitter in under a minute. Not charred in a good way. Just scorched.
 
 Dried basil has the opposite problem. It can handle the heat, but it loses whatever fragrance it had and contributes almost nothing to the finished pie.
 
