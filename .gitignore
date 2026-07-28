@@ -39,3 +39,4 @@ Photos/*.HEIC
 __pycache__/
 Pinterest/*.jpg
 *.zip
+Pinterest/*.png
