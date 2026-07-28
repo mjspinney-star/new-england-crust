@@ -49,7 +49,7 @@ keywords:
   - "Ooni margherita recipe"
   - "pizza oven recipe"
   - "00 flour pizza dough"
-draft: true
+draft: false
 ---
 
 This is the pizza the backyard oven was invented for, and the one every new oven owner should master first — because it teaches heat management, launching, and turning, the skills every other outdoor recipe on this site builds on.

@@ -40,7 +40,7 @@ keywords:
   - "bakery pizza recipe"
   - "red strips recipe"
   - "cheeseless pizza"
-draft: true
+draft: false
 ---
 
 Explain Rhode Island bakery pizza to someone from away and watch their face: it's thick, it has no cheese, and you eat it cold. They'll tell you that's not pizza. Rhode Islanders will tell you they're not wrong, and they don't care.

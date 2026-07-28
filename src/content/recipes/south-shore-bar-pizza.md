@@ -39,7 +39,7 @@ keywords:
   - "Massachusetts bar pizza"
   - "laced edge pizza"
   - "tavern pizza"
-draft: true
+draft: false
 ---
 
 South of Boston, pizza means something specific: a 10-inch pan, a thin crackly crust, and cheese burned onto the rim in a dark ring the locals call lace. Order one anywhere from Quincy to Brockton and nobody asks what size — there's only one size.

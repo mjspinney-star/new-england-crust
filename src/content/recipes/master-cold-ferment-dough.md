@@ -33,7 +33,7 @@ keywords:
   - "48 hour pizza dough"
   - "best pizza dough recipe"
   - "New England pizza dough"
-draft: true
+draft: false
 ---
 
 Every recipe on this site links back to this dough. Learn it once and you can make almost every pizza in New England — the beach squares, the bar pies, the Greek pans — by changing how you shape and bake it, not what's in it.

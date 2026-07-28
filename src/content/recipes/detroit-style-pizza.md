@@ -36,7 +36,7 @@ keywords:
   - "Detroit pizza pan recipe"
   - "frico crust pizza"
   - "pan pizza recipe"
-draft: true
+draft: false
 ---
 
 Not a New England style — but it's the pan pizza that conquered the country over the last decade, and once you've mastered our beach and bar pizzas, the Detroit pan is the natural next flex. Airy like focaccia inside, walled with caramelized cheese, sauce laid on top in stripes like it's showing off. Because it is.

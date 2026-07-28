@@ -49,7 +49,7 @@ keywords:
   - "Tripoli pizza recipe"
   - "New England pizza"
   - "sheet pan pizza"
-draft: true
+draft: false
 ---
 
 If you grew up anywhere north of Boston, you know this pizza. Thin, a little sweet, provolone laid on in slices, sold by the square at Tripoli's and Cristy's on the Salisbury Beach boardwalk. It doesn't taste like any other pizza in America, and that's the point.

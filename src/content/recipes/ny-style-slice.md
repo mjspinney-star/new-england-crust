@@ -41,7 +41,7 @@ keywords:
   - "New York pizza dough"
   - "baking steel pizza"
   - "foldable pizza slice"
-draft: true
+draft: false
 ---
 
 New England has its own styles, but let's be honest: half of us measure every slice against the one we had outside Fenway or on a trip down to the city. The good news is that NY-style is the most home-oven-friendly of all the classic styles — no 900-degree oven required, just a steel, patience with the preheat, and a dough with a little oil and sugar in it.
