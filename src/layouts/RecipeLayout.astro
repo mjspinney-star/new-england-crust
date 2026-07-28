@@ -83,7 +83,11 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
 });
 
-const absoluteHeroImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
+// Recipes without their own photo fall back to the site OG image so the
+// Recipe JSON-LD always carries an `image` (Google strongly prefers it)
+// and social shares never render blank. Replace with a real photo as
+// each recipe gets shot.
+const absoluteHeroImage = new URL(heroImage ?? '/og-image.jpg', Astro.site).toString();
 
 // --- schema.org Recipe JSON-LD ---
 // Only include properties that actually exist in the frontmatter — no
@@ -252,6 +256,9 @@ if (typeof calories === 'number') {
     {gear.length > 0 && (
       <div class="not-prose card mb-12 border-glow-300/25 bg-twilight-600/70">
         <h2 class="font-display text-xl text-timber-50">Gear I used</h2>
+        <p class="mt-2 text-xs text-timber-100/60">
+          Some links below are affiliate links — I earn a small commission at no cost to you.
+        </p>
         <ul class="mt-5 space-y-5">
           {gear.map((item) => (
             <li class="text-timber-100/90">
@@ -269,9 +276,6 @@ if (typeof calories === 'number') {
             </li>
           ))}
         </ul>
-        <p class="mt-5 text-xs text-timber-100/60">
-          Some links are affiliate links — I earn a small commission at no cost to you.
-        </p>
       </div>
     )}
 

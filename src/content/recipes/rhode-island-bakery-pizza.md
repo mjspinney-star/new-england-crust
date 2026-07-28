@@ -2,7 +2,6 @@
 title: "Rhode Island Bakery Pizza (Red Strips)"
 description: "The thick, cheeseless, room-temperature tomato strips sold in every Rhode Island bakery case — the most misunderstood pizza in New England."
 pubDate: 2026-08-31
-heroImage: "/images/recipes/ri-strips-hero.jpg"
 style: "bakery-pizza"
 prepTime: "PT25M"
 cookTime: "PT22M"
@@ -41,7 +40,7 @@ keywords:
   - "bakery pizza recipe"
   - "red strips recipe"
   - "cheeseless pizza"
-draft: true
+draft: false
 ---
 
 Explain Rhode Island bakery pizza to someone from away and watch their face: it's thick, it has no cheese, and you eat it cold. They'll tell you that's not pizza. Rhode Islanders will tell you they're not wrong, and they don't care.

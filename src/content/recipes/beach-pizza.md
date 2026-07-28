@@ -1,8 +1,7 @@
 ---
 title: "Salisbury Beach Pizza (Tripoli-Style) at Home"
 description: "The thin, sweet-sauced, provolone-topped beach pizza every North Shore kid grew up on — recreated in a home oven with a sheet pan and a slightly sweet tomato sauce."
-pubDate: 2026-07-13
-heroImage: "/images/recipes/beach-pizza-hero.jpg"
+pubDate: 2026-08-06
 style: "beach-pizza"
 prepTime: "PT25M"
 cookTime: "PT14M"
@@ -50,7 +49,7 @@ keywords:
   - "Tripoli pizza recipe"
   - "New England pizza"
   - "sheet pan pizza"
-draft: true
+draft: false
 ---
 
 If you grew up anywhere north of Boston, you know this pizza. Thin, a little sweet, provolone laid on in slices, sold by the square at Tripoli's and Cristy's on the Salisbury Beach boardwalk. It doesn't taste like any other pizza in America, and that's the point.

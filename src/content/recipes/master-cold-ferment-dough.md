@@ -1,8 +1,7 @@
 ---
 title: "The New England Crust Master Dough (48-Hour Cold Ferment)"
 description: "One dough to rule the site — a 65% hydration, 48-to-72-hour cold-fermented dough that works for beach pizza, bar pizza, NY slices, and sheet pans alike."
-pubDate: 2026-07-20
-heroImage: "/images/recipes/master-dough-hero.jpg"
+pubDate: 2026-07-30
 style: "dough"
 prepTime: "PT20M"
 cookTime: "PT0M"
@@ -34,7 +33,7 @@ keywords:
   - "48 hour pizza dough"
   - "best pizza dough recipe"
   - "New England pizza dough"
-draft: true
+draft: false
 ---
 
 Every recipe on this site links back to this dough. Learn it once and you can make almost every pizza in New England — the beach squares, the bar pies, the Greek pans — by changing how you shape and bake it, not what's in it.

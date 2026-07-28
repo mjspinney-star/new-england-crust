@@ -2,7 +2,6 @@
 title: "Greek Pizza (House of Pizza Style)"
 description: "The pan-fried-bottom, chewy-crusted pizza served at every 'House of Pizza' in New England — oiled pan, oregano-heavy sauce, and a mozzarella-provolone blend."
 pubDate: 2026-08-10
-heroImage: "/images/recipes/greek-pizza-hero.jpg"
 style: "greek"
 prepTime: "PT25M"
 cookTime: "PT15M"
@@ -39,7 +38,7 @@ keywords:
   - "house of pizza recipe"
   - "New England Greek pizza"
   - "pan pizza recipe"
-draft: true
+draft: false
 ---
 
 Every New England town has one: a place called Something House of Pizza, run by a Greek family, serving a pizza that exists nowhere else in the world. Chewy, oily-bottomed (complimentary), with sauce that hits you with oregano before anything else.

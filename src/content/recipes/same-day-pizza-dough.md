@@ -1,8 +1,7 @@
 ---
 title: "Same-Day Emergency Pizza Dough (Ready in 2 Hours)"
 description: "Decided at 3pm that tonight is pizza night? This 2-hour dough gets you a legitimately good pie without planning ahead."
-pubDate: 2026-07-27
-heroImage: "/images/recipes/same-day-dough-hero.jpg"
+pubDate: 2026-08-13
 style: "dough"
 prepTime: "PT15M"
 cookTime: "PT0M"
@@ -33,7 +32,7 @@ keywords:
   - "same day pizza dough"
   - "2 hour pizza dough"
   - "easy pizza dough recipe"
-draft: true
+draft: false
 ---
 
 The master dough is better — no argument. But better never fed anyone on a Tuesday when the plan came together at school pickup. This dough exists for real life: two hours, one bowl, and a pizza that will still beat anything from the freezer aisle.

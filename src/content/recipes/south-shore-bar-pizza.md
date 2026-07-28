@@ -2,7 +2,6 @@
 title: "South Shore Bar Pizza (10-Inch Pan, Laced Edge)"
 description: "The cult 10-inch pan pizza of the Massachusetts South Shore — cheese to the very edge so it caramelizes against the pan into the famous 'laced' crust."
 pubDate: 2026-08-03
-heroImage: "/images/recipes/bar-pizza-hero.jpg"
 style: "bar-pizza"
 prepTime: "PT30M"
 cookTime: "PT15M"
@@ -40,7 +39,7 @@ keywords:
   - "Massachusetts bar pizza"
   - "laced edge pizza"
   - "tavern pizza"
-draft: true
+draft: false
 ---
 
 South of Boston, pizza means something specific: a 10-inch pan, a thin crackly crust, and cheese burned onto the rim in a dark ring the locals call lace. Order one anywhere from Quincy to Brockton and nobody asks what size — there's only one size.

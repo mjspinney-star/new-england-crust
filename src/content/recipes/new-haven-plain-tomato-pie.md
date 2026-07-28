@@ -2,7 +2,6 @@
 title: "New Haven Plain Tomato Pie (Apizza at Home)"
 description: "The charred, chewy, mozzarella-free tomato pie that made Wooster Street famous — adapted for a home pizza oven or a screaming-hot baking steel."
 pubDate: 2026-08-17
-heroImage: "/images/recipes/new-haven-plain-hero.jpg"
 style: "new-haven"
 prepTime: "PT30M"
 cookTime: "PT6M"
@@ -46,7 +45,7 @@ keywords:
   - "apizza recipe"
   - "tomato pie recipe"
   - "New Haven style pizza dough"
-draft: true
+draft: false
 ---
 
 Ninety minutes down I-95 from Boston is America's most serious pizza city, and its purest expression is the plain: tomatoes, pecorino, oregano, olive oil, char. No mozzarella. The first time someone orders you a plain at a Wooster Street institution, you wonder where the cheese is. By the second slice, you understand everything.

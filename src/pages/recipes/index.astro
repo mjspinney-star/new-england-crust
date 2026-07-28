@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../data/publishing';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import KitPizzaKitForm from '../../components/KitPizzaKitForm.astro';
 
@@ -13,7 +14,7 @@ const doughCard = {
 };
 
 // Live recipes from the content collection
-const recipeEntries = await getCollection('recipes', ({ data }) => !data.draft);
+const recipeEntries = await getCollection('recipes', ({ data }) => isPublished(data));
 recipeEntries.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 ---
 

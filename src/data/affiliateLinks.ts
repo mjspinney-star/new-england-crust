@@ -15,6 +15,17 @@ export interface AffiliateProduct {
   short: string;
   full: string;
   category: "oven" | "cover" | "peel" | "stand" | "thermometer" | "pellets" | "cord" | "griddle" | "ingredient" | "tool";
+  // Set on brands whose direct affiliate program application is pending
+  // (Ooni — Avantlink; Solo Stove — Impact). While present, <AffiliateLink>
+  // will NOT render the Amazon-tagged URL for this product: it renders an
+  // untracked brand-site link (brandUrl) when given, otherwise plain text.
+  // Ninja is NOT flagged — it stays on Amazon Associates by decision.
+  // When a program approves, replace pendingProgram with the program's
+  // tracked URL in `short`/`full` (or extend this shape at that point).
+  pendingProgram?: {
+    brand: "ooni" | "solo-stove";
+    brandUrl?: string;
+  };
 }
 
 export const affiliateLinks: AffiliateProduct[] = [
@@ -26,18 +37,28 @@ export const affiliateLinks: AffiliateProduct[] = [
     category: "oven",
   },
   {
+    // Standard Koda 12 SKU (B07PN5R5WY) is canonical site-wide — the base
+    // listing outlives bundles, which get repriced or discontinued. The old
+    // short https://amzn.to/3R8PMkD pointed at a Koda 12 bundle (B0FLDRWD4F);
+    // link the bundle explicitly only in a post that reviews the bundle.
     id: "ooni-koda-12",
     name: "Ooni Koda 12 Gas Powered Pizza Oven",
-    short: "https://amzn.to/3R8PMkD",
-    full: "https://amzn.to/3R8PMkD",
+    short: "https://amzn.to/44cJ3sE",
+    full: "https://www.amazon.com/dp/B07PN5R5WY/?tag=newenglandcru-20",
     category: "oven",
+    // Verified 2026-07-28: specific Koda 12 (1st gen) gas product page.
+    pendingProgram: { brand: "ooni", brandUrl: "https://ooni.com/products/ooni-koda" },
   },
   {
     id: "solo-stove-pi",
-    name: "Solo Stove Pi Gas Pizza Oven",
+    // The gas model's retail name is "Pi Prime" — same product the old
+    // Amazon link (ASIN B0CG2MB8YB) pointed at.
+    name: "Solo Stove Pi Prime Gas Pizza Oven",
     short: "https://amzn.to/4fiw9yD",
     full: "https://amzn.to/4fiw9yD",
     category: "oven",
+    // Verified 2026-07-28: specific Pi Prime propane product page.
+    pendingProgram: { brand: "solo-stove", brandUrl: "https://www.solostove.com/en-us/p/pi-prime" },
   },
   {
     id: "ninja-cover",
@@ -191,6 +212,41 @@ export const affiliateLinks: AffiliateProduct[] = [
     name: "Clam Shucking Knife",
     short: "https://amzn.to/4p9VZJF",
     full: "https://amzn.to/4p9VZJF",
+    category: "tool",
+  },
+  {
+    id: "hans-grill-brush",
+    name: "Hans Grill Pizza Oven Brush & Scraper",
+    short: "https://amzn.to/4e7Y1Vu",
+    full: "https://www.amazon.com/dp/B08N1GD3HR/?tag=newenglandcru-20",
+    category: "tool",
+  },
+  {
+    id: "thermopop-2",
+    name: "ThermoWorks ThermoPop 2 Instant-Read Thermometer",
+    short: "https://amzn.to/4xnYBY4",
+    full: "https://www.amazon.com/dp/B0DC8FD41B/?tag=newenglandcru-20",
+    category: "thermometer",
+  },
+  {
+    id: "saf-instant-yeast",
+    name: "SAF Instant Yeast (Red Label), 1 lb",
+    short: "https://www.amazon.com/dp/B0001CXUHW/?tag=newenglandcru-20",
+    full: "https://www.amazon.com/dp/B0001CXUHW/?tag=newenglandcru-20",
+    category: "ingredient",
+  },
+  {
+    id: "mikes-hot-honey",
+    name: "Mike's Hot Honey (10 oz)",
+    short: "https://www.amazon.com/dp/B085B1YZ8Q/?tag=newenglandcru-20",
+    full: "https://www.amazon.com/dp/B085B1YZ8Q/?tag=newenglandcru-20",
+    category: "ingredient",
+  },
+  {
+    id: "vollum-banneton",
+    name: "Vollum Banneton Bread Proofing Basket",
+    short: "https://amzn.to/43qkxE5",
+    full: "https://www.amazon.com/dp/B079ZP74Q3/?tag=newenglandcru-20",
     category: "tool",
   },
 ];

@@ -2,7 +2,6 @@
 title: "New England Bar Pizza (Schema Demo)"
 description: "Placeholder recipe used to verify the new recipe collection schema, RecipeLayout, and Recipe JSON-LD end to end. Not for publication."
 pubDate: 2026-07-08
-heroImage: "/images/recipes/placeholder-bar-pizza.jpg"
 style: "bar-pizza"
 prepTime: "PT20M"
 cookTime: "PT10M"
