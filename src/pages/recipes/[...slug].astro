@@ -1,10 +1,11 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { isPublished } from '../../data/publishing';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RecipeLayout from '../../layouts/RecipeLayout.astro';
 
 export async function getStaticPaths() {
-  const recipes = await getCollection('recipes', ({ data }) => !data.draft);
+  const recipes = await getCollection('recipes', ({ data }) => isPublished(data));
   return recipes.map((recipe) => ({
     params: { slug: recipe.slug },
     props: { recipe },

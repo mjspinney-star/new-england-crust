@@ -1,8 +1,9 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { isPublished } from '../data/publishing';
 
 export async function GET(context) {
-  const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
+  const posts = (await getCollection('blog')).filter((p) => isPublished(p.data));
   return rss({
     title: 'New England Crust',
     description:

@@ -1,9 +1,10 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { isPublished } from '../../data/publishing';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = await getCollection('blog', ({ data }) => isPublished(data));
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
@@ -15,7 +16,7 @@ type Props = { post: CollectionEntry<'blog'> };
 const { post } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await post.render();
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('blog', ({ data }) => isPublished(data));
 const relatedPosts = (post.data.relatedPosts ?? [])
   .map(slug => allPosts.find(p => p.slug === slug))
   .filter((p): p is CollectionEntry<'blog'> => p !== undefined);
