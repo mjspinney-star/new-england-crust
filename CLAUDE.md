@@ -18,9 +18,11 @@ outdoor pizza ovens (Ooni, Ninja Woodfire, Solo Stove); everything else
 ## Tech stack
 
 - **Astro** static site (`output: 'static'`, trailing-slash directory URLs)
-- **Cloudflare Workers with static assets** — deploy via
-  `npx wrangler versions upload --assets=./dist`; config in `wrangler.jsonc`
-  at repo root (name `new-england-crust`, assets dir `./dist`)
+- **Cloudflare Workers Builds project with static assets** (not Pages) —
+  `Assets → ASSETS` binding, config in `wrangler.jsonc` at repo root (name
+  `new-england-crust`, assets dir `./dist`), deployed via
+  `npx wrangler versions upload --assets=./dist`. Confirmed working:
+  production deployed successfully from `main` after PR #3 merged.
 - Content: markdown collections in `src/content/blog/` and
   `src/content/recipes/` (`.mdx` when a post uses components)
 - Analytics: GA4 `G-3QBKJCC5F9` (tag in `BaseLayout.astro`)
@@ -94,10 +96,7 @@ clashes get logged in `REGISTRY-GAPS.md` for Michael to fix by hand.
    deleting `sample-recipe-schema-demo.md` (kept `draft: true` on purpose).
 5. **Etekcity model nuance:** the infrared post names the "Lasergrip 1080" but
    the registry ASIN is a newer Etekcity IR gun — swap ASIN or prose someday.
-6. **Cloudflare deploy verification:** wrangler.jsonc added for Workers
-   static assets; if preview builds still fail, check whether the dashboard
-   project is actually Pages (would need `wrangler pages deploy ./dist`).
-7. **Security:** git remote URL embeds a plaintext GitHub PAT — rotate and
+6. **Security:** git remote URL embeds a plaintext GitHub PAT — rotate and
    move to a credential helper.
 
 ## What to remember each session
