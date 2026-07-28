@@ -32,9 +32,8 @@ instructions:
     text: "Remaining pecorino, a drizzle of oil, black pepper, and a squeeze of lemon. Eat immediately — a clam pie waits for no one."
 gear:
   - name: "Ooni Koda 12"
-    url: "https://amzn.to/44cJ3sE"
-    note: "interim Amazon Associates link — swap to Ooni direct program on approval"
-    affiliateId: "ooni-koda-12"
+    url: "https://YOUR-AFFILIATE-LINK"
+    note: "Direct brand affiliate program pending approval."
   - name: "Ninja Woodfire Outdoor Oven"
     url: "https://amzn.to/4obF5K3"
     note: "live Amazon Associates link"

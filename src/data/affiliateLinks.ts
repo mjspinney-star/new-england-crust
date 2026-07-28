@@ -15,6 +15,17 @@ export interface AffiliateProduct {
   short: string;
   full: string;
   category: "oven" | "cover" | "peel" | "stand" | "thermometer" | "pellets" | "cord" | "griddle" | "ingredient" | "tool";
+  // Set on brands whose direct affiliate program application is pending
+  // (Ooni — Avantlink; Solo Stove — Impact). While present, <AffiliateLink>
+  // will NOT render the Amazon-tagged URL for this product: it renders an
+  // untracked brand-site link (brandUrl) when given, otherwise plain text.
+  // Ninja is NOT flagged — it stays on Amazon Associates by decision.
+  // When a program approves, replace pendingProgram with the program's
+  // tracked URL in `short`/`full` (or extend this shape at that point).
+  pendingProgram?: {
+    brand: "ooni" | "solo-stove";
+    brandUrl?: string;
+  };
 }
 
 export const affiliateLinks: AffiliateProduct[] = [

@@ -227,4 +227,36 @@ The automated June/July technique posts contain **zero affiliate links**, includ
 
 ---
 
+## Appendix — Ooni + Solo Stove Amazon inventory (2026-07-28)
+
+Per the oven-brand affiliate policy: no Amazon-tagged links to Ooni or Solo Stove products anywhere (clean outbound profile for Impact/Avantlink reapplication); Ninja stays on Amazon. This is every Amazon-tagged Ooni/Solo Stove link on the site after the step-1 reverts (recipe gear cards restored to "pending"; clam post link removed). Every entry below renders through `AffiliateLink` + the registry, so each fix is a registry flip and/or a one-line edit.
+
+**Decision key: (a) remove entirely · (b) swap to untracked brand-direct URL · (c) leave, accept reapplication risk**
+
+### Ooni — all Ooni Koda 12, full oven (registry `ooni-koda-12` → amzn.to/44cJ3sE → ASIN B07PN5R5WY)
+
+| # | Source | Context | Decision |
+|---|---|---|---|
+| O1 | `best-outdoor-pizza-ovens-under-500.mdx:46` | comparison-table row | |
+| O2 | `best-outdoor-pizza-ovens-under-500.mdx:60` | "the benchmark" review section, first mention | |
+| O3 | `best-outdoor-pizza-ovens-under-500.mdx:216` | "Pick 1: Ooni Koda 12" | |
+| O4 | `prime-day-pizza-oven-deals-2026.mdx:32` | deals section (page converts to evergreen in step 7) | |
+| O5 | `src/pages/gear/index.astro:18` | /gear/ "The ovens" card | |
+| O6 | registry `affiliateLinks.ts` `ooni-koda-12` | source entry all of the above resolve through | |
+
+### Solo Stove — all Solo Stove Pi (gas), full oven (registry `solo-stove-pi` → amzn.to/4fiw9yD → ASIN B0CG2MB8YB)
+
+| # | Source | Context | Decision |
+|---|---|---|---|
+| S1 | `best-outdoor-pizza-ovens-under-500.mdx:48` | comparison-table row | |
+| S2 | `best-outdoor-pizza-ovens-under-500.mdx:102` | "the forgiving one" review section, first mention | |
+| S3 | `best-outdoor-pizza-ovens-under-500.mdx:226` | "Also worth considering" pick | |
+| S4 | `prime-day-pizza-oven-deals-2026.mdx:38` | deals section (page converts to evergreen in step 7) | |
+| S5 | `src/pages/gear/index.astro:27` | /gear/ "The ovens" card | |
+| S6 | registry `affiliateLinks.ts` `solo-stove-pi` | source entry all of the above resolve through | |
+
+**Verified absent:** Ooni Fyra (mentioned, never linked — correct), Ooni/Solo accessories or branded gear (none exist on the site), draft-queue recipes (Ooni gear entries are inert `YOUR-AFFILIATE-LINK` placeholders), clam post (link reverted to plain text), live recipe gear cards (restored to "pending"). Ninja links: excluded per policy, unchanged.
+
+---
+
 *Method notes: word counts strip frontmatter/components/code; structured-recipe totals estimated including frontmatter ingredients/instructions. Affiliate tags verified by following every `amzn.to` redirect on 2026-07-28. No content, links, or code were modified in this pass.*

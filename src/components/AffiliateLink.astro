@@ -22,16 +22,35 @@ if (!product) {
 
 const linkText = label ?? product.name;
 const href = product.short; // use short URL for cleanliness in HTML output
+
+// Brands with a direct-program application pending must not carry
+// Amazon-tagged links (clean outbound profile for reapplication).
+// Render an untracked brand-site link when we have one, plain text otherwise.
+const pending = product.pendingProgram;
 ---
 
-<a
-  href={href}
-  target="_blank"
-  rel="sponsored nofollow noopener"
-  class="affiliate-link"
-  data-affiliate="amazon"
-  aria-label={`${linkText} (affiliate link, opens Amazon)`}
->{linkText}{badge && <span class="affiliate-badge" aria-hidden="true">→ Amazon</span>}</a>
+{pending ? (
+  pending.brandUrl ? (
+    <a
+      href={pending.brandUrl}
+      target="_blank"
+      rel="noopener"
+      class="affiliate-link"
+      data-affiliate="none"
+    >{linkText}</a>
+  ) : (
+    <span>{linkText}</span>
+  )
+) : (
+  <a
+    href={href}
+    target="_blank"
+    rel="sponsored nofollow noopener"
+    class="affiliate-link"
+    data-affiliate="amazon"
+    aria-label={`${linkText} (affiliate link, opens Amazon)`}
+  >{linkText}{badge && <span class="affiliate-badge" aria-hidden="true">→ Amazon</span>}</a>
+)}
 
 <style>
   .affiliate-link {
