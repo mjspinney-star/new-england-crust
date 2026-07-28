@@ -42,3 +42,9 @@ Pinterest/*.jpg
 Pinterest/*.png
 Ember/Children's book design update/
 Ember/*.zip
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
