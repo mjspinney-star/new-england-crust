@@ -237,7 +237,7 @@ cook, all in for under $80.
 - **badge_position:** top_right
 - **output:** NEC-primeday-pin1.png
 - **board:** Ninja Woodfire Oven
-- **link:** https://newenglandcrust.com/blog/prime-day-pizza-oven-deals-2026/
+- **link:** https://newenglandcrust.com/blog/best-pizza-oven-deals/
 
 ---
 
