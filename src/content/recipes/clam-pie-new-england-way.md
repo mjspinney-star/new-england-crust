@@ -1,6 +1,5 @@
 ---
 heroImage: "/assets/recipes/clam-pie/clam-pie-hero.jpg"
-heroImage: "/assets/recipes/clam-pie/clam-pie-hero.jpg"
 title: "Clam Pie, the New England Way"
 description: "Our take on a New Haven classic — Wellfleet littlenecks, garlic, oregano, no mozzarella. The clam liquor is the sauce. The stone does the rest."
 pubDate: 2026-06-15

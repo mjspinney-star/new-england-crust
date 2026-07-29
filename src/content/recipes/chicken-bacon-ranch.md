@@ -1,6 +1,5 @@
 ---
 heroImage: "/assets/recipes/chicken-bacon-ranch/chicken-bacon-ranch-hero.jpg"
-heroImage: "/assets/recipes/chicken-bacon-ranch/chicken-bacon-ranch-hero.jpg"
 title: "Chicken, Bacon & Ranch"
 description: "The crowd-pleaser we weren't going to put on the site. Herby ranch base, roasted chicken, crispy bacon, scallions. It always goes first."
 pubDate: 2026-06-01
