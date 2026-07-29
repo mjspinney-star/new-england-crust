@@ -1397,6 +1397,20 @@ Use exactly one of these:
 - "The Accessory We Didn't Trust Until We Tried It Ourselves"
 - "Why We Keep Revisiting This List Every Few Months"
 
+### Q4 gift-guide / holiday buying angles — cross-post batch (generated 2026-07-29)
+- "The Best Outdoor Pizza Ovens Under $500 — Our Holiday Buying Guide" (best-outdoor-pizza-ovens-under-500)
+- "Ninja Woodfire vs. Ooni — Which One to Buy Before the Holidays" (best-outdoor-pizza-ovens-under-500)
+- "Ooni vs. Solo Stove Pi — Our Honest Take Before You Buy One as a Gift" (best-outdoor-pizza-ovens-under-500)
+- "Save This Before You Buy Anyone a Pizza Oven This Holiday Season" (best-outdoor-pizza-ovens-under-500)
+- "Best Pizza Accessories Under $50 — Our Stocking Stuffer Picks" (best-pizza-accessories-under-50)
+- "One Peel or Two — What We'd Tell Someone Buying Their First Oven This Winter" (2026-06-01-two-peels-vs-one-is-a-turning-peel-worth-owning)
+- "The Turning Peel Question Every Holiday Shopper Asks Us" (2026-06-01-two-peels-vs-one-is-a-turning-peel-worth-owning)
+- "Best Pizza Oven Deals This Black Friday — What We're Actually Watching" (best-pizza-oven-deals)
+- "Pin This Before Black Friday — Our Pizza Gear Watch List" (best-pizza-oven-deals)
+- "What We'd Actually Put on a Pizza Person's Holiday Wish List" (ninja-woodfire-accessories-worth-buying)
+- "Before You Buy the Cover as a Gift — What We Wish We'd Known First" (ninja-woodfire-accessories-worth-buying)
+- "Hosting Pizza Night Indoors This Winter — Our Honest Setup Notes" (backyard-pizza-night-setup)
+
 ---
 
 ## NOTES & CONSTRAINTS
