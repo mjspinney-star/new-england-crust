@@ -25,7 +25,11 @@ pnpm-debug.log*
 # stray root files (delete from Finder)
 backyard-pizza-night-setup.md
 best-outdoor-pizza-ovens-under-500.md
-Instagram/
+Instagram/*
+!Instagram/carousels
+Instagram/carousels/*
+!Instagram/carousels/*-caption.txt
+!Instagram/instagram-carousel-queue.md
 
 # Generated weekly outputs (local only, not deployed)
 reels/*.mp4
