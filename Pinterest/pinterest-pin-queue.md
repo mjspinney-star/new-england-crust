@@ -87,6 +87,58 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] Nine Combos, Not Just Margherita — Pizza Night (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Pizza Night
+- **headline:** 9 Pizza Night Recipes That Aren't Just Margherita
+- **descriptor:** Hot honey pepperoni to fig and
+prosciutto — nine combos we
+actually make on repeat.
+- **output:** NEC-beyondmargherita-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/pizza-night-recipes-beyond-margherita/
+
+---
+
+### [ ] Pellets Dry All Summer — Tips (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** How We Keep Our Pellets Dry Through a Humid NE Summer
+- **descriptor:** Coastal humidity ruins pellets
+fast — our sealed-bucket,
+silica-pack fix that works.
+- **output:** NEC-pelletstorage-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/storing-pellets-new-england-summer/
+
+---
+
+### [ ] Why We Switched to 72 Hours — Recipe (Pin 1)
+- **photo:** Photos/2026-07-17-dough-shots/dough-ball-machine.jpg
+- **category:** Recipe
+- **headline:** Why We Switched to 72-Hour Cold-Ferment Dough
+- **descriptor:** Tuesday mix, Friday bake —
+the schedule that fixed
+our fighting, warm dough.
+- **output:** NEC-72hourdough-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/72-hour-cold-ferment-dough/
+
+---
+
+### [!] South Shore Bar Pizza — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** South Shore Bar Pizza — Cheese to the Very Edge
+- **descriptor:** Cheese pushed to the pan
+wall is what makes the
+famous South Shore lace.
+- **output:** NEC-southshore-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/south-shore-bar-pizza/
+
+---
+
 ### [x] Accessory We Regret Buying — Gear Guide (Pin 12)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
