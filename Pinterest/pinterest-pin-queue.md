@@ -79,6 +79,13 @@ When the weekly scheduled task runs:
 5. Mark each completed pin `[x]` in this file
 6. Commit changes: bash run-git-commit.command "Generated Pinterest pins — [date]" Pinterest/pinterest-pin-queue.md
 
+**Status markers:**
+- `[ ]` — queued, ready to generate and post
+- `[x]` — completed and posted
+- `[p]` — previously posted / in the posted backlog (do not regenerate)
+- `[!]` — held: link target not yet live (e.g. recipe committed but undeployed).
+  Do not post. Revert to `[ ]` once the linked page is confirmed live.
+
 If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
