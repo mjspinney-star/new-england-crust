@@ -146,6 +146,19 @@ famous South Shore lace.
 
 ---
 
+### [ ] Chicken, Bacon & Ranch — Recipe (Pin 1)
+- **photo:** Chicken_Bacon_Ranch.jpg
+- **category:** Recipe
+- **headline:** Chicken, Bacon & Ranch — The Pie That Disappears First
+- **descriptor:** Scratch ranch, crispy bacon,
+650°F stone — the white pizza
+guests reach for over margherita.
+- **output:** NEC-chickenbaconranch-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/chicken-bacon-ranch/
+
+---
+
 ### [x] Accessory We Regret Buying — Gear Guide (Pin 12)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Gear Guide
