@@ -1470,6 +1470,20 @@ Use exactly one of these:
 - "Before You Buy the Cover as a Gift — What We Wish We'd Known First" (ninja-woodfire-accessories-worth-buying)
 - "Hosting Pizza Night Indoors This Winter — Our Honest Setup Notes" (backyard-pizza-night-setup)
 
+### Q4 gift-guide / holiday buying angles — cross-post batch 2 (generated 2026-08-12)
+- "Ooni Koda 12 vs. Ninja Woodfire — Save This Before You Buy Someone a Pizza Oven" (best-outdoor-pizza-ovens-under-500)
+- "Ninja Woodfire vs. Solo Stove Pi — The Match-Up We Haven't Covered Yet" (best-outdoor-pizza-ovens-under-500)
+- "Ooni, Ninja, or Solo Stove — Our Answer Before You Buy Someone's First Oven" (best-outdoor-pizza-ovens-under-500)
+- "Save This: Our Under-$500 Oven Picks for Holiday Shopping" (best-outdoor-pizza-ovens-under-500)
+- "Save This: Our Under-$50 Gift Picks for Anyone Who Cooks Outside All Winter" (best-pizza-accessories-under-50)
+- "Our Under-$25 Stocking Stuffers for Pizza People — Worth Saving Before You Shop" (best-pizza-accessories-under-50)
+- "Peel Bundle or Single Peel — What We'd Wrap Up as a Gift" (2026-06-01-two-peels-vs-one-is-a-turning-peel-worth-owning)
+- "The Ninja Woodfire Accessory We'd Never Give as a Gift (And What We'd Give Instead)" (ninja-woodfire-accessories-worth-buying)
+- "Our Under-$60 Ninja Woodfire Gift Bundle — Pin This Before Gift Season" (ninja-woodfire-accessories-worth-buying)
+- "Before You Buy Anyone an Infrared Thermometer, Read This" (2026-06-16-reading-your-stone-with-an-infrared-thermometer)
+- "Cyber Monday or Christmas Eve — When Pizza Oven Prices Actually Bottom Out" (best-pizza-oven-deals)
+- "Hosting Pizza Night for the Holidays — What We're Making Instead of Margherita" (pizza-night-recipes-beyond-margherita)
+
 ---
 
 ## NOTES & CONSTRAINTS

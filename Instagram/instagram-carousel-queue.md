@@ -76,3 +76,11 @@ State markers: `[ ]` ready to generate · `[x]` PNGs created · `[p]` posted ·
   Slide count: 6
   Caption filename: carousel-2026-07-30-caption.txt
   State: [x] PNGs created
+
+- Date generated: 2026-08-06
+  Source post: 2026-06-25-fresh-basil-vs-dried-the-honest-answer-for-outdoor.md
+  Resolved slug: fresh-basil-vs-dried-the-honest-answer-for-outdoor
+  Cover headline: "Fresh basil vs. dried: the honest answer"
+  Slide count: 6
+  Caption filename: carousel-2026-08-06-caption.txt
+  State: [x] PNGs created
