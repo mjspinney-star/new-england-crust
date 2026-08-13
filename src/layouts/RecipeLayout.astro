@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import AffiliateLink from '../components/AffiliateLink.astro';
+import KitSignupForm from '../components/KitSignupForm.astro';
 
 interface InstructionImage {
   src: string;
@@ -279,26 +280,14 @@ if (typeof calories === 'number') {
       </div>
     )}
 
-    <div class="not-prose card mb-12 text-center">
-      <h2 class="font-display text-2xl text-timber-50">Get the New England Pizza Dough Cheat Sheet</h2>
-      <p class="mt-3 text-timber-100/85">
-        The ratios, timing, and cold-ferment schedule we actually use — straight to your inbox.
-      </p>
-      <!-- TODO: wire this form to an email provider. See KitPizzaKitForm.astro for the
-           existing ConvertKit embed pattern used elsewhere on the site. -->
-      <form class="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center" action="TODO" method="post">
-        <label class="sr-only" for="recipe-cheat-sheet-email">Email address</label>
-        <input
-          id="recipe-cheat-sheet-email"
-          type="email"
-          name="email_address"
-          placeholder="Email address"
-          required
-          class="w-full max-w-xs rounded-full border border-timber-300/30 bg-twilight-700/80 px-5 py-3 text-sm text-timber-50 placeholder:text-timber-100/50 focus:outline-none focus:ring-2 focus:ring-glow-300"
-        />
-        <button type="submit" class="btn-ember shrink-0">Send Me the Cheat Sheet</button>
-      </form>
-    </div>
+    <KitSignupForm
+      formId="9525175"
+      uid="5affb2cce0"
+      header="Get the Ninja Woodfire Quick-Start Guide"
+      subheader="The accessories worth buying first, the pellets to keep stocked, and the stone temps that actually produce a good crust."
+      buttonText="Send Me the Guide"
+      successMessage="Check your inbox — your guide is on its way."
+    />
 
     <footer class="mt-16 flex items-center justify-between border-t border-timber-300/15 pt-6 text-sm text-timber-200/80">
       <a href="/recipes/" class="hover:text-glow-200">&larr; All recipes</a>

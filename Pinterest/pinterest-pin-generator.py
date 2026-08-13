@@ -63,9 +63,9 @@ W, H = 1000, 1500
 
 # ── FONT PATHS ────────────────────────────────────────────────────────────────
 # Mac paths (primary — Georgia is system-installed on all Macs)
-MAC_SERIF_BOLD   = '/Library/Fonts/Georgia Bold.ttf'
-MAC_SERIF_REG    = '/Library/Fonts/Georgia.ttf'
-MAC_SERIF_ITALIC = '/Library/Fonts/Georgia Italic.ttf'
+MAC_SERIF_BOLD   = '/System/Library/Fonts/Supplemental/Georgia Bold.ttf'
+MAC_SERIF_REG    = '/System/Library/Fonts/Supplemental/Georgia.ttf'
+MAC_SERIF_ITALIC = '/System/Library/Fonts/Supplemental/Georgia Italic.ttf'
 # Linux fallback (for CI / server environments)
 LIN_SERIF_BOLD   = '/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf'
 LIN_SERIF_REG    = '/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf'
@@ -73,12 +73,14 @@ LIN_SERIF_ITALIC = '/usr/share/fonts/truetype/liberation/LiberationSerif-Italic.
 
 # Sans-serif bold — used only for the small FREE flag badge (deliberately
 # distinct from the Georgia serif headline type elsewhere on the pin).
-MAC_SANS_BOLD = '/Library/Fonts/Arial Bold.ttf'
+MAC_SANS_BOLD = '/System/Library/Fonts/Supplemental/Arial Bold.ttf'
 LIN_SANS_BOLD = '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'
 
 def _font(mac_path, linux_path, size):
-    path = mac_path if os.path.exists(mac_path) else linux_path
-    return ImageFont.truetype(path, size)
+    for path in (mac_path, linux_path):
+        if os.path.exists(path):
+            return ImageFont.truetype(path, size)
+    raise FileNotFoundError(f"No font found at {mac_path} or {linux_path}")
 
 # ── PINS TO GENERATE ──────────────────────────────────────────────────────────
 # layout: "split" (2/3 photo + 1/3 text block) or "fullbleed" (photo fills pin)
