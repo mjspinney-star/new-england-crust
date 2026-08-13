@@ -249,6 +249,20 @@ export const affiliateLinks: AffiliateProduct[] = [
     full: "https://www.amazon.com/dp/B079ZP74Q3/?tag=newenglandcru-20",
     category: "tool",
   },
+  {
+    id: "microplane-grater",
+    name: "Microplane 40020 Classic Zester/Grater",
+    short: "https://amzn.to/4wlcEf7",
+    full: "https://www.amazon.com/Microplane-40020-Classic-Zester-Grater/dp/B00004S7V8?linkCode=ll2&tag=newenglandcru-20&linkId=e6a804e5279cc78c999ef5205156899a",
+    category: "tool",
+  },
+  {
+    id: "squeeze-bottles",
+    name: "Norcalway Condiment Squeeze Bottles",
+    short: "https://amzn.to/4guXrDq",
+    full: "https://www.amazon.com/Norcalway-Condiment-Squeeze-Bottles-Liquids/dp/B0CD1PXZTZ?linkCode=ll2&tag=newenglandcru-20&linkId=da24c259911248899309ed441a8b255b",
+    category: "tool",
+  },
 ];
 
 // Helper: get a single product by id
