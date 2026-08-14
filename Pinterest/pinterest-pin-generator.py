@@ -867,7 +867,10 @@ PIN_KIT_RECIPES = [
     {
         "slug": "chicken-bacon-ranch",
         "hero_photo": "../pin-kits/chicken-bacon-ranch/chicken-bacon-ranch-hero.jpg",
-        "hero_photos": {},
+        "hero_photos": {
+            "classic_badge": "../pin-kits/chicken-bacon-ranch/chicken-bacon-ranch-hero-2.jpg",
+            "how_to":        "../pin-kits/chicken-bacon-ranch/chicken-bacon-ranch-hero-2.jpg",
+        },
         "output_dir": "../pin-kits/chicken-bacon-ranch",
         "pins": [
             {"variant": "hero_title", "suffix": "pin-1-hero-title-v2.png", "category": "Recipe",
@@ -881,7 +884,7 @@ PIN_KIT_RECIPES = [
              "headline": "The Ranch Base You Make Yourself",
              "subhead": "No packet mix. Ever."},
             {"variant": "how_to", "suffix": "pin-4-how-to-v2.png", "category": "Recipe",
-             "headline": "20 Min Prep · 4 Min Bake",
+             "headline": "20 Min Prep · Hot Stone Bake",
              "subhead": "Chicken, Bacon & Ranch Pizza",
              "top_badge": "STEP-BY-STEP"},
         ],
