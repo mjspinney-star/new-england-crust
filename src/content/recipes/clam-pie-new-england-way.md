@@ -78,5 +78,5 @@ It's also one of the most famous pizzas in the country — the version that make
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough)
-- [The Best Outdoor Pizza Ovens Under $500](/blog/best-outdoor-pizza-ovens-under-500) — which oven works best for high-heat pies
+- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
+- [The Best Outdoor Pizza Ovens Under $500](/blog/best-outdoor-pizza-ovens-under-500/) — which oven works best for high-heat pies

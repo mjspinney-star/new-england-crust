@@ -56,5 +56,5 @@ This is not a quick weeknight sauce. It takes about 90 minutes start to finish, 
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough) — the dough we use under this sauce
-- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita) — more ideas for what to put on top
+- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the dough we use under this sauce
+- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/) — more ideas for what to put on top

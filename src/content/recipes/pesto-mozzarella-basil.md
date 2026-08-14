@@ -86,5 +86,5 @@ We make this one more than any other in June and July, when basil is cheap and t
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough)
-- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita)
+- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
+- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/)

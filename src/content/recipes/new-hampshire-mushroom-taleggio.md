@@ -73,5 +73,5 @@ We make it in fall. It wouldn't be right any other time of year.
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough) — the base we use under this
-- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita)
+- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the base we use under this
+- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/)

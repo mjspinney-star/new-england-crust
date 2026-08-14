@@ -90,6 +90,6 @@ We've made peace with this being in our rotation. The guests have spoken.
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough)
-- [How to Throw a Pizza Party for 12 Without Losing Your Mind](/blog/backyard-pizza-night-setup)
-- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita)
+- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
+- [Backyard Pizza Night Setup — Everything You Need](/blog/backyard-pizza-night-setup/)
+- [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/)
