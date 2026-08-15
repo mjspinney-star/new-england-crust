@@ -84,3 +84,11 @@ State markers: `[ ]` ready to generate · `[x]` PNGs created · `[p]` posted ·
   Slide count: 6
   Caption filename: carousel-2026-08-06-caption.txt
   State: [x] PNGs created
+
+- Date generated: 2026-08-13
+  Source post: 2026-06-15-the-difference-between-00-flour-and-bread-flour-wh.mdx
+  Resolved slug: 2026-06-15-the-difference-between-00-flour-and-bread-flour-wh
+  Cover headline: "00 flour vs. bread flour: pick by oven"
+  Slide count: 6
+  Caption filename: carousel-2026-08-13-caption.txt
+  State: [x] PNGs created
