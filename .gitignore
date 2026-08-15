@@ -44,6 +44,7 @@ __pycache__/
 Pinterest/*.jpg
 *.zip
 Pinterest/*.png
+Pinterest/carousels/*.png
 Ember/Children's book design update/
 Ember/*.zip
 pin-kits/**/*.png

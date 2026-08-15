@@ -157,15 +157,6 @@ PINS = [
     {
         "photo_path":     "NinjaWoodfireHero.jpeg",
         "category":       "Gear Guide",
-        "headline":       "The Only 4 Ninja Woodfire Accessories Worth Buying — Free One-Page Cheat Sheet",
-        "subhead":        "Our exact buy-immediately list, pellet picks, and setup — free and printable.",
-        "layout":         "split",
-        "flag":           "FREE",
-        "output":         "outputs/NEC-quickstart-pin2.png",
-    },
-    {
-        "photo_path":     "NinjaWoodfireHero.jpeg",
-        "category":       "Gear Guide",
         "headline":       "New Ninja Woodfire Owner? Start With This Free Printable Shopping List",
         "subhead":        "Skip the trial and error. Our free quick-start guide covers what to buy first.",
         "layout":         "split",
@@ -231,6 +222,30 @@ PINS = [
         "subhead":        "Fresh pesto, torn mozzarella, basil laid on after the bake. The summer pie we make more than any other.",
         "layout":         "split",
         "output":         "outputs/NEC-pesto-pin1.png",
+    },
+    {
+        "photo_path":     "IMG_8372.jpeg",
+        "category":       "Pizza Night",
+        "headline":       "9 Pizza Night Recipes That Aren't Just Margherita",
+        "subhead":        "Hot honey pepperoni to fig and prosciutto — nine combos we actually make on repeat.",
+        "layout":         "split",
+        "output":         "outputs/NEC-beyondmargherita-pin1.png",
+    },
+    {
+        "photo_path":     "NinjaWoodfireHero.jpeg",
+        "category":       "Tips",
+        "headline":       "How We Keep Our Pellets Dry Through a Humid NE Summer",
+        "subhead":        "Coastal humidity ruins pellets fast — our sealed-bucket, silica-pack fix that works.",
+        "layout":         "split",
+        "output":         "outputs/NEC-pelletstorage-pin1.png",
+    },
+    {
+        "photo_path":     "Chicken_Bacon_Ranch.jpg",
+        "category":       "Recipe",
+        "headline":       "Chicken, Bacon & Ranch — The Pie That Disappears First",
+        "subhead":        "Scratch ranch, crispy bacon, 650°F stone — the white pizza guests reach for over margherita.",
+        "layout":         "split",
+        "output":         "outputs/NEC-chickenbaconranch-pin1.png",
     },
     # ── Add more pins below ───────────────────────────────────────────────────
     # {

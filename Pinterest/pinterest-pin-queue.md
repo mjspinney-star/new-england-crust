@@ -94,7 +94,7 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Nine Combos, Not Just Margherita — Pizza Night (Pin 1)
+### [x] Nine Combos, Not Just Margherita — Pizza Night (Pin 1)
 - **photo:** IMG_8372.jpeg
 - **category:** Pizza Night
 - **headline:** 9 Pizza Night Recipes That Aren't Just Margherita
@@ -107,7 +107,7 @@ actually make on repeat.
 
 ---
 
-### [ ] Pellets Dry All Summer — Tips (Pin 1)
+### [x] Pellets Dry All Summer — Tips (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Tips
 - **headline:** How We Keep Our Pellets Dry Through a Humid NE Summer
@@ -120,7 +120,7 @@ silica-pack fix that works.
 
 ---
 
-### [ ] Why We Switched to 72 Hours — Recipe (Pin 1)
+### [!] Why We Switched to 72 Hours — Recipe (Pin 1)
 - **photo:** Photos/2026-07-17-dough-shots/dough-ball-machine.jpg
 - **category:** Recipe
 - **headline:** Why We Switched to 72-Hour Cold-Ferment Dough
@@ -130,6 +130,7 @@ our fighting, warm dough.
 - **output:** NEC-72hourdough-pin1.png
 - **board:** Backyard Pizza Night
 - **link:** https://newenglandcrust.com/blog/72-hour-cold-ferment-dough/
+- **note:** skipped 2026-08-14 — photo file not found at Photos/2026-07-17-dough-shots/dough-ball-machine.jpg (folder/file does not exist in Pinterest directory). Add the photo and revert to [ ] to regenerate.
 
 ---
 
@@ -146,7 +147,7 @@ famous South Shore lace.
 
 ---
 
-### [ ] Chicken, Bacon & Ranch — Recipe (Pin 1)
+### [x] Chicken, Bacon & Ranch — Recipe (Pin 1)
 - **photo:** Chicken_Bacon_Ranch.jpg
 - **category:** Recipe
 - **headline:** Chicken, Bacon & Ranch — The Pie That Disappears First
