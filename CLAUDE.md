@@ -20,9 +20,14 @@ outdoor pizza ovens (Ooni, Ninja Woodfire, Solo Stove); everything else
 - **Astro** static site (`output: 'static'`, trailing-slash directory URLs)
 - **Cloudflare Workers Builds project with static assets** (not Pages) —
   `Assets → ASSETS` binding, config in `wrangler.jsonc` at repo root (name
-  `new-england-crust`, assets dir `./dist`), deployed via
-  `npx wrangler versions upload --assets=./dist`. Confirmed working:
-  production deployed successfully from `main` after PR #3 merged.
+  `new-england-crust`, assets dir `./dist`). Deploy with `npm run deploy`.
+
+  **Do not use `npx wrangler versions upload`.** It uploads a version but
+  does NOT route traffic to it — the version sits unpromoted while the site
+  continues serving whatever was promoted last. This silently served a stale
+  build on 2026-08-17 (three unpromoted versions had accumulated). Promoting
+  requires a separate `npx wrangler versions deploy`. `wrangler deploy`
+  does both in one step, which is what `npm run deploy` runs.
 - Content: markdown collections in `src/content/blog/` and
   `src/content/recipes/` (`.mdx` when a post uses components)
 - Analytics: GA4 `G-3QBKJCC5F9` (tag in `BaseLayout.astro`)
