@@ -3,6 +3,7 @@ title: "Same-Day Emergency Pizza Dough (Ready in 2 Hours)"
 description: "Decided at 3pm that tonight is pizza night? This 2-hour dough gets you a legitimately good pie without planning ahead."
 pubDate: 2026-08-13
 style: "dough"
+recipeCategory: "Ingredient"
 prepTime: "PT15M"
 cookTime: "PT0M"
 restTime: "PT2H"

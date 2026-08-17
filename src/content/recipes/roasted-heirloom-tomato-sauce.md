@@ -5,6 +5,7 @@ pubDate: 2026-08-01
 category: "recipes"
 tags: ["sauce", "heirloom tomatoes", "new england", "seasonal", "roasted"]
 draft: false
+recipeCategory: "Ingredient"
 prepTime: "PT15M"
 cookTime: "PT1H15M"
 totalTime: "PT1H30M"
