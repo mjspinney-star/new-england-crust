@@ -28,6 +28,8 @@ interface Props {
   pubDate: Date;
   updatedDate?: Date;
   style?: string;
+  recipeCategory?: string;
+  recipeCuisine?: string;
   prepTime?: string;
   cookTime?: string;
   totalTime?: string;
@@ -48,6 +50,8 @@ const {
   pubDate,
   updatedDate,
   style,
+  recipeCategory,
+  recipeCuisine,
   prepTime,
   cookTime,
   totalTime,
@@ -102,7 +106,8 @@ const jsonLd: Record<string, unknown> = {
     '@type': 'Organization',
     name: 'New England Crust',
   },
-  recipeCuisine: 'New England',
+  recipeCategory,
+  recipeCuisine,
 };
 
 if (absoluteHeroImage) jsonLd.image = absoluteHeroImage;

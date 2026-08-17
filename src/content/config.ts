@@ -60,6 +60,8 @@ const recipes = defineCollection({
     // "style" is the regional/format label, e.g. "beach-pizza", "bar-pizza",
     // "greek", "new-haven", "neapolitan".
     style: z.string().optional(),
+    recipeCategory: z.string().default('Main course'),
+    recipeCuisine: z.string().default('New England'),
     // ISO 8601 durations, e.g. "PT30M". (Legacy recipes may still use
     // freeform strings like "30 min" in prepTime/cookTime — both are
     // accepted here since this field is shared with the legacy schema.)
