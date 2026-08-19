@@ -72,22 +72,26 @@ Your post body here.
 ```
 
 Posts with `draft: true` are excluded from the listing, RSS, and sitemap. Slug
-defaults to the filename, e.g. `my-post.md` → `/blog/my-post/`.
+defaults to the filename, e.g. `my-post.mdx` → `/blog/my-post/`. New posts use `.mdx`; existing `.md` files work the same way.
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare Workers
 
-Connect your Git repository to Cloudflare Pages and use these settings:
+The site deploys as Workers static assets, configured in `wrangler.jsonc` —
+not Cloudflare Pages.
 
-| Setting              | Value           |
-| -------------------- | --------------- |
-| Framework preset     | Astro           |
-| Build command        | `npm run build` |
-| Build output directory | `dist`        |
-| Root directory       | `/` (default)   |
-| Node version         | `20` (or newer) |
+```bash
+npm run build && npx wrangler deploy --assets=./dist
+```
 
-The `public/_headers` and `public/_redirects` files are picked up automatically
-by Cloudflare Pages and applied at the edge.
+**Important:** `wrangler versions upload` stages a version but does *not* route
+traffic to it. Deploying requires either the command above or a separate
+`wrangler versions deploy` step. A successful upload with no traffic change is
+the symptom of this mistake.
+
+`public/_headers` and `public/_redirects` are honored by Workers static assets
+and applied at the edge (verified 2026-08-18 against the Prime Day → deals
+301). Trailing-slash canonicalization is handled by Astro's
+`build.format = 'directory'`, so slash-less URLs 308 to the canonical form.
 
 Before going live, update `site` in `astro.config.mjs` to your production
 domain so canonical URLs, the sitemap, and RSS feed point to the right place.
