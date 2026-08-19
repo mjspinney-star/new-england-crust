@@ -186,20 +186,20 @@ const req = https.request(options, (res) => {
 
     const postContent = response.content[0].text;
 
-    // Filename: post-topic-slug.md (no date prefix, word-boundary safe)
+    // Filename: post-topic-slug.mdx (no date prefix, word-boundary safe)
     let slug = selected.topic
       .toLowerCase()
       .replace(/[^a-z0-9\s-]/g, '')
       .replace(/\s+/g, '-')
       .replace(/-+/g, '-')
       .replace(/^-|-$/g, '');
-    if (slug.length > 50) {
-      slug = slug.slice(0, 50);
+    if (slug.length > 65) {
+      slug = slug.slice(0, 65);
       const lastHyphen = slug.lastIndexOf('-');
       if (lastHyphen > 20) slug = slug.slice(0, lastHyphen);
       slug = slug.replace(/-$/, '');
     }
-    const filename = `src/content/blog/${slug}.md`;
+    const filename = `src/content/blog/${slug}.mdx`;
     if (fs.existsSync(filename)) {
       console.error(`Post already exists: ${filename} — aborting.`);
       process.exit(1);
