@@ -30,7 +30,7 @@ If the buffer drops below 7, add more items to the queue mid-week.
 
 **Prompt to paste into Cowork:**
 
-First run `git pull` in `/Users/michaelspinney/Desktop/new-england-crust` to
+First run `git fetch` in `/Users/michaelspinney/Desktop/new-england-crust` to
 sync the latest posts. Then read all blog posts in
 `/Users/michaelspinney/Desktop/new-england-crust/src/content/blog/` to
 understand what posts are currently live. Then read
@@ -68,7 +68,7 @@ only. Commit and push by running: bash run-git-commit.command "Added Pinterest h
 
 **Prompt to paste into Cowork:**
 
-First run `git pull` in `/Users/michaelspinney/Desktop/new-england-crust` to
+First run `git fetch` in `/Users/michaelspinney/Desktop/new-england-crust` to
 sync the latest files. Then read
 `/Users/michaelspinney/Desktop/new-england-crust/Pinterest/pinterest-pin-queue.md`
 and find ALL items marked `[ ]` in the Pin Queue section.
@@ -111,7 +111,7 @@ reducing Thursday's manual load and keeping the buffer topped up
 
 **Prompt to paste into Cowork:**
 
-First run git pull in /Users/michaelspinney/Desktop/new-england-crust to sync the latest files.
+First run git fetch in /Users/michaelspinney/Desktop/new-england-crust to sync the latest files.
 
 If git pull fails for any reason, stop immediately and report the failure. Do not proceed using local content — a failed pull means the repo may be behind, and "up to date with origin/main" is not reliable in that state.
 

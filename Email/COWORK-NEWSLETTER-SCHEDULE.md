@@ -12,7 +12,7 @@ Weekly — set for Monday at 9:00 AM
 
 ---
 
-First, run git pull in /Users/michaelspinney/Desktop/new-england-crust to sync the latest posts from GitHub.
+First, run git fetch in /Users/michaelspinney/Desktop/new-england-crust to sync the latest posts from GitHub.
 
 Then do the following:
 
