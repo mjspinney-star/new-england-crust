@@ -16,3 +16,12 @@ flagged for fix (do not regenerate automatically).
   Card count: 5
   Meta filename: carousel-2026-08-14-meta.txt
   State: [x] PNGs created
+
+- Date generated: 2026-08-21
+  Source post: 2026-07-13-pecorino-vs-parmigiano-when-each-belongs-on-a-pizz.md
+  Resolved slug: 2026-07-13-pecorino-vs-parmigiano-when-each-belongs-on-a-pizz
+  Adapted from Instagram carousel: yes — Instagram/instagram-carousel-queue.md entry dated 2026-08-20 (same source post, slide breakdown reused: cover + pecorino profile/use-case + parmigiano profile/use-case + "neither" exception, capped at 5 cards with a new CTA card replacing the Instagram carousel's buying-tip closing slide, which was cut as non-essential)
+  Cover headline: "Pecorino or parmigiano? read the pie first"
+  Card count: 5
+  Meta filename: carousel-2026-08-21-meta.txt
+  State: [x] PNGs created

@@ -92,3 +92,11 @@ State markers: `[ ]` ready to generate · `[x]` PNGs created · `[p]` posted ·
   Slide count: 6
   Caption filename: carousel-2026-08-13-caption.txt
   State: [x] PNGs created
+
+- Date generated: 2026-08-20
+  Source post: 2026-07-13-pecorino-vs-parmigiano-when-each-belongs-on-a-pizz.md
+  Resolved slug: 2026-07-13-pecorino-vs-parmigiano-when-each-belongs-on-a-pizz
+  Cover headline: "Pecorino or parmigiano? read the pie first"
+  Slide count: 6
+  Caption filename: carousel-2026-08-20-caption.txt
+  State: [x] PNGs created

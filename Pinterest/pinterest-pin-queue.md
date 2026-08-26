@@ -94,6 +94,58 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
+### [ ] Stone Temp vs. Air Temp — Tips (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** Stone Temp vs. Air Temp: The Number We Check Before Every Cook
+- **descriptor:** Our display can read 100°F off
+the real stone — the $20 fix
+we check before every launch.
+- **output:** NEC-stonetemp-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/2026-06-16-reading-your-stone-with-an-infrared-thermometer/
+
+---
+
+### [ ] Cold-Weather Preheat Rule — Tips (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** Our Cold-Weather Pizza Oven Rule: Add 15–20 Minutes
+- **descriptor:** Cold stone, weak propane, stubborn
+wind — what changes below 40°F
+and how we adjust before we launch.
+- **output:** NEC-coldpreheat-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/2026-06-05-preheating-your-outdoor-oven-in-cold-weather-what-/
+
+---
+
+### [ ] New Haven Plain Tomato Pie — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** New Haven Plain Tomato Pie — No Mozzarella, All Char
+- **descriptor:** Tomatoes, pecorino, oregano, oil —
+the Wooster Street classic that
+needs 700°F+ to actually work.
+- **output:** NEC-newhaven-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/new-haven-plain-tomato-pie/
+
+---
+
+### [ ] The Master Dough Recipe — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** One Dough, Every Pizza — Our 48-Hour Master Recipe
+- **descriptor:** Five pantry staples, 65% hydration,
+48 hours in the fridge — the
+dough behind every recipe we post.
+- **output:** NEC-masterdough-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/master-cold-ferment-dough/
+
+---
+
 ### [x] Nine Combos, Not Just Margherita — Pizza Night (Pin 1)
 - **photo:** IMG_8372.jpeg
 - **category:** Pizza Night
@@ -1497,6 +1549,20 @@ Use exactly one of these:
 - "Before You Buy Anyone an Infrared Thermometer, Read This" (2026-06-16-reading-your-stone-with-an-infrared-thermometer)
 - "Cyber Monday or Christmas Eve — When Pizza Oven Prices Actually Bottom Out" (best-pizza-oven-deals)
 - "Hosting Pizza Night for the Holidays — What We're Making Instead of Margherita" (pizza-night-recipes-beyond-margherita)
+
+### Q4 gift-guide / holiday buying angles — cross-post batch 3 (generated 2026-08-19)
+- "Save This Before You Buy Anyone a Pizza Oven Under $500" (best-outdoor-pizza-ovens-under-500)
+- "Propane vs. Wood Pellet — Save This Before You Gift a Pizza Oven" (best-outdoor-pizza-ovens-under-500)
+- "One Peel or Two — Save This Before It Goes on Anyone's Wish List" (2026-06-01-two-peels-vs-one-is-a-turning-peel-worth-owning)
+- "00 or Bread Flour — The One Worth Putting in a Baker's Stocking" (2026-06-15-the-difference-between-00-flour-and-bread-flour-wh)
+- "Pecorino vs. Parmigiano — Save This Before You Build the Holiday Cheese Board" (2026-07-13-pecorino-vs-parmigiano-when-each-belongs-on-a-pizz)
+- "Best Ninja Woodfire Accessories Under $50 — Save This Before You Shop the Sales" (ninja-woodfire-accessories-worth-buying)
+- "Under $50 and Worth It — Save Our Pizza Accessory Picks Before You Shop" (best-pizza-accessories-under-50)
+- "The Discount We Actually Wait For — Save This Before You Buy a Pizza Oven on Sale" (best-pizza-oven-deals)
+- "Our Four-Station Setup — Save This Before Your Next Holiday Gathering" (backyard-pizza-night-setup)
+- "The $20 Gift We'd Give Any Pizza Person — Save This Before the Holidays" (2026-06-16-reading-your-stone-with-an-infrared-thermometer)
+- "Save This Before Your Next Holiday Pizza Night — Nine Combos Worth Repeating" (pizza-night-recipes-beyond-margherita)
+- "Whole Peeled vs. Crushed — Save This Before Your Next Grocery Run for Sauce" (buying-good-canned-tomatoes-without-overthinking)
 
 ---
 
