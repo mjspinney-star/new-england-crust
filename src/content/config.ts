@@ -75,7 +75,7 @@ const recipes = defineCollection({
     ingredients: z.array(z.string()).default([]),
     instructions: z.array(instructionStep).default([]),
     // Affiliate/owned gear used in the recipe (Ooni, Ninja Artisan, Solo
-    // Stove Pi, etc.). Rendered as a disclosed "Gear I used" callout.
+    // Stove Pi, etc.). Rendered as a disclosed "Gear we used" callout.
     gear: z.array(gearItem).default([]),
     keywords: z.array(z.string()).default([]),
   }),

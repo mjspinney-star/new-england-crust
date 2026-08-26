@@ -86,10 +86,13 @@ placeholders or suggest Ooni/Solo links (prompt-enforced — keep it that way).
 
 ## Voice
 
-First-person, personal, no content-farm tone. Two registers, never mixed on
-one page: **"I"** for story/experience pieces and all newly generated content;
-**"we"** stays in legacy instructional bodies (don't rewrite them). Within-page
-clashes get logged in `REGISTRY-GAPS.md` for Michael to fix by hand.
+**First-person plural throughout — "we," "our," "us."** No exceptions: story
+pieces, instructional bodies, recipes, layouts, generated content, and every
+automated job (carousels, newsletter, pins, reels). Plain-spoken, dry, honest
+about downsides. No content-farm tone, no food-blog clichés.
+
+Legacy pages written in "I" are drift, not policy — log them in
+`REGISTRY-GAPS.md` for Michael to fix by hand.
 
 ## Cowork sandbox constraints — read before writing any job spec
 
@@ -124,8 +127,9 @@ obstacle to route around.
    oil, semolina, pellet bucket + silica packs.
 2. **Restore after 08-01:** the "Roasted Heirloom Tomato Sauce" link in
    `caputo-breadmaker-dough.mdx` "See Also" (removed while target was hidden).
-3. **Voice-mix pages** logged in `REGISTRY-GAPS.md` (RecipeLayout "Gear I
+3. **Voice drift to "I"** logged in `REGISTRY-GAPS.md` (RecipeLayout "Gear I
    used" over "we" recipe bodies; /gear/ mixes both) — Michael fixes by hand.
+   Policy settled 2026-08-26: everything is first-person plural.
 4. **Parked work** (deliberately deferred until post-deploy GSC data): rest of
    Task B title/meta rewrites, Task C schema markup (Article/ItemList/FAQ/
    Breadcrumb), Task E internal linking, Task F component extraction +
