@@ -4,6 +4,8 @@
 > evolves — decisions made, content published, programs joined.
 > Rewritten 2026-07-28 at the end of the fable5-seo-audit pass; that branch's
 > PR (#3) and `AUDIT.md` hold the full history of how we got here.
+> Updated 2026-08-26: PAT rotation resolved, Cowork sandbox constraints
+> documented.
 
 ---
 
@@ -33,7 +35,8 @@ outdoor pizza ovens (Ooni, Ninja Woodfire, Solo Stove); everything else
 - Analytics: GA4 `G-3QBKJCC5F9` (tag in `BaseLayout.astro`)
 - Search Console: sitemap is **`/sitemap-index.xml`** (there is no
   `sitemap.xml` — never point anything at that)
-- Build: `npm run build` — run it after every change set; fix what you broke
+- Build: `npm run build` — run it after every change set, **from Terminal
+  only** (see sandbox constraints below); fix what you broke
 
 ## Conventions — read CONTRIBUTING-SEO.md first
 
@@ -69,6 +72,8 @@ here; read it before editing content or components.
 | Social/OG fallback image | `public/og-image.jpg` (1200×630) |
 | Audit history + Ooni/Solo link inventory | `AUDIT.md` |
 | Product gaps + voice-mix log | `REGISTRY-GAPS.md` |
+| Commit/push wrapper used by Cowork jobs | `run-git-commit.command` |
+| Cowork job specs (mirror the live scheduler) | `Pinterest/COWORK-PINTEREST-SCHEDULES.md`, `Email/COWORK-NEWSLETTER-SCHEDULE.md` |
 
 ## Publishing model
 
@@ -86,7 +91,33 @@ one page: **"I"** for story/experience pieces and all newly generated content;
 **"we"** stays in legacy instructional bodies (don't rewrite them). Within-page
 clashes get logged in `REGISTRY-GAPS.md` for Michael to fix by hand.
 
-## Known-open items (as of 2026-07-28)
+## Cowork sandbox constraints — read before writing any job spec
+
+Cowork's sandbox **can create and overwrite files but cannot delete them.**
+Every unlink fails with EPERM. This is the shape of the environment, not an
+obstacle to route around.
+
+- **No git commands in job specs.** Any git operation that writes a lock file
+  (`HEAD.lock`, `index.lock`, `ORIG_HEAD.lock`) leaves it behind permanently
+  and breaks every later run. `git pull` in job specs caused repeated silent
+  failures from June through August 2026.
+- **Read content via `git show origin/main:<path>`** when a job needs current
+  content, rather than pulling into the working tree.
+- **Never `npm run build` from the sandbox.** Astro and Vite delete files
+  during cleanup, so the build exits non-zero even when output looks complete,
+  and a partial build writes junk into `dist/` that later runs misread.
+- **Auto-maintenance is disabled** on this repo (`maintenance.auto false`,
+  `gc.auto 0`) because `git fetch` regenerated `.git/objects/maintenance.lock`
+  on every run and the sandbox could not unlink it. Run `git gc` manually from
+  Terminal every few weeks.
+- **Lock checks use `find .git -maxdepth 1 -name "*.lock"`** — top level only.
+  Locks inside `objects/` are routine maintenance artifacts, not dead
+  operations.
+- **Job specs exist in two places:** the Cowork scheduler (authoritative) and a
+  mirrored `.md` file in the repo. If you edit one, edit both — drift between
+  them hid the `git pull` problem for months.
+
+## Known-open items (as of 2026-08-26)
 
 1. **Registry gaps** (see `REGISTRY-GAPS.md`): turning peel (two posts link a
    launching peel under "turning peel" text pending this), finishing olive
@@ -101,15 +132,30 @@ clashes get logged in `REGISTRY-GAPS.md` for Michael to fix by hand.
    deleting `sample-recipe-schema-demo.md` (kept `draft: true` on purpose).
 5. **Etekcity model nuance:** the infrared post names the "Lasergrip 1080" but
    the registry ASIN is a newer Etekcity IR gun — swap ASIN or prose someday.
-6. **Security:** git remote URL embeds a plaintext GitHub PAT — rotate and
-   move to a credential helper.
+6. **Security — RESOLVED 2026-08-26:** the git remote URL previously embedded a
+   plaintext GitHub PAT. Two classic PATs with `repo` scope were found and
+   revoked; the remote is now
+   `https://github.com/mjspinney-star/new-england-crust.git` with no credential
+   in the URL. Auth uses a fine-grained token scoped to this repo only
+   (Contents: read/write), stored via `credential.helper osxkeychain`. Never
+   put a token back in the remote URL.
+7. **Job specs not yet audited** for the sandbox constraints above: reel kit,
+   Search Console indexing check, headline generator, morning job digest, pin
+   queue prework. The two carousel jobs and the newsletter job are clean; the
+   pin generator was fixed 2026-08-26.
+8. **`YOUR-AFFILIATE-LINK` placeholders** remain on some published recipes.
+   The Pinterest carousel job can point traffic at a page showing a bare
+   placeholder — fix before relying on that job.
 
 ## What to remember each session
 
 1. Never add an Amazon-tagged link to an Ooni or Solo Stove product.
 2. Never hand-write affiliate URLs in content — registry + component only.
-3. Run `npm run build` after edits; the pubDate filter means future content
-   staying hidden is correct behavior, not a bug.
+3. Run `npm run build` after edits **from Terminal only** — never from a Cowork
+   sandbox. The pubDate filter means future content staying hidden is correct
+   behavior, not a bug.
 4. Michael reviews per-step commits and wants judgment calls flagged, not
    guessed — pause on policy-shaped decisions.
-5. Update this file when major decisions land.
+5. Never `git add -A` — stage only named files. Verify commits by hash and
+   GitHub diff URL, not by an agent's self-report.
+6. Update this file when major decisions land.
