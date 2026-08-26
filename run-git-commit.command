@@ -17,7 +17,7 @@ if pgrep -x git > /dev/null; then
   exit 1
 fi
 
-LOCKS=$(find .git -name "*.lock")
+LOCKS=$(find .git -maxdepth 1 -name "*.lock")
 if [ -n "$LOCKS" ]; then
   echo "ABORT: stale lock files present:"
   echo "$LOCKS"
