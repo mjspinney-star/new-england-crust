@@ -17,7 +17,13 @@ if pgrep -x git > /dev/null; then
   exit 1
 fi
 
-find .git -name "*.lock" -delete
+LOCKS=$(find .git -name "*.lock")
+if [ -n "$LOCKS" ]; then
+  echo "ABORT: stale lock files present:"
+  echo "$LOCKS"
+  echo "Clear them from Terminal, then re-run."
+  exit 1
+fi
 
 git status
 echo "--- staging: $* ---"
