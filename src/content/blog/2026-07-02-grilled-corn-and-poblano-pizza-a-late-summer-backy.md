@@ -19,7 +19,7 @@ This one is light on ingredients, which means everything has to actually taste l
 - 2 ears of corn, shucked
 - 1 large poblano pepper
 - Low-moisture mozzarella, shredded — about 4 ounces per pie
-- One ball of dough, room temperature *[See our 72-hour cold ferment dough for best results]*
+- One ball of dough, room temperature *[See our cold ferment dough for best results]*
 - Olive oil, salt, black pepper
 - Optional: a small handful of crumbled cotija for finishing
 
@@ -53,4 +53,4 @@ A drizzle of good olive oil right off the oven. Cotija if you have it — the sa
 
 This is a one-season pie. Make it while the corn is actually good, eat it outside before the weather turns, and that is enough.
 
-**Try this next:** Get the dough right before anything else. Our 72-hour cold ferment recipe is where we always send people first.
+**Try this next:** Get the dough right before anything else. Our cold ferment recipe is where we always send people first.

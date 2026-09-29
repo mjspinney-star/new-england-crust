@@ -75,7 +75,7 @@ We make this one more than any other in June and July, when basil is cheap and t
 
 **On pesto from a jar:** It will work. The pie won't be the same. Fresh pesto has a brightness that oxidized, pasteurized jar pesto can't match. If you're going to make pesto pizza, make the pesto.
 
-**On the crust:** The 72-hour cold-ferment dough is the right call here — the long ferment gives you a slightly sour note that cuts the richness of the pesto and cheese. A same-day dough will work but the flavor balance shifts.
+**On the crust:** The cold-ferment dough is the right call here — the long ferment gives you a slightly sour note that cuts the richness of the pesto and cheese. A same-day dough will work but the flavor balance shifts.
 
 **Prosciutto variation:** Lay 2–3 thin slices of prosciutto over the top right after the basil goes on, while the pie is still hot enough to soften the fat. Don't bake the prosciutto — it turns leathery fast on a hot stone. This is the version we make when the pie needs to carry a meal instead of open one.
 
@@ -83,5 +83,5 @@ We make this one more than any other in June and July, when basil is cheap and t
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
+- [The cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
 - [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/)

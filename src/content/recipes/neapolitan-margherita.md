@@ -8,7 +8,7 @@ prepTime: "PT30M"
 cookTime: "PT7M"
 restTime: "PT24H"
 totalTime: "PT24H37M"
-servings: "3 twelve-inch pies"
+servings: "3 ten-inch pies"
 ingredients:
   - "1 batch of our Caputo 00 dough (3 balls, about 280 g each)"
   - "1 can (28 oz) whole San Marzano tomatoes, hand-crushed with 1 tsp salt (never cooked)"

@@ -43,4 +43,4 @@ If the dough opens easily, drapes over your knuckles without tearing, and does n
 
 ---
 
-*Related: [Our 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/) · [our Caputo dough](/recipes/caputo-breadmaker-dough/) · [Same-day pizza dough](/recipes/same-day-pizza-dough/) · [What yeast to buy for pizza dough](/blog/2026-06-29-what-yeast-to-buy-for-pizza-dough-instant-active-d/)*
+*Related: [Our cold-ferment dough](/blog/72-hour-cold-ferment-dough/) · [our Caputo dough](/recipes/caputo-breadmaker-dough/) · [Same-day pizza dough](/recipes/same-day-pizza-dough/) · [What yeast to buy for pizza dough](/blog/2026-06-29-what-yeast-to-buy-for-pizza-dough-instant-active-d/)*

@@ -87,6 +87,6 @@ It's earned its spot in our rotation.
 
 ## Related
 
-- [The 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
+- [The cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
 - [Backyard Pizza Night Setup — Everything You Need](/blog/backyard-pizza-night-setup/)
 - [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/)

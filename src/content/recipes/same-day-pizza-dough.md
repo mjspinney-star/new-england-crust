@@ -36,4 +36,4 @@ keywords:
 draft: false
 ---
 
-The master dough is better — no argument. But better never fed anyone on a Tuesday when the plan came together at school pickup. This dough exists for real life: two hours, one bowl, and a pizza that will still beat anything from the freezer aisle.
+[Our Caputo breadmaker dough](/recipes/caputo-breadmaker-dough/) is better — no argument. But better never fed anyone on a Tuesday when the plan came together at school pickup. This dough exists for real life: two hours, one bowl, and a pizza that will still beat anything from the freezer aisle.

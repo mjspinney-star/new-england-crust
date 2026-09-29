@@ -140,6 +140,6 @@ A rough pairing guide for the combinations above, for when you want to match dri
 
 ## Related reading
 
-- [Our 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the dough recipe these all work best with
+- [Our cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the dough recipe these all work best with
 - [Backyard pizza night setup](/blog/backyard-pizza-night-setup/) — how to run a pizza night for a crowd without losing your mind
 - [The best outdoor pizza ovens under $500](/blog/best-outdoor-pizza-ovens-under-500/) — which oven to fire these on
