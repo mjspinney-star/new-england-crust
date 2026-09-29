@@ -94,7 +94,215 @@ If there are no `[ ]` items, do nothing and note the queue is empty.
 
 ---
 
-### [ ] Stone Temp vs. Air Temp — Tips (Pin 1)
+### [x] Detroit-Style Pizza (Crispy Frico Edge) — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** Detroit-Style Pizza — Cheese Pushed to the Pan Walls
+- **descriptor:** Cubed cheese laced to the steel walls,
+sauce laid on top in stripes —
+the frico crust we didn't expect to love.
+- **output:** NEC-detroitpizza-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/detroit-style-pizza/
+
+---
+
+### [x] Same-Day Emergency Pizza Dough — Recipe (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Recipe
+- **headline:** Same-Day Emergency Dough — Ready in 2 Hours, Not 2 Days
+- **descriptor:** No overnight ferment, no planning —
+mix at 3pm, stretch by 5, and it
+still beats anything from a freezer bag.
+- **output:** NEC-emergencydough-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/same-day-pizza-dough/
+
+---
+
+### [x] No-Cook Tomato Sauce — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** No-Cook Tomato Sauce — Five Minutes, No Simmering
+- **descriptor:** Crushed by hand, salted once, done —
+the sauce that lets the oven do
+the cooking instead of your stovetop.
+- **output:** NEC-nocooksauce-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/a-no-cook-tomato-sauce-that-does-not-need/
+
+---
+
+### [x] Buying Good Canned Tomatoes — Tips (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** Buying Canned Tomatoes Without Overthinking the Label
+- **descriptor:** Short ingredient list, whole peeled,
+skip diced entirely — what we
+actually check before it hits the cart.
+- **output:** NEC-cannedtomatoes-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/buying-good-canned-tomatoes-without-overthinking/
+
+---
+
+### [x] Same-Day Pizza Dough for Forgotten Nights — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** Forgot to Plan? This Same-Day Pizza Dough Still Works
+- **descriptor:** No overnight ferment — dough ready
+in two to three hours, worked into
+a real, crispy-bottomed pizza.
+- **output:** NEC-quickdough-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/a-same-day-pizza-dough-for-nights-when-you-forgot-to-plan-ahead/
+
+---
+
+### [x] NY-Style Slice — Recipe (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Recipe
+- **headline:** NY-Style Pizza at Home — The Foldable Slice, No Deck Oven
+- **descriptor:** A baking steel and a 48-hour
+cold ferment get you the big,
+thin, foldable slice at home.
+- **output:** NEC-nystyleslice-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/ny-style-slice/
+
+---
+
+### [x] White Pizza with Ricotta, Garlic, and Lemon — Recipe (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Recipe
+- **headline:** White Pizza: Ricotta, Garlic, and a Squeeze of Lemon
+- **descriptor:** No tomato sauce — just ricotta,
+thin garlic, and lemon added the
+second it comes off the stone.
+- **output:** NEC-whitepizza-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/white-pizza-with-ricotta-garlic-and-lemon/
+
+---
+
+### [x] Rhode Island Bakery Pizza (Red Strips) — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** Rhode Island Bakery Pizza — No Cheese, Served Cold
+- **descriptor:** Thick, cheeseless tomato strips
+eaten room temp — the most
+misunderstood pizza in New England.
+- **output:** NEC-ribakerypizza-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/rhode-island-bakery-pizza/
+
+---
+
+### [x] Backyard Neapolitan Margherita — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** The Margherita Every Backyard Oven Should Master First
+- **descriptor:** 62% hydration, a 24-hour rest,
+and a sauce we never cook —
+the pie every recipe here builds on.
+- **output:** NEC-margherita-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/neapolitan-margherita/
+
+---
+
+### [x] Why We Keep Semolina Next to Every Peel — Tips (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Tips
+- **headline:** Why We Keep Semolina Next to Every Peel, Not Flour
+- **descriptor:** Flour bonds to warm dough and
+glues it to the peel — semolina
+slides it clean, every single time.
+- **output:** NEC-semolina-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/the-case-for-semolina-on-the-peel-what-it-does-tha/
+
+---
+
+### [x] Salisbury Beach Pizza — Recipe (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Recipe
+- **headline:** Salisbury Beach Pizza — Sweet Sauce, Whole Provolone
+- **descriptor:** The North Shore boardwalk pizza —
+sugar in the sauce, whole provolone
+slices instead of shredded cheese.
+- **output:** NEC-beachpizza-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/beach-pizza/
+
+---
+
+### [x] Pecorino vs. Parmigiano — Tips (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** Pecorino vs. Parmigiano — Our Rule for Reading the Pie
+- **descriptor:** Sharp sheep's milk cheese for
+richness, nutty Parmigiano for
+tomato — and sometimes neither.
+- **output:** NEC-pecorino-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/pecorino-vs-parmigiano-when-each-belongs-on-a-pizz/
+
+---
+
+### [x] Do You Really Need a Second Pizza Peel? — Gear Guide (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Gear Guide
+- **headline:** Do You Really Need a Second Pizza Peel?
+- **descriptor:** We cooked a dozen pies with one peel
+before buying a turning peel — here's
+what changed and what you can skip.
+- **output:** NEC-turningpeel-pin1.png
+- **board:** Ninja Woodfire Oven
+- **link:** https://newenglandcrust.com/blog/2026-06-01-two-peels-vs-one-is-a-turning-peel-worth-owning/
+
+---
+
+### [x] Greek Pizza — House of Pizza Style — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** Greek Pizza — The House of Pizza Classic at Home
+- **descriptor:** Oiled pan, oregano-heavy sauce, and
+a mozzarella-provolone blend — the
+fried-bottom pie every town has one of.
+- **output:** NEC-greekpizza-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/greek-pizza/
+
+---
+
+### [x] The Salt Mistake That Kills Your Dough — Tips (Pin 1)
+- **photo:** NinjaWoodfireHero.jpeg
+- **category:** Tips
+- **headline:** The Salt Mistake That Kills Your Pizza Dough
+- **descriptor:** We've killed yeast with salt more
+than we'd admit — here's exactly
+when to add it and why it matters.
+- **output:** NEC-salttiming-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/blog/2026-07-06-why-salt-timing-matters-in-pizza-dough-and-what-ha/
+
+---
+
+### [x] Roasted Heirloom Tomato Sauce — Recipe (Pin 1)
+- **photo:** IMG_8372.jpeg
+- **category:** Recipe
+- **headline:** Roasted Heirloom Tomato Sauce — Our Best Pizza Sauce
+- **descriptor:** Farm-stand tomatoes, slow-roasted
+and caramelized — the sauce we only
+get to make for about six weeks a year.
+- **output:** NEC-heirloomsauce-pin1.png
+- **board:** Backyard Pizza Night
+- **link:** https://newenglandcrust.com/recipes/roasted-heirloom-tomato-sauce/
+
+---
+
+### [x] Stone Temp vs. Air Temp — Tips (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Tips
 - **headline:** Stone Temp vs. Air Temp: The Number We Check Before Every Cook
@@ -107,7 +315,7 @@ we check before every launch.
 
 ---
 
-### [ ] Cold-Weather Preheat Rule — Tips (Pin 1)
+### [x] Cold-Weather Preheat Rule — Tips (Pin 1)
 - **photo:** NinjaWoodfireHero.jpeg
 - **category:** Tips
 - **headline:** Our Cold-Weather Pizza Oven Rule: Add 15–20 Minutes
@@ -120,7 +328,7 @@ and how we adjust before we launch.
 
 ---
 
-### [ ] New Haven Plain Tomato Pie — Recipe (Pin 1)
+### [x] New Haven Plain Tomato Pie — Recipe (Pin 1)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
 - **headline:** New Haven Plain Tomato Pie — No Mozzarella, All Char
@@ -133,7 +341,7 @@ needs 700°F+ to actually work.
 
 ---
 
-### [ ] The Master Dough Recipe — Recipe (Pin 1)
+### [x] The Master Dough Recipe — Recipe (Pin 1)
 - **photo:** IMG_8372.jpeg
 - **category:** Recipe
 - **headline:** One Dough, Every Pizza — Our 48-Hour Master Recipe

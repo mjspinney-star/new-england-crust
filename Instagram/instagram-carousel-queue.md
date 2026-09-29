@@ -100,3 +100,43 @@ State markers: `[ ]` ready to generate · `[x]` PNGs created · `[p]` posted ·
   Slide count: 6
   Caption filename: carousel-2026-08-20-caption.txt
   State: [x] PNGs created
+
+- Date generated: 2026-08-27
+  Source post: best-outdoor-pizza-ovens-under-500.mdx
+  Resolved slug: best-outdoor-pizza-ovens-under-500
+  Cover headline: "Five ovens under $500, one spec that matters"
+  Slide count: 6
+  Caption filename: carousel-2026-08-27-caption.txt
+  State: [x] PNGs created
+
+- Date generated: 2026-09-03
+  Source post: 2026-06-29-what-yeast-to-buy-for-pizza-dough-instant-active-d.mdx
+  Resolved slug: 2026-06-29-what-yeast-to-buy-for-pizza-dough-instant-active-d
+  Cover headline: "Which yeast should you actually buy?"
+  Slide count: 6
+  Caption filename: carousel-2026-09-03-caption.txt
+  State: [x] PNGs created
+
+- Date generated: 2026-09-10
+  Source post: best-pizza-accessories-under-50.mdx
+  Resolved slug: best-pizza-accessories-under-50
+  Cover headline: "Ten pizza upgrades, none over $50"
+  Slide count: 6
+  Caption filename: carousel-2026-09-10-caption.txt
+  State: [x] PNGs created
+
+- Date generated: 2026-09-17
+  Source post: ninja-woodfire-accessories-worth-buying.mdx
+  Resolved slug: ninja-woodfire-accessories-worth-buying
+  Cover headline: "What's actually worth buying for the Woodfire"
+  Slide count: 6
+  Caption filename: carousel-2026-09-17-caption.txt
+  State: [x] PNGs created
+
+- Date generated: 2026-09-24
+  Source post: best-pizza-oven-deals.mdx
+  Resolved slug: best-pizza-oven-deals
+  Cover headline: "The oven deals actually worth chasing"
+  Slide count: 6
+  Caption filename: carousel-2026-09-24-caption.txt
+  State: [x] PNGs created
