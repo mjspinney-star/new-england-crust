@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import { isPublished } from '../../data/publishing';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import RecipeLayout from '../../layouts/RecipeLayout.astro';
+import { formatDuration } from '../../utils/formatDuration';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recipes', ({ data }) => isPublished(data));
@@ -57,6 +58,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 <BaseLayout
   title={recipe.data.title}
   description={recipe.data.description}
+  image={recipe.data.heroImage}
   article={true}
 >
   <article class="container-prose py-16 md:py-20">
@@ -74,18 +76,18 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
         />
       )}
 
-      {(recipe.data.prepTime || recipe.data.cookTime || recipe.data.yield) && (
+      {(formatDuration(recipe.data.prepTime) || formatDuration(recipe.data.cookTime) || recipe.data.yield) && (
         <dl class="mt-6 flex flex-wrap gap-6 text-sm text-timber-100/80">
-          {recipe.data.prepTime && (
+          {formatDuration(recipe.data.prepTime) && (
             <div>
               <dt class="text-xs uppercase tracking-widest text-timber-300/70">Prep</dt>
-              <dd class="mt-0.5">{recipe.data.prepTime}</dd>
+              <dd class="mt-0.5">{formatDuration(recipe.data.prepTime)}</dd>
             </div>
           )}
-          {recipe.data.cookTime && (
+          {formatDuration(recipe.data.cookTime) && (
             <div>
               <dt class="text-xs uppercase tracking-widest text-timber-300/70">Cook</dt>
-              <dd class="mt-0.5">{recipe.data.cookTime}</dd>
+              <dd class="mt-0.5">{formatDuration(recipe.data.cookTime)}</dd>
             </div>
           )}
           {recipe.data.yield && (

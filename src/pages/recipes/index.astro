@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { isPublished } from '../../data/publishing';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import KitPizzaKitForm from '../../components/KitPizzaKitForm.astro';
+import { formatDuration } from '../../utils/formatDuration';
 
 // Static dough card (lives in /blog/, not the recipes collection)
 const doughCard = {
@@ -20,7 +21,7 @@ recipeEntries.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 
 <BaseLayout
   title="Recipes"
-  description="Sourdough, sauce, and seasonal toppings — backyard pizza recipes from New England Crust."
+  description="Cold-ferment doughs, New England regional styles, and seasonal pies — tested on our Ninja Woodfire and in the home oven."
 >
   <section class="container-page py-16 md:py-20">
     <p class="eyebrow">Recipes</p>
@@ -52,9 +53,11 @@ recipeEntries.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
       {/* Collection-driven recipe cards */}
       {
         recipeEntries.map((r) => {
-          const eta = r.data.prepTime && r.data.cookTime
-            ? `${r.data.prepTime} prep · ${r.data.cookTime} cook`
-            : r.data.prepTime || r.data.cookTime || '';
+          const prep = formatDuration(r.data.prepTime);
+          const cook = formatDuration(r.data.cookTime);
+          const eta = [prep && `${prep} prep`, cook && `${cook} cook`]
+            .filter(Boolean)
+            .join(' · ');
           return (
             <li class="card">
               <a href={`/recipes/${r.slug}/`} class="block">

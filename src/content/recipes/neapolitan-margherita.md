@@ -1,13 +1,13 @@
 ---
 title: "Backyard Neapolitan Margherita"
-description: "The classic that every outdoor pizza oven was built for — 00 flour, San Marzano tomatoes, fresh mozzarella, and a bake measured in seconds."
+description: "The classic, done our way on the Ninja Woodfire — 00 flour, San Marzano tomatoes, fresh mozzarella, and a 550°F par-bake that gives you an evenly golden crust."
 pubDate: 2026-09-07
 style: "neapolitan"
 recipeCuisine: "Italian"
 prepTime: "PT30M"
-cookTime: "PT2M"
+cookTime: "PT7M"
 restTime: "PT24H"
-totalTime: "PT24H32M"
+totalTime: "PT24H37M"
 servings: "3 twelve-inch pies"
 ingredients:
   - "500 g 00 flour"
@@ -36,7 +36,7 @@ gear:
     affiliateId: "ninja-woodfire-oven"
   - name: "Etekcity Infrared Thermometer"
     url: "https://amzn.to/3RHkZLA"
-    note: "Live Amazon Associates link. The difference between a 90-second pie and a pale one is stone temp you can't see. This tool ends the guessing."
+    note: "The difference between a golden, crisp base and a pale one is stone temperature you can't see. This tool ends the guessing."
     affiliateId: "infrared-thermometer"
   - name: "12-inch perforated pizza peel"
     url: "https://amzn.to/4dRGlgB"
@@ -50,6 +50,6 @@ keywords:
 draft: false
 ---
 
-This is the pizza the backyard oven was invented for, and the one every new oven owner should master first — because it teaches heat management, launching, and turning, the skills every other outdoor recipe on this site builds on.
+This is the pizza the backyard oven was invented for, and the one every new oven owner should master first — because it teaches heat management and launching, the skills every other outdoor recipe on this site builds on.
 
-It's also the best oven-comparison recipe there is, which is exactly what we'll do with it: same dough, same toppings, three different ovens. Results coming in a follow-up post.
+It's also the recipe that teaches you the most about your own oven — nothing on the pie hides a pale bottom or an underheated stone.

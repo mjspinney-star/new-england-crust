@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import AffiliateLink from '../components/AffiliateLink.astro';
 import KitSignupForm from '../components/KitSignupForm.astro';
+import { formatDuration } from '../utils/formatDuration';
 
 interface InstructionImage {
   src: string;
@@ -69,19 +70,6 @@ const {
 // so they can be dropped straight into JSON-LD. For on-page display we
 // convert them to something a human reads naturally. Legacy/freeform
 // strings (e.g. "30 min") don't match the pattern and are shown as-is.
-function humanizeDuration(iso?: string): string | undefined {
-  if (!iso) return undefined;
-  const match = iso.match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$/);
-  if (!match) return iso;
-  const [, days, hours, minutes, seconds] = match;
-  const parts: string[] = [];
-  if (days) parts.push(`${days}d`);
-  if (hours) parts.push(`${hours}h`);
-  if (minutes) parts.push(`${minutes}m`);
-  if (seconds) parts.push(`${seconds}s`);
-  return parts.length ? parts.join(' ') : iso;
-}
-
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   month: 'long',
   day: 'numeric',
@@ -167,28 +155,28 @@ if (typeof calories === 'number') {
 
       {(prepTime || cookTime || totalTime || restTime || servings) && (
         <dl class="mt-6 flex flex-wrap gap-6 text-sm text-timber-100/80">
-          {prepTime && (
+          {formatDuration(prepTime) && (
             <div>
               <dt class="text-xs uppercase tracking-widest text-timber-300/70">Prep</dt>
-              <dd class="mt-0.5">{humanizeDuration(prepTime)}</dd>
+              <dd class="mt-0.5">{formatDuration(prepTime)}</dd>
             </div>
           )}
-          {cookTime && (
+          {formatDuration(cookTime) && (
             <div>
               <dt class="text-xs uppercase tracking-widest text-timber-300/70">Cook</dt>
-              <dd class="mt-0.5">{humanizeDuration(cookTime)}</dd>
+              <dd class="mt-0.5">{formatDuration(cookTime)}</dd>
             </div>
           )}
-          {totalTime && (
+          {formatDuration(totalTime) && (
             <div>
               <dt class="text-xs uppercase tracking-widest text-timber-300/70">Total</dt>
-              <dd class="mt-0.5">{humanizeDuration(totalTime)}</dd>
+              <dd class="mt-0.5">{formatDuration(totalTime)}</dd>
             </div>
           )}
-          {restTime && (
+          {formatDuration(restTime) && (
             <div>
               <dt class="text-xs uppercase tracking-widest text-timber-300/70">Rest / Ferment</dt>
-              <dd class="mt-0.5">{humanizeDuration(restTime)}</dd>
+              <dd class="mt-0.5">{formatDuration(restTime)}</dd>
             </div>
           )}
           {servings && (
