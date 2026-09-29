@@ -1,5 +1,5 @@
 ---
-title: "Backyard Neapolitan Margherita (60-Second Bake)"
+title: "Backyard Neapolitan Margherita"
 description: "The classic that every outdoor pizza oven was built for — 00 flour, San Marzano tomatoes, fresh mozzarella, and a bake measured in seconds."
 pubDate: 2026-09-07
 style: "neapolitan"

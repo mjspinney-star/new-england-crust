@@ -1,10 +1,16 @@
 name: Generate Weekly Blog Post
 
+# Writes ONE draft post per week (draft: true). Drafts don't appear on the
+# site. To publish: review the file on GitHub, fix anything wrong, change
+# `draft: true` to `draft: false`, and commit. Cloudflare builds on the commit.
+
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9:00 AM UTC (5:00 AM Eastern)
-    - cron: '0 9 * * 4'  # Every Thursday at 9:00 AM UTC (5:00 AM Eastern)
-  workflow_dispatch:      # Also allows manual trigger from GitHub Actions tab
+    - cron: '0 9 * * 1'  # Mondays at 9:00 AM UTC (5:00 AM Eastern)
+  workflow_dispatch:      # Manual trigger from the GitHub Actions tab
+
+permissions:
+  contents: write
 
 jobs:
   generate-post:
@@ -19,15 +25,19 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generate blog post via Claude API
+      - name: Generate draft post via Claude API
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node .github/scripts/generate-post.cjs
 
-      - name: Commit and push new post
+      - name: Commit draft post
         run: |
+          if [ -z "${POST_FILENAME:-}" ]; then
+            echo "No draft generated (topic queue empty). Nothing to commit."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/content/blog/
-          git commit -m "Auto-generate blog post: $(date +'%Y-%m-%d')"
+          git add "$POST_FILENAME"
+          git commit -m "Draft for review: $(basename "$POST_FILENAME")"
           git push
