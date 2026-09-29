@@ -2,22 +2,23 @@
 title: "9 Pizza Night Recipes That Aren't Just Margherita"
 description: "Margherita is a classic for a reason — but here are nine creative pizza topping combinations worth rotating into your backyard pizza nights, from hot honey pepperoni to Korean BBQ short rib."
 pubDate: 2026-04-25
+updatedDate: 2026-09-28
 tags: ["recipes", "pizza-night", "creative-toppings", "ninja-woodfire", "entertaining"]
 ---
 
 Margherita is a perfect pizza. We're not arguing otherwise. Tomato, fresh mozzarella, basil — it's the benchmark for a reason, and we fire one off at almost every pizza night as a palate check on the oven temperature.
 
-But you cannot serve it three weekends in a row to the same friends without someone bringing up pineapple just to start something. And more to the point: you have a high-heat backyard oven and nine months of pizza nights ahead of you. There's room to be more interesting than this. One of the things we like most about backyard pizza night as a format is that the oven does something a home oven simply can't — it creates real edge char, bubbled mozzarella, and a crisp bottom in under five minutes. That's worth using for more than one recipe.
+But you cannot serve it three weekends in a row to the same friends without someone bringing up pineapple just to start something. And more to the point: you have a high-heat backyard oven and nine months of pizza nights ahead of you. There's room to be more interesting than this. One of the things we like most about backyard pizza night as a format is that the oven does something a home oven simply can't — it gives you a browned edge, bubbling mozzarella, and a crisp bottom in about five minutes. That's worth using for more than one recipe.
 
-What follows are nine combinations we've landed on through a few summers of trial, error, and enthusiastic feedback from people standing at the dough table. Some are weeknight simple. A couple require advance prep. One is specifically designed to make guests ask what's on this and immediately build a second one.
+What follows are nine combinations we've landed on through trial, error, and feedback from people standing at the dough table. Some are weeknight simple. A couple require advance prep. One is specifically designed to make guests ask what's on this and immediately build a second one.
 
 ---
 
 ## A quick note on dough
 
-All nine of these recipes work with any reasonably good pizza dough, but they really shine on a 72-hour cold ferment. The longer fermentation develops enough flavor and extensibility that the dough holds up against big, bold toppings without getting soggy or bready. If you haven't made it yet, [our full dough recipe is here](/blog/72-hour-cold-ferment-dough/) — it's a 15-minute active-work commitment the night before.
+All nine of these recipes work with any reasonably good pizza dough, but they really shine on a cold-fermented dough. The longer fermentation develops enough flavor and extensibility that the dough holds up against big, bold toppings without getting soggy or bready. If you haven't made it yet, [here's why we cold-ferment and the dough we use](/blog/72-hour-cold-ferment-dough/). It's about 15 minutes of work, a day or two ahead.
 
-Stone temp for all of these: 700°F or above on the Ninja Woodfire, confirmed with an infrared thermometer, not the display.
+How we cook all of these on our Ninja Woodfire: preheat to 550°F (about 20 minutes), confirm the stone is around 540°F with an infrared thermometer rather than trusting the display, brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then top it and bake for about 5 minutes without turning it. Timings below assume that routine.
 
 ---
 
@@ -27,7 +28,7 @@ This is the pizza that converts people. Classic pepperoni, but finished with a d
 
 **Build:** San Marzano sauce, low-moisture mozzarella, cup-and-char pepperoni. After the bake, drizzle hot honey and scatter a few fresh basil leaves.
 
-The fat from the cup-and-char pepperoni cups collects during the bake — that's the version you want, not the flat deli slices. The hot honey hits the warm fat and creates something that is somehow both spicy and sweet and savory all at once. Takes about 4 minutes on the Ninja at 700°F.
+The fat from the cup-and-char pepperoni cups collects during the bake — that's the version you want, not the flat deli slices. The hot honey hits the warm fat and creates something that is somehow both spicy and sweet and savory all at once. About 5 minutes on our Ninja after the par-bake.
 
 ---
 
@@ -73,7 +74,7 @@ Slice the apple thin so it softens in the bake rather than staying raw and crunc
 
 ## 6. Mushroom and truffle oil
 
-Simple, deeply savory, and one of the best arguments for a high-heat oven. Mushrooms at 700°F caramelize at the edges and concentrate in flavor in a way that a 400°F home oven simply can't replicate.
+Simple, deeply savory, and one of the best arguments for a high-heat oven. Mushrooms on a 540°F stone caramelize at the edges and concentrate in flavor in a way a 400°F home oven can't match.
 
 **Build:** Olive oil base, low-moisture mozzarella, thinly sliced cremini or shiitake mushrooms (or a mix), a few cloves of roasted garlic scattered across. After the bake, a very light drizzle of truffle oil and fresh thyme.
 
@@ -95,7 +96,7 @@ If making the beef from scratch is too much for a pizza night, Korean BBQ short 
 
 For the morning after pizza night, when there's leftover dough in the fridge and guests who stayed over. This is worth keeping a ball or two of dough back specifically for.
 
-**Build:** Olive oil base, shredded low-moisture mozzarella, cooked and crumbled breakfast sausage or crisped bacon, a handful of caramelized onions if you have them. Slide into the oven and after about 2 minutes (when the crust is set), crack two eggs directly onto the pizza and finish the bake until the whites are just set and the yolks are still runny — another 2–3 minutes on the Ninja at 650°F (lower the temp slightly from peak pizza temperature so the eggs don't blast through).
+**Build:** Olive oil base, shredded low-moisture mozzarella, cooked and crumbled breakfast sausage or crisped bacon, a handful of caramelized onions if you have them. Build it on the par-baked crust and bake for about 2 minutes, then crack two eggs directly onto the pizza and finish the bake until the whites are just set and the yolks are still runny — about another 2–3 minutes at our usual 550°F.
 
 Finish with chili flakes, flaky salt, and fresh chives. The egg yolk breaks when you slice it and runs into the crust, which is exactly right.
 
@@ -105,7 +106,7 @@ Finish with chili flakes, flaky salt, and fresh chives. The egg yolk breaks when
 
 This gets made last, when the oven is on its way down from peak temp, and it buys 15 minutes of peace at the end of the night. Kids love it. Adults eat it too, quietly, without making eye contact.
 
-**Build:** Nutella spread thin as the base on a stretched dough round, mini marshmallows scattered across, a handful of chocolate chips, and crushed graham crackers. The oven heat at around 550–600°F (let the stone cool a bit after the savory run) will puff and toast the marshmallows and melt the chocolate in about 3 minutes without burning the crust.
+**Build:** Nutella spread thin as the base on a stretched dough round, mini marshmallows scattered across, a handful of chocolate chips, and crushed graham crackers. At our usual 550°F, the marshmallows puff and toast and the chocolate melts in about 3 minutes. Use the par-baked crust so the base is set before the sweet toppings go on.
 
 Watch it closely. Marshmallows go from perfectly toasted to scorched faster than any other topping on this list. One minute of distraction is the difference between golden and ruined. Have the cutting board ready, stay at the oven, and pull it the moment the marshmallows are toasted and the chocolate is visibly melted. Let it rest for 90 seconds before cutting — the marshmallow will be lava-hot straight off the stone. Slice into small squares rather than wedges so kids can grab pieces without the whole thing falling apart.
 
