@@ -50,3 +50,4 @@ Ember/*.zip
 pin-kits/**/*.png
 pin-kits/**/*.jpg
 .claude/settings.local.json
+Pinterest/*-pin-*.png
