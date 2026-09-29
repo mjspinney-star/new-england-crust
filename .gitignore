@@ -49,3 +49,4 @@ Ember/Children's book design update/
 Ember/*.zip
 pin-kits/**/*.png
 pin-kits/**/*.jpg
+.claude/settings.local.json
