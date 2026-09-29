@@ -119,9 +119,20 @@ if (totalTime) jsonLd.totalTime = totalTime;
 if (servings) jsonLd.recipeYield = servings;
 if (ingredients.length) jsonLd.recipeIngredient = ingredients;
 if (instructions.length) {
-  jsonLd.recipeInstructions = instructions.map((s) => {
-    const entry: Record<string, string> = { '@type': 'HowToStep', text: s.text };
+  // Each step links to its own anchor on the page (#step-1, #step-2, ...)
+  // and carries its photo when the step has one — both are fields Google's
+  // Recipe rich results look for on HowToStep.
+  const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+  jsonLd.recipeInstructions = instructions.map((s, i) => {
+    const entry: Record<string, string> = {
+      '@type': 'HowToStep',
+      text: s.text,
+      url: `${pageUrl}#step-${i + 1}`,
+    };
     if (s.step) entry.name = s.step;
+    if (s.images && s.images.length > 0) {
+      entry.image = new URL(s.images[0].src, Astro.site).toString();
+    }
     return entry;
   });
 }
@@ -228,7 +239,7 @@ if (typeof calories === 'number') {
             <h2 class="font-display text-2xl text-timber-50">Instructions</h2>
             <ol class="mt-4 space-y-5">
               {instructions.map((item, i) => (
-                <li class="flex gap-4">
+                <li id={`step-${i + 1}`} class="flex gap-4 scroll-mt-24">
                   <span
                     class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ember-500/90 text-sm font-semibold text-white"
                     aria-hidden="true"
