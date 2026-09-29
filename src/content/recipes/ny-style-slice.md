@@ -30,13 +30,6 @@ instructions:
     text: "Sauce in a spiral leaving a half-inch rim, then an even layer of shredded mozzarella. Simple is the style. Pepperoni is the one sanctioned upgrade."
   - step: "Bake 7–8 minutes"
     text: "Launch onto the steel. Pull when the rim is spotted brown and the underside has real color. Rest 2 minutes, cut into 8, and fold your slice like you're walking somewhere."
-gear:
-  - name: "Baking steel"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "The single biggest indoor pizza upgrade that exists. Stones crack and underperform; steel just works."
-  - name: "16-inch pizza peel"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "A full-size NY pie needs a full-size launch."
 keywords:
   - "NY style pizza recipe"
   - "New York pizza dough"

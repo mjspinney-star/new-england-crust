@@ -36,10 +36,6 @@ instructions:
     text: "Bake at 500°F on the lowest rack for 12–14 minutes, until the bottom is golden and the provolone is melted with browned spots."
   - step: "Cut into squares"
     text: "Rest 3 minutes, then cut into squares. Eat one standing over the pan like you're at the beach. Mandatory."
-gear:
-  - name: "Half-sheet aluminum pan"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Heavy-gauge aluminum crisps the bottom better than nonstick."
 keywords:
   - "beach pizza recipe"
   - "Salisbury beach pizza"

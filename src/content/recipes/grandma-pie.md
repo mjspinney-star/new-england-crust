@@ -30,10 +30,6 @@ instructions:
     text: "475°F on the lowest rack, 16–18 minutes, until the underside is golden-fried from the garlic oil and the sauce has concentrated."
   - step: "Finish and square it up"
     text: "Basil, pecorino, one more thread of oil. Cut into little squares — grandma pie is meant to disappear three squares at a time."
-gear:
-  - name: "Half-sheet aluminum pan"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "The third recipe on this site built on the same pan — if you only buy one piece of pizza gear, this keeps being it."
 keywords:
   - "grandma pizza recipe"
   - "grandma pie recipe"

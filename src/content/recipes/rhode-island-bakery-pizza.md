@@ -31,10 +31,6 @@ instructions:
     text: "425°F for 20–22 minutes until the bread is golden underneath and the sauce has darkened at the edges."
   - step: "Cool completely — really"
     text: "This is the step everyone refuses to believe: bakery pizza is served room temperature. Cool it fully, cut into strips, and stack them like they do in the bakery case."
-gear:
-  - name: "Half-sheet aluminum pan"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Same heavy-gauge pan as the beach pizza — it's the workhorse of the New England styles."
 keywords:
   - "Rhode Island pizza strips"
   - "bakery pizza recipe"

@@ -34,9 +34,6 @@ gear:
     url: "https://amzn.to/4obF5K3"
     note: "The oven we use. With our 550°F par-bake routine, plan on about 5 minutes."
     affiliateId: "ninja-woodfire-oven"
-  - name: "Baking steel"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "The indoor alternative — steel under a broiler out-performs any pizza stone for this."
 keywords:
   - "New Haven pizza recipe"
   - "apizza recipe"

@@ -29,10 +29,6 @@ instructions:
     text: "Bake at 525°F on the lowest rack or oven floor for 13–15 minutes, until the edge is deep brown and lacy and the bottom is crisp enough to tap."
   - step: "Cut in the pan"
     text: "Cut into small squares or slim slices right in the pan, tavern style. Serve with a cold beverage of legal choice."
-gear:
-  - name: "10-inch bar pizza pans (set of 2)"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "The shallow tinned-steel pan IS the recipe. A cake pan works in a pinch, but the real pan makes the real lace."
 keywords:
   - "bar pizza recipe"
   - "South Shore bar pizza"

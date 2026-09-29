@@ -28,10 +28,6 @@ instructions:
     text: "Two or three ladled stripes of the cooked sauce over the cheese — 'racing stripes.' Sauce on top keeps the crumb light."
   - step: "Bake hot and low"
     text: "500°F, lowest rack, 13–15 minutes, until the edges are deep mahogany. Run a knife around the frico immediately and lift the whole pie out to a rack so the bottom stays crisp."
-gear:
-  - name: "Detroit-style steel pan (10x14)"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Blue steel builds seasoning like cast iron and makes the signature crust. A 9x13 works while you decide if you're a Detroit person. You will be."
 keywords:
   - "Detroit style pizza recipe"
   - "Detroit pizza pan recipe"

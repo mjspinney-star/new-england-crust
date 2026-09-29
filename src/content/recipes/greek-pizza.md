@@ -29,10 +29,6 @@ instructions:
     text: "Top with the mozzarella-provolone mix. Bake at 475°F on the lowest rack, 14–16 minutes. The oil essentially fries the bottom crust golden while the crumb stays chewy."
   - step: "Check the underside"
     text: "Lift an edge — the bottom should be deep golden and crisp from the oil. If pale, give it 2 more minutes on the oven floor."
-gear:
-  - name: "Deep-dish round pizza pan"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "You want real sides to hold the oil bath that makes this style what it is."
 keywords:
   - "Greek pizza recipe"
   - "house of pizza recipe"
