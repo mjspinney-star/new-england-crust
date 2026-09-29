@@ -37,9 +37,6 @@ instructions:
   - step: "Cut into squares"
     text: "Rest 3 minutes, then cut into squares. Eat one standing over the pan like you're at the beach. Mandatory."
 gear:
-  - name: "Ninja Artisan Outdoor Pizza Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "If you're baking outdoors, run it around 550°F on the pan setting — shaves 3 minutes off the bake."
   - name: "Half-sheet aluminum pan"
     url: "https://YOUR-AFFILIATE-LINK"
     note: "Heavy-gauge aluminum crisps the bottom better than nonstick."
