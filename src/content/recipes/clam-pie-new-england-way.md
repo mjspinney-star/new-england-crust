@@ -28,13 +28,10 @@ instructions:
   - step: "Top sparingly"
     text: "Scatter the clams, garlic, oregano, and most of the pecorino. Restraint matters — an overloaded clam pie goes soggy."
   - step: "Bake ferociously hot"
-    text: "Koda 12: 750°F+, 4–5 minutes. Ninja Woodfire: max pizza setting, 5–7 minutes. Indoors: steel under the broiler. Pull when the rim is charred and the clam edges are just curling."
+    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. In a hotter 750°F+ oven, expect 4–5 minutes. Indoors: a baking steel under the broiler. Pull when the rim is browned and the clam edges are just curling."
   - step: "Finish"
     text: "Remaining pecorino, a drizzle of oil, black pepper, and a squeeze of lemon. Eat immediately — a clam pie waits for no one."
 gear:
-  - name: "Ooni Koda 12"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Direct brand affiliate program pending approval."
   - name: "Ninja Woodfire Outdoor Oven"
     url: "https://amzn.to/4obF5K3"
     note: "live Amazon Associates link"
@@ -58,7 +55,7 @@ The clam pie is the one pizza that New England has an honest claim to. New Haven
 
 We make ours with Wellfleet littlenecks when we can get them, which is most of the year if you know where to look. The clam liquor released during the bake becomes the sauce. The garlic goes on raw and sweetens in the heat. Oregano is not negotiable. No red sauce. No mozzarella — if you put mozzarella on a clam pie, you've made a different pie, and that's fine, but call it something else.
 
-This is a pizza that rewards a hot stone. The Ninja at full Pizza mode or the Ooni at operating temperature — either one will do. The clam liquor needs to cook down in the few minutes the pie is on the stone, and that only happens at real heat.
+This is a pizza that rewards a hot stone. We cook it on our Ninja Woodfire with the stone around 540°F, using the same par-bake routine as every other pie. The clam liquor needs to cook down in the few minutes the pie is on the stone, and a fully preheated stone is what makes that happen.
 
 It's also one of the most famous pizzas in the country — the version that makes national best-of lists every year and inspires two-hour lines outside Frank Pepe's. And despite the reputation, it's one of the easier pies in our rotation: no sauce to balance, no cheese pull to chase, just fresh clams, garlic, and a brutally hot oven.
 

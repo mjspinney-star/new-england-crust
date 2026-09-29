@@ -38,7 +38,7 @@ instructions:
       - src: "/assets/recipes/pesto-mozzarella-basil/pesto-pizza-topped-prebake.jpg"
         alt: "Pesto pizza topped with torn mozzarella, ready to launch"
   - step: "Launch and bake"
-    text: "Ninja Woodfire: Pizza mode, stone at 620–650°F surface temperature. Launch and bake 3–4 minutes, rotating once at the 2-minute mark. You're looking for a blistered, golden crust and mozzarella that's fully melted with some color at the edges. Don't walk it past this — pesto can turn bitter if it sits on a screaming-hot stone too long. Ooni: Preheat fully, at least 20 minutes. Launch and bake 60–75 seconds, rotate, another 60 seconds. Watch it — pesto browns faster than tomato sauce."
+    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. You're looking for a golden crust and mozzarella that's fully melted with some color at the edges. Don't walk it past this — pesto can turn bitter if it sits on a hot stone too long. In a hotter 850°F+ oven, expect roughly 60–90 seconds with a turn partway, and watch it closely: pesto browns faster than tomato sauce."
     images:
       - src: "/assets/recipes/pesto-mozzarella-basil/pesto-pizza-ninja-woodfire-oven.jpg"
         alt: "Pesto pizza baking in the Ninja Woodfire oven"
@@ -52,9 +52,6 @@ gear:
     url: "https://amzn.to/4obF5K3"
     note: "live Amazon Associates link"
     affiliateId: "ninja-woodfire-oven"
-  - name: "Ooni Pizza Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Direct brand affiliate program pending approval."
 keywords:
   - "pesto pizza recipe"
   - "fresh mozzarella pizza"

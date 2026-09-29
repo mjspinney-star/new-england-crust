@@ -10,7 +10,7 @@ relatedPosts:
   - "2026-06-05-preheating-your-outdoor-oven-in-cold-weather-what-"
 ---
 
-Last fall we had a friend over for a backyard cook — one of those good October nights where you're in a hoodie and the Ooni is doing most of the work. She grabbed the rolling pin off the prep table before we could say anything. Thirty seconds later the dough was flat, even, and completely dead.
+Leave a rolling pin on the prep table during a backyard cook and someone will reach for it. Thirty seconds later the dough is flat, even, and completely dead.
 
 That's not an exaggeration. We'll explain.
 

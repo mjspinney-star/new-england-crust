@@ -48,7 +48,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
     calories={recipe.data.calories}
     ingredients={recipe.data.ingredients}
     instructions={recipe.data.instructions}
-    gear={recipe.data.gear}
+    gear={(recipe.data.gear ?? []).filter((g) => g.affiliateId || !g.url.includes('YOUR-AFFILIATE-LINK'))}
     keywords={recipe.data.keywords}
   >
     <Content />

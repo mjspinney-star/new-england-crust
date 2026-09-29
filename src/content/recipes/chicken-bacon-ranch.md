@@ -37,7 +37,7 @@ instructions:
   - step: "Build on the peel"
     text: "Stretch your dough and lay it on a well-floured peel. Spread the ranch base evenly across the surface, leaving a ¾-inch border. Scatter the shredded mozzarella over the ranch. Distribute the chicken and half the scallions. Add the bacon crumbles. Finish with the Parmigiano and a pinch of red pepper flakes. Don't overload the pie. This one has several components, and the instinct is always to add more of everything. Resist. A crowded pie takes longer to bake and the crust suffers."
   - step: "Launch and bake"
-    text: "Ninja Woodfire: Pizza mode, stone at 620–650°F. Launch and bake 3–4 minutes, rotating once at the 2-minute mark. The mozzarella should be fully melted and beginning to brown. The crust should be deeply golden with good char spots underneath. Because this pie has a creamy base, check the undercarriage before pulling — it can look done on top while the bottom needs another minute. Ooni: Fully preheated on high. Launch and bake 60–90 seconds, rotate, another 60–90 seconds. The high heat of the Ooni caramelizes the ranch base at the edges in a way we actually love."
+    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. The mozzarella should be fully melted and beginning to brown, and the crust deeply golden underneath. Because this pie has a creamy base, check the underside before pulling — it can look done on top while the bottom needs another minute."
   - step: "Finish"
     text: "Off the peel, scatter the remaining raw scallions across the top. The contrast between cooked and fresh scallion is subtle but right. Optional: a thin drizzle of extra ranch base, straight from the bowl, across the finished pie. This is not subtle. People will comment on it."
 gear:
@@ -56,9 +56,6 @@ gear:
     url: "https://amzn.to/4ws4eTn"
     note: "What we call for in the ranch base."
     affiliateId: "baleine-sea-salt"
-  - name: "Ooni Pizza Oven"
-    url: "https://ooni.com/"
-    note: "Direct brand affiliate program pending approval."
 keywords:
   - "chicken bacon ranch pizza"
   - "white pizza recipe"

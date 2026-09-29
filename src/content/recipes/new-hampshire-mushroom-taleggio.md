@@ -29,7 +29,7 @@ instructions:
   - step: "Build on the peel"
     text: "Stretch your dough ball and lay it on a floured peel. Work quickly — dough on a peel is borrowing time. Brush the surface with olive oil, leaving a half-inch border. Scatter the Parmigiano evenly over the oil. Distribute the taleggio pieces — don't try to cover every inch, leave gaps, the cheese will spread and pool. Pile the mushrooms on top. Season lightly with black pepper and a pinch of flaky salt. No additional salt — the taleggio and Parmigiano are already doing the work."
   - step: "Launch and bake"
-    text: "Ninja Woodfire: Pizza mode, stone preheated to 650°F+ surface temperature (check with infrared thermometer). Launch and cook 4–5 minutes, rotating once at the 2-minute mark. The cheese should be fully melted and beginning to brown at the edges. The crust should be deep golden with char spots. Ooni: Preheat at least 20 minutes on high. Launch onto the stone, cook 60–90 seconds, rotate 180°, another 60–90 seconds. Watch the cheese — taleggio moves fast at Ooni temperatures."
+    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. The cheese should be fully melted and beginning to brown at the edges, and the crust deep golden. In a hotter 850°F+ oven, expect roughly 2–3 minutes total with a turn partway — and watch the taleggio, which moves fast at high heat."
   - step: "Finish"
     text: "Slide off the peel onto a cutting board. Immediately: a squeeze of lemon over the entire surface, a scatter of fresh thyme leaves, and a few flakes of salt. Let it sit 90 seconds before cutting — taleggio needs a moment to set or it runs off the slice."
 gear:
@@ -37,9 +37,6 @@ gear:
     url: "https://amzn.to/4obF5K3"
     note: "live Amazon Associates link"
     affiliateId: "ninja-woodfire-oven"
-  - name: "Ooni Pizza Oven"
-    url: "https://YOUR-AFFILIATE-LINK"
-    note: "Direct brand affiliate program pending approval."
   - name: "Etekcity Infrared Thermometer"
     url: "https://amzn.to/3RHkZLA"
     note: "live Amazon Associates link — for checking stone temp before launch"
