@@ -1,0 +1,15 @@
+Pin title: Which Pizza Dough Yeast to Buy: Instant, Active Dry, or Fresh
+
+Pin description: We compare instant, active dry, and fresh yeast for pizza dough to help you pick the right one for your next backyard bake. Instant yeast is our go-to for both same-day dough and a 72-hour cold ferment, while active dry needs proofing and fresh yeast only keeps about two weeks. See our full pizza dough yeast breakdown for exactly what we buy and why.
+
+Board assignment: Pizza Dough & Ingredients — this post is entirely about yeast selection, a dough/ingredient topic not tied to a specific oven, which is exactly what this board covers, over Ninja Woodfire Oven (post isn't Woodfire-specific), Outdoor Pizza Ovens (not gear/oven comparison content), or Backyard Pizza Night (too broad — this is ingredient-focused, and the more specific board is what the algorithm rewards).
+
+Destination link: https://newenglandcrust.com/blog/2026-06-29-what-yeast-to-buy-for-pizza-dough-instant-active-d/
+
+Affiliate disclosure: Some links on our site are affiliate links — we may earn a commission at no cost to you. Note: page checked against the registry — the SAF Instant Yeast link resolves to a live Amazon Associates URL (id "saf-instant-yeast" in affiliateLinks.ts). No YOUR-AFFILIATE-LINK placeholders found on this page. Not an Ooni/Solo Stove product, so the pending-program caveat doesn't apply.
+
+ALT 1: Cover text "Which yeast should you actually buy?" over Caputo flour, yeast, and La Baleine salt on a counter.
+ALT 2: Text says instant yeast is our default — no proofing, straight into dry flour.
+ALT 3: Text says active dry yeast needs 100-110°F water and ten minutes to dissolve.
+ALT 4: Text says fresh yeast has the best flavor but only keeps about two weeks.
+ALT 5: CTA text "Full breakdown + where to buy" over the same ingredient photo.

@@ -1,0 +1,17 @@
+Pin title: Best Pizza Accessories Under $50 — Our Gear Guide
+
+Pin description: We tested every pizza and outdoor cooking accessory under $50 on our own patio and narrowed it to five essentials worth buying first. See the perforated peel, digital scale, and bench scraper that actually earn a spot in our best pizza accessories under $50 lineup.
+
+Board assignment: Ninja Woodfire Oven — this post is framed around accessories tested on our Ninja Woodfire patio setup (title, tags, and body all anchor to the Woodfire), which is more specific than Outdoor Pizza Ovens (cross-brand comparison content) or Backyard Pizza Night (recipes/general content not tied to gear). Matches the board already used for this post's standard pins in pinterest-pin-queue.md (Infrared Thermometer — Accessory Pin Rework, Prime Day Accessories 2026).
+
+Destination link: https://newenglandcrust.com/blog/best-pizza-accessories-under-50/
+
+Affiliate disclosure: Some links on our site are affiliate links — we may earn a commission at no cost to you. Note: page checked against the registry — all five essentials-tier items (generic-peel, infrared-thermometer, etekcity-scale, oxo-bench-scraper, gorilla-grip-mitts) resolve to live Amazon Associates URLs in affiliateLinks.ts. No YOUR-AFFILIATE-LINK placeholders found. Not an Ooni/Solo Stove product, so the pending-program caveat doesn't apply.
+
+FACT CHECK FLAG (not rendered on any card): the post's Gorilla Grip Silicone Oven Mitts section states "we're talking 700°F-plus surface temps" attributed to the Ninja Woodfire's stone/Pro-Heat pan. Per this job's reference ceiling table, Ninja Woodfire is ~700°F air temp with stone surface stated as LOWER than that — so a Woodfire-attributed figure at or above 700°F fails the hard rule. This card fact was NOT used anywhere in this carousel; the mitts item was dropped from the card set specifically to avoid it. Flagging for Michael's review — this looks like a same drift as the reading-your-stone-with-infrared-thermometer post's air-vs-stone distinction, possibly a copy error in the mitts section (should stone temp be described as running cooler, not 700°F-plus?).
+
+ALT 1: Cover text "Ten pizza upgrades, none over $50" over our Ninja Woodfire patio setup.
+ALT 2: Text says a $15 scale beats guessing, with a note on 20-30 gram flour variance, over our Ninja Woodfire patio setup.
+ALT 3: Text says a 12-inch perforated peel earns its spot, over our Ninja Woodfire patio setup.
+ALT 4: Text says five essentials come to under $75 total, over our Ninja Woodfire patio setup.
+ALT 5: CTA text "Full breakdown + where to buy" over the same patio photo.

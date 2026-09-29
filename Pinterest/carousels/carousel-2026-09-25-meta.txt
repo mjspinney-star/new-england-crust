@@ -1,0 +1,22 @@
+Pin title: Best Pizza Oven Deals — What's Worth Buying on Sale
+
+Pin description: We track pizza oven deals year-round so you know which price actually beats retail — Ooni Koda 12 under $280, Ninja Woodfire OO101 between $299 and $449, plus the $20 infrared thermometer worth grabbing whenever it's on sale. See our full buy signals and sale calendar for every oven and accessory worth watching this year.
+
+Board assignment: Outdoor Pizza Ovens — this post is a cross-brand deals/buying-guide roundup spanning Ooni, Ninja Woodfire, Solo Stove, and Cuisinart, which is exactly the "propane vs. pellet vs. electric, which oven is worth it" content this board is for, over Ninja Woodfire Oven (too narrow — the post isn't Woodfire-specific, it's a roundup across four ovens), Backyard Pizza Night (recipes/technique, not gear/deals), or Pizza Dough & Ingredients (not applicable). Note: this post's standard pins in pinterest-pin-queue.md used the Ninja Woodfire Oven board instead — flagging the mismatch for Michael's awareness, but following this job's own board-assignment criteria, which the post's actual content (four-oven comparison) matches to Outdoor Pizza Ovens more precisely.
+
+Destination link: https://newenglandcrust.com/blog/best-pizza-oven-deals/
+
+Affiliate disclosure: Some links on our site are affiliate links — we may earn a commission at no cost to you. Note: page checked directly (not just the registry) for bare YOUR-AFFILIATE-LINK placeholders — none found; best-pizza-oven-deals.mdx is a blog post, not one of the affected recipe files. Ooni Koda 12 and Solo Stove Pi render untracked brand-direct links (pendingProgram, no Amazon tag per policy, consistent with the Ooni/Solo Impact-approval window); Ninja Woodfire OO101, Cuisinart 3-in-1, and the infrared thermometer carry Amazon Associates tags (tag newenglandcru-20).
+
+FACT CHECK: every figure below is traceable to best-pizza-oven-deals.mdx with attribution intact, and none exceeds the Woodfire's 700°F ceiling (no temperature above 700°F is attributed to the Ninja Woodfire on any card).
+- Ooni Koda 12: "15 minutes to 800°F on the stone, 60-90 second cook time... If it drops below $280, that's a strong buy signal... occasionally dips to $250" — matches source exactly. Ooni Koda 12 is a non-Woodfire oven (~950°F reference ceiling), so 800°F here is consistent.
+- Ninja Woodfire OO101: "Pizza in 4-7 minutes rather than 90 seconds... fluctuates between $299 and $449" — matches source exactly. No temperature claim made for the Woodfire on this card.
+- Infrared thermometer: "this $20 tool tells you your actual stone temperature, not the air temperature your oven's display shows" — matches source exactly.
+
+Card selection note: the Instagram carousel (Instagram/instagram-carousel-queue.md, dated 2026-09-24, "The oven deals actually worth chasing") ran 4 content slides (Ooni, Ninja Woodfire, a combined Solo Stove Pi Prime + Cuisinart 3-in-1 card, and the infrared thermometer) plus a cover and closing CTA. Capped at 5 Pinterest cards (cover + 3 content + CTA), the combined Solo Stove/Cuisinart card was dropped — it was the one card making two claims at once rather than one, and the same two products were already the first ones cut from the best-outdoor-pizza-ovens-under-500 carousel (2026-08-28) for the same reason. Ooni Koda 12, Ninja Woodfire OO101, and the infrared thermometer were kept as the three highest-priority, fully standalone claims. Cover headline and photo reused from the Instagram carousel for continuity (same source post, same story).
+
+ALT 1: Cover text "The oven deals actually worth chasing" over a close-up white clam pizza.
+ALT 2: Text says the Ooni Koda 12 hits $250 in past sales, 15 minutes to 800°F on the stone.
+ALT 3: Text says the Ninja Woodfire OO101 swings $299 to $449 and also smokes a pork shoulder.
+ALT 4: Text says a $20 infrared thermometer beats guessing at stone temperature.
+ALT 5: CTA text "Full breakdown + where to buy" over the same pizza photo.
