@@ -114,7 +114,7 @@ const OWNER_FACTS = `
 - The Ninja also has a 700°F setting: we have measured the stone at about 695°F on it, and a pizza cooks in about 3 minutes. We typically use 550°F. (Do not say whether we par-bake on the 700°F setting.)
 - Fully preheated, the stone reads close to the set temperature (about 540°F at 550°F; about 695°F at 700°F).
 - The result is an evenly golden crust with some blistering on the edge — not leopard-spotted Neapolitan char.
-- Our dough: Caputo Pizzeria 00 flour 500 g, cool water 325 g, Baleine fine sea salt 13 g, Caputo Lievito dry yeast 1.5 g, optional olive oil; mixed on the Dough cycle of a Cuisinart CBK-110 bread maker; balled and cold-fermented in the fridge for 24–48 hours.
+- Our dough: Caputo Pizzeria 00 flour 500 g, cool water 325 g, Baleine fine sea salt 13 g, Caputo Lievito dry yeast 1.5 g, optional olive oil; mixed on the Dough cycle of a Cuisinart CBK-110 bread maker; divided into 250–300 g balls, set in a floured proofing tray, covered, and cold-fermented in the fridge for 24–48 hours.
 - We have smoked pulled pork and chicken on the Ninja; both came out tender. (No times or temperatures are known — do not state any.)
 - We rotate three pellet flavors: oak, maple, and a cherry blend.
 - The oven sits on a Keter Unity cart on our deck. We use the Ninja perforated pizza peel and an infrared thermometer; we also own a turning peel.
