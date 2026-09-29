@@ -7,3 +7,21 @@
 # 2026-07-28: Prime Day page converted to evergreen deals page.
 /blog/prime-day-pizza-oven-deals-2026/  /blog/best-pizza-oven-deals/  301
 /blog/prime-day-pizza-oven-deals-2026   /blog/best-pizza-oven-deals/  301
+
+# 2026-09-28: Consolidated duplicate pipeline posts into existing pages (indexing audit).
+/blog/white-pizza-with-ricotta-garlic-and-lemon/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/white-pizza-with-ricotta-garlic-and-lemon  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/hot-honey-pepperoni-the-simplest-pizza-worth-making-twice-a-week/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/hot-honey-pepperoni-the-simplest-pizza-worth-making-twice-a-week  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/fig-prosciutto-and-arugula-pizza-how-to-balance-the-sweet-and/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/fig-prosciutto-and-arugula-pizza-how-to-balance-the-sweet-and  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/mushroom-pizza-with-thyme-and-fontina-a-fall-patio-pizza/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/mushroom-pizza-with-thyme-and-fontina-a-fall-patio-pizza  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/breakfast-pizza-for-the-morning-after-pizza-night-what-to-do/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/breakfast-pizza-for-the-morning-after-pizza-night-what-to-do  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/pesto-base-pizza-how-to-keep-it-from-burning-at-high-heat/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/pesto-base-pizza-how-to-keep-it-from-burning-at-high-heat  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/apple-gorgonzola-and-walnut-pizza-a-fall-flavor-combination/  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/apple-gorgonzola-and-walnut-pizza-a-fall-flavor-combination  /blog/pizza-night-recipes-beyond-margherita/  301
+/blog/a-same-day-pizza-dough-for-nights-when-you-forgot-to-plan-ahead/  /recipes/same-day-pizza-dough/  301
+/blog/a-same-day-pizza-dough-for-nights-when-you-forgot-to-plan-ahead  /recipes/same-day-pizza-dough/  301

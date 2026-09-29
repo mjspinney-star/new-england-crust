@@ -127,6 +127,16 @@ A rough pairing guide for the combinations above, for when you want to match dri
 
 ---
 
+## More pizzas worth making
+
+**New England styles:** [New Haven plain tomato pie](/recipes/new-haven-plain-tomato-pie/) · [Rhode Island bakery pizza](/recipes/rhode-island-bakery-pizza/) · [South Shore bar pizza](/recipes/south-shore-bar-pizza/) · [Greek pizza](/recipes/greek-pizza/) · [Beach pizza](/recipes/beach-pizza/) · [Clam pie, the New England way](/recipes/clam-pie-new-england-way/) · [New Hampshire mushroom and taleggio](/recipes/new-hampshire-mushroom-taleggio/)
+
+**The classics:** [Neapolitan margherita](/recipes/neapolitan-margherita/) · [NY-style slice](/recipes/ny-style-slice/)
+
+**Two more toppings:** [anchovy and olive](/blog/a-simple-anchovy-and-olive-pizza-that-skeptics-end-up-eating/) · [smash sausage and fennel](/blog/a-smash-style-sausage-and-fennel-pizza-for-cold-october-nights/) — and the [no-cook tomato sauce](/blog/a-no-cook-tomato-sauce-that-does-not-need/) that goes under most of them
+
+---
+
 ## Related reading
 
 - [Our 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the dough recipe these all work best with

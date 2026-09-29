@@ -8,13 +8,13 @@ relatedPosts: ["buying-good-canned-tomatoes-without-overthinking", "2026-06-25-f
 draft: false
 ---
 
-The first time we skipped simmering the sauce, we assumed we were cutting corners. We were not. We were just getting out of the way.
+Skipping the simmer feels like cutting corners. It is not. It is just getting out of the way.
 
 No-cook tomato sauce is what most serious pizza makers use. The oven does the cooking. Your job is to start with good tomatoes and not overthink it.
 
 ## Why Simmering Works Against You Here
 
-When you simmer tomato sauce for pasta, you want it reduced and concentrated. That makes sense. On a pizza, the sauce goes into a 900-degree oven for sixty to ninety seconds — or a longer cook in a home oven — and it reduces on its own. If you pre-cook it, you are cooking it twice, and you end up with something too thick, too dark, and sometimes slightly bitter on the edges.
+When you simmer tomato sauce for pasta, you want it reduced and concentrated. That makes sense. On a pizza, the sauce reduces on its own in the oven — in about 5 minutes on our Ninja Woodfire at 550°F, or 60 to 90 seconds in a 900°F Neapolitan-style oven. If you pre-cook it, you are cooking it twice, and you end up with something too thick, too dark, and sometimes slightly bitter on the edges.
 
 Raw crushed tomatoes spread better, too. They stay loose enough to move across the dough without tearing it.
 
@@ -48,3 +48,5 @@ One more thing: use it sparingly. A 12-inch pizza needs about three or four tabl
 ## Try This Next
 
 Make a batch before your next outdoor session and let it sit for twenty minutes before using it. The salt pulls moisture from the tomatoes and the flavor opens up noticeably. It is worth the wait even when you are in a hurry to get the oven up to temp.
+
+For where to use it, try [smash sausage and fennel](/blog/a-smash-style-sausage-and-fennel-pizza-for-cold-october-nights/), [anchovy and olive](/blog/a-simple-anchovy-and-olive-pizza-that-skeptics-end-up-eating/), or the [New Haven plain tomato pie](/recipes/new-haven-plain-tomato-pie/), where the sauce is the whole show.

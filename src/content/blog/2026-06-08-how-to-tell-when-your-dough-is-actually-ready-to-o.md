@@ -43,4 +43,4 @@ If the dough opens easily, drapes over your knuckles without tearing, and does n
 
 ---
 
-*Related: How We Cold-Proof Dough for Weekend Cooks — and Why It Works Better in Winter*
+*Related: [Our 72-hour cold-ferment dough](/blog/72-hour-cold-ferment-dough/) · [The master cold-ferment dough recipe](/recipes/master-cold-ferment-dough/) · [Same-day pizza dough](/recipes/same-day-pizza-dough/) · [What yeast to buy for pizza dough](/blog/2026-06-29-what-yeast-to-buy-for-pizza-dough-instant-active-d/)*
