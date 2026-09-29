@@ -49,16 +49,28 @@ const topics = [
     links: ['/blog/72-hour-cold-ferment-dough/', '/blog/pizza-night-recipes-beyond-margherita/', '/blog/best-outdoor-pizza-ovens-under-500/'],
   },
   {
-    slug: 'new-england-pizza-styles-guide',
-    type: 'guide',
-    topic: 'A guide to New England pizza styles — New Haven apizza, South Shore bar pizza, Greek pizza, Rhode Island bakery pizza, beach pizza, and the clam pie — what makes each one distinct',
-    links: ['/recipes/new-haven-plain-tomato-pie/', '/recipes/south-shore-bar-pizza/', '/recipes/greek-pizza/', '/recipes/rhode-island-bakery-pizza/', '/recipes/beach-pizza/', '/recipes/clam-pie-new-england-way/'],
-  },
-  {
     slug: 'gifts-for-ninja-woodfire-owners',
     type: 'gear',
     topic: 'Gifts for a Ninja Woodfire owner — the accessories that are actually useful, based on what we use and recommend',
     links: ['/blog/ninja-woodfire-accessories-worth-buying/', '/blog/best-pizza-accessories-under-50/', '/gear/'],
+  },
+  {
+    slug: 'pizza-stocking-stuffers-under-25',
+    type: 'gear',
+    topic: 'Stocking stuffers under $25 for a backyard pizza cook',
+    links: ['/blog/best-pizza-accessories-under-50/', '/blog/ninja-woodfire-accessories-worth-buying/'],
+  },
+  {
+    slug: 'how-to-host-a-holiday-pizza-night',
+    type: 'hosting',
+    topic: 'How to host a holiday pizza night — dough timing, a toppings bar, and keeping pizzas coming when it is cold out',
+    links: ['/blog/backyard-pizza-night-setup/', '/blog/pizza-night-recipes-beyond-margherita/', '/blog/72-hour-cold-ferment-dough/'],
+  },
+  {
+    slug: 'new-england-pizza-styles-guide',
+    type: 'guide',
+    topic: 'A guide to New England pizza styles — New Haven apizza, South Shore bar pizza, Greek pizza, Rhode Island bakery pizza, beach pizza, and the clam pie — what makes each one distinct',
+    links: ['/recipes/new-haven-plain-tomato-pie/', '/recipes/south-shore-bar-pizza/', '/recipes/greek-pizza/', '/recipes/rhode-island-bakery-pizza/', '/recipes/beach-pizza/', '/recipes/clam-pie-new-england-way/'],
   },
   {
     slug: 'extension-cord-for-ninja-woodfire',
@@ -77,18 +89,6 @@ const topics = [
     type: 'ingredient',
     topic: 'Which mozzarella to use on pizza — low-moisture vs. fresh, and how to keep fresh mozzarella from pooling water',
     links: ['/blog/pizza-night-recipes-beyond-margherita/', '/recipes/neapolitan-margherita/'],
-  },
-  {
-    slug: 'pizza-stocking-stuffers-under-25',
-    type: 'gear',
-    topic: 'Stocking stuffers under $25 for a backyard pizza cook',
-    links: ['/blog/best-pizza-accessories-under-50/', '/blog/ninja-woodfire-accessories-worth-buying/'],
-  },
-  {
-    slug: 'how-to-host-a-holiday-pizza-night',
-    type: 'hosting',
-    topic: 'How to host a holiday pizza night — dough timing, a toppings bar, and keeping pizzas coming when it is cold out',
-    links: ['/blog/backyard-pizza-night-setup/', '/blog/pizza-night-recipes-beyond-margherita/', '/blog/72-hour-cold-ferment-dough/'],
   },
   {
     slug: 'how-to-sauce-a-pizza',
