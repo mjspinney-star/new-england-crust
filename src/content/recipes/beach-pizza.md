@@ -54,4 +54,4 @@ draft: false
 
 If you grew up anywhere north of Boston, you know this pizza. Thin, a little sweet, provolone laid on in slices, sold by the square at Tripoli's and Cristy's on the Salisbury Beach boardwalk. It doesn't taste like any other pizza in America, and that's the point.
 
-The two non-negotiables: sugar in the sauce, and whole provolone slices instead of shredded mozzarella. Everything else is forgiving. Here's my home version, tested until my kids couldn't tell the difference.
+The two non-negotiables: sugar in the sauce, and whole provolone slices instead of shredded mozzarella. Everything else is forgiving. Here's our home version, tested until our kids couldn't tell the difference.

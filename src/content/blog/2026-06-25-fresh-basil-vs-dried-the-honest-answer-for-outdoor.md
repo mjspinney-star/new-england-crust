@@ -14,7 +14,7 @@ It is not a small question. The answer depends entirely on how your oven cooks.
 
 ## What High Heat Does to Basil
 
-Fresh basil burns fast. At 900°F to 950°F — the kind of temps you are running in an Ooni Koda 12 — fresh leaves on top of a pie before the launch will turn black and bitter in under a minute. Not charred in a good way. Just scorched.
+Fresh basil burns fast. At 900°F to 950°F — the temps of a gas pizza oven — fresh leaves on top of a pie before the launch will turn black and bitter in under a minute. At the Ninja's gentler 550°F, the bake is longer, so the same rule applies: add fresh basil after the pizza comes out. Not charred in a good way. Just scorched.
 
 Dried basil has the opposite problem. It can handle the heat, but it loses whatever fragrance it had and contributes almost nothing to the finished pie.
 

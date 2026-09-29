@@ -42,4 +42,4 @@ keywords:
 draft: false
 ---
 
-The grandma pie is the sheet-pan pizza for people who decided on pizza two hours ago, not two days ago. Thin, garlicky, cheese hiding under the sauce — and the single best recipe in this library for feeding a soccer team on short notice. Ask me how I know.
+The grandma pie is the sheet-pan pizza for people who decided on pizza two hours ago, not two days ago. Thin, garlicky, cheese hiding under the sauce — and the single best recipe in this library for feeding a soccer team on short notice. Ask us how we know.

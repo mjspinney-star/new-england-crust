@@ -65,11 +65,11 @@ keywords:
 
 We resisted putting this one on the site for a while. It doesn't fit the aesthetic. It's not regional. It's not something you'd find at a New Haven apizza institution.
 
-It's also the pie that disappears first at every pizza night we've ever hosted.
+It's also one of the first pies to disappear at a pizza night.
 
-The ranch base is the key — made from scratch, heavy on dill and chives, tangy enough to hold its own against the smoky bacon and the richness of the chicken. Don't use bottled ranch dressing. The ratio matters, and it takes four minutes to mix. Once you've had this on a properly charred crust off a 650°F stone, the bottled version will never seem like the same substance again.
+The ranch base is the key — made from scratch, heavy on dill and chives, tangy enough to hold its own against the smoky bacon and the richness of the chicken. Don't use bottled ranch dressing. The ratio matters, and it takes four minutes to mix. Once you've had it on a properly browned crust, the bottled version won't seem like the same thing.
 
-We've made peace with this being in our rotation. The guests have spoken.
+It's earned its spot in our rotation.
 
 ---
 
@@ -81,7 +81,7 @@ We've made peace with this being in our rotation. The guests have spoken.
 
 **On the ranch:** The scratch ranch takes four minutes. The difference between it and bottled is significant enough that it's not worth the shortcut here. If you only have bottled, thicken it slightly with a tablespoon of sour cream and add fresh dill if you have it.
 
-**On the kids:** This is the pizza kids actually eat. If you're hosting pizza night with children, make this one first and watch what happens. We've seen adults reach for it over the margherita.
+**On the kids:** This is the pizza kids actually eat. If you're hosting pizza night with children, make this one first.
 
 ---
 

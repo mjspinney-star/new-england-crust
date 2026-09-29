@@ -111,11 +111,17 @@ const OWNER_FACTS = `
 - We own exactly one outdoor oven: a Ninja Woodfire OO101 (electric, 105–700°F, wood pellets add smoke flavor only — they do not heat the oven). We have owned it for over a year and have had no real problems with it.
 - We chose it over gas and wood-pellet pizza ovens for ease of use: it plugs in, with no propane and no fire to tend.
 - Our pizza routine: preheat to 550°F (about 20 minutes); confirm the stone reads about 540°F with an infrared thermometer; brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds; add toppings; bake about 5 minutes. We do NOT rotate, turn, or flip the pizza.
+- The Ninja also has a 700°F setting: we have measured the stone at about 695°F on it, and a pizza cooks in about 3 minutes. We typically use 550°F. (Do not say whether we par-bake on the 700°F setting.)
+- Fully preheated, the stone reads close to the set temperature (about 540°F at 550°F; about 695°F at 700°F).
 - The result is an evenly golden crust with some blistering on the edge — not leopard-spotted Neapolitan char.
 - Our dough: Caputo Pizzeria 00 flour 500 g, cool water 325 g, Baleine fine sea salt 13 g, Caputo Lievito dry yeast 1.5 g, optional olive oil; mixed on the Dough cycle of a Cuisinart CBK-110 bread maker; balled and cold-fermented in the fridge for 24–48 hours.
 - We have smoked pulled pork and chicken on the Ninja; both came out tender. (No times or temperatures are known — do not state any.)
 - We rotate three pellet flavors: oak, maple, and a cherry blend.
-- The oven sits on a Keter Unity cart on our deck. We use the Ninja perforated pizza peel and an infrared thermometer.
+- The oven sits on a Keter Unity cart on our deck. We use the Ninja perforated pizza peel and an infrared thermometer; we also own a turning peel.
+- We tested a third-party heavy-duty cover for the Ninja through two months of rain and wind; it held up fine.
+- Before owning an infrared thermometer we occasionally got pale bottoms; with it, consistent results.
+- We have cooked pizza on many surfaces over the years (cast iron, perforated pans, and others) before settling on the stone.
+- Recipes we have made: chicken bacon ranch, pesto mozzarella basil, New Hampshire mushroom taleggio, the clam pie, Salisbury beach pizza, and the grandma pie.
 - We are based in coastal New England.`;
 
 // ── SITE PAGES (for linking) ───────────────────────────────────────────────
@@ -168,7 +174,7 @@ HONESTY RULES — THESE OVERRIDE EVERYTHING ELSE:
 2. No invented anecdotes: no friends or guests who did something, no specific nights, parties, or events, no "every time we make this," no "honest quirks" from experience we don't have.
 3. Beyond OWNER FACTS, write general guidance in second person ("you"), or clearly general statements ("most cooks," "the usual advice"). Never dress general advice up as our experience.
 4. We own only the Ninja Woodfire. Never write cooking directions for, or claim experience with, any other oven. Do not mention Ooni, Koda, Fyra, Solo Stove, Gozney, or any other oven brand at all.
-5. Any cooking directions for the Ninja must match our routine exactly: 550°F, stone about 540°F, oiled par-bake about 1 minute 30 seconds, then about 5 minutes. Never tell the reader to rotate, turn, or flip the pizza on the Ninja.
+5. Any cooking directions for the Ninja must match OWNER FACTS exactly: our usual 550°F routine, or the 700°F setting described there. Never tell the reader to rotate, turn, or flip the pizza on the Ninja.
 6. Do not state prices, product specs, or statistics you are not certain of. If unsure, leave it out.
 
 OWNER FACTS:${OWNER_FACTS}

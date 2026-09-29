@@ -1,7 +1,7 @@
 ---
 heroImage: "/assets/recipes/clam-pie/clam-pie-hero.jpg"
 title: "Clam Pie, the New England Way"
-description: "Our take on a New Haven classic — Wellfleet littlenecks, garlic, oregano, no mozzarella. The clam liquor is the sauce. The stone does the rest."
+description: "Our take on a New Haven classic — fresh littlenecks, garlic, oregano, no mozzarella. The clam liquor is the sauce. The stone does the rest."
 pubDate: 2026-06-15
 category: "recipes"
 tags: ["clam pie", "new haven", "white pizza", "seafood", "new england", "littlenecks"]
@@ -53,7 +53,7 @@ keywords:
 
 The clam pie is the one pizza that New England has an honest claim to. New Haven has been making it since at least the 1920s, and the version Frank Pepe's settled on — white, no mozzarella, fresh clams steamed open on the pie — is one of those things that sounds wrong until you eat it.
 
-We make ours with Wellfleet littlenecks when we can get them, which is most of the year if you know where to look. The clam liquor released during the bake becomes the sauce. The garlic goes on raw and sweetens in the heat. Oregano is not negotiable. No red sauce. No mozzarella — if you put mozzarella on a clam pie, you've made a different pie, and that's fine, but call it something else.
+We make ours with fresh littlenecks — Wellfleet's, from Cape Cod, are the famous ones. The clam liquor released during the bake becomes the sauce. The garlic goes on raw and sweetens in the heat. Oregano is not negotiable. No red sauce. No mozzarella — if you put mozzarella on a clam pie, you've made a different pie, and that's fine, but call it something else.
 
 This is a pizza that rewards a hot stone. We cook it on our Ninja Woodfire with the stone around 540°F, using the same par-bake routine as every other pie. The clam liquor needs to cook down in the few minutes the pie is on the stone, and a fully preheated stone is what makes that happen.
 
@@ -67,9 +67,9 @@ It's also one of the most famous pizzas in the country — the version that make
 
 **On the dough:** Cold ferment dough is ideal here — the longer ferment gives you a crust complex enough to hold its own against the brine and garlic. Same-day dough works, but the crust becomes more of a vehicle than a participant.
 
-**On sourcing:** Wellfleet is a half-day drive from most of New England and worth the trip. For a closer option, most good fishmongers in New Hampshire and Maine carry locally harvested littlenecks. Buy them day-of or the day before, keep them cold and damp, cook them within 24 hours of purchase.
+**On sourcing:** most good New England fishmongers carry locally harvested littlenecks. Buy them day-of or the day before, keep them cold and damp, cook them within 24 hours of purchase.
 
-**On the "no mozzarella" rule:** We've tried it with mozzarella. It becomes a different pie — heavier, the dairy competes with the clam. The New Haven version without it is the right version. Trust the process.
+**On the "no mozzarella" rule:** with mozzarella it becomes a different pie — heavier, with the dairy competing with the clam. The New Haven version without it is the right version. Trust the process.
 
 ---
 

@@ -7,7 +7,7 @@ tags: [dough, technique, beginner tips]
 draft: false
 ---
 
-We have pushed a ball of dough flat and watched it snap back like a rubber band more times than we want to count. It is not a hydration problem. It is not a flour problem. The dough just was not ready.
+You push a ball of dough flat and it snaps back like a rubber band. It is not a hydration problem. It is not a flour problem. The dough just was not ready.
 
 This is the single most common mistake we see from people starting out with pizza at home. Not the recipe. The timing.
 
