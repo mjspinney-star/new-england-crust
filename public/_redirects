@@ -25,3 +25,7 @@
 /blog/apple-gorgonzola-and-walnut-pizza-a-fall-flavor-combination  /blog/pizza-night-recipes-beyond-margherita/  301
 /blog/a-same-day-pizza-dough-for-nights-when-you-forgot-to-plan-ahead/  /recipes/same-day-pizza-dough/  301
 /blog/a-same-day-pizza-dough-for-nights-when-you-forgot-to-plan-ahead  /recipes/same-day-pizza-dough/  301
+
+# 2026-09-29: Master Dough merged into the Caputo Breadmaker Dough (canonical dough).
+/recipes/master-cold-ferment-dough/  /recipes/caputo-breadmaker-dough/  301
+/recipes/master-cold-ferment-dough  /recipes/caputo-breadmaker-dough/  301

@@ -10,17 +10,14 @@ restTime: "PT24H"
 totalTime: "PT24H37M"
 servings: "3 twelve-inch pies"
 ingredients:
-  - "500 g 00 flour"
-  - "310 g cool water (62% hydration)"
-  - "12 g fine sea salt"
-  - "1 g instant yeast (yes, that little — time does the work)"
+  - "1 batch of our Caputo 00 dough (3 balls, about 280 g each)"
   - "1 can (28 oz) whole San Marzano tomatoes, hand-crushed with 1 tsp salt (never cooked)"
   - "250 g fresh mozzarella, torn and drained on paper towels"
   - "Fresh basil leaves"
   - "Olive oil for finishing"
 instructions:
-  - step: "Mix and slow ferment"
-    text: "Mix, knead 8 minutes until silky, and ferment: 4 hours at room temp, then ball into three 270 g balls and rest 18–24 hours in the fridge (or all day on the counter, the traditional way)."
+  - step: "Make the dough ahead"
+    text: "Make a batch of our Caputo 00 Breadmaker Dough, divide it into three balls, and cold-ferment them 24–48 hours. Let them sit at room temperature 1–2 hours before stretching."
   - step: "Preheat like you mean it"
     text: "Ninja Woodfire: we preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F. Traditional Neapolitan wants 850–900°F; in an oven that gets there, give the stone a full 20–25 minutes. An infrared thermometer takes the guessing out either way."
   - step: "Stretch gently"
@@ -53,3 +50,5 @@ draft: false
 This is the pizza the backyard oven was invented for, and the one every new oven owner should master first — because it teaches heat management and launching, the skills every other outdoor recipe on this site builds on.
 
 It's also the recipe that teaches you the most about your own oven — nothing on the pie hides a pale bottom or an underheated stone.
+
+The dough is our [Caputo 00 Breadmaker Dough](/recipes/caputo-breadmaker-dough/) — make it a day or two ahead.
