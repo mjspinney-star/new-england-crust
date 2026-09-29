@@ -9,9 +9,14 @@ interface Props {
   description?: string;
   image?: string;
   article?: boolean;
+  canonical?: string;
 }
 
-const { title, description, image, article } = Astro.props;
+const { title, description, image, article, canonical } = Astro.props;
+
+// Only forward a non-empty canonical; otherwise SEO.astro keeps its default
+// (Astro.url.pathname resolved against Astro.site).
+const canonicalUrl = canonical && canonical.trim() !== '' ? canonical : undefined;
 ---
 
 <!doctype html>
@@ -25,7 +30,7 @@ const { title, description, image, article } = Astro.props;
 <meta name="google-site-verification" content="v65fdblRqsz41WKZ6W3Bv1bffl52z_7HlZatii82bmw" />
 <meta name="google-site-verification" content="aLxtFwoN4y-jf1HCjWUQexT9RRASTX1lRekDAZWcv3Q" />
 
-    <SEO title={title} description={description} image={image} article={article} />
+    <SEO title={title} description={description} image={image} article={article} canonical={canonicalUrl} />
 
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
