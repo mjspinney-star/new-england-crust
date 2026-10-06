@@ -21,8 +21,8 @@ interface Props {
 const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.props;
 ---
 
-<section class="ndc" data-dough-calc data-preset={preset} aria-label={title}>
-  <h2 class="ndc-title">{title}</h2>
+<section class="ndc" data-dough-calc data-preset={preset} aria-label={title || 'Dough calculator'}>
+  {title && <h2 class="ndc-title">{title}</h2>}
   <p class="ndc-intro">
     Pick your pizza and when you want to eat. You'll get ingredient weights, yeast scaled to your
     fridge and ferment time, and a schedule for when to mix.
@@ -136,13 +136,7 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
       <div class="ndc-schedule">
         <h3>Your schedule</h3>
         <p class="ndc-warn" data-out="warn" hidden></p>
-        <ol class="ndc-steps">
-          <li><strong data-out="mixStep">Start the bread machine Dough cycle</strong><span data-out="tMix"></span></li>
-          <li><strong>Ball and refrigerate</strong><span data-out="tBall"></span></li>
-          <li><strong>Pull from the fridge</strong><span data-out="tPull"></span></li>
-          <li><strong>Preheat the oven</strong><span data-out="tPreheat"></span></li>
-          <li><strong>Bake</strong><span data-out="tBake"></span></li>
-        </ol>
+        <div class="ndc-steps" data-out="steps"></div>
       </div>
     </div>
   </div>
@@ -200,6 +194,32 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
   const fmtSmall = (n: number) => `${n.toFixed(n < 10 ? 1 : 0)} g`;
   const fmtWhen = (d: Date) =>
     d.toLocaleString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+
+  // Schedule grouped by day: "Tuesday, Oct 6" then "3:00 PM  Start the dough"
+  function renderSteps(el: HTMLElement, steps: { at: Date; label: string }[]) {
+    el.replaceChildren();
+    let lastDay = '';
+    steps.forEach((st, i) => {
+      const day = st.at.toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
+      if (day !== lastDay) {
+        const d = document.createElement('div');
+        d.className = 'ndc-day';
+        d.textContent = day;
+        el.append(d);
+        lastDay = day;
+      }
+      const row = document.createElement('div');
+      row.className = 'ndc-step' + (i === steps.length - 1 ? ' ndc-step-final' : '');
+      const t = document.createElement('span');
+      t.className = 'ndc-time';
+      t.textContent = st.at.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+      const l = document.createElement('span');
+      l.className = 'ndc-label';
+      l.textContent = st.label;
+      row.append(t, ' ', l);
+      el.append(row);
+    });
+  }
 
   function toLocalInput(d: Date): string {
     const p = (n: number) => String(n).padStart(2, '0');
@@ -276,21 +296,27 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
       // Schedule
       const bakeAt = new Date(field('bakeAt').value);
       const warn = out('warn');
+      const stepsEl = out('steps');
+      let startStr = '', bakeStr = '';
       if (isNaN(bakeAt.getTime())) {
+        stepsEl.replaceChildren();
         warn.hidden = false;
         warn.textContent = 'Choose a bake date and time to see your schedule.';
       } else {
         const pull = new Date(bakeAt.getTime() - WARM_UP_HOURS * 3600e3);
         const ball = new Date(pull.getTime() - s.hours * 3600e3);
         const method = MIX_METHODS[s.mixMethod as keyof typeof MIX_METHODS] ?? MIX_METHODS.machine;
-        out('mixStep').textContent = method.step;
         const mix = new Date(ball.getTime() - method.minutes * 60e3);
         const preheat = new Date(bakeAt.getTime() - preheatMin * 60e3);
-        out('tMix').textContent = fmtWhen(mix);
-        out('tBall').textContent = fmtWhen(ball);
-        out('tPull').textContent = fmtWhen(pull);
-        out('tPreheat').textContent = fmtWhen(preheat);
-        out('tBake').textContent = fmtWhen(bakeAt);
+        startStr = fmtWhen(mix);
+        bakeStr = fmtWhen(bakeAt);
+        renderSteps(stepsEl, [
+          { at: mix, label: method.step },
+          { at: ball, label: 'Ball and refrigerate' },
+          { at: pull, label: 'Pull from the fridge' },
+          { at: preheat, label: 'Preheat the oven' },
+          { at: bakeAt, label: 'Bake' },
+        ]);
         if (mix.getTime() < Date.now()) {
           const earliest = new Date(Date.now() + (bakeAt.getTime() - mix.getTime()));
           warn.hidden = false;
@@ -307,7 +333,7 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
         `${y.name} ${r.yeast.toFixed(2)} g`,
         `${s.hours} hours in the fridge at ${s.fridgeF}°F`,
         `Mixed by ${MIX_METHODS[s.mixMethod as keyof typeof MIX_METHODS]?.name ?? 'bread machine'}`,
-        isNaN(bakeAt.getTime()) ? '' : `Start ${out('tMix').textContent}, bake ${out('tBake').textContent}`,
+        startStr ? `Start ${startStr}, bake ${bakeStr}` : '',
         'newenglandcrust.com',
       ].filter(Boolean).join('\n');
     }
@@ -339,18 +365,23 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
 <style is:global>
   /* Override these from your site theme if needed */
   .ndc {
-    --ndc-ink: var(--nec-ink, #1f2a33);
-    --ndc-muted: var(--nec-muted, #5b7083);
-    --ndc-paper: var(--nec-paper, #ffffff);
-    --ndc-sauce: var(--nec-accent, #b5322a);
-    --ndc-rule: var(--nec-rule, #d9dee3);
-    --ndc-wash: var(--nec-wash, #eef2f5);
+    /* Tuned for the site's dark theme */
+    --ndc-ink: #f3ede3;     /* main text */
+    --ndc-muted: #c4baab;   /* labels, notes */
+    --ndc-paper: #1d1a17;   /* card background */
+    --ndc-field: #26221e;   /* input background */
+    --ndc-sauce: #e0612f;   /* accent, matches the site's orange */
+    --ndc-rule: #4a433b;
+    --ndc-wash: #2c2722;
     color: var(--ndc-ink);
+    color-scheme: dark;
     font: inherit;
     max-width: 960px;
     margin: 2.5rem auto;
   }
-  .ndc-title { margin: 0 0 0.4rem; line-height: 1.2; }
+  .ndc-title { margin: 0 0 0.4rem; line-height: 1.2; color: var(--ndc-ink); }
+  .ndc legend { color: var(--ndc-ink); }
+  .ndc-field > span, .ndc-check > span { color: var(--ndc-muted); }
   .ndc-intro { margin: 0 0 1.5rem; color: var(--ndc-muted); max-width: 62ch; }
 
   .ndc-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
@@ -359,7 +390,7 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
   @container (min-width: 760px) { .ndc-grid { grid-template-columns: 1.1fr 1fr; align-items: start; } }
 
   .ndc fieldset {
-    border: 0; border-top: 2px solid var(--ndc-ink);
+    border: 0; border-top: 2px solid var(--ndc-rule);
     margin: 0 0 1.25rem; padding: 0.75rem 0 0;
     display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1rem;
   }
@@ -367,7 +398,7 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
   .ndc-field { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.95rem; }
   .ndc-wide { grid-column: 1 / -1; }
   .ndc input[type="number"], .ndc input[type="datetime-local"], .ndc select {
-    font: inherit; color: var(--ndc-ink); background: var(--ndc-paper);
+    font: inherit; color: var(--ndc-ink); background: var(--ndc-field);
     border: 1px solid var(--ndc-rule); border-radius: 6px;
     padding: 0.55rem 0.65rem; min-height: 44px; width: 100%; box-sizing: border-box;
   }
@@ -394,7 +425,7 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
     background: var(--ndc-ink); color: var(--ndc-paper);
     border: 0; border-radius: 6px; padding: 0.6rem 1rem; min-height: 44px;
   }
-  .ndc-copy:hover { background: var(--ndc-sauce); }
+  .ndc-copy:hover { background: var(--ndc-sauce); color: #fff; }
   .ndc-copied { margin-left: 0.75rem; font-size: 0.9rem; color: var(--ndc-muted); }
 
   .ndc-schedule { margin-top: 1.75rem; }
@@ -403,23 +434,16 @@ const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.prop
     background: var(--ndc-wash); border-left: 4px solid var(--ndc-sauce);
     padding: 0.7rem 0.9rem; margin: 0 0 1rem; font-size: 0.95rem; line-height: 1.5;
   }
-  .ndc-steps { list-style: none; counter-reset: ndc; margin: 0; padding: 0; }
-  .ndc-steps li {
-    counter-increment: ndc; position: relative;
-    padding: 0 0 1rem 2.6rem; display: flex; flex-direction: column; gap: 0.15rem;
+  .ndc-day { font-weight: 700; color: var(--ndc-ink); margin: 1.1rem 0 0.35rem; }
+  .ndc-day:first-child { margin-top: 0; }
+  .ndc-step {
+    display: grid; grid-template-columns: 5.75rem 1fr; gap: 0.75rem; align-items: baseline;
+    padding: 0.5rem 0; border-bottom: 1px dashed var(--ndc-rule);
   }
-  .ndc-steps li::before {
-    content: counter(ndc); position: absolute; left: 0; top: 0;
-    width: 1.8rem; height: 1.8rem; border-radius: 50%;
-    background: var(--ndc-paper); border: 2px solid var(--ndc-ink);
-    display: grid; place-items: center; font-weight: 700; font-size: 0.9rem;
-  }
-  .ndc-steps li:not(:last-child)::after {
-    content: ""; position: absolute; left: 0.9rem; top: 1.8rem; bottom: 0;
-    border-left: 2px solid var(--ndc-rule);
-  }
-  .ndc-steps li:last-child::before { background: var(--ndc-sauce); border-color: var(--ndc-sauce); color: #fff; }
-  .ndc-steps span { color: var(--ndc-muted); font-variant-numeric: tabular-nums; }
+  .ndc-time { color: var(--ndc-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .ndc-label { color: var(--ndc-ink); }
+  .ndc-step-final { border-bottom: 0; }
+  .ndc-step-final .ndc-time, .ndc-step-final .ndc-label { color: var(--ndc-sauce); font-weight: 700; }
 
   .ndc-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 </style>
