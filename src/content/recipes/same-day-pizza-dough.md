@@ -8,7 +8,7 @@ prepTime: "PT15M"
 cookTime: "PT0M"
 restTime: "PT2H"
 totalTime: "PT2H15M"
-servings: "2 dough balls (280 g each)"
+servings: "3 dough balls (about 280 g each)"
 ingredients:
   - "500 g bread flour"
   - "325 g warm water, about 100°F"
@@ -22,7 +22,7 @@ instructions:
   - step: "Warm rise"
     text: "Cover and rise somewhere warm (an oven with just the light on works) for 90 minutes to 2 hours, until doubled."
   - step: "Ball and rest"
-    text: "Divide into two balls and rest 15 minutes before stretching. Straight to the oven from here."
+    text: "Divide into three balls and rest 15 minutes before stretching. Straight to the oven from here."
 gear:
   - name: "Digital kitchen scale"
     url: "https://amzn.to/4dVhJ84"

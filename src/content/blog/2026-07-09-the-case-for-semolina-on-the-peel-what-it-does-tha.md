@@ -1,5 +1,5 @@
 ---
-title: "Why We Use Semolina on the Peel (And What Flour Can't Do)"
+title: "The Case for Semolina on the Peel (And What Flour Can't Do)"
 description: "Semolina on the launch peel isn't a trick — it's a function. Here's what it actually does and why flour falls short."
 pubDate: 2026-07-09
 category: ingredient
@@ -12,7 +12,7 @@ draft: false
 
 You built the dough right. You shaped it carefully. You loaded it onto the peel, added your toppings — and then it stuck. The whole thing folded on itself going into the oven and you spent the next ten minutes dealing with the aftermath.
 
-We have been there. Most people switch to semolina after exactly that experience.
+Most people switch to semolina after exactly that experience.
 
 ## What Semolina Actually Does
 
@@ -24,19 +24,19 @@ The difference is physical, not subtle.
 
 ## Why Flour Fails on a Warm Peel
 
-We want to be honest about this: flour works fine if your timing is fast and your peel is cold. But that is a narrow window.
+To be fair, flour works fine if your timing is fast and your peel is cold. But that is a narrow window.
 
 In a backyard setup — stone preheating, sauce and toppings out, someone asking you a question — the window closes. Flour that seemed like enough thirty seconds ago is now glued to your dough. Semolina gives you a little more margin, and margin matters when you are cooking outside in July with no airflow.
 
 **One practical note:** too much semolina and you will taste it on the bottom of the crust — slightly gritty, slightly bitter. A thin, even layer is the goal. Shake the excess off before you launch.
 
-## How We Use It
+## How to Use It
 
-We keep a small bowl of semolina next to the peel during every cook. Before the dough goes on, we dust the peel, spread it with a flat hand, and tip off anything that does not stick. Then the dough goes on and we work fast.
+Keep a small bowl of semolina next to the peel during every cook. Before the dough goes on, dust the peel, spread it with a flat hand, and tip off anything that does not stick. Then put the dough on and work fast.
 
-If the pizza has been sitting on the peel for more than two minutes, we lift an edge and check. If it is dragging, we work a little more semolina underneath with a fingertip. That is a trick you will learn after two or three cooks.
+If the pizza has been on the peel for more than two minutes, lift an edge and check. If it is dragging, work a little more semolina underneath with a fingertip. That is a trick you will learn after two or three cooks.
 
-We do not use semolina on the stone itself — just the peel.
+Use semolina on the peel only, not on the stone itself.
 
 ## The Honest Downside
 

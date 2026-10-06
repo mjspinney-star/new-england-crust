@@ -41,6 +41,6 @@ draft: false
 
 Explain Rhode Island bakery pizza to someone from away and watch their face: it's thick, it has no cheese, and you eat it cold. They'll tell you that's not pizza. Rhode Islanders will tell you they're not wrong, and they don't care.
 
-The strips live in bakery cases from Providence to Westerly, fuel every graduation party in the state, and are genuinely great — sweet, herby, bready, and better the day after. Perfect for Owen's soccer team coolers, by the way. Travels like a champ.
+The strips live in bakery cases from Providence to Westerly, fuel every graduation party in the state, and are genuinely great — sweet, herby, bready, and better the day after.
 
 This is a kitchen-oven pan pizza — a half-sheet pan won't fit a compact outdoor oven like the Ninja Woodfire.
