@@ -33,7 +33,7 @@ instructions:
   - step: "Lay the provolone"
     text: "Shingle whole provolone slices across the pie, overlapping slightly. Gaps are fine — the slices melt into pools, not a uniform blanket. That's the look."
   - step: "Bake hot"
-    text: "Bake at 500°F on the lowest rack for 12–14 minutes, until the bottom is golden and the provolone is melted with browned spots."
+    text: "Bake in your kitchen oven at 500°F on the lowest rack for 12–14 minutes, until the bottom is golden and the provolone is melted with browned spots."
   - step: "Cut into squares"
     text: "Rest 3 minutes, then cut into squares. Eat one standing over the pan like you're at the beach. Mandatory."
 keywords:
@@ -47,4 +47,6 @@ draft: false
 
 If you grew up anywhere north of Boston, you know this pizza. Thin, a little sweet, provolone laid on in slices, sold by the square at Tripoli's and Cristy's on the Salisbury Beach boardwalk. It doesn't taste like any other pizza in America, and that's the point.
 
-The two non-negotiables: sugar in the sauce, and whole provolone slices instead of shredded mozzarella. Everything else is forgiving. Here's our home version, tested until our kids couldn't tell the difference.
+The two non-negotiables: sugar in the sauce, and whole provolone slices instead of shredded mozzarella. Everything else is forgiving. Here's how to make it at home.
+
+This is a kitchen-oven pan pizza — a half-sheet pan won't fit a compact outdoor oven like the Ninja Woodfire.

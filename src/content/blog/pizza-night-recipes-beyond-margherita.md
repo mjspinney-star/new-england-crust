@@ -10,7 +10,7 @@ Margherita is a perfect pizza. We're not arguing otherwise. Tomato, fresh mozzar
 
 But you cannot serve it three weekends in a row to the same friends without someone bringing up pineapple just to start something. And more to the point: you have a high-heat backyard oven and nine months of pizza nights ahead of you. There's room to be more interesting than this. One of the things we like most about backyard pizza night as a format is that the oven does something a home oven simply can't — it gives you a browned edge, bubbling mozzarella, and a crisp bottom in about five minutes. That's worth using for more than one recipe.
 
-What follows are nine combinations we've landed on through trial, error, and feedback from people standing at the dough table. Some are weeknight simple. A couple require advance prep. One is specifically designed to make guests ask what's on this and immediately build a second one.
+What follows are nine combinations worth working into the rotation. Some are weeknight simple. A couple require advance prep. One is specifically designed to make guests ask what's on this and immediately build a second one.
 
 ---
 
@@ -18,7 +18,7 @@ What follows are nine combinations we've landed on through trial, error, and fee
 
 All nine of these recipes work with any reasonably good pizza dough, but they really shine on a cold-fermented dough. The longer fermentation develops enough flavor and extensibility that the dough holds up against big, bold toppings without getting soggy or bready. If you haven't made it yet, [here's why we cold-ferment and the dough we use](/blog/72-hour-cold-ferment-dough/). It's about 15 minutes of work, a day or two ahead.
 
-How we cook all of these on our Ninja Woodfire: preheat to 550°F (about 20 minutes), confirm the stone is around 540°F with an infrared thermometer rather than trusting the display, brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then top it and bake for about 5 minutes without turning it. Timings below assume that routine.
+These nine are recipe ideas, not pies we've cooked yet. They're topping-forward pies rather than heat-defined styles, so on a Ninja Woodfire the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, brush the dough with oil and par-bake about 1:30, then top and bake about 5 minutes. Timings below assume that routine — watch the first one closely.
 
 ---
 
@@ -28,7 +28,7 @@ This is the pizza that converts people. Classic pepperoni, but finished with a d
 
 **Build:** San Marzano sauce, low-moisture mozzarella, cup-and-char pepperoni. After the bake, drizzle hot honey and scatter a few fresh basil leaves.
 
-The fat from the cup-and-char pepperoni cups collects during the bake — that's the version you want, not the flat deli slices. The hot honey hits the warm fat and creates something that is somehow both spicy and sweet and savory all at once. About 5 minutes on our Ninja after the par-bake.
+The fat from the cup-and-char pepperoni cups collects during the bake — that's the version you want, not the flat deli slices. The hot honey hits the warm fat and creates something that is somehow both spicy and sweet and savory all at once. About 5 minutes after the par-bake on the 550°F routine.
 
 ---
 
@@ -48,7 +48,7 @@ A good make-ahead pizza for nights when you want something hearty without standi
 
 **Build:** Basil pesto as the base (store-bought works fine, homemade is better), shredded or thinly sliced rotisserie chicken, sun-dried tomatoes in oil (pat them dry first — excess oil can make the base soggy), low-moisture mozzarella, and a handful of fresh basil after the bake.
 
-A few notes: don't over-sauce with the pesto or the crust will steam instead of crisp. The sun-dried tomatoes carry a lot of flavor — four or five per pizza is enough. If you want to go a step further, a few strips of roasted red pepper under the cheese add sweetness and color. This one holds its heat well, so it's a good option for the second or third round when guests are already eating and the pressure is off. It also happens to be the pizza that reheats best the next day if anything survives the night.
+A few notes: don't over-sauce with the pesto or the crust will steam instead of crisp. The sun-dried tomatoes carry a lot of flavor — four or five per pizza is enough. If you want to go a step further, a few strips of roasted red pepper under the cheese add sweetness and color. This one holds its heat well, so it's a good option for the second or third round when guests are already eating and the pressure is off. It's also a good candidate for reheating the next day, if anything survives the night.
 
 ---
 
@@ -64,7 +64,7 @@ The lemon zest is the move here — it brightens the richness of the ricotta in 
 
 ## 5. Apple, gorgonzola, and walnut
 
-The fall pizza. We start making this in September when the first good apples show up at farmstands and keep making it through October. If you've never had fruit on a savory pizza beyond the pineapple debate, this is the introduction.
+The fall pizza. This is a September-to-October pie, when the first good apples show up at farmstands. If you've never had fruit on a savory pizza beyond the pineapple debate, this is the introduction.
 
 **Build:** Thin layer of olive oil or a very light béchamel as the base, low-moisture mozzarella, thinly sliced apple (Honeycrisp or Granny Smith — something with structure and acidity), crumbled gorgonzola, and roughly chopped walnuts. After the bake, a light drizzle of honey and a few fresh thyme leaves.
 
@@ -84,7 +84,7 @@ The key: don't pile the mushrooms. A single layer that has space to breathe will
 
 ## 7. Korean BBQ short rib
 
-This is the one that makes guests stop mid-conversation. It requires advance work — the short rib needs to marinate and cook ahead of time — but the payoff on the pizza is significant.
+This is the one built to make guests stop mid-conversation. It requires advance work — the short rib needs to marinate and cook ahead of time — but the payoff on the pizza is significant.
 
 **Build:** Thin layer of gochujang thinned with a bit of sesame oil as the base, low-moisture mozzarella, thin slices of cooked Korean BBQ short rib (or kalbi-style beef from the butcher, marinated in soy, sesame, garlic, brown sugar, pear). After the bake, a scatter of sliced scallions, sesame seeds, and a small drizzle of sriracha mayo.
 
@@ -96,7 +96,7 @@ If making the beef from scratch is too much for a pizza night, Korean BBQ short 
 
 For the morning after pizza night, when there's leftover dough in the fridge and guests who stayed over. This is worth keeping a ball or two of dough back specifically for.
 
-**Build:** Olive oil base, shredded low-moisture mozzarella, cooked and crumbled breakfast sausage or crisped bacon, a handful of caramelized onions if you have them. Build it on the par-baked crust and bake for about 2 minutes, then crack two eggs directly onto the pizza and finish the bake until the whites are just set and the yolks are still runny — about another 2–3 minutes at our usual 550°F.
+**Build:** Olive oil base, shredded low-moisture mozzarella, cooked and crumbled breakfast sausage or crisped bacon, a handful of caramelized onions if you have them. Build it on the par-baked crust and bake for about 2 minutes, then crack two eggs directly onto the pizza and finish the bake until the whites are just set and the yolks are still runny — about another 2–3 minutes on the 550°F routine.
 
 Finish with chili flakes, flaky salt, and fresh chives. The egg yolk breaks when you slice it and runs into the crust, which is exactly right.
 
@@ -106,7 +106,7 @@ Finish with chili flakes, flaky salt, and fresh chives. The egg yolk breaks when
 
 This gets made last, when the oven is on its way down from peak temp, and it buys 15 minutes of peace at the end of the night. Kids love it. Adults eat it too, quietly, without making eye contact.
 
-**Build:** Nutella spread thin as the base on a stretched dough round, mini marshmallows scattered across, a handful of chocolate chips, and crushed graham crackers. At our usual 550°F, the marshmallows puff and toast and the chocolate melts in about 3 minutes. Use the par-baked crust so the base is set before the sweet toppings go on.
+**Build:** Nutella spread thin as the base on a stretched dough round, mini marshmallows scattered across, a handful of chocolate chips, and crushed graham crackers. On the 550°F routine, the marshmallows puff and toast and the chocolate melts in about 3 minutes. Use the par-baked crust so the base is set before the sweet toppings go on.
 
 Watch it closely. Marshmallows go from perfectly toasted to scorched faster than any other topping on this list. One minute of distraction is the difference between golden and ruined. Have the cutting board ready, stay at the oven, and pull it the moment the marshmallows are toasted and the chocolate is visibly melted. Let it rest for 90 seconds before cutting — the marshmallow will be lava-hot straight off the stone. Slice into small squares rather than wedges so kids can grab pieces without the whole thing falling apart.
 

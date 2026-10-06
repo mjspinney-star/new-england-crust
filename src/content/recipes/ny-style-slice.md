@@ -23,13 +23,13 @@ instructions:
   - step: "Mix and cold ferment"
     text: "Knead all dough ingredients 8 minutes until smooth, ball into two 420 g balls, and refrigerate 48 hours. The oil and sugar are what make the slice tender enough to fold instead of crack."
   - step: "Preheat the steel an hour"
-    text: "Baking steel on an upper-middle rack, oven at its max (usually 550°F), for a full 60 minutes. The steel is what compresses a 15-minute home bake into a deck-oven 8."
+    text: "Baking steel on an upper-middle rack of your kitchen oven, set to its max (usually 550°F), for a full 60 minutes. The steel is what compresses a 15-minute home bake into a deck-oven 8."
   - step: "Stretch big and thin"
     text: "Temper the dough 2 hours, then stretch to a full 16 inches — over your knuckles for the last few. Thin center, modest rim."
   - step: "Sauce, then cheese, edge-conscious"
     text: "Sauce in a spiral leaving a half-inch rim, then an even layer of shredded mozzarella. Simple is the style. Pepperoni is the one sanctioned upgrade."
   - step: "Bake 7–8 minutes"
-    text: "Launch onto the steel. Pull when the rim is spotted brown and the underside has real color. Rest 2 minutes, cut into 8, and fold your slice like you're walking somewhere."
+    text: "Launch onto the steel in your kitchen oven. Pull when the rim is spotted brown and the underside has real color. Rest 2 minutes, cut into 8, and fold your slice like you're walking somewhere."
 keywords:
   - "NY style pizza recipe"
   - "New York pizza dough"
@@ -39,3 +39,5 @@ draft: false
 ---
 
 New England has its own styles, but let's be honest: half of us measure every slice against the one we had outside Fenway or on a trip down to the city. The good news is that NY-style is the most home-oven-friendly of all the classic styles — no 900-degree oven required, just a steel, patience with the preheat, and a dough with a little oil and sugar in it.
+
+This is a kitchen-oven recipe built around a baking steel.

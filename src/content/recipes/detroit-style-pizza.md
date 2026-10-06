@@ -27,7 +27,7 @@ instructions:
   - step: "Sauce ON TOP, in stripes"
     text: "Two or three ladled stripes of the cooked sauce over the cheese — 'racing stripes.' Sauce on top keeps the crumb light."
   - step: "Bake hot and low"
-    text: "500°F, lowest rack, 13–15 minutes, until the edges are deep mahogany. Run a knife around the frico immediately and lift the whole pie out to a rack so the bottom stays crisp."
+    text: "Bake in your kitchen oven at 500°F on the lowest rack, 13–15 minutes, until the edges are deep mahogany. Run a knife around the frico immediately and lift the whole pie out to a rack so the bottom stays crisp."
 keywords:
   - "Detroit style pizza recipe"
   - "Detroit pizza pan recipe"
@@ -36,4 +36,6 @@ keywords:
 draft: false
 ---
 
-Not a New England style — but it's the pan pizza that conquered the country over the last decade, and once you've mastered our beach and bar pizzas, the Detroit pan is the natural next flex. Airy like focaccia inside, walled with caramelized cheese, sauce laid on top in stripes like it's showing off. Because it is.
+Not a New England style — but it's the pan pizza that conquered the country over the last decade, and once you've mastered the beach and bar pizzas, the Detroit pan is the natural next flex. Airy like focaccia inside, walled with caramelized cheese, sauce laid on top in stripes like it's showing off. Because it is.
+
+This is a kitchen-oven pan pizza — a 10x14 pan won't fit a compact outdoor oven like the Ninja Woodfire.

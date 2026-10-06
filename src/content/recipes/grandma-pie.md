@@ -27,7 +27,7 @@ instructions:
   - step: "Cheese first, then sauce"
     text: "Mozzarella straight on the dough, edge to edge, then the crushed tomato sauce in dollops and stripes over the cheese. Inverting the layers keeps the thin crust from going soggy."
   - step: "Bake"
-    text: "475°F on the lowest rack, 16–18 minutes, until the underside is golden-fried from the garlic oil and the sauce has concentrated."
+    text: "Bake in your kitchen oven at 475°F on the lowest rack, 16–18 minutes, until the underside is golden-fried from the garlic oil and the sauce has concentrated."
   - step: "Finish and square it up"
     text: "Basil, pecorino, one more thread of oil. Cut into little squares — grandma pie is meant to disappear three squares at a time."
 keywords:
@@ -38,4 +38,6 @@ keywords:
 draft: false
 ---
 
-The grandma pie is the sheet-pan pizza for people who decided on pizza two hours ago, not two days ago. Thin, garlicky, cheese hiding under the sauce — and the single best recipe in this library for feeding a soccer team on short notice. Ask us how we know.
+The grandma pie is the sheet-pan pizza for people who decided on pizza two hours ago, not two days ago. Thin, garlicky, cheese hiding under the sauce — and the easiest way to feed a crowd on short notice.
+
+This is a kitchen-oven pan pizza — a half-sheet pan won't fit a compact outdoor oven like the Ninja Woodfire.

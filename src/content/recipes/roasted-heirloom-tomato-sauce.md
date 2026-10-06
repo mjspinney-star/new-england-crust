@@ -1,6 +1,6 @@
 ---
 title: "Roasted Heirloom Tomato Sauce"
-description: "Every August, New England farm stands overflow with heirloom tomatoes. We slow-roast them until deeply caramelized, finish with fresh basil and good olive oil. The best pizza sauce we've ever made — and it only exists for about six weeks a year."
+description: "Every August, New England farm stands overflow with heirloom tomatoes. Slow-roast them until deeply caramelized, then finish with fresh basil and good olive oil. Few pizza sauces are better — and this one only exists for about six weeks a year."
 pubDate: 2026-08-01
 category: "recipes"
 tags: ["sauce", "heirloom tomatoes", "new england", "seasonal", "roasted"]
@@ -25,9 +25,9 @@ instructions:
   - step: "Rest and peel the garlic"
     text: "Let the pan cool for 10 minutes. Squeeze the garlic from its skins directly onto the pan — it should be soft and golden, almost paste-like. Discard the skins."
   - step: "Build the sauce"
-    text: "Scrape everything from the pan — tomatoes, garlic, all the roasting juices — into a food mill or blender. Add the fresh basil and the remaining tablespoon of olive oil. For a smooth sauce: blend until completely smooth, then pass through a fine mesh strainer to catch seeds and any remaining skin. For a rougher, more rustic texture: pulse briefly in a food processor or crush with a fork — we actually prefer this for the Ninja, where the oven's high heat finishes the cooking and a little texture holds up better than a thin purée."
+    text: "Scrape everything from the pan — tomatoes, garlic, all the roasting juices — into a food mill or blender. Add the fresh basil and the remaining tablespoon of olive oil. For a smooth sauce: blend until completely smooth, then pass through a fine mesh strainer to catch seeds and any remaining skin. For a rougher, more rustic texture: pulse briefly in a food processor or crush with a fork — the better choice for a hot pizza oven, where the high heat finishes the cooking and a little texture holds up better than a thin purée."
   - step: "Season and taste"
-    text: "Add the red wine vinegar — it brightens everything. Taste for salt. This sauce is more concentrated than canned, so a little goes a long way; we use about 3–4 tablespoons per pizza, not a full ladle."
+    text: "Add the red wine vinegar — it brightens everything. Taste for salt. This sauce is more concentrated than canned, so a little goes a long way; about 3–4 tablespoons per pizza is plenty, not a full ladle."
 keywords:
   - "heirloom tomato sauce"
   - "roasted tomato pizza sauce"
@@ -37,9 +37,9 @@ keywords:
 
 There's a narrow window in late summer — maybe six weeks, maybe less — when the farm stands along Route 1 and the Saturday markets are stacked with heirloom tomatoes in shapes that don't make sense. Brandywines the size of softballs. Green Zebras that look like something you'd find in a tide pool. Cherokee Purples with color that has no business being on a tomato.
 
-We buy too many every time. And then we make this sauce.
+Buy too many. Then make this sauce.
 
-This is not a quick weeknight sauce. It takes about 90 minutes start to finish, most of that hands-off in the oven. What comes out is deeply caramelized, sweet without any added sugar, and complicated in a way that canned tomatoes can't touch. We make it in bulk and freeze in half-cup portions. When February comes and the Ninja is cold, a container of this thawed in a saucepan is the closest thing to August we've found.
+This is not a quick weeknight sauce. It takes about 90 minutes start to finish, most of that hands-off in the oven. What comes out is deeply caramelized, sweet without any added sugar, and complicated in a way that canned tomatoes can't touch. It freezes well in half-cup portions. When February comes and the outdoor oven is cold, a container of this thawed in a saucepan is about as close to August as it gets.
 
 ---
 
@@ -47,15 +47,15 @@ This is not a quick weeknight sauce. It takes about 90 minutes start to finish, 
 
 **On tomato variety:** Brandywines and Cherokee Purples give the deepest, most complex flavor. Green Zebras add brightness and acidity. We don't recommend using only cherry tomatoes here — they're too sweet and watery on their own, better as a topping.
 
-**On timing:** The sauce holds in the fridge for five days. It freezes beautifully for up to three months — we portion into half-cup containers, which is just right for two or three pizzas. Label and date. Future-you will be grateful in February.
+**On timing:** The sauce holds in the fridge for five days. It freezes beautifully for up to three months — portion it into half-cup containers, which is just right for two or three pizzas. Label and date. Future-you will be grateful in February.
 
 **On yield:** Three pounds of tomatoes yields roughly 1½ to 2 cups of finished sauce after roasting and straining. Heirlooms vary a lot in water content, so don't be surprised if the yield is less from a particularly meaty variety.
 
-**On the Ninja:** If you're using the Woodfire on Pizza mode, the additional caramelization from the oven does the rest of the work. Don't overload the pie — this sauce is concentrated, and a thin layer is exactly right.
+**On the Ninja:** On a Ninja Woodfire, the additional caramelization from the oven does the rest of the work. Don't overload the pie — this sauce is concentrated, and a thin layer is exactly right.
 
 ---
 
 ## Related
 
-- [The cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the dough we use under this sauce
+- [The cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — a good base for this sauce
 - [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/) — more ideas for what to put on top

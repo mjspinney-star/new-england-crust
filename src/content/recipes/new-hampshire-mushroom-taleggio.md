@@ -1,14 +1,14 @@
 ---
 title: "New Hampshire Mushroom & Taleggio"
-description: "Foraged hens-of-the-woods, taleggio, thyme, a hit of lemon when it comes off the peel. This one tastes like the woods smell in October."
+description: "Hens-of-the-woods, taleggio, thyme, a hit of lemon when it comes off the peel. This one tastes like the woods smell in October."
 pubDate: 2026-09-15
 category: "recipes"
-tags: ["mushroom", "taleggio", "white pizza", "fall", "new england", "foraged"]
+tags: ["mushroom", "taleggio", "white pizza", "fall", "new england", "maitake"]
 draft: false
 style: "white-pizza"
 prepTime: "PT20M"
-cookTime: "PT4M"
-totalTime: "PT24M"
+cookTime: "PT7M"
+totalTime: "PT27M"
 servings: "One 10–12 inch pizza"
 ingredients:
   - "Mushrooms — 8 oz hens-of-the-woods (maitake) mushrooms — or cremini if that's what's available, sliced thick"
@@ -29,17 +29,15 @@ instructions:
   - step: "Build on the peel"
     text: "Stretch your dough ball and lay it on a floured peel. Work quickly — dough on a peel is borrowing time. Brush the surface with olive oil, leaving a half-inch border. Scatter the Parmigiano evenly over the oil. Distribute the taleggio pieces — don't try to cover every inch, leave gaps, the cheese will spread and pool. Pile the mushrooms on top. Season lightly with black pepper and a pinch of flaky salt. No additional salt — the taleggio and Parmigiano are already doing the work."
   - step: "Launch and bake"
-    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. The cheese should be fully melted and beginning to brown at the edges, and the crust deep golden. In a hotter 850°F+ oven, expect roughly 2–3 minutes total with a turn partway — and watch the taleggio, which moves fast at high heat."
+    text: "On a Ninja Woodfire, the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, brush the dough with oil and par-bake about 1:30, then top and bake about 5 minutes. We haven't made this one yet, so watch it — pull it when the cheese is melted and browning at the edges."
   - step: "Finish"
     text: "Slide off the peel onto a cutting board. Immediately: a squeeze of lemon over the entire surface, a scatter of fresh thyme leaves, and a few flakes of salt. Let it sit 90 seconds before cutting — taleggio needs a moment to set or it runs off the slice."
 gear:
   - name: "Ninja Woodfire Outdoor Oven"
     url: "https://amzn.to/4obF5K3"
-    note: "live Amazon Associates link"
     affiliateId: "ninja-woodfire-oven"
   - name: "Etekcity Infrared Thermometer"
     url: "https://amzn.to/3RHkZLA"
-    note: "live Amazon Associates link — for checking stone temp before launch"
     affiliateId: "infrared-thermometer"
 keywords:
   - "mushroom taleggio pizza"
@@ -50,9 +48,9 @@ keywords:
 
 In September and October, hens-of-the-woods mushrooms — maitake, if you're buying from a market — start showing up at the base of oaks around here. They're unmistakable: big frilly clusters, tan and brown, growing in rosettes close to the ground. They smell like the forest floor. They taste like what you'd want a mushroom to taste like.
 
-This pizza came out of a farmers market trip where we bought more than we needed and had to figure out what to do with them. Taleggio was in the cheese case. That combination — earthy, funky, fatty — turned out to be one of the best pies we've made. No red sauce. No mozzarella. Just the mushrooms, the cheese, thyme, and a squeeze of lemon at the end that makes everything else louder.
+Pair them with taleggio and the combination — earthy, funky, fatty — works because each part covers for the others: the mushrooms bring depth and a little meatiness, the taleggio brings funk and fat, and the thyme ties it all to the season. No red sauce. No mozzarella. Just the mushrooms, the cheese, thyme, and a squeeze of lemon at the end that makes everything else louder.
 
-We make it in fall. It wouldn't be right any other time of year.
+It's a fall pie — this is when hens-of-the-woods show up.
 
 ---
 
@@ -60,7 +58,7 @@ We make it in fall. It wouldn't be right any other time of year.
 
 **On taleggio:** Buy it from a cheese counter if you can, not pre-packaged. It should smell assertive but not alarming — barnyard, not spoiled. The rind is edible but turns papery at oven temperatures; removing it gives you a cleaner melt.
 
-**On the mushrooms:** Hens-of-the-woods can vary enormously in size. Break or cut them into pieces no larger than a silver dollar before cooking — larger pieces won't have time to cook through in a 3-minute bake.
+**On the mushrooms:** Hens-of-the-woods can vary enormously in size. Break or cut them into pieces no larger than a silver dollar before cooking — larger pieces won't cook through in a short bake.
 
 **On sourcing:** If you're in New Hampshire or Vermont, check farmers markets in September–October. If you're buying from a grocery store, maitake is the same mushroom under its Japanese name. Cremini or shiitake will work but give a less interesting result.
 
@@ -70,5 +68,5 @@ We make it in fall. It wouldn't be right any other time of year.
 
 ## Related
 
-- [The cold-ferment dough](/blog/72-hour-cold-ferment-dough/) — the base we use under this
+- [The cold-ferment dough](/blog/72-hour-cold-ferment-dough/)
 - [9 Pizza Recipes Beyond Margherita](/blog/pizza-night-recipes-beyond-margherita/)

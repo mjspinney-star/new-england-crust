@@ -1,6 +1,6 @@
 ---
 title: "Grilled Corn and Poblano Pizza: A Late-Summer Backyard Pie Worth Making Once a Season"
-description: "Sweet grilled corn, charred poblano, and melted mozzarella on a crispy outdoor-cooked crust — this is the late-summer backyard pizza we make every August."
+description: "Sweet grilled corn, charred poblano, and melted mozzarella on a crispy outdoor-cooked crust — a late-summer backyard pizza built for August."
 pubDate: 2026-07-02
 category: recipe
 tags: [recipe, grilled corn, poblano, summer pizza, backyard cooking]
@@ -8,7 +8,7 @@ relatedPosts: ["pizza-night-recipes-beyond-margherita", "backyard-pizza-night-se
 draft: false
 ---
 
-August in New England is short. You know this. So when the farm stand has real corn — the kind that smells like something — and the grocery store actually has decent poblanos, we stop what we are doing and make this pizza.
+August in New England is short. You know this. So when the farm stand has real corn — the kind that smells like something — and the grocery store actually has decent poblanos, it is time to stop what you are doing and make this pizza.
 
 It is not a year-round pie. That is the whole point.
 
@@ -27,7 +27,7 @@ Skip the red sauce entirely. This pie uses olive oil as the base, and the char f
 
 ## Grill the Corn and Poblano First
 
-Get your grill hot — or fire up whatever outdoor oven you are running. We bake the pizza itself on our **Ninja Woodfire**; a standard gas or charcoal grill handles the corn and poblano step well.
+Get your grill hot — or fire up whatever outdoor oven you are running. The pizza itself bakes in the outdoor oven; a standard gas or charcoal grill handles the corn and poblano step well.
 
 Grill the corn directly over the flame, turning until you get real char marks on most of the kernels. Cut the kernels off the cob once it is cool enough to handle. Char the poblano until the skin blisters all over, then seal it in a bowl with a plate on top for ten minutes. Peel, seed, and slice it into thin strips.
 
@@ -37,9 +37,7 @@ This step takes about twenty minutes. Do not rush it — the char is the flavor.
 
 Stretch your dough to about 11 or 12 inches. Brush the surface with olive oil, then scatter the mozzarella across it, leaving an inch at the edge. Lay the corn kernels and poblano strips over the cheese. Season with salt and black pepper.
 
-On our Ninja, we preheat to 550°F (the stone reads around 540°F), par-bake the oiled dough for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. In a hotter 900°F+ oven, it's closer to 75 to 90 seconds with a turn halfway.
-
-Pull it when the crust is spotted and the cheese has color on the edges.
+On a Ninja Woodfire, the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, brush the dough with oil and par-bake about 1:30, then top and bake about 5 minutes. We haven't made this one yet, so watch it — pull it when the crust is spotted and the cheese has color on the edges. In a dedicated 900°F+ oven, expect closer to 75 to 90 seconds with a turn halfway.
 
 ## Honest Assessment
 

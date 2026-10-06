@@ -26,7 +26,7 @@ instructions:
   - step: "Sauce and cheese to the edge"
     text: "Thin layer of sauce, then the mozzarella-cheddar blend spread ALL the way to the pan wall, touching metal. That contact point is what becomes the laced edge."
   - step: "Bake on the floor of the oven"
-    text: "Bake at 525°F on the lowest rack or oven floor for 13–15 minutes, until the edge is deep brown and lacy and the bottom is crisp enough to tap."
+    text: "Bake in your kitchen oven at 525°F on the lowest rack or oven floor for 13–15 minutes, until the edge is deep brown and lacy and the bottom is crisp enough to tap."
   - step: "Cut in the pan"
     text: "Cut into small squares or slim slices right in the pan, tavern style. Serve with a cold beverage of legal choice."
 keywords:
@@ -41,3 +41,5 @@ draft: false
 South of Boston, pizza means something specific: a 10-inch pan, a thin crackly crust, and cheese burned onto the rim in a dark ring the locals call lace. Order one anywhere from Quincy to Brockton and nobody asks what size — there's only one size.
 
 The whole trick happens where the cheese meets the pan wall. Don't be timid about it.
+
+This is a kitchen-oven pan pizza — a 10-inch pan won't fit a compact outdoor oven like the Ninja Woodfire.

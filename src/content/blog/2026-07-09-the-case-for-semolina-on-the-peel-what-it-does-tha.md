@@ -40,7 +40,7 @@ We do not use semolina on the stone itself — just the peel.
 
 ## The Honest Downside
 
-Semolina burns faster than flour on the stone. If your oven is running at 900°F or above — which it should be for Neapolitan-style — you will see dark spots on the bottom of the crust from semolina that transferred off the peel. It does not usually affect the flavor much, but it is there.
+Semolina burns faster than flour on the stone. In a very hot oven (900°F and up), you will see dark spots on the bottom of the crust from semolina that transferred off the peel. It does not usually affect the flavor much, but it is there.
 
 If that bothers you, use less and shake the peel before launching.
 

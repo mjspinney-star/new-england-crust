@@ -47,6 +47,7 @@ const recipes = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
+    tested: z.boolean().default(false),
     heroImage: z.string().optional(),
 
     // --- Legacy fields (existing published recipes use these — keep
@@ -74,8 +75,7 @@ const recipes = defineCollection({
     calories: z.number().optional(),
     ingredients: z.array(z.string()).default([]),
     instructions: z.array(instructionStep).default([]),
-    // Affiliate/owned gear used in the recipe (Ooni, Ninja Artisan, Solo
-    // Stove Pi, etc.). Rendered as a disclosed "Gear we used" callout.
+    // Affiliate/owned gear used in the recipe (oven, peel, tools, etc.). Rendered as a disclosed "Gear we used" callout.
     gear: z.array(gearItem).default([]),
     keywords: z.array(z.string()).default([]),
   }),

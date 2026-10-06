@@ -26,7 +26,7 @@ instructions:
   - step: "Heavy-handed sauce"
     text: "Greek pizza sauce is thick, red, and loud with oregano. Spread it generously, leaving a small rim."
   - step: "Cheese blend and bake"
-    text: "Top with the mozzarella-provolone mix. Bake at 475°F on the lowest rack, 14–16 minutes. The oil essentially fries the bottom crust golden while the crumb stays chewy."
+    text: "Top with the mozzarella-provolone mix. Bake in your kitchen oven at 475°F on the lowest rack, 14–16 minutes. The oil essentially fries the bottom crust golden while the crumb stays chewy."
   - step: "Check the underside"
     text: "Lift an edge — the bottom should be deep golden and crisp from the oil. If pale, give it 2 more minutes on the oven floor."
 keywords:
@@ -40,3 +40,5 @@ draft: false
 Every New England town has one: a place called Something House of Pizza, run by a Greek family, serving a pizza that exists nowhere else in the world. Chewy, oily-bottomed (complimentary), with sauce that hits you with oregano before anything else.
 
 Nobody outside New England understands this pizza. Their loss. Here's how to make it at home.
+
+This is a kitchen-oven pan pizza — a deep round pan won't fit a compact outdoor oven like the Ninja Woodfire.

@@ -5,11 +5,12 @@ pubDate: 2026-06-01
 category: "recipes"
 tags: ["pesto", "fresh mozzarella", "basil", "white pizza", "summer", "simple"]
 draft: false
+tested: true
 style: "white-pizza"
 heroImage: "/assets/recipes/pesto-mozzarella-basil/pesto-mozzarella-basil-pizza-hero.jpg"
 prepTime: "PT15M"
-cookTime: "PT4M"
-totalTime: "PT19M"
+cookTime: "PT7M"
+totalTime: "PT22M"
 servings: "One 10–12 inch pizza"
 ingredients:
   - "Pesto (makes enough for 2 pizzas) — 2 cups packed fresh basil leaves"
@@ -28,17 +29,22 @@ ingredients:
 instructions:
   - step: "Make the pesto"
     text: "Combine basil, garlic, and pine nuts in a food processor. Pulse until roughly chopped. Add the Parmigiano and pulse again. With the machine running, stream in the olive oil. Season with salt and lemon juice. Taste — it should be bright, garlicky, and salty enough to season the whole pie. If making ahead, press plastic wrap directly against the surface to prevent browning. It'll hold for a day in the fridge, but fresh is noticeably better."
-  - step: "Build on the peel"
-    text: "Stretch your dough ball and lay it on a well-floured peel. Work quickly. Spread pesto across the surface, leaving a ¾-inch border. Don't overthink this — 4–5 tablespoons is about right. Too much and the pie gets heavy and soggy; too little and the crust is dry. Distribute the torn mozzarella pieces evenly. Leave some gaps — the mozzarella will spread as it melts, and you want it to pool slightly in places rather than form a solid layer. Season with a small pinch of flaky salt and a light drizzle of olive oil over the cheese."
+  - step: "Stretch and oil"
+    text: "Stretch your dough ball and lay it on a well-floured peel. Work quickly. Brush the surface lightly with oil."
     images:
       - src: "/assets/recipes/pesto-mozzarella-basil/pesto-pizza-dough-prep.jpg"
         alt: "Stretched dough ball ready on a floured peel"
+  - step: "Preheat and par-bake"
+    text: "Preheat the Ninja Woodfire to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Launch the oiled dough bare and par-bake it for about 1 minute 30 seconds."
+  - step: "Top the shell"
+    text: "Pull the shell back onto the peel. Spread pesto across the surface, leaving a ¾-inch border. Don't overthink this — 4–5 tablespoons is about right. Too much and the pie gets heavy and soggy; too little and the crust is dry. Distribute the torn mozzarella pieces evenly. Leave some gaps — the mozzarella will spread as it melts, and you want it to pool slightly in places rather than form a solid layer. Season with a small pinch of flaky salt and a light drizzle of olive oil over the cheese."
+    images:
       - src: "/assets/recipes/pesto-mozzarella-basil/pesto-pizza-spreading-sauce.jpg"
         alt: "Spreading fresh pesto across the stretched dough"
       - src: "/assets/recipes/pesto-mozzarella-basil/pesto-pizza-topped-prebake.jpg"
         alt: "Pesto pizza topped with torn mozzarella, ready to launch"
-  - step: "Launch and bake"
-    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. You're looking for a golden crust and mozzarella that's fully melted with some color at the edges. Don't walk it past this — pesto can turn bitter if it sits on a hot stone too long. In a hotter 850°F+ oven, expect roughly 60–90 seconds with a turn partway, and watch it closely: pesto browns faster than tomato sauce."
+  - step: "Bake"
+    text: "Slide it back onto the stone and bake for about 5 minutes without turning. You're looking for a golden crust and mozzarella that's fully melted with some color at the edges. Don't walk it past this — pesto can turn bitter if it sits on a hot stone too long."
     images:
       - src: "/assets/recipes/pesto-mozzarella-basil/pesto-pizza-ninja-woodfire-oven.jpg"
         alt: "Pesto pizza baking in the Ninja Woodfire oven"
@@ -50,7 +56,6 @@ instructions:
 gear:
   - name: "Ninja Woodfire Outdoor Oven"
     url: "https://amzn.to/4obF5K3"
-    note: "live Amazon Associates link"
     affiliateId: "ninja-woodfire-oven"
 keywords:
   - "pesto pizza recipe"

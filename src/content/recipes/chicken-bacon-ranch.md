@@ -6,10 +6,11 @@ pubDate: 2026-06-01
 category: "recipes"
 tags: ["chicken", "bacon", "ranch", "crowd pleaser", "white pizza", "kids"]
 draft: false
+tested: true
 style: "white-pizza"
 prepTime: "PT20M"
-cookTime: "PT4M"
-totalTime: "PT24M"
+cookTime: "PT7M"
+totalTime: "PT27M"
 servings: "One 10–12 inch pizza"
 ingredients:
   - "Ranch base — 3 tablespoons mayonnaise (full fat)"
@@ -34,10 +35,14 @@ instructions:
     text: "Combine all ranch ingredients in a small bowl and whisk until smooth. Taste — it should be tangy, herby, and well-seasoned. This base is thicker than pourable ranch dressing; it should hold its shape on the dough. If it's too thick to spread, add another small splash of buttermilk. This keeps in the fridge for 4–5 days. We always make a double batch."
   - step: "Cook the bacon and prep the chicken"
     text: "Cook the bacon until genuinely crispy — not chewy, crispy. It's going on a hot stone and needs to survive the bake without turning to rubber. Drain on paper towels, then crumble into pieces. If using rotisserie chicken, shred the meat and season lightly with salt and pepper. If cooking from scratch, a simple roast or poached breast works. Either way, the chicken should be pre-cooked — it won't have enough time to cook through on the stone."
-  - step: "Build on the peel"
-    text: "Stretch your dough and lay it on a well-floured peel. Spread the ranch base evenly across the surface, leaving a ¾-inch border. Scatter the shredded mozzarella over the ranch. Distribute the chicken and half the scallions. Add the bacon crumbles. Finish with the Parmigiano and a pinch of red pepper flakes. Don't overload the pie. This one has several components, and the instinct is always to add more of everything. Resist. A crowded pie takes longer to bake and the crust suffers."
-  - step: "Launch and bake"
-    text: "Ninja Woodfire (how we cook it): preheat to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Brush the stretched dough with oil and par-bake it for about 1 minute 30 seconds, then add the toppings and bake for about 5 minutes without turning. The mozzarella should be fully melted and beginning to brown, and the crust deeply golden underneath. Because this pie has a creamy base, check the underside before pulling — it can look done on top while the bottom needs another minute."
+  - step: "Stretch and oil"
+    text: "Stretch your dough and lay it on a well-floured peel. Brush the surface lightly with oil."
+  - step: "Preheat and par-bake"
+    text: "Preheat the Ninja Woodfire to 550°F for about 20 minutes and confirm the stone reads around 540°F with an infrared thermometer. Launch the oiled dough bare and par-bake it for about 1 minute 30 seconds."
+  - step: "Top the shell"
+    text: "Pull the shell back onto the peel. Spread the ranch base evenly across the surface, leaving a ¾-inch border. Scatter the shredded mozzarella over the ranch. Distribute the chicken and half the scallions. Add the bacon crumbles. Finish with the Parmigiano and a pinch of red pepper flakes. Don't overload the pie. This one has several components, and the instinct is always to add more of everything. Resist. A crowded pie takes longer to bake and the crust suffers."
+  - step: "Bake"
+    text: "Slide it back onto the stone and bake for about 5 minutes without turning. The mozzarella should be fully melted and beginning to brown, and the crust deeply golden underneath. Because this pie has a creamy base, check the underside before pulling — it can look done on top while the bottom needs another minute."
   - step: "Finish"
     text: "Off the peel, scatter the remaining raw scallions across the top. The contrast between cooked and fresh scallion is subtle but right. Optional: a thin drizzle of extra ranch base, straight from the bowl, across the finished pie. This is not subtle. People will comment on it."
 gear:
