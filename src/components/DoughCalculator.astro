@@ -1,0 +1,425 @@
+---
+/**
+ * New England Crust — Cold-Ferment Dough Calculator
+ *
+ * Usage (in an .astro page or .mdx post):
+ *   import DoughCalculator from '../components/DoughCalculator.astro';
+ *   <DoughCalculator />                 // standalone tool page
+ *   <DoughCalculator preset="house" />  // explicit preset
+ *
+ * Presets: "house" (more styles to be added once their recipes are aligned)
+ * Runs entirely client-side. No API, no storage, safe on Workers static assets.
+ *
+ * "house" matches the Caputo 00 breadmaker dough (500 g flour, 65% water,
+ * 13 g salt, 1.5 g dry yeast; bread machine Dough cycle; 24-48 h fridge;
+ * pull 1-2 h before baking; Ninja Woodfire preheat ~20 min).
+ */
+interface Props {
+  preset?: 'house';
+  title?: string;
+}
+const { preset = 'house', title = 'Cold-ferment dough calculator' } = Astro.props;
+---
+
+<section class="ndc" data-dough-calc data-preset={preset} aria-label={title}>
+  <h2 class="ndc-title">{title}</h2>
+  <p class="ndc-intro">
+    Pick your pizza and when you want to eat. You'll get ingredient weights, yeast scaled to your
+    fridge and ferment time, and a schedule for when to mix.
+  </p>
+
+  <div class="ndc-grid">
+    <form class="ndc-inputs" onsubmit="return false">
+      <fieldset>
+        <legend>The pizza</legend>
+        <label class="ndc-field ndc-wide">
+          <span>Style</span>
+          <select data-k="style">
+            <option value="house">NEC house dough (Caputo 00, Ninja Woodfire)</option>
+            <option value="custom">Custom</option>
+          </select>
+        </label>
+        <label class="ndc-field">
+          <span>Dough balls</span>
+          <input type="number" data-k="balls" min="1" max="24" step="1" inputmode="numeric" />
+        </label>
+        <label class="ndc-field">
+          <span>Weight per ball (g)</span>
+          <input type="number" data-k="ballWeight" min="100" max="1200" step="5" inputmode="numeric" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Baker's percentages</legend>
+        <label class="ndc-field">
+          <span>Water (%)</span>
+          <input type="number" data-k="hydration" min="50" max="85" step="0.5" inputmode="decimal" />
+        </label>
+        <label class="ndc-field">
+          <span>Salt (%)</span>
+          <input type="number" data-k="salt" min="0" max="4" step="0.1" inputmode="decimal" />
+        </label>
+        <label class="ndc-field">
+          <span>Oil (%)</span>
+          <input type="number" data-k="oil" min="0" max="10" step="0.5" inputmode="decimal" />
+        </label>
+        <label class="ndc-field">
+          <span>Sugar (%)</span>
+          <input type="number" data-k="sugar" min="0" max="5" step="0.5" inputmode="decimal" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fermentation</legend>
+        <label class="ndc-field">
+          <span>Hours in the fridge</span>
+          <select data-k="hours">
+            <option value="24">24 hours</option>
+            <option value="48">48 hours</option>
+          </select>
+        </label>
+        <label class="ndc-field">
+          <span>Fridge temperature (°F)</span>
+          <input type="number" data-k="fridgeF" min="34" max="45" step="1" inputmode="numeric" />
+        </label>
+        <label class="ndc-field ndc-wide">
+          <span>Yeast</span>
+          <select data-k="yeastType">
+            <option value="idy">Instant dry yeast (Caputo Lievito)</option>
+            <option value="ady">Active dry yeast</option>
+            <option value="fresh">Fresh (cake) yeast</option>
+          </select>
+        </label>
+        <label class="ndc-field ndc-wide">
+          <span>How are you mixing?</span>
+          <select data-k="mixMethod">
+            <option value="machine">Bread machine (Dough cycle)</option>
+            <option value="mixer">Stand mixer</option>
+            <option value="hand">By hand</option>
+          </select>
+        </label>
+        <label class="ndc-field ndc-wide">
+          <span>When do you want to bake?</span>
+          <input type="datetime-local" data-k="bakeAt" />
+        </label>
+        <label class="ndc-check ndc-wide">
+          <input type="checkbox" data-k="waste" />
+          <span>Add 2% extra for dough left in the bowl</span>
+        </label>
+      </fieldset>
+    </form>
+
+    <div class="ndc-output" aria-live="polite">
+      <div class="ndc-ticket">
+        <p class="ndc-ticket-head">
+          <span data-out="summary"></span>
+        </p>
+        <table class="ndc-table">
+          <caption class="ndc-sr">Ingredient weights</caption>
+          <tbody>
+            <tr><th scope="row">Flour</th><td data-out="flour"></td></tr>
+            <tr><th scope="row">Water</th><td data-out="water"></td></tr>
+            <tr><th scope="row">Salt</th><td data-out="salt"></td></tr>
+            <tr data-row="oil"><th scope="row">Oil</th><td data-out="oil"></td></tr>
+            <tr data-row="sugar"><th scope="row">Sugar</th><td data-out="sugar"></td></tr>
+            <tr><th scope="row" data-out="yeastLabel">Yeast</th><td data-out="yeast"></td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row">Total dough</th><td data-out="total"></td></tr>
+          </tfoot>
+        </table>
+        <p class="ndc-note" data-out="yeastNote"></p>
+        <button type="button" class="ndc-copy" data-action="copy">Copy recipe</button>
+        <span class="ndc-copied" data-out="copied" role="status"></span>
+      </div>
+
+      <div class="ndc-schedule">
+        <h3>Your schedule</h3>
+        <p class="ndc-warn" data-out="warn" hidden></p>
+        <ol class="ndc-steps">
+          <li><strong data-out="mixStep">Start the bread machine Dough cycle</strong><span data-out="tMix"></span></li>
+          <li><strong>Ball and refrigerate</strong><span data-out="tBall"></span></li>
+          <li><strong>Pull from the fridge</strong><span data-out="tPull"></span></li>
+          <li><strong>Preheat the oven</strong><span data-out="tPreheat"></span></li>
+          <li><strong>Bake</strong><span data-out="tBake"></span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // ---- Defaults ----
+  // house = Caputo 00 breadmaker dough: 500 g flour / 325 g water / 13 g salt / 1.5 g yeast
+  // = about 840 g, divided into 3 balls (~280 g) or 4 (~210 g).
+  // Add bar / greek / beach here (and in the Style menu) once their recipes are aligned.
+  const PRESETS = {
+    house: { balls: 3, ballWeight: 280, hydration: 65, salt: 2.6, oil: 0, sugar: 0, preheatMin: 20 },
+  };
+  const DEFAULTS = { hours: 48, fridgeF: 38, yeastType: 'idy', mixMethod: 'machine', waste: false };
+
+  // Instant dry yeast (% of flour) at 38°F, by fridge hours.
+  // The house recipe uses 0.3% (1.5 g per 500 g) for its 24-48 h window,
+  // so the amount stays flat across both times. Fridge temperature still adjusts it:
+  // each +2°F above 38°F speeds fermentation ~25%, so the yeast drops to match.
+  const IDY_AT_38F = { 24: 0.3, 48: 0.3 };
+  const YEAST = {
+    idy:   { name: 'Instant dry yeast (Caputo Lievito)', factor: 1,    gPerTsp: 3.1 },
+    ady:   { name: 'Active dry yeast',  factor: 1.33, gPerTsp: 3.1 },
+    fresh: { name: 'Fresh yeast',       factor: 3,    gPerTsp: null },
+  };
+  const WARM_UP_HOURS = 1.5; // pull from fridge 1-2 h before baking
+  // Minutes from starting the dough to balling it and putting it in the fridge.
+  const MIX_METHODS = {
+    machine: { minutes: 90, step: 'Start the bread machine Dough cycle', name: 'bread machine' }, // Cuisinart CBK-110
+    mixer:   { minutes: 30, step: 'Mix in the stand mixer, then rest',   name: 'stand mixer' },   // ~10 min mix + 20 min rest
+    hand:    { minutes: 45, step: 'Mix and knead by hand, then rest',    name: 'hand' },          // ~15 min knead + 30 min rest
+  };
+
+  type State = Record<string, any>;
+
+  function idyPercent(hours: number, fridgeF: number): number {
+    const base = IDY_AT_38F[hours as keyof typeof IDY_AT_38F] ?? 0.3;
+    const tempFactor = Math.pow(0.8, (fridgeF - 38) / 2);
+    return Math.min(1, Math.max(0.05, base * tempFactor));
+  }
+
+  function calc(s: State) {
+    const yeastPct = idyPercent(s.hours, s.fridgeF) * YEAST[s.yeastType as keyof typeof YEAST].factor;
+    const total = s.balls * s.ballWeight * (s.waste ? 1.02 : 1);
+    const pctSum = 100 + s.hydration + s.salt + s.oil + s.sugar + yeastPct;
+    const flour = total / (pctSum / 100);
+    const g = (pct: number) => (flour * pct) / 100;
+    return {
+      total, flour, yeastPct,
+      water: g(s.hydration), salt: g(s.salt), oil: g(s.oil), sugar: g(s.sugar), yeast: g(yeastPct),
+    };
+  }
+
+  const fmtG = (n: number) => `${Math.round(n).toLocaleString()} g`;
+  const fmtSmall = (n: number) => `${n.toFixed(n < 10 ? 1 : 0)} g`;
+  const fmtWhen = (d: Date) =>
+    d.toLocaleString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+
+  function toLocalInput(d: Date): string {
+    const p = (n: number) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`;
+  }
+
+  function init(root: HTMLElement) {
+    const field = (k: string) => root.querySelector<HTMLInputElement | HTMLSelectElement>(`[data-k="${k}"]`)!;
+    const out = (k: string) => root.querySelector<HTMLElement>(`[data-out="${k}"]`)!;
+    const presetKeys = ['balls', 'ballWeight', 'hydration', 'salt', 'oil', 'sugar'];
+
+    let preheatMin = PRESETS.house.preheatMin;
+    function applyPreset(name: string) {
+      const p = PRESETS[name as keyof typeof PRESETS];
+      if (!p) return;
+      preheatMin = p.preheatMin;
+      presetKeys.forEach((k) => { field(k).value = String(p[k as keyof typeof p]); });
+    }
+
+    // Initial values
+    const startPreset = root.dataset.preset && PRESETS[root.dataset.preset as keyof typeof PRESETS] ? root.dataset.preset : 'house';
+    field('style').value = startPreset!;
+    applyPreset(startPreset!);
+    field('hours').value = String(DEFAULTS.hours);
+    field('fridgeF').value = String(DEFAULTS.fridgeF);
+    field('yeastType').value = DEFAULTS.yeastType;
+    field('mixMethod').value = DEFAULTS.mixMethod;
+    (field('waste') as HTMLInputElement).checked = DEFAULTS.waste;
+    const bake = new Date();
+    bake.setDate(bake.getDate() + Math.ceil((DEFAULTS.hours + WARM_UP_HOURS + 2) / 24));
+    bake.setHours(18, 0, 0, 0);
+    field('bakeAt').value = toLocalInput(bake);
+
+    const num = (k: string, fallback: number) => {
+      const v = parseFloat(field(k).value);
+      return Number.isFinite(v) ? v : fallback;
+    };
+
+    let recipeText = '';
+
+    function render() {
+      const s: State = {
+        balls: Math.max(1, Math.round(num('balls', 1))),
+        ballWeight: Math.max(1, num('ballWeight', 250)),
+        hydration: num('hydration', 62), salt: num('salt', 2.5),
+        oil: num('oil', 0), sugar: num('sugar', 0),
+        hours: parseInt(field('hours').value, 10),
+        fridgeF: num('fridgeF', 38),
+        yeastType: field('yeastType').value,
+        mixMethod: field('mixMethod').value,
+        waste: (field('waste') as HTMLInputElement).checked,
+      };
+      const r = calc(s);
+      const y = YEAST[s.yeastType as keyof typeof YEAST];
+
+      out('summary').textContent = `${s.balls} × ${s.ballWeight} g dough ${s.balls === 1 ? 'ball' : 'balls'}`;
+      out('flour').textContent = fmtG(r.flour);
+      out('water').textContent = fmtG(r.water);
+      out('salt').textContent = fmtSmall(r.salt);
+      out('oil').textContent = fmtSmall(r.oil);
+      out('sugar').textContent = fmtSmall(r.sugar);
+      root.querySelector<HTMLElement>('[data-row="oil"]')!.hidden = s.oil === 0;
+      root.querySelector<HTMLElement>('[data-row="sugar"]')!.hidden = s.sugar === 0;
+      out('yeastLabel').textContent = y.name;
+      out('yeast').textContent = `${r.yeast.toFixed(2)} g`;
+      out('total').textContent = fmtG(r.total);
+
+      const tsp = y.gPerTsp ? r.yeast / y.gPerTsp : null;
+      out('yeastNote').textContent =
+        `That's ${r.yeastPct.toFixed(2)}% of the flour` +
+        (tsp ? `, about ${tsp < 0.2 ? 'a pinch under ¼' : tsp.toFixed(2)} tsp` : '') +
+        `. Yeast amounts this small are worth weighing on a 0.01 g scale. Warmer fridge? Use less.`;
+
+      // Schedule
+      const bakeAt = new Date(field('bakeAt').value);
+      const warn = out('warn');
+      if (isNaN(bakeAt.getTime())) {
+        warn.hidden = false;
+        warn.textContent = 'Choose a bake date and time to see your schedule.';
+      } else {
+        const pull = new Date(bakeAt.getTime() - WARM_UP_HOURS * 3600e3);
+        const ball = new Date(pull.getTime() - s.hours * 3600e3);
+        const method = MIX_METHODS[s.mixMethod as keyof typeof MIX_METHODS] ?? MIX_METHODS.machine;
+        out('mixStep').textContent = method.step;
+        const mix = new Date(ball.getTime() - method.minutes * 60e3);
+        const preheat = new Date(bakeAt.getTime() - preheatMin * 60e3);
+        out('tMix').textContent = fmtWhen(mix);
+        out('tBall').textContent = fmtWhen(ball);
+        out('tPull').textContent = fmtWhen(pull);
+        out('tPreheat').textContent = fmtWhen(preheat);
+        out('tBake').textContent = fmtWhen(bakeAt);
+        if (mix.getTime() < Date.now()) {
+          const earliest = new Date(Date.now() + (bakeAt.getTime() - mix.getTime()));
+          warn.hidden = false;
+          warn.textContent = `A ${s.hours}-hour ferment needs you to have mixed already. Earliest bake if you mix now: ${fmtWhen(earliest)}. Or pick a shorter ferment.`;
+        } else {
+          warn.hidden = true;
+        }
+      }
+
+      recipeText = [
+        `New England Crust dough: ${out('summary').textContent}`,
+        `Flour ${fmtG(r.flour)}`, `Water ${fmtG(r.water)}`, `Salt ${fmtSmall(r.salt)}`,
+        s.oil ? `Oil ${fmtSmall(r.oil)}` : '', s.sugar ? `Sugar ${fmtSmall(r.sugar)}` : '',
+        `${y.name} ${r.yeast.toFixed(2)} g`,
+        `${s.hours} hours in the fridge at ${s.fridgeF}°F`,
+        `Mixed by ${MIX_METHODS[s.mixMethod as keyof typeof MIX_METHODS]?.name ?? 'bread machine'}`,
+        isNaN(bakeAt.getTime()) ? '' : `Start ${out('tMix').textContent}, bake ${out('tBake').textContent}`,
+        'newenglandcrust.com',
+      ].filter(Boolean).join('\n');
+    }
+
+    root.addEventListener('input', (e) => {
+      const t = e.target as HTMLElement;
+      if (t.dataset.k === 'style') applyPreset((t as HTMLSelectElement).value);
+      else if (presetKeys.includes(t.dataset.k || '')) field('style').value = 'custom';
+      render();
+    });
+
+    root.querySelector('[data-action="copy"]')!.addEventListener('click', async () => {
+      const msg = out('copied');
+      try {
+        await navigator.clipboard.writeText(recipeText);
+        msg.textContent = 'Copied';
+      } catch {
+        msg.textContent = 'Copy failed. Select the text and copy it manually.';
+      }
+      setTimeout(() => { msg.textContent = ''; }, 2500);
+    });
+
+    render();
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-dough-calc]').forEach(init);
+</script>
+
+<style is:global>
+  /* Override these from your site theme if needed */
+  .ndc {
+    --ndc-ink: var(--nec-ink, #1f2a33);
+    --ndc-muted: var(--nec-muted, #5b7083);
+    --ndc-paper: var(--nec-paper, #ffffff);
+    --ndc-sauce: var(--nec-accent, #b5322a);
+    --ndc-rule: var(--nec-rule, #d9dee3);
+    --ndc-wash: var(--nec-wash, #eef2f5);
+    color: var(--ndc-ink);
+    font: inherit;
+    max-width: 960px;
+    margin: 2.5rem auto;
+  }
+  .ndc-title { margin: 0 0 0.4rem; line-height: 1.2; }
+  .ndc-intro { margin: 0 0 1.5rem; color: var(--ndc-muted); max-width: 62ch; }
+
+  .ndc-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
+  /* Two columns only when the calculator itself is wide (not the viewport), so it fits narrow blog columns */
+  .ndc { container-type: inline-size; }
+  @container (min-width: 760px) { .ndc-grid { grid-template-columns: 1.1fr 1fr; align-items: start; } }
+
+  .ndc fieldset {
+    border: 0; border-top: 2px solid var(--ndc-ink);
+    margin: 0 0 1.25rem; padding: 0.75rem 0 0;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1rem;
+  }
+  .ndc legend { font-weight: 700; padding: 0 0.5rem 0 0; }
+  .ndc-field { display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.95rem; }
+  .ndc-wide { grid-column: 1 / -1; }
+  .ndc input[type="number"], .ndc input[type="datetime-local"], .ndc select {
+    font: inherit; color: var(--ndc-ink); background: var(--ndc-paper);
+    border: 1px solid var(--ndc-rule); border-radius: 6px;
+    padding: 0.55rem 0.65rem; min-height: 44px; width: 100%; box-sizing: border-box;
+  }
+  .ndc-check { display: flex; gap: 0.6rem; align-items: center; font-size: 0.95rem; min-height: 44px; }
+  .ndc-check input { width: 1.15rem; height: 1.15rem; accent-color: var(--ndc-sauce); }
+  .ndc :focus-visible { outline: 3px solid var(--ndc-sauce); outline-offset: 2px; }
+
+  .ndc-ticket {
+    background: var(--ndc-paper);
+    border: 1px solid var(--ndc-rule);
+    border-top: 6px solid var(--ndc-sauce);
+    border-radius: 4px;
+    padding: 1.25rem 1.25rem 1rem;
+  }
+  .ndc-ticket-head { margin: 0 0 0.75rem; font-weight: 700; font-size: 1.05rem; }
+  .ndc-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .ndc-table th { text-align: left; font-weight: 400; padding: 0.5rem 0; }
+  .ndc-table td { text-align: right; font-weight: 700; font-size: 1.15rem; padding: 0.5rem 0; }
+  .ndc-table tbody tr { border-bottom: 1px dashed var(--ndc-rule); }
+  .ndc-table tfoot th, .ndc-table tfoot td { padding-top: 0.75rem; color: var(--ndc-muted); font-size: 0.95rem; font-weight: 400; }
+  .ndc-note { color: var(--ndc-muted); font-size: 0.9rem; margin: 0.75rem 0 1rem; line-height: 1.5; }
+  .ndc-copy {
+    font: inherit; font-weight: 700; cursor: pointer;
+    background: var(--ndc-ink); color: var(--ndc-paper);
+    border: 0; border-radius: 6px; padding: 0.6rem 1rem; min-height: 44px;
+  }
+  .ndc-copy:hover { background: var(--ndc-sauce); }
+  .ndc-copied { margin-left: 0.75rem; font-size: 0.9rem; color: var(--ndc-muted); }
+
+  .ndc-schedule { margin-top: 1.75rem; }
+  .ndc-schedule h3 { margin: 0 0 0.75rem; }
+  .ndc-warn {
+    background: var(--ndc-wash); border-left: 4px solid var(--ndc-sauce);
+    padding: 0.7rem 0.9rem; margin: 0 0 1rem; font-size: 0.95rem; line-height: 1.5;
+  }
+  .ndc-steps { list-style: none; counter-reset: ndc; margin: 0; padding: 0; }
+  .ndc-steps li {
+    counter-increment: ndc; position: relative;
+    padding: 0 0 1rem 2.6rem; display: flex; flex-direction: column; gap: 0.15rem;
+  }
+  .ndc-steps li::before {
+    content: counter(ndc); position: absolute; left: 0; top: 0;
+    width: 1.8rem; height: 1.8rem; border-radius: 50%;
+    background: var(--ndc-paper); border: 2px solid var(--ndc-ink);
+    display: grid; place-items: center; font-weight: 700; font-size: 0.9rem;
+  }
+  .ndc-steps li:not(:last-child)::after {
+    content: ""; position: absolute; left: 0.9rem; top: 1.8rem; bottom: 0;
+    border-left: 2px solid var(--ndc-rule);
+  }
+  .ndc-steps li:last-child::before { background: var(--ndc-sauce); border-color: var(--ndc-sauce); color: #fff; }
+  .ndc-steps span { color: var(--ndc-muted); font-variant-numeric: tabular-nums; }
+
+  .ndc-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>

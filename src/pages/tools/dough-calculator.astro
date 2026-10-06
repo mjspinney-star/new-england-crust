@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DoughCalculator from '../../components/DoughCalculator.astro';
+---
+
+<BaseLayout
+  title="Pizza Dough Calculator for Cold-Fermented Dough"
+  description="Get exact dough weights, yeast scaled to your fridge, and a schedule for when to mix, based on our Caputo 00 dough."
+>
+  <article class="container-prose py-16 md:py-20">
+    <header class="not-prose mb-10 border-b border-timber-300/15 pb-8">
+      <p class="eyebrow">Tools</p>
+      <h1 class="mt-3 font-display text-4xl leading-tight md:text-5xl">Cold-Ferment Dough Calculator</h1>
+      <p class="mt-4 text-lg text-timber-100/90">
+        Built on our <a href="/recipes/caputo-breadmaker-dough/" class="text-glow-200 hover:text-glow-300">Caputo 00 breadmaker dough</a>.
+      </p>
+    </header>
+
+    <DoughCalculator preset="house" title="Pizza dough calculator" />
+
+    <footer class="mt-16 flex items-center justify-between border-t border-timber-300/15 pt-6 text-sm text-timber-200/80">
+      <a href="/recipes/" class="hover:text-glow-200">&larr; All recipes</a>
+      <a href="/" class="hover:text-glow-200">Back home</a>
+    </footer>
+  </article>
+</BaseLayout>
