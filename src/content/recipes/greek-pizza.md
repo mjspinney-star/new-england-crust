@@ -41,4 +41,4 @@ Every New England town has one: a place called Something House of Pizza, run by 
 
 Nobody outside New England understands this pizza. Their loss. Here's how to make it at home.
 
-This is a kitchen-oven pan pizza — a deep round pan won't fit a compact outdoor oven like the Ninja Woodfire.
+This is written for a kitchen oven — we haven't tried it in the Ninja Woodfire.

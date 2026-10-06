@@ -75,7 +75,7 @@ const recipes = defineCollection({
     calories: z.number().optional(),
     ingredients: z.array(z.string()).default([]),
     instructions: z.array(instructionStep).default([]),
-    // Affiliate/owned gear used in the recipe (oven, peel, tools, etc.). Rendered as a disclosed "Gear we used" callout.
+    // Affiliate/owned gear used in the recipe (oven, peel, tools, etc.). Rendered as a disclosed gear callout ("Gear we used" when tested, "Gear for this style" otherwise).
     gear: z.array(gearItem).default([]),
     keywords: z.array(z.string()).default([]),
   }),

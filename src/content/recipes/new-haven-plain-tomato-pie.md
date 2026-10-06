@@ -43,4 +43,4 @@ draft: false
 
 Ninety minutes down I-95 from Boston is America's most serious pizza city, and its purest expression is the plain: tomatoes, pecorino, oregano, olive oil, char. No mozzarella. The first time someone orders you a plain at a Wooster Street institution, you wonder where the cheese is. By the second slice, you understand everything.
 
-This is also the recipe where your outdoor oven earns its keep — this style wants 750°F or more — on a Ninja, the 700°F setting is as close as it gets.
+This is also the recipe where your outdoor oven earns its keep. The style wants 750°F or more; on a Ninja, the 700°F setting is as close as it gets.

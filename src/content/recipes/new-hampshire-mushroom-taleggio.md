@@ -26,10 +26,14 @@ ingredients:
 instructions:
   - step: "Cook the mushrooms"
     text: "This step happens before the pizza goes on the peel. Don't skip it — raw mushrooms on a fast oven will steam and turn rubbery rather than roast. Heat olive oil in a wide skillet over medium-high. When shimmering, add the mushrooms in a single layer — don't stir for the first 2 minutes, let them make contact with the pan. Add the garlic and thyme sprigs, season with salt, and cook another 3–4 minutes until the mushrooms are golden and reduced by about half. Pull from heat and let cool slightly. Remove thyme sprigs."
-  - step: "Build on the peel"
-    text: "Stretch your dough ball and lay it on a floured peel. Work quickly — dough on a peel is borrowing time. Brush the surface with olive oil, leaving a half-inch border. Scatter the Parmigiano evenly over the oil. Distribute the taleggio pieces — don't try to cover every inch, leave gaps, the cheese will spread and pool. Pile the mushrooms on top. Season lightly with black pepper and a pinch of flaky salt. No additional salt — the taleggio and Parmigiano are already doing the work."
-  - step: "Launch and bake"
-    text: "On a Ninja Woodfire, the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, brush the dough with oil and par-bake about 1:30, then top and bake about 5 minutes. We haven't made this one yet, so watch it — pull it when the cheese is melted and browning at the edges."
+  - step: "Stretch and oil"
+    text: "Stretch your dough ball and lay it on a floured peel. Work quickly — dough on a peel is borrowing time. Brush the surface with olive oil, leaving a half-inch border."
+  - step: "Par-bake"
+    text: "On a Ninja Woodfire, the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, then launch the oiled dough bare and par-bake about 1:30. We haven't made this one yet, so treat these times as a starting point."
+  - step: "Top the shell"
+    text: "Pull the shell back onto the peel. Scatter the Parmigiano evenly over the oil. Distribute the taleggio pieces — don't try to cover every inch, leave gaps, the cheese will spread and pool. Pile the mushrooms on top. Season lightly with black pepper and a pinch of flaky salt. No additional salt — the taleggio and Parmigiano are already doing the work."
+  - step: "Bake"
+    text: "Slide it back onto the stone and bake about 5 minutes, watching closely — pull it when the cheese is melted and browning at the edges."
   - step: "Finish"
     text: "Slide off the peel onto a cutting board. Immediately: a squeeze of lemon over the entire surface, a scatter of fresh thyme leaves, and a few flakes of salt. Let it sit 90 seconds before cutting — taleggio needs a moment to set or it runs off the slice."
 gear:
@@ -41,7 +45,7 @@ gear:
     affiliateId: "infrared-thermometer"
 keywords:
   - "mushroom taleggio pizza"
-  - "foraged mushroom pizza"
+  - "maitake mushroom pizza"
   - "new hampshire pizza recipe"
   - "white pizza recipe"
 ---

@@ -19,7 +19,7 @@ This one is light on ingredients, which means everything has to actually taste l
 - 2 ears of corn, shucked
 - 1 large poblano pepper
 - Low-moisture mozzarella, shredded — about 4 ounces per pie
-- One ball of dough, room temperature *[See our cold ferment dough for best results]*
+- One ball of dough, room temperature — [our Caputo dough](/recipes/caputo-breadmaker-dough/) gives the best results
 - Olive oil, salt, black pepper
 - Optional: a small handful of crumbled cotija for finishing
 
@@ -35,9 +35,9 @@ This step takes about twenty minutes. Do not rush it — the char is the flavor.
 
 ## Building the Pizza
 
-Stretch your dough to about 11 or 12 inches. Brush the surface with olive oil, then scatter the mozzarella across it, leaving an inch at the edge. Lay the corn kernels and poblano strips over the cheese. Season with salt and black pepper.
+Stretch your dough to about 11 or 12 inches and brush the surface with olive oil.
 
-On a Ninja Woodfire, the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, brush the dough with oil and par-bake about 1:30, then top and bake about 5 minutes. We haven't made this one yet, so watch it — pull it when the crust is spotted and the cheese has color on the edges. In a dedicated 900°F+ oven, expect closer to 75 to 90 seconds with a turn halfway.
+On a Ninja Woodfire, the natural starting point is the 550°F routine we use for our everyday pies: preheat about 20 minutes until the stone reads around 540°F, then launch the oiled dough bare and par-bake about 1:30. Pull the shell, scatter the mozzarella across it, leaving an inch at the edge, lay the corn kernels and poblano strips over the cheese, and season with salt and black pepper. Slide it back in and bake about 5 minutes. We haven't made this one yet, so watch it — pull it when the crust is spotted and the cheese has color on the edges. In a dedicated 900°F+ oven, skip the par-bake: build on the raw dough and expect closer to 75 to 90 seconds with a turn halfway.
 
 ## Honest Assessment
 
@@ -51,4 +51,4 @@ A drizzle of good olive oil right off the oven. Cotija if you have it — the sa
 
 This is a one-season pie. Make it while the corn is actually good, eat it outside before the weather turns, and that is enough.
 
-**Try this next:** Get the dough right before anything else. Our cold ferment recipe is where we always send people first.
+**Try this next:** Get the dough right before anything else. [Our Caputo dough](/recipes/caputo-breadmaker-dough/) is where we always send people first.

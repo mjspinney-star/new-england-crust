@@ -42,4 +42,4 @@ South of Boston, pizza means something specific: a 10-inch pan, a thin crackly c
 
 The whole trick happens where the cheese meets the pan wall. Don't be timid about it.
 
-This is a kitchen-oven pan pizza — a 10-inch pan won't fit a compact outdoor oven like the Ninja Woodfire.
+This is written for a kitchen oven — we haven't tried it in the Ninja Woodfire.

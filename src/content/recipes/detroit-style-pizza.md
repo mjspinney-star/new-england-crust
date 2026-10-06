@@ -38,4 +38,4 @@ draft: false
 
 Not a New England style — but it's the pan pizza that conquered the country over the last decade, and once you've mastered the beach and bar pizzas, the Detroit pan is the natural next flex. Airy like focaccia inside, walled with caramelized cheese, sauce laid on top in stripes like it's showing off. Because it is.
 
-This is a kitchen-oven pan pizza — a 10x14 pan won't fit a compact outdoor oven like the Ninja Woodfire.
+This is written for a kitchen oven — we haven't tried it in the Ninja Woodfire.
